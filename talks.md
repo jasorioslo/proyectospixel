@@ -50,11 +50,11 @@
 ## BLOQUE 11: Configuración de Repositorio y Deploy (GitHub + Cloudflare Pages)
 
 ### TAREA-11.1 — Inicializar repositorio Git
-- [ ] Crear repositorio en GitHub (ej: github.com/usuario/proyectospixel)
-- [ ] Agregar `.gitignore` con: node_modules/, .DS_Store, Thumbs.db, *.log, .env
-- [ ] Agregar `README.md` básico con nombre del proyecto y link al sitio
-- [ ] Hacer commit de todo el código completo del proyecto
-- [ ] Push a la rama `main`
+- [x] Crear repositorio en GitHub — HECHO 9/10/2026: `github.com/jasorioslo/proyectospixel` (público, rama main)
+- [x] Agregar `.gitignore` con: node_modules/, .DS_Store, Thumbs.db, *.log, .env (.wrangler/, backups)
+- [x] Agregar `README.md` básico con nombre del proyecto y link al sitio
+- [x] Hacer commit de todo el código completo del proyecto (102 archivos, fdd0843)
+- [x] Push a la rama `main`
 
 ### TAREA-11.2 — Configurar Cloudflare Pages
 - [ ] Ir al dashboard de Cloudflare → Pages → Create a project

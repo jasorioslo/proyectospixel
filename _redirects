@@ -1,0 +1,2 @@
+# www -> dominio raiz (301)
+https://www.proyectospixel.com/* https://proyectospixel.com/:splat 301
