@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página no encontrada (404) | ProyectosPixel</title>
   <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="4;url=/">
   <meta name="description" content="La página que buscas no existe. Vuelve al inicio o explora nuestras herramientas online gratis.">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -23,7 +24,8 @@
         <div class="hero">
           <div class="hero-badge">404 <span>&middot;</span> No encontrada</div>
           <h1>Página no encontrada</h1>
-          <p>La URL que buscas no existe o fue movida. Estas herramientas quizá te sirvan:</p>
+          <p>La URL que buscas no existe o fue movida. Te llevamos al inicio en <strong id="countdown">4</strong> segundos...</p>
+          <p style="font-size:14px;color:var(--text-secondary)">Estas herramientas quizá te sirvan mientras:</p>
         </div>
         <section class="section" style="padding-top:0">
           <div id="grid-404" class="grid-tools grid-tools-all"></div>
@@ -44,6 +46,14 @@
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
+    // Cuenta atrás y redirección automática a la home
+    var activeSecs = 4;
+    var el = document.getElementById('countdown');
+    var timer = setInterval(function () {
+      activeSecs--;
+      if (el) el.textContent = activeSecs;
+      if (activeSecs <= 0) { clearInterval(timer); location.replace('/'); }
+    }, 1000);
     // 4 destacadas para rescatar al usuario
     ProyectosPixel.renderRelatedTools('grid-404', ['contar-palabras-caracteres', 'generar-contrasenas', 'codificar-decodificar-base64', 'quitar-acentos']);
   </script>
