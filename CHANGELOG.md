@@ -12,7 +12,8 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - **Producción: https://proyectospixel.pages.dev** (Cloudflare Pages, deploy vía wrangler, 102 archivos)
   - QA de producción: 18 rutas verificadas 200 OK
   - `_headers` con security headers verificados en producción (CSP con fuentes de Google, nosniff, DENY, Referrer, Permissions)
-  - `_redirects` con www → dominio raíz (301)
+  - `_redirects` con www → dominio raíz (301) — **nota: la variante con host no dispara en custom domains de Pages (probadas ambas sintaxis); el redirect www se resolverá con una Redirect Rule de zona (TAREA-11.3, acción de usuario en dashboard)**
+- **🚀 DOMINIO CUSTOM ACTIVO — https://proyectospixel.com en línea** (custom domains por API + DNS del usuario; sin noindex; HTML con canonical coincidente)
   - Nota: `*.pages.dev` incluye `X-Robots-Tag: noindex` automático de Cloudflare (evita duplicados); desaparece al adjuntar el dominio custom
 
 ### Added

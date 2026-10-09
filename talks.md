@@ -64,10 +64,14 @@
 - [ ] Variable de entorno para Umami si aplica: `UMAMI_WEBSITE_ID` (pendiente Bloque 9)
 
 ### TAREA-11.3 — Configurar Custom Domain en Cloudflare Pages
-- [ ] En Cloudflare Pages → Custom domains → agregar `proyectospixel.com`
-- [ ] Configurar DNS en Cloudflare: registro CNAME apuntando al proyecto Pages
-- [ ] Verificar que HTTPS se activa automáticamente con el certificado de Cloudflare
-- [ ] Verificar que `http://` redirige a `https://`
+- [x] Agregar `proyectospixel.com` + `www.proyectospixel.com` como custom domains del proyecto (API Pages domains; zona activa en la misma cuenta)
+- [x] DNS: que el usuario creara CNAME @ y www → `proyectospixel.pages.dev` proxied (apex con CNAME flattening)
+- [x] **Dominios: active ✓ — https://proyectospixel.com en producción**, verificado 200
+- [x] HTTPS automático y redirección HTTP→HTTPS de Cloudflare ✓ (active con la zona)
+- [x] **`X-Robots-Tag: noindex` desapareció en el dominio custom** — el sitio es indexable ✓
+- [x] **404.html creado** (después de descubrir que Pages activaba modo SPA sin él y servía index con 200 para cualquier URL vieja) — URLs de tools movidas devuelven 404 real ✓
+- [x] Auto-slash verificado: `/herramientas` sirve `/herramientas/` ✓
+- [ | ] Pendiente usuario (dashboard): **Redirect Rule** www → raíz (el `_redirects` con host no dispara en custom domains; se probaron ambas variantes de sintaxis). Pasos: Cloudflare Dashboard → proyectospixel.com → Rules → Redirect Rules → Create: si Hostname es www.proyectospixel.com → Dynamic redirect 301 a `https://proyectospixel.com${uri}`. Alternativa equivalente: el sitio sirve igual en www (duplicate superado por canonicals); para SEO robusto crear la regla
 
 ### TAREA-11.4 — Configurar deploy preview por rama
 - [ ] Confirmar que Cloudflare Pages genera previews automáticos para cada PR
