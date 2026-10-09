@@ -2,7 +2,7 @@
 
 Marketplace de herramientas online **gratuitas, rápidas y 100% privadas**: todo se procesa en el navegador del usuario. Ningún dato sale del dispositivo. Sitio estático multipágina optimizado para SEO.
 
-🌐 Domínio: `proyectospixel.com` · Estado: **Fase 1 completa (35 herramientas activas)** · Deploy: pendiente (Cloudflare Pages)
+🌐 **LIVE:** https://proyectospixel.pages.dev · Repo: https://github.com/jasorioslo/proyectospixel · Custom domain `proyectospixel.com` pendiente de adjuntar (TAREA-11.3)
 
 ---
 

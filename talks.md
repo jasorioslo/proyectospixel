@@ -57,15 +57,11 @@
 - [x] Push a la rama `main`
 
 ### TAREA-11.2 — Configurar Cloudflare Pages
-- [ ] Ir al dashboard de Cloudflare → Pages → Create a project
-- [ ] Conectar con GitHub: seleccionar el repositorio `proyectospixel`
-- [ ] Configurar build settings:
-  - Framework preset: None
-  - Build command: vacío (sitio estático sin build step)
-  - Build output directory: `/` (raíz del repo)
-  - Root directory: vacío
-- [ ] Configurar variable de entorno para Umami si aplica: `UMAMI_WEBSITE_ID`
-- [ ] Verificar que el primer deploy funciona y el sitio es accesible en `*.pages.dev`
+- [x] (A) ~~Dashboard~~ Hecho vía **wrangler**: `wrangler pages project create proyectospixel --production-branch=main` (cuenta Jasonrioslopez@gmail.com, account 1ecb2c5e)
+- [x] Deploy del sitio: `wrangler pages deploy .` — **102 archivos en ~3s** → **https://proyectospixel.pages.dev** (en producción)
+- [x] QA producción: 18 rutas verificadas 200 OK (home, 5 categorías, índice, tools, legales, manifest, sitemap, sw, favicon, og-image)
+- [ ] Conectar el repo de GitHub Pages vía dashboard para **deploys automáticos por push** (opcional ahora; nosql alternativa: re-deploy con `wrangler pages deploy .` después de cada commit)
+- [ ] Variable de entorno para Umami si aplica: `UMAMI_WEBSITE_ID` (pendiente Bloque 9)
 
 ### TAREA-11.3 — Configurar Custom Domain en Cloudflare Pages
 - [ ] En Cloudflare Pages → Custom domains → agregar `proyectospixel.com`
@@ -79,20 +75,10 @@
 - [ ] Probar creando una rama de test, haciendo push y verificando que se genera el preview
 
 ### TAREA-11.5 — Configurar `_redirects` y headers en Cloudflare
-- [ ] Crear archivo `_redirects` en la raíz del proyecto:
-  - `www.proyectospixel.com/*` → `proyectospixel.com/$1` (301)
-  - Redirigir URLs sin slash final a URLs con slash final (consistencia SEO)
-- [ ] Crear archivo `_headers` en la raíz del proyecto con security headers:
-  ```
-  /*
-    X-Content-Type-Options: nosniff
-    X-Frame-Options: DENY
-    X-XSS-Protection: 1; mode=block
-    Referrer-Policy: strict-origin-when-cross-origin
-    Permissions-Policy: camera=(), microphone=(), geolocation=()
-    Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://[UMAMI_URL]; style-src 'self' 'unsafe-inline'; img-src 'self' data:;
-  ```
-- [ ] Verificar headers con `curl -I https://proyectospixel.com`
+- [x] `_redirects` creado: `www.proyectospixel.com/* → proyectospixel.com/:splat (301)` (redirigirá una vez que el dominio www esté adjunto)
+- [x] `_headers` creado con security headers: `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy` y CSP (default-src 'self' + Google Fonts). NOTA: se omitió X-XSS-Protection (deprecado y sin efecto en navegadores modernos)
+- [x] Verificado en producción (deployment d43d8790): los 5 headers presentes ✓
+- [ ] Redirigir URLs sin slash final a URL con slash (pendiente; Cloudflare Pages sirve `/dir` → `/dir/` con 308 automático; verificar al adjuntar dominio)
 
 ### TAREA-11.6 — Despliegue a producción
 - [ ] Hacer push de todo el código completo a `main` en GitHub (si no se hizo en TAREA-11.1)
