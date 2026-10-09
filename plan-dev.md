@@ -10,8 +10,8 @@
 
 | # | Tool (nombre SEO) | URL | Lógica | Vacío/error | Copiar/Limpiar | Estilo híbrido | Estado |
 |---|---|-----|--------|-------------|----------------|----------------|--------|
-| 1 | Contar palabras y caracteres | `/herramientas/texto/contar-palabras-caracteres.html` | ✅ | ✅ | ✅ | ✅ | ✅ verificada 9/10 |
-| 2 | Quitar acentos | `/herramientas/texto/quitar-acentos.html` | ✅ | ✅ | ✅ | ✅ | ✅ verificada 9/10 |
+| 1 | Contar palabras y caracteres | `/herramientas/texto/contar-palabras-caracteres/` | ✅ | ✅ | ✅ | ✅ | ✅ verificada 9/10 |
+| 2 | Quitar acentos | `/herramientas/texto/quitar-acentos/` | ✅ | ✅ | ✅ | ✅ | ✅ verificada 9/10 |
 | 3 | Convertir mayúsculas y minúsculas | `convertir-mayusculas-minusculas.html` | — | — | — | — | ❌ auditar |
 | 4 | Generador Lorem Ipsum | `generar-lorem-ipsum.html` | — | — | — | — | ❌ auditar |
 | 5 | Quitar espacios duplicados | `quitar-espacios-duplicados.html` | — | — | — | — | ❌ auditar |

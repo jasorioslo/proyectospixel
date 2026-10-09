@@ -106,7 +106,7 @@
     var icon = icons[tool.slug] || '';
     var catLabel = CATEGORY_LABELS[tool.category] || tool.category;
     var badge = tool.featured ? '<span class="badge badge-secondary">Destacada</span>' : '<span class="badge ' + (CATEGORY_BADGE[tool.category] || 'badge-primary') + '">' + catLabel + '</span>';
-    return '<a href="/herramientas/' + tool.category + '/' + tool.slug + '.html" class="card-tool" data-slug="' + tool.slug + '" data-title="' + tool.title.toLowerCase() + '" data-desc="' + tool.desc.toLowerCase() + '" data-category="' + tool.category + '">' +
+    return '<a href="/herramientas/' + tool.category + '/' + tool.slug + '/" class="card-tool" data-slug="' + tool.slug + '" data-title="' + tool.title.toLowerCase() + '" data-desc="' + tool.desc.toLowerCase() + '" data-category="' + tool.category + '">' +
       icon +
       '<div class="card-title">' + tool.title + '</div>' +
       '<div class="card-desc">' + tool.desc + '</div>' +

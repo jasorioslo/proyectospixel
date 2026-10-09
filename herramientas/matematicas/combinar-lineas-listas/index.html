@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinar Líneas de Dos Listas (Producto Cruzado) | ProyectosPixel</title>
+  <meta name="description" content="Genera todas las combinaciones cruzadas entre dos listas de texto (A×B). Ideal para keywords y tests. Gratis y 100% privado.">
+  <link rel="canonical" href="https://proyectospixel.com/herramientas/matematicas/combinar-lineas-listas/">
+  <meta property="og:title" content="Combinar Líneas de Dos Listas Online | ProyectosPixel">
+  <meta property="og:description" content="Crea todas las combinaciones cruzadas de dos listas al instante.">
+  <meta property="og:url" content="https://proyectospixel.com/herramientas/matematicas/combinar-lineas-listas/">
+  <meta property="og:image" content="https://proyectospixel.com/assets/img/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css?v=8">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Combinar Líneas de Dos Listas","description":"Genera el producto cruzado de dos listas de texto, una línea por combinación.","url":"https://proyectospixel.com/herramientas/matematicas/combinar-lineas-listas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div id="header"></div>
+    <main>
+      <div class="container tool-container">
+        <nav class="breadcrumb">
+          <a href="/">Inicio</a>
+          <span class="sep">/</span>
+          <a href="/herramientas/matematicas/">MatemÃ¡ticas</a>
+          <span class="sep">/</span>
+          <span>Combinar Líneas de Dos Listas</span>
+        </nav>
+        <h1 class="tool-h1">Combinar Líneas de Dos Listas</h1>
+        <p class="tool-description">Genera todas las cruces posibles de la lista A con la lista B.</p>
+        <div id="ad-banner-mid" class="ad-container ad-mid" style="margin-bottom:32px"></div>
+        <div class="tool-workzone">
+          <div class="tool-section">
+            <label for="tool-input" class="tool-input-label">Lista A</label>
+            <textarea id="tool-input" class="input-text" placeholder="barato&#10;rápido"></textarea>
+          </div>
+          <div class="tool-section">
+            <label for="tool-input-b" class="tool-input-label">Lista B</label>
+            <textarea id="tool-input-b" class="input-text" placeholder="zapatos&#10;camisas"></textarea>
+            <div id="tool-error" class="error-msg"></div>
+          </div>
+          <div class="tool-section">
+            <div class="tool-controls">
+              <div>
+                <label for="ctl-sep">Separador entre A y B</label>
+                <input type="text" id="ctl-sep" value=" " autocomplete="off">
+              </div>
+              <label><input type="checkbox" id="ctl-order"> Invertir orden (B primero)</label>
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button id="btn-process" class="btn-primary">Combinar listas</button>
+          </div>
+          <div class="tool-section">
+            <label class="tool-input-label">Resultado</label>
+            <div id="tool-result" class="result-area"></div>
+            <div class="result-actions">
+              <button id="btn-copy" class="btn-secondary copy-feedback" disabled>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="0"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copiar resultado
+              </button>
+              <button id="btn-clear" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                Limpiar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
+        <section class="related-tools">
+          <h2 class="section-title">Tools Relacionadas</h2>
+          <div id="related-tools" class="grid-tools grid-tools-all"></div>
+        </section>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </div>
+  <script src="/js/components.js"></script>
+  <script src="/js/tools-data.js"></script>
+  <script>
+    ProyectosPixel.renderHeader();
+    ProyectosPixel.renderFooter();
+  </script>
+  <script src="/js/tools/combinar-lineas-listas.js"></script>
+</body>
+</html>
