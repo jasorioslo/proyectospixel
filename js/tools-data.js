@@ -114,15 +114,43 @@
     '</a>';
   }
 
-  /* --- Cards relacionadas (encima de #related-tools en cada tool) --- */
+  /* --- Cards relacionadas (encima de #related-tools en cada tool) ---
+     Estrategia de 6: [1-3] curados por la tool → [4-6] auto-fill con
+     hermanos de la misma categoría → si faltan, destacadas de otras categorías */
   function renderRelatedTools(containerId, slugs) {
     var container = document.getElementById(containerId);
     if (!container) return;
-    var html = slugs.map(function (slug) {
+
+    var seen = {};
+    var picked = [];
+
+    function pushBySlug(slug) {
+      if (seen[slug] || picked.length >= 6) return;
       var tool = tools.find(function (t) { return t.slug === slug; });
-      return tool ? renderCardTool(tool) : '';
-    }).filter(Boolean).join('');
-    container.innerHTML = html;
+      if (tool) { seen[slug] = true; picked.push(tool); }
+    }
+    function pushByFilter(fn) {
+      tools.forEach(function (t) {
+        if (picked.length >= 6) return;
+        if (!seen[t.slug] && fn(t)) { seen[t.slug] = true; picked.push(t); }
+      });
+    }
+
+    // 1) Curados (contextuales, prioridad editorial)
+    slugs.forEach(pushBySlug);
+    // 2) Resto de la misma categoría
+    var cat = picked.length ? picked[0].category : null;
+    var selfSlug = slugs[0];
+    var self = tools.find(function (t) { return t.slug === selfSlug; });
+    var ownCat = self ? self.category : cat;
+    if (ownCat) pushByFilter(function (t) { return t.category === ownCat; });
+    // 3) Relleno con destacadas de otras categorías
+    pushByFilter(function (t) { return t.featured; });
+    // 4) Última red: cualquier otra herramienta
+    pushByFilter(function () { return true; });
+
+    if (picked.length === 0) { container.innerHTML = ''; return; }
+    container.innerHTML = picked.map(renderCardTool).join('');
   }
 
   /* --- localStorage: Track Usage --- */
