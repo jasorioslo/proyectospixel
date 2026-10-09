@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Entorno
+.env
+.env.local
+
+# Editores
+.vscode/
+.idea/
+
+# Wrangler local
+.wrangler/
+
+# Backups temporales
+*.bak
+*~

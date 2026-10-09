@@ -1,0 +1,169 @@
+﻿/* =========================================================
+   ProyectosPixel - Datos compartidos (tools, iconos, helpers)
+   Usado por: home.js y los renderRelatedTools de cada tool
+   ========================================================= */
+
+(function () {
+  'use strict';
+
+  /* --- Tool Data (fuente unica de verdad) --- */
+  var tools = [
+    { slug: 'contar-palabras-caracteres', title: 'Contar palabras y caracteres', desc: 'Cuenta palabras, caracteres, oraciones y párrafos al instante.', category: 'texto', featured: true },
+    { slug: 'quitar-acentos', title: 'Quitar acentos', desc: 'Elimina tilde de cualquier texto rápido y fácil.', category: 'texto', featured: false },
+    { slug: 'convertir-mayusculas-minusculas', title: 'Convertir mayúsculas/minúsculas', desc: 'Transforma tu texto a MAYÚSCULAS, minúsculas, Tipo Título o tipo oración.', category: 'texto', featured: true },
+    { slug: 'generar-lorem-ipsum', title: 'Generador Lorem Ipsum', desc: 'Genera párrafos de texto de relleno para tus diseños o maquetas.', category: 'texto', featured: false },
+    { slug: 'quitar-espacios-duplicados', title: 'Quitar espacios duplicados', desc: 'Limpia tu texto eliminando los espacios en blanco sobrantes.', category: 'texto', featured: false },
+    { slug: 'quitar-saltos-de-linea', title: 'Quitar saltos de línea', desc: 'Convierte texto multilínea en un solo párrafo continuo.', category: 'texto', featured: false },
+    { slug: 'invertir-texto', title: 'Invertir texto', desc: 'Pon tu texto al revés letra por letra o palabra por palabra.', category: 'texto', featured: false },
+    { slug: 'frecuencia-palabras', title: 'Frecuencia de palabras', desc: 'Analiza tu texto y muestra cuántas veces se repite cada palabra.', category: 'texto', featured: false },
+    { slug: 'texto-a-morse', title: 'Texto a Morse', desc: 'Traduce texto a código Morse y de Morse a texto.', category: 'conversion', featured: false },
+    { slug: 'generar-contrasenas', title: 'Generador de contraseñas', desc: 'Crea contraseñas seguras y aleatorias personalizando longitud y símbolos.', category: 'seguridad', featured: true },
+    { slug: 'eliminar-caracteres-especiales', title: 'Eliminar caracteres especiales', desc: 'Limpia tu texto dejando solo letras y números, ideal para URLs.', category: 'texto', featured: false },
+    { slug: 'convertir-unicode-texto', title: 'Convertir Unicode/Texto', desc: 'Codifica texto a formato Unicode o decodifica Unicode a texto legible.', category: 'conversion', featured: false },
+    { slug: 'justificar-texto', title: 'Justificar texto', desc: 'Alinea tu texto perfectamente a ambos lados como en un periódico.', category: 'texto', featured: false },
+    { slug: 'buscar-reemplazar-texto', title: 'Buscar y reemplazar', desc: 'Encuentra palabras específicas y reemplázalas masivamente.', category: 'texto', featured: false },
+    { slug: 'codificar-decodificar-base64', title: 'Codificar/Decodificar Base64', desc: 'Convierte cualquier texto a Base64 o descifra Base64 a texto plano.', category: 'conversion', featured: true },
+    { slug: 'anadir-prefijo-sufijo-lineas', title: 'Añadir Prefijo y Sufijo a Líneas', desc: 'Inserta un prefijo y/o sufijo al inicio y final de cada línea de tu texto.', category: 'texto', featured: false },
+    { slug: 'eliminar-lineas-duplicadas', title: 'Quitar Líneas Duplicadas', desc: 'Elimina las líneas repetidas de tu lista o texto, conservando la primera aparición.', category: 'texto', featured: false },
+    { slug: 'eliminar-lineas-vacias', title: 'Eliminar Líneas Vacías', desc: 'Quita las líneas en blanco o vacías de cualquier texto o lista al instante.', category: 'texto', featured: false },
+    { slug: 'filtrar-lineas-texto', title: 'Filtrar Líneas de Texto', desc: 'Conserva o elimina las líneas que contengan una palabra o frase específica.', category: 'texto', featured: false },
+    { slug: 'numerar-lineas-texto', title: 'Numerar Líneas de Texto', desc: 'Añade un número delante de cada línea con el separador que elijas.', category: 'texto', featured: false },
+    { slug: 'generar-lista-numeros', title: 'Generar Lista de Números', desc: 'Crea listas de números correlativos con inicio, fin y paso configurables.', category: 'matematicas', featured: false },
+    { slug: 'texto-a-binario', title: 'Texto a Binario', desc: 'Convierte texto a código binario UTF-8 y de binario a texto.', category: 'conversion', featured: false },
+    { slug: 'cifrado-rot13', title: 'Cifrado ROT13', desc: 'Codifica y decodifica texto con el cifrado ROT13 al instante.', category: 'seguridad', featured: false },
+    { slug: 'quitar-vocales-texto', title: 'Quitar Vocales de un Texto', desc: 'Elimina todas las vocales (incluidas las acentuadas) de tu texto.', category: 'texto', featured: false },
+    { slug: 'mezclar-letras-palabras', title: 'Mezclar Letras de Palabras', desc: 'Desordena las letras de cada palabra de tu texto al azar.', category: 'texto', featured: false },
+    { slug: 'anadir-saltos-de-linea', title: 'Añadir Saltos de Línea', desc: 'Divide tu texto insertando saltos de línea cada N caracteres o palabras.', category: 'texto', featured: false },
+    { slug: 'extraer-columnas-texto', title: 'Extraer Columna de Texto Delimitado', desc: 'Extrae la columna N de tu texto separado por comas, tabs u otro delimitador.', category: 'texto', featured: false },
+    { slug: 'fusionar-texto-lineas', title: 'Fusionar Dos Listas de Texto', desc: 'Une dos listas línea por línea con el separador que elijas.', category: 'texto', featured: false },
+    { slug: 'limpiar-lista-urls', title: 'Limpiar Lista de URLs', desc: 'Deja solo el dominio raíz de cada URL: quita http, rutas y parámetros.', category: 'desarrollo', featured: false },
+    { slug: 'cifrador-cesar', title: 'Cifrador César de Texto', desc: 'Cifra o descifra texto con el cifrado César con desplazamiento configurable.', category: 'seguridad', featured: false },
+    { slug: 'generar-combinaciones', title: 'Generador de Combinaciones', desc: 'Genera todas las combinaciones de tu lista tomadas de K en K elementos.', category: 'matematicas', featured: false },
+    { slug: 'combinar-lineas-listas', title: 'Combinar Líneas de Dos Listas', desc: 'Crea todas las cruces posibles de dos listas (producto cruzado).', category: 'matematicas', featured: false },
+    { slug: 'generador-permutaciones', title: 'Generador de Permutaciones', desc: 'Todas las permutaciones posibles de tu lista, hasta 8 elementos.', category: 'matematicas', featured: false },
+    { slug: 'contador-clics', title: 'Contador de Clics', desc: 'Contador interactivo con atajos de teclado y ajuste libre.', category: 'matematicas', featured: false },
+    { slug: 'separar-keywords-genero', title: 'Separar Keywords por Género', desc: 'Clasifica tus keywords en masculino/femenino y singular/plural.', category: 'texto', featured: false }
+  ];
+
+  /* --- Icon SVGs (Lucide-style inline) --- */
+  var icons = {
+    'contar-palabras-caracteres': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>',
+    'quitar-acentos': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/><circle cx="12" cy="12" r="1"/></svg>',
+    'convertir-mayusculas-minusculas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h12"/><path d="M6 18V6"/><path d="M18 12h3"/><path d="M19.5 6.5L21 18"/><path d="M15 18l3-12"/></svg>',
+    'generar-lorem-ipsum': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg>',
+    'quitar-espacios-duplicados': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="8" x2="12" y2="8"/><line x1="16" y1="8" x2="20" y2="8"/><line x1="4" y1="16" x2="10" y2="16"/><line x1="14" y1="16" x2="20" y2="16"/></svg>',
+    'quitar-saltos-de-linea': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>',
+    'invertir-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>',
+    'frecuencia-palabras': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
+    'texto-a-morse': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="2" fill="currentColor"/><line x1="12" y1="12" x2="17" y2="12"/><circle cx="20" cy="12" r="2" fill="currentColor"/></svg>',
+    'generar-contrasenas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="0"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>',
+    'eliminar-caracteres-especiales': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="M5 6v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6"/></svg>',
+    'convertir-unicode-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>',
+    'justificar-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="3" y1="14" x2="21" y2="14"/><line x1="3" y1="18" x2="21" y2="18"/></svg>',
+    'buscar-reemplazar-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>',
+    'codificar-decodificar-base64': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="5" x2="20" y2="5"/><polyline points="20 7 20 17 12 17"/></svg>',
+    'anadir-prefijo-sufijo-lineas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M21 16v3a2 2 0 0 1-2 2h-3"/><line x1="7" y1="12" x2="17" y2="12"/></svg>',
+    'eliminar-lineas-duplicadas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="0"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>',
+    'eliminar-lineas-vacias': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>',
+    'filtrar-lineas-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>',
+    'numerar-lineas-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h11"/><path d="M10 12h11"/><path d="M10 18h11"/><text x="4" y="8" font-size="6" fill="currentColor" stroke="none" font-family="monospace">1</text><text x="4" y="14" font-size="6" fill="currentColor" stroke="none" font-family="monospace">2</text><text x="4" y="20" font-size="6" fill="currentColor" stroke="none" font-family="monospace">3</text></svg>',
+    'generar-lista-numeros': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16"/><path d="M4 15h16"/><path d="M10 3L8 21"/><path d="M16 3l-2 18"/></svg>',
+    'texto-a-binario': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="0"/><circle cx="17" cy="6" r="3"/><circle cx="17" cy="17" r="3"/><line x1="10" y1="6.5" x2="14" y2="6.5"/><line x1="10" y1="17.5" x2="14" y2="17.5"/></svg>',
+    'cifrado-rot13': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9a8 8 0 0 1 14.93-2.5"/><path d="M20 15a8 8 0 0 1-14.93 2.5"/><polyline points="18.5 2.5 19 6.5 15 7"/><polyline points="5.5 21.5 5 17.5 9 17"/><text x="9" y="15" font-size="9" fill="currentColor" stroke="none" font-family="monospace">13</text></svg>',
+    'quitar-vocales-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><line x1="4" y1="16" x2="20" y2="16"/><path d="M4 3l16 16"/></svg>',
+    'mezclar-letras-palabras': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>',
+    'anadir-saltos-de-linea': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="15" y2="18"/><path d="M19 14v6"/><path d="M16 17h6"/></svg>',
+    'extraer-columnas-texto': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="0"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>',
+    'fusionar-texto-lineas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 3 8 9 16 9 16 3"/><line x1="12" y1="3" x2="12" y2="21"/><polyline points="8 21 8 15 16 15 16 21"/><line x1="7" y1="12" x2="17" y2="12"/></svg>',
+    'limpiar-lista-urls': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>',
+    'cifrador-cesar': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="13" rx="0"/><path d="M4 10h16"/><path d="M9 10v9"/><path d="M15 10v9"/></svg>',
+    'generar-combinaciones': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><circle cx="12" cy="16" r="3"/><line x1="9.5" y1="9" x2="11" y2="13"/><line x1="14.5" y1="9" x2="13" y2="13"/><line x1="10" y1="16" x2="14" y2="16"/></svg>',
+    'combinar-lineas-listas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="12" r="2"/><path d="M8 6c6 0 6 12 8 12" /><path d="M8 18c6 0 6-12 8-12"/></svg>',
+    'generador-permutaciones': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="0"/><rect x="15" y="3" width="6" height="6" rx="0"/><rect x="3" y="15" width="6" height="6" rx="0"/><rect x="15" y="15" width="6" height="6" rx="0"/></svg>',
+    'contador-clics': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12 11 15 16 9"/></svg>',
+    'separar-keywords-genero': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5"/><circle cx="17" cy="17" r="3"/><line x1="12" y1="12" x2="8" y2="16"/></svg>'
+  };
+
+  /* --- Render Card (cards iguales en home y relacionadas) --- */
+  var CATEGORY_LABELS = {
+    texto: 'Texto',
+    seguridad: 'Seguridad',
+    conversion: 'Conversión',
+    desarrollo: 'Desarrollo',
+    matematicas: 'Matemáticas',
+    imagen: 'Imagen'
+  };
+  var CATEGORY_BADGE = {
+    texto: 'badge-primary',
+    seguridad: 'badge-dark',
+    conversion: 'badge-secondary',
+    desarrollo: 'badge-dark',
+    matematicas: 'badge-primary',
+    imagen: 'badge-primary'
+  };
+
+  function renderCardTool(tool) {
+    var icon = icons[tool.slug] || '';
+    var catLabel = CATEGORY_LABELS[tool.category] || tool.category;
+    var badge = tool.featured ? '<span class="badge badge-secondary">Destacada</span>' : '<span class="badge ' + (CATEGORY_BADGE[tool.category] || 'badge-primary') + '">' + catLabel + '</span>';
+    return '<a href="/herramientas/' + tool.category + '/' + tool.slug + '.html" class="card-tool" data-slug="' + tool.slug + '" data-title="' + tool.title.toLowerCase() + '" data-desc="' + tool.desc.toLowerCase() + '" data-category="' + tool.category + '">' +
+      icon +
+      '<div class="card-title">' + tool.title + '</div>' +
+      '<div class="card-desc">' + tool.desc + '</div>' +
+      badge +
+    '</a>';
+  }
+
+  /* --- Cards relacionadas (encima de #related-tools en cada tool) --- */
+  function renderRelatedTools(containerId, slugs) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    var html = slugs.map(function (slug) {
+      var tool = tools.find(function (t) { return t.slug === slug; });
+      return tool ? renderCardTool(tool) : '';
+    }).filter(Boolean).join('');
+    container.innerHTML = html;
+  }
+
+  /* --- localStorage: Track Usage --- */
+  function trackToolUsage(slug) {
+    try {
+      var data = JSON.parse(localStorage.getItem('pp-tools-usage') || '{}');
+      data[slug] = (data[slug] || 0) + 1;
+      localStorage.setItem('pp-tools-usage', JSON.stringify(data));
+    } catch (e) {}
+  }
+
+  function getMostUsedTools(limit) {
+    try {
+      var data = JSON.parse(localStorage.getItem('pp-tools-usage') || '{}');
+      return Object.keys(data)
+        .map(function (slug) { return { slug: slug, count: data[slug] }; })
+        .sort(function (a, b) { return b.count - a.count; })
+        .slice(0, limit);
+    } catch (e) { return []; }
+  }
+
+  /* --- Render grid de una categoría (páginas de categoría) --- */
+  function renderCategoryGrid(containerId, category) {
+    var container = document.getElementById(containerId);
+    if (!container) return;
+    var grid = tools.filter(function (t) { return t.category === category; });
+    if (grid.length === 0) return;
+    var html = grid.map(renderCardTool).join('');
+    container.innerHTML = html;
+    var countEl = document.getElementById(containerId + '-count');
+    if (countEl) countEl.textContent = grid.length + ' herramienta' + (grid.length === 1 ? '' : 's');
+  }
+
+  /* --- Expose --- */
+  window.ProyectosPixel = window.ProyectosPixel || {};
+  window.ProyectosPixel.tools = tools;
+  window.ProyectosPixel.icons = icons;
+  window.ProyectosPixel.renderCardTool = renderCardTool;
+  window.ProyectosPixel.renderRelatedTools = renderRelatedTools;
+  window.ProyectosPixel.renderCategoryGrid = renderCategoryGrid;
+  window.ProyectosPixel.trackToolUsage = trackToolUsage;
+  window.ProyectosPixel.getMostUsedTools = getMostUsedTools;
+
+})();
