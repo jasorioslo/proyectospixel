@@ -80,6 +80,13 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Service Worker con precache completo (`pp-v3`): home, 15 tools (HTML+JS), legales, favicon, íconos y og-image
 
 ### Changed
+- **Esquema de URLs "directory" (consistencia SEO total, alineado con dioshoy.com):**
+  - **Las 35 tools migradas** de `/herramientas/{cat}/{slug}.html` a `/herramientas/{cat}/{slug}/` (carpeta con `index.html` — mismo patrón que las categorías; nunca habrá redirects slash↔html)
+  - Canonicals, og:url y JSON-LD de las 35 páginas regenerados con trailing slash
+  - `sitemap.xml`: las 35 URLs tools en formato directory
+  - Constructor de links en `tools-data.js` actualizado (cards home + relacionadas)
+  - `sw.js` precache actualizado; `plan-dev.md` con las URLs nuevas
+  - Verificado en producción: `/herramientas/texto/quitar-acentos/` → 200 directo con canonical correcto; el `.html` viejo → 404 real (gracias a `404.html`); Google solo verá UNA variante por página
 - **Reorganización física de URLs por categoría (TAREA-11 antes del deploy, sin necesidad de 301s):**
   - **13 herramientas movidas** de `/herramientas/texto/` a su carpeta de categoría: Morse, Base64, Unicode y Binario → `/herramientas/conversion/`; Contraseñas, ROT13 y César → `/herramientas/seguridad/`; Lista de números, Combinaciones, Permutaciones, A×B y Contador → `/herramientas/matematicas/`; URLs → `/herramientas/desarrollo/`
   - URLs internas actualizadas en todos los niveles: canonical/OG/JSON-LD de cada página movida, constructor de hrefs de `tools-data.js` (ahora por categoría), `sitemap.xml`, precache de `sw.js` (pp-v8) y `plan-dev.md`
