@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada (404) | ProyectosPixel</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="La página que buscas no existe. Vuelve al inicio o explora nuestras herramientas online gratis.">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css?v=8">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div id="header"></div>
+    <main>
+      <div class="container category-container" style="text-align:center">
+        <div class="hero">
+          <div class="hero-badge">404 <span>&middot;</span> No encontrada</div>
+          <h1>Página no encontrada</h1>
+          <p>La URL que buscas no existe o fue movida. Estas herramientas quizá te sirvan:</p>
+        </div>
+        <section class="section" style="padding-top:0">
+          <div id="grid-404" class="grid-tools grid-tools-all"></div>
+        </section>
+        <section class="section" style="padding-top:0">
+          <div class="result-actions" style="justify-content:center">
+            <a class="btn-primary" href="/">Volver al inicio</a>
+            <a class="btn-secondary" href="/herramientas/">Ver todas las herramientas</a>
+          </div>
+        </section>
+        <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </div>
+  <script src="/js/components.js"></script>
+  <script src="/js/tools-data.js"></script>
+  <script>
+    ProyectosPixel.renderHeader();
+    ProyectosPixel.renderFooter();
+    // 4 destacadas para rescatar al usuario
+    ProyectosPixel.renderRelatedTools('grid-404', ['contar-palabras-caracteres', 'generar-contrasenas', 'codificar-decodificar-base64', 'quitar-acentos']);
+  </script>
+</body>
+</html>
