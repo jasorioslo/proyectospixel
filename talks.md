@@ -61,6 +61,8 @@
 - [x] Deploy del sitio: `wrangler pages deploy .` — **102 archivos en ~3s** → **https://proyectospixel.pages.dev** (en producción)
 - [x] QA producción: 18 rutas verificadas 200 OK (home, 5 categorías, índice, tools, legales, manifest, sitemap, sw, favicon, og-image)
 - [ ] Conectar el repo de GitHub Pages vía dashboard para **deploys automáticos por push** (opcional ahora; nosql alternativa: re-deploy con `wrangler pages deploy .` después de cada commit)
+- [x] Integración GitHub → Pages vía **GitHub Action** (el proyecto es direct-upload, no convertible a Git-connected): `.github/workflows/deploy.yml` con `wrangler-action` — **deploy automático por cada push a main** + dispatch manual
+- [ ] **Requisito único (acción del dueño):** crear API Token en Cloudflare (My Profile → API Tokens → Custom: Account → Cloudflare Pages → Edit; Zone Resources: All zones o specific) y configurar los secretos en el repo: `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` (Settings → Secrets and variables → Actions). Hasta entonces cada deploy es manual: `wrangler pages deploy .` (funciona, lo hago por pedido)
 - [ ] Variable de entorno para Umami si aplica: `UMAMI_WEBSITE_ID` (pendiente Bloque 9)
 
 ### TAREA-11.3 — Configurar Custom Domain en Cloudflare Pages
@@ -84,33 +86,33 @@
 - [x] Verificado en producción (deployment d43d8790): los 5 headers presentes ✓
 - [ ] Redirigir URLs sin slash final a URL con slash (pendiente; Cloudflare Pages sirve `/dir` → `/dir/` con 308 automático; verificar al adjuntar dominio)
 
-### TAREA-11.6 — Despliegue a producción
-- [ ] Hacer push de todo el código completo a `main` en GitHub (si no se hizo en TAREA-11.1)
-- [ ] Verificar que Cloudflare Pages hace deploy automático desde `main`
-- [ ] Confirmar que el sitio está accesible en `proyectospixel.com`
-- [ ] Confirmar que todas las tools cargan correctamente en la URL de producción
-- [ ] Confirmar que HTTPS está activo y el certificado es válido
-- [ ] Confirmar que `_redirects` funciona (www → non-www)
-- [ ] Confirmar que `_headers` se aplican (verificar con `curl -I`)
-- [ ] Confirmar que el service worker y manifest.json funcionan en producción
+### TAREA-11.6 — Despliegue a producción (casi completa vía wrangler)
+- [x] Push de todo el código completo a `main` en GitHub — HECHO: 7 commits (último: 39e2093)
+- [ ] Deploy automático desde `main` (requiere integración Git-GitHub vía dashboard; alternativa manual: `wrangler pages deploy .`)
+- [x] Sitio accesible en `proyectospixel.com` — verificado 200 ✓ 9/10
+- [x] Tools cargan en producción — verificado (35/35 URLs 200 al momento del deploy; re-QA tras cada cambio)
+- [x] HTTPS activo y cert válido ✓ (Cloudflare, zona activa)
+- [ ] `_redirects` www → non-www (pendiente la Redirect Rule de dashboard)
+- [x] `_headers` aplicados y verificados en producción ✓
+- [x] SW y manifest funcionan (registro activo; verificación completa offline → TAREA-10.3)
 
 ### TAREA-11.7 — Post-despliegue y verificación en producción
-- [ ] Verificar con Google Search Console que el sitio está indexable
-- [ ] Verificar que `sitemap.xml` es accesible en `/sitemap.xml`
-- [ ] Verificar que `robots.txt` es accesible en `/robots.txt`
+- [x] **Google Search Console: HECHO por el dueño 9/10/2026** (dominio dado de alta)
+- [x] Verificar que `sitemap.xml` es accesible en proyectospixel.com/sitemap.xml — 200 ✓ (submit del sitemap dentro de GSC: pendiente confirmar si el dueño lo hizo en el panel)
+- [x] Verificar que `robots.txt` es accesible en proyectospixel.com/robots.txt — 200 ✓
 - [ ] Verificar que los Open Graph tags se ven correctamente con el debugger de Facebook/Twitter
 - [ ] Correr Lighthouse en producción y verificar score > 90 en Performance y Accessibility
-- [ ] Verificar que Cloudflare Analytics (si se usa) está capturando datos
+- [ ] (opcional) Cloudflare Analytics según decisión de Umami
 - [ ] Probar "Instalar como app" en móvil Chrome (PWA)
 - [ ] Probar que todas las tools funcionan offline después de primera visita
-- [ ] Verificar que los contenedores de ads no causan CLS (Core Web Vitals)
+- [ ] Verificar que los contenedores de ads no causan CLS al activarse
 
 ---
 
 ## Verificaciones pendientes de bloques ya completados
 
-- [ ] Verificar que las tools funcionan offline después de primera visita (BLOQUE 7)
-- [ ] Verificar que `sitemap.xml` y `robots.txt` son accesibles en la URL de producción (BLOQUE 8)
+- [ ] Verificar que las tools funcionan offline después de primera visita (BLOQUE 7) → en móvil real (DevTools offline ya pendiente en TAREA-10.3)
+- [x] Verificar que `sitemap.xml` y `robots.txt` son accesibles en la URL de producción (BLOQUE 8) — HECHO 9/10: 200 en proyectospixel.com ✓
 
 ---
 

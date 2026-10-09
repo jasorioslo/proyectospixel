@@ -1,0 +1,30 @@
+name: Deploy a Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # permite lanzar manualmente desde GitHub
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy a Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy . --project-name=proyectospixel --branch=main --commit-dirty=true
+
+      - name: Resumen
+        run: echo "Desplegado a https://proyectospixel.pages.dev y https://proyectospixel.com"
