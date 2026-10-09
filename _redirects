@@ -1,2 +1,2 @@
-# www -> dominio raiz (301)
-https://www.proyectospixel.com/* https://proyectospixel.com/:splat 301
+# www -> dominio raiz (301) — variante sin esquema para compatibilidad _redirects
+www.proyectospixel.com/* https://proyectospixel.com/:splat 301
