@@ -180,11 +180,16 @@
 - [x] 2.6 QA por lote (JSON-LD válido + FAQ + contenido + Lighthouse) — por lote aplicado
 - [ ] 2.7 Medición a 30 días en GSC → reescribir las que no arranquen
 
-**Progreso del contenido (23/66 publicados):**
+**Progreso del contenido (66/66 publicados ✅ — Fase 2 COMPLETA 14/10):**
 - ✅ Piloto: quitar-acentos · contar-palabras-caracteres · comprimir-imagen
 - ✅ Lote 1: convertir-mayúsculas · espacios duplicados · saltos de línea · invertir · frecuencia · caracteres especiales · buscar/reemplazar · lorem ipsum · justificar · generador-slugs
 - ✅ Lote 2: duplicadas · vacías · filtrar líneas · numerar líneas · prefijo/sufijo · añadir saltos · extraer columnas · fusionar listas · mezclar letras · quitar vocales
-- ⏳ Lotes 3-7: 43 herramientas restantes (imagen ×5, seguridad ×10, matemáticas ×11, conversión ×6, desarrollo ×5, texto ×6)
+- ✅ Lote 3 (v27): separar-keywords-genero · limites-redes · convertir-imagen · redimensionar-imagen · marca-de-agua · limpiar-exif · recortar-imagen · codificar-url · limpiar-lista-urls · formatear-json
+- ✅ Lote 4 (v28): minificar-codigo · regex-tester · comparar-textos · texto-a-morse · convertir-unicode-texto · base64 · texto-a-binario · json-a-csv · markdown-a-html · imagen-a-pdf
+- ✅ Lote 5 (v29): generar-contrasenas · cifrado-rot13 · cifrador-cesar · generador-uuid · verificador-contrasenas · generador-hashes · cifrar-texto-aes · generador-hmac · decodificar-jwt · comparar-hashes
+- ✅ Lote 6 (v30): generar-par-claves · generar-lista-numeros · generar-combinaciones · combinar-lineas-listas · generador-permutaciones · contador-clics · calculadora-porcentajes · calculadora-descuentos · estadistica-basica · convertidor-bases
+- ✅ Lote 7 (v31): conversor-unidades · regla-de-tres · generador-tabla-multiplicar
+- **Todas** con HowTo + FAQPage válidos; producción v31 / SW pp-v31
 
 ### FASE 3 — Testing pendiente (Bloque 10)
 - [ ] 3.1 Responsive real en dispositivo (320/375/768/1024/1440)

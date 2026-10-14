@@ -27,6 +27,14 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - Método replicable: specs compactas por herramienta → lote → validación automática → deploy por CI
   - Corrección funcional: el checkbox “omitir filas sin esa columna” de *Extraer columnas* ahora hace lo que dice (conserva línea vacía al desactivarlo)
   - Bump `?v=26` + SW `pp-v26`
+- **✅ FASE 2 COMPLETADA — Contenido SEO en las 66/66 herramientas** (14/10/2026):
+  - **Lote 3** (v27): separar-keywords-genero · limites-redes · convertir-imagen · redimensionar-imagen · marca-de-agua · limpiar-exif · recortar-imagen · codificar-url · limpiar-lista-urls · formatear-json
+  - **Lote 4** (v28): minificar-codigo · regex-tester · comparar-textos · texto-a-morse · convertir-unicode-texto · base64 · texto-a-binario · json-a-csv · markdown-a-html · imagen-a-pdf
+  - **Lote 5** (v29): generar-contrasenas · cifrado-rot13 · cifrador-cesar · generador-uuid · verificador-contrasenas · generador-hashes · cifrar-texto-aes · generador-hmac · decodificar-jwt · comparar-hashes
+  - **Lote 6** (v30): generar-par-claves · generar-lista-numeros · generar-combinaciones · combinar-lineas-listas · generador-permutaciones · contador-clics · calculadora-porcentajes · calculadora-descuentos · estadistica-basica · convertidor-bases
+  - **Lote 7** (v31): conversor-unidades · regla-de-tres · generador-tabla-multiplicar
+  - Todas con **HowTo + FAQPage** válidos y contenido original (600-800 palabras, ángulos de privacidad/offline)
+  - Bump `?v=31` + SW `pp-v31`
 - **💰 FASE 1 — AdSense ACTIVADO** (14/10/2026):
   - Cliente `ca-pub-4553600515484019` + 3 unidades: **top** `4318614334` · **mid** `9277006553` · **bottom** `4327932200`
   - **Montaje centralizado en `components.js`** (`initAds`/`mountAd`): script de AdSense cargado **una sola vez** y **lazy** (IntersectionObserver con rootMargin 300px) → no bloquea el render ni LCP

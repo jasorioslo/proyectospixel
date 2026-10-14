@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=30">
+  <link rel="stylesheet" href="/css/styles.css?v=31">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Conversor de Unidades","description":"Convierte unidades online: longitud, masa, volumen, área, velocidad, datos, tiempo y temperatura. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/matematicas/conversor-unidades/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo convertir unidades online","description":"Qué convierte el conversor de unidades","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige la categoría","text":"Elige la categoría (longitud, masa, volumen, área, velocidad, datos, tiempo o temperatura)."},{"@type":"HowToStep","position":2,"name":"Selecciona origen y destino","text":"Selecciona la unidad de origen y la de destino en los desplegables."},{"@type":"HowToStep","position":3,"name":"Introduce el valor y convierte","text":"Escribe el valor y pulsa convertir: el resultado aparece ya formateado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué categorías incluye?","acceptedAnswer":{"@type":"Answer","text":"Longitud, masa, volumen, área, velocidad, datos digitales, tiempo y temperatura (ocho en total)."}},{"@type":"Question","name":"¿Cómo trata los decimales?","acceptedAnswer":{"@type":"Answer","text":"Con coma decimal y hasta 8 decimales; los valores muy grandes o pequeños se muestran en notación científica."}},{"@type":"Question","name":"¿Diferencia entre MB y MiB?","acceptedAnswer":{"@type":"Answer","text":"Aquí 1 KB = 1024 B (binario), que es el uso habitual de sistemas operativos y tamaños de archivo."}},{"@type":"Question","name":"¿Se envían mis valores?","acceptedAnswer":{"@type":"Answer","text":"No: la conversión es local en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -88,6 +91,38 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué convierte el conversor de unidades</h2>
+          <p>Convierte al instante entre unidades de <strong>longitud, masa, volumen, área, velocidad, datos digitales, tiempo y temperatura</strong>: de kilómetros a millas, de libras a kilos, de litros a galones, de MB a GB o de Celsius a Fahrenheit.</p>
+          <p>Eliges la categoría, la unidad de origen y la de destino, escribes el valor y obtienes el resultado con formato español (coma decimal y hasta 8 decimales).</p>
+          <h2>Cómo convertir unidades paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige la categoría</strong> (longitud, masa, volumen, área, velocidad, datos, tiempo o temperatura).</li>
+            <li><strong>Selecciona la unidad de origen y la de destino</strong> en los desplegables.</li>
+            <li><strong>Escribe el valor</strong> y pulsa convertir: el resultado aparece ya formateado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Cocina y repostería:</strong> tazas, mililitros, gramos y onzas.</li>
+            <li><strong>Viajes:</strong> millas, kilómetros, pies y metros.</li>
+            <li><strong>Tecnología:</strong> pasar MB a GB para calcular espacio o tráfico.</li>
+            <li><strong>Ciencia y estudios:</strong> masa, volumen y temperatura en un solo sitio.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>1 km = 0,62137119 mi</code></li>
+            <li><code>1000 MB = 0,9765625 GB</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué categorías incluye?</summary><p>Longitud, masa, volumen, área, velocidad, datos digitales, tiempo y temperatura (ocho en total).</p></details>
+            <details class="faq-item"><summary>¿Cómo trata los decimales?</summary><p>Con coma decimal y hasta 8 decimales; los valores muy grandes o pequeños se muestran en notación científica.</p></details>
+            <details class="faq-item"><summary>¿Diferencia entre MB y MiB?</summary><p>Aquí 1 KB = 1024 B (binario), que es el uso habitual de sistemas operativos y tamaños de archivo.</p></details>
+            <details class="faq-item"><summary>¿Se envían mis valores?</summary><p>No: la conversión es local en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/convertidor-bases/">Convertidor de bases numéricas</a>, <a href="/herramientas/matematicas/calculadora-porcentajes/">Calculadora de porcentajes</a> o <a href="/herramientas/matematicas/regla-de-tres/">Regla de tres</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -97,12 +132,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=30"></script>
-  <script src="/js/tools-data.js?v=30"></script>
+  <script src="/js/components.js?v=31"></script>
+  <script src="/js/tools-data.js?v=31"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/conversor-unidades.js?v=30"></script>
+  <script src="/js/tools/conversor-unidades.js?v=31"></script>
 </body>
 </html>

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=30">
+  <link rel="stylesheet" href="/css/styles.css?v=31">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Regla de Tres","description":"Resuelve reglas de tres directas e inversas online al instante. Muestra el valor de X. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/matematicas/regla-de-tres/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo calcular una regla de tres directa o inversa","description":"Qué resuelve la regla de tres","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige directa o inversa","text":"Elige el tipo: directa o inversa según si las magnitudes crecen juntas o van en sentido contrario."},{"@type":"HowToStep","position":2,"name":"Rellena A, B y C","text":"Rellena A, B y C: A→B es la proporción conocida y C es el valor del que quieres saber su X."},{"@type":"HowToStep","position":3,"name":"Calcula la incógnita X","text":"Pulsa calcular: verás la proporción planteada y el valor de X."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuándo es inversa?","acceptedAnswer":{"@type":"Answer","text":"Cuando al aumentar una magnitud la otra disminuye (más velocidad, menos tiempo). En directa ambas crecen o decrecen juntas."}},{"@type":"Question","name":"¿Cómo se calcula?","acceptedAnswer":{"@type":"Answer","text":"Directa: X = B·C / A. Inversa: X = B·A / C."}},{"@type":"Question","name":"¿Por qué no acepta 0 en A (directa)?","acceptedAnswer":{"@type":"Answer","text":"Porque no existe proporción válida con A = 0: no se puede dividir entre cero."}},{"@type":"Question","name":"¿Se guardan los datos?","acceptedAnswer":{"@type":"Answer","text":"No, todo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -80,6 +83,38 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué resuelve la regla de tres</h2>
+          <p>Resuelve una proporción conociendo <strong>tres de sus cuatro valores</strong>: si A se corresponde con B, ¿a qué X corresponde C? Sirve para precios, recetas, escalas, tiempos y porcentajes.</p>
+          <p>Además distingue la <strong>proporción directa</strong> (más cantidad, más resultado) de la <strong>inversa</strong> (más trabajadores, menos tiempo), con la fórmula y el resultado explicados.</p>
+          <h2>Cómo resolver una regla de tres paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige el tipo:</strong> directa o inversa según si las magnitudes crecen juntas o van en sentido contrario.</li>
+            <li><strong>Rellena A, B y C:</strong> A→B es la proporción conocida y C es el valor del que quieres saber su X.</li>
+            <li><strong>Pulsa calcular:</strong> verás la proporción planteada y el valor de X.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Compras:</strong> si 3 kg cuestan 12 €, ¿cuánto cuestan 5 kg?</li>
+            <li><strong>Recetas y escalas:</strong> adaptar cantidades o medidas.</li>
+            <li><strong>Trabajo y tiempo:</strong> proporción inversa entre operarios y duración.</li>
+            <li><strong>Porcentajes:</strong> relacionar partes y totales.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>Directa: 3→12, 5→X ⇒ X = 20</code></li>
+            <li><code>Inversa: 2→6, 4→X ⇒ X = 3</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cuándo es inversa?</summary><p>Cuando al aumentar una magnitud la otra disminuye (más velocidad, menos tiempo). En directa ambas crecen o decrecen juntas.</p></details>
+            <details class="faq-item"><summary>¿Cómo se calcula?</summary><p>Directa: X = B·C / A. Inversa: X = B·A / C.</p></details>
+            <details class="faq-item"><summary>¿Por qué no acepta 0 en A (directa)?</summary><p>Porque no existe proporción válida con A = 0: no se puede dividir entre cero.</p></details>
+            <details class="faq-item"><summary>¿Se guardan los datos?</summary><p>No, todo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/calculadora-porcentajes/">Calculadora de porcentajes</a>, <a href="/herramientas/matematicas/calculadora-descuentos/">Calculadora de descuentos e IVA</a> o <a href="/herramientas/matematicas/estadistica-basica/">Estadística básica</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -89,12 +124,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=30"></script>
-  <script src="/js/tools-data.js?v=30"></script>
+  <script src="/js/components.js?v=31"></script>
+  <script src="/js/tools-data.js?v=31"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/regla-de-tres.js?v=30"></script>
+  <script src="/js/tools/regla-de-tres.js?v=31"></script>
 </body>
 </html>

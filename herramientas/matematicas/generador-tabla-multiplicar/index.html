@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=30">
+  <link rel="stylesheet" href="/css/styles.css?v=31">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Generador de Tablas de Multiplicar","description":"Genera tablas de multiplicar online (una o varias, personalizadas) para estudiar o imprimir. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/matematicas/generador-tabla-multiplicar/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo generar tablas de multiplicar personalizadas","description":"Qué genera la herramienta de tablas de multiplicar","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige las tablas desde/hasta","text":"Elige las tablas: «desde» y «hasta» (puedes pedir desde la del 1 hasta la del 10)."},{"@type":"HowToStep","position":2,"name":"Indica el multiplicador máximo","text":"Indica el multiplicador máximo (hasta el 10, 12, 20...)."},{"@type":"HowToStep","position":3,"name":"Genera y copia","text":"Pulsa generar y copia el texto: sale una tabla por bloque, con el formato que hayas elegido."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es el límite?","acceptedAnswer":{"@type":"Answer","text":"Hasta 50 tablas de una vez; el multiplicador máximo es libre (10, 12, 20...)."}},{"@type":"Question","name":"¿Puedo pegarlas en Excel?","acceptedAnswer":{"@type":"Answer","text":"Sí: elige el formato tabulado y cada fila irá con columnas separadas por tabulador."}},{"@type":"Question","name":"¿Genera demasiadas filas?","acceptedAnswer":{"@type":"Answer","text":"Puedes acotar desde/hasta y el multiplicador máximo para que salga justo lo que necesitas."}},{"@type":"Question","name":"¿Se guarda lo generado?","acceptedAnswer":{"@type":"Answer","text":"No: se calcula al momento en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -80,6 +83,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué genera la herramienta de tablas de multiplicar</h2>
+          <p>Crea las <strong>tablas de multiplicar de los números que quieras</strong> y hasta el multiplicador que necesites, listas para copiar o imprimir y estudiar. Por ejemplo, del 1 al 10 hasta el 12.</p>
+          <p>Puedes generarlas en <strong>formato de ecuación</strong> (7 × 5 = 35, una por línea) o en <strong>columnas separadas por tabulador</strong>, ideal para pegar en una hoja de cálculo.</p>
+          <h2>Cómo generar tablas de multiplicar paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige las tablas:</strong> «desde» y «hasta» (puedes pedir desde la del 1 hasta la del 10).</li>
+            <li><strong>Indica el multiplicador máximo</strong> (hasta el 10, 12, 20...).</li>
+            <li><strong>Pulsa generar</strong> y copia el texto: sale una tabla por bloque, con el formato que hayas elegido.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Primaria:</strong> crear hojas de estudio o de deberes.</li>
+            <li><strong>Repaso y refuerzo:</strong> tablas personalizadas para un curso concreto.</li>
+            <li><strong>Profesores:</strong> generar varios juegos de tablas para la clase.</li>
+            <li><strong>Excel:</strong> usar el modo tabulado para pegar en celdas.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>Tabla del 3 hasta el 5 → 3 × 1 = 3 · 3 × 2 = 6 · 3 × 3 = 9 · 3 × 4 = 12 · 3 × 5 = 15</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cuál es el límite?</summary><p>Hasta 50 tablas de una vez; el multiplicador máximo es libre (10, 12, 20...).</p></details>
+            <details class="faq-item"><summary>¿Puedo pegarlas en Excel?</summary><p>Sí: elige el formato tabulado y cada fila irá con columnas separadas por tabulador.</p></details>
+            <details class="faq-item"><summary>¿Genera demasiadas filas?</summary><p>Puedes acotar desde/hasta y el multiplicador máximo para que salga justo lo que necesitas.</p></details>
+            <details class="faq-item"><summary>¿Se guarda lo generado?</summary><p>No: se calcula al momento en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/generar-lista-numeros/">Generar lista de números</a>, <a href="/herramientas/matematicas/contador-clics/">Contador de clics</a> o <a href="/herramientas/matematicas/convertidor-bases/">Convertidor de bases</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -89,12 +123,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=30"></script>
-  <script src="/js/tools-data.js?v=30"></script>
+  <script src="/js/components.js?v=31"></script>
+  <script src="/js/tools-data.js?v=31"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/generador-tabla-multiplicar.js?v=30"></script>
+  <script src="/js/tools/generador-tabla-multiplicar.js?v=31"></script>
 </body>
 </html>

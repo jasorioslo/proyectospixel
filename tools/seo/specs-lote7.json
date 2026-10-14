@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "conversor-unidades",
+    "cat": "matematicas",
+    "keyword": "conversor de unidades online",
+    "h2_que": "Qué convierte el conversor de unidades",
+    "que": [
+      "Convierte al instante entre unidades de <strong>longitud, masa, volumen, área, velocidad, datos digitales, tiempo y temperatura</strong>: de kilómetros a millas, de libras a kilos, de litros a galones, de MB a GB o de Celsius a Fahrenheit.",
+      "Eliges la categoría, la unidad de origen y la de destino, escribes el valor y obtienes el resultado con formato español (coma decimal y hasta 8 decimales)."
+    ],
+    "h2_pasos": "Cómo convertir unidades paso a paso",
+    "howtoName": "Cómo convertir unidades online",
+    "howtoSteps": ["Elige la categoría", "Selecciona origen y destino", "Introduce el valor y convierte"],
+    "pasos": [
+      "<strong>Elige la categoría</strong> (longitud, masa, volumen, área, velocidad, datos, tiempo o temperatura).",
+      "<strong>Selecciona la unidad de origen y la de destino</strong> en los desplegables.",
+      "<strong>Escribe el valor</strong> y pulsa convertir: el resultado aparece ya formateado."
+    ],
+    "usos": [
+      "<strong>Cocina y repostería:</strong> tazas, mililitros, gramos y onzas.",
+      "<strong>Viajes:</strong> millas, kilómetros, pies y metros.",
+      "<strong>Tecnología:</strong> pasar MB a GB para calcular espacio o tráfico.",
+      "<strong>Ciencia y estudios:</strong> masa, volumen y temperatura en un solo sitio."
+    ],
+    "ejemplos": [ "1 km = 0,62137119 mi", "1000 MB = 0,9765625 GB" ],
+    "faqs": [
+      { "q": "¿Qué categorías incluye?", "a": "Longitud, masa, volumen, área, velocidad, datos digitales, tiempo y temperatura (ocho en total)." },
+      { "q": "¿Cómo trata los decimales?", "a": "Con coma decimal y hasta 8 decimales; los valores muy grandes o pequeños se muestran en notación científica." },
+      { "q": "¿Diferencia entre MB y MiB?", "a": "Aquí 1 KB = 1024 B (binario), que es el uso habitual de sistemas operativos y tamaños de archivo." },
+      { "q": "¿Se envían mis valores?", "a": "No: la conversión es local en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/convertidor-bases/", "label": "Convertidor de bases numéricas" },
+      { "url": "/herramientas/matematicas/calculadora-porcentajes/", "label": "Calculadora de porcentajes" },
+      { "url": "/herramientas/matematicas/regla-de-tres/", "label": "Regla de tres" }
+    ]
+  },
+  {
+    "slug": "regla-de-tres",
+    "cat": "matematicas",
+    "keyword": "regla de tres online",
+    "h2_que": "Qué resuelve la regla de tres",
+    "que": [
+      "Resuelve una proporción conociendo <strong>tres de sus cuatro valores</strong>: si A se corresponde con B, ¿a qué X corresponde C? Sirve para precios, recetas, escalas, tiempos y porcentajes.",
+      "Además distingue la <strong>proporción directa</strong> (más cantidad, más resultado) de la <strong>inversa</strong> (más trabajadores, menos tiempo), con la fórmula y el resultado explicados."
+    ],
+    "h2_pasos": "Cómo resolver una regla de tres paso a paso",
+    "howtoName": "Cómo calcular una regla de tres directa o inversa",
+    "howtoSteps": ["Elige directa o inversa", "Rellena A, B y C", "Calcula la incógnita X"],
+    "pasos": [
+      "<strong>Elige el tipo:</strong> directa o inversa según si las magnitudes crecen juntas o van en sentido contrario.",
+      "<strong>Rellena A, B y C:</strong> A→B es la proporción conocida y C es el valor del que quieres saber su X.",
+      "<strong>Pulsa calcular:</strong> verás la proporción planteada y el valor de X."
+    ],
+    "usos": [
+      "<strong>Compras:</strong> si 3 kg cuestan 12 €, ¿cuánto cuestan 5 kg?",
+      "<strong>Recetas y escalas:</strong> adaptar cantidades o medidas.",
+      "<strong>Trabajo y tiempo:</strong> proporción inversa entre operarios y duración.",
+      "<strong>Porcentajes:</strong> relacionar partes y totales."
+    ],
+    "ejemplos": [ "Directa: 3→12, 5→X ⇒ X = 20", "Inversa: 2→6, 4→X ⇒ X = 3" ],
+    "faqs": [
+      { "q": "¿Cuándo es inversa?", "a": "Cuando al aumentar una magnitud la otra disminuye (más velocidad, menos tiempo). En directa ambas crecen o decrecen juntas." },
+      { "q": "¿Cómo se calcula?", "a": "Directa: X = B·C / A. Inversa: X = B·A / C." },
+      { "q": "¿Por qué no acepta 0 en A (directa)?", "a": "Porque no existe proporción válida con A = 0: no se puede dividir entre cero." },
+      { "q": "¿Se guardan los datos?", "a": "No, todo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/calculadora-porcentajes/", "label": "Calculadora de porcentajes" },
+      { "url": "/herramientas/matematicas/calculadora-descuentos/", "label": "Calculadora de descuentos e IVA" },
+      { "url": "/herramientas/matematicas/estadistica-basica/", "label": "Estadística básica" }
+    ]
+  },
+  {
+    "slug": "generador-tabla-multiplicar",
+    "cat": "matematicas",
+    "keyword": "generar tablas de multiplicar",
+    "h2_que": "Qué genera la herramienta de tablas de multiplicar",
+    "que": [
+      "Crea las <strong>tablas de multiplicar de los números que quieras</strong> y hasta el multiplicador que necesites, listas para copiar o imprimir y estudiar. Por ejemplo, del 1 al 10 hasta el 12.",
+      "Puedes generarlas en <strong>formato de ecuación</strong> (7 × 5 = 35, una por línea) o en <strong>columnas separadas por tabulador</strong>, ideal para pegar en una hoja de cálculo."
+    ],
+    "h2_pasos": "Cómo generar tablas de multiplicar paso a paso",
+    "howtoName": "Cómo generar tablas de multiplicar personalizadas",
+    "howtoSteps": ["Elige las tablas desde/hasta", "Indica el multiplicador máximo", "Genera y copia"],
+    "pasos": [
+      "<strong>Elige las tablas:</strong> «desde» y «hasta» (puedes pedir desde la del 1 hasta la del 10).",
+      "<strong>Indica el multiplicador máximo</strong> (hasta el 10, 12, 20...).",
+      "<strong>Pulsa generar</strong> y copia el texto: sale una tabla por bloque, con el formato que hayas elegido."
+    ],
+    "usos": [
+      "<strong>Primaria:</strong> crear hojas de estudio o de deberes.",
+      "<strong>Repaso y refuerzo:</strong> tablas personalizadas para un curso concreto.",
+      "<strong>Profesores:</strong> generar varios juegos de tablas para la clase.",
+      "<strong>Excel:</strong> usar el modo tabulado para pegar en celdas."
+    ],
+    "ejemplos": [ "Tabla del 3 hasta el 5 → 3 × 1 = 3 · 3 × 2 = 6 · 3 × 3 = 9 · 3 × 4 = 12 · 3 × 5 = 15" ],
+    "faqs": [
+      { "q": "¿Cuál es el límite?", "a": "Hasta 50 tablas de una vez; el multiplicador máximo es libre (10, 12, 20...)." },
+      { "q": "¿Puedo pegarlas en Excel?", "a": "Sí: elige el formato tabulado y cada fila irá con columnas separadas por tabulador." },
+      { "q": "¿Genera demasiadas filas?", "a": "Puedes acotar desde/hasta y el multiplicador máximo para que salga justo lo que necesitas." },
+      { "q": "¿Se guarda lo generado?", "a": "No: se calcula al momento en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/generar-lista-numeros/", "label": "Generar lista de números" },
+      { "url": "/herramientas/matematicas/contador-clics/", "label": "Contador de clics" },
+      { "url": "/herramientas/matematicas/convertidor-bases/", "label": "Convertidor de bases" }
+    ]
+  }
+]
