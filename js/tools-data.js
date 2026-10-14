@@ -1,4 +1,4 @@
-﻿/* =========================================================
+/* =========================================================
    ProyectosPixel - Datos compartidos (tools, iconos, helpers)
    Usado por: home.js y los renderRelatedTools de cada tool
    ========================================================= */
@@ -45,9 +45,9 @@
     { slug: 'separar-keywords-genero', title: 'Separar Keywords por Género', desc: 'Clasifica tus keywords en masculino/femenino y singular/plural.', category: 'texto', featured: false },
     { slug: 'comprimir-imagen', title: 'Comprimir Imagen', desc: 'Reduce el peso de tus imágenes sin subirlas a ningún servidor.', category: 'imagen', featured: true },
     { slug: 'convertir-imagen', title: 'Convertir Imagen a WebP, PNG o JPG', desc: 'Cambia el formato de tu imagen a WebP, PNG o JPG al instante.', category: 'imagen', featured: true },
-    { slug: 'redimensionar-imagen', title: 'Redimensionar Imagen', desc: 'Cambia el tamaño en píxeles o porcentaje manteniendo la proporción.', category: 'imagen', featured: true },
+    { slug: 'redimensionar-imagen', title: 'Redimensionar Imagen', desc: 'Cambia el tamaño en píxeles o porcentaje manteniendo la proporción.', category: 'imagen', featured: false },
     { slug: 'marca-de-agua', title: 'Añadir Marca de Agua', desc: 'Estampa tu texto o copyright sobre la imagen con control total.', category: 'imagen', featured: false },
-    { slug: 'limpiar-exif', title: 'Eliminar Metadatos EXIF', desc: 'Borra GPS, cámara y fecha de tus fotos antes de compartirlas.', category: 'imagen', featured: true },
+    { slug: 'limpiar-exif', title: 'Eliminar Metadatos EXIF', desc: 'Borra GPS, cámara y fecha de tus fotos antes de compartirlas.', category: 'imagen', featured: false },
     { slug: 'recortar-imagen', title: 'Recortar Imagen', desc: 'Recorta la zona que quieras conservar sin subir tu imagen.', category: 'imagen', featured: false }
   ];
 
