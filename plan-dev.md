@@ -75,6 +75,21 @@ Checklist obligatorio por cada tool:
 
 ---
 
+## 6. SPRINT 3 — FASE 2: Imagen ✅ compleja (14/10/2026)
+
+| # | Nombre SEO | Slug | Estado |
+|---|---|---|---|
+| 1 | Comprimir Imagen | `comprimir-imagen` | ✅ QA: foto 2.8 MB → 97 KB (-97%) |
+| 2 | Convertir Imagen a WebP/PNG/JPG | `convertir-imagen` | ✅ QA: PNG→JPG/WebP con fallback Safari/Firefox |
+| 3 | Redimensionar Imagen | `redimensionar-imagen` | ✅ QA: 1200×800 → 400×267 (proporción auto) |
+| 4 | Añadir Marca de Agua | `marca-de-agua` | ✅ QA: texto + posición/opacidad |
+| 5 | Eliminar Metadatos EXIF | `limpiar-exif` | ✅ QA: re-encode + lectura EXIF informativa |
+| 6 | Recortar Imagen | `recortar-imagen` | ✅ QA: recorte por % con validación |
+
+**Infraestructura nueva:** `js/tools/image-utils.js` (carga con drag&drop/pegar, canvas, toBlob, download, formato de bytes), categoría `/herramientas/imagen/`, activada en pills/nav/footer/sitemap/SW. Total del sitio: **41 herramientas**.
+
+---
+
 ## 4. Registro de incidencias (control de fallos)
 
 Cada fallo de QA se registra con: tool, síntoma, causa, fix y fecha. Regla: NO marcar ✅ sin pasar el checklist completo.

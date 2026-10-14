@@ -16,7 +16,7 @@
           '</a>',
           '<nav class="header-nav" aria-label="Categorías">',
             '<a href="/herramientas/texto/">Texto</a>',
-            '<span class="nav-comingsoon" title="Próximamente">Imagen</span>',
+            '<a href="/herramientas/imagen/">Imagen</a>',
             '<a href="/herramientas/desarrollo/">Desarrollo</a>',
             '<a href="/herramientas/conversion/">Conversión</a>',
             '<a href="/herramientas/seguridad/">Seguridad</a>',
@@ -48,6 +48,7 @@
         '<a href="/herramientas/seguridad/">Seguridad</a>',
         '<a href="/herramientas/desarrollo/">Desarrollo</a>',
         '<a href="/herramientas/matematicas/">Matemáticas</a>',
+        '<a href="/herramientas/imagen/">Imagen</a>',
       '</div>',
     '</footer>'
   ].join('');

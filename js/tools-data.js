@@ -42,7 +42,13 @@
     { slug: 'combinar-lineas-listas', title: 'Combinar Líneas de Dos Listas', desc: 'Crea todas las cruces posibles de dos listas (producto cruzado).', category: 'matematicas', featured: false },
     { slug: 'generador-permutaciones', title: 'Generador de Permutaciones', desc: 'Todas las permutaciones posibles de tu lista, hasta 8 elementos.', category: 'matematicas', featured: false },
     { slug: 'contador-clics', title: 'Contador de Clics', desc: 'Contador interactivo con atajos de teclado y ajuste libre.', category: 'matematicas', featured: false },
-    { slug: 'separar-keywords-genero', title: 'Separar Keywords por Género', desc: 'Clasifica tus keywords en masculino/femenino y singular/plural.', category: 'texto', featured: false }
+    { slug: 'separar-keywords-genero', title: 'Separar Keywords por Género', desc: 'Clasifica tus keywords en masculino/femenino y singular/plural.', category: 'texto', featured: false },
+    { slug: 'comprimir-imagen', title: 'Comprimir Imagen', desc: 'Reduce el peso de tus imágenes sin subirlas a ningún servidor.', category: 'imagen', featured: true },
+    { slug: 'convertir-imagen', title: 'Convertir Imagen a WebP, PNG o JPG', desc: 'Cambia el formato de tu imagen a WebP, PNG o JPG al instante.', category: 'imagen', featured: true },
+    { slug: 'redimensionar-imagen', title: 'Redimensionar Imagen', desc: 'Cambia el tamaño en píxeles o porcentaje manteniendo la proporción.', category: 'imagen', featured: true },
+    { slug: 'marca-de-agua', title: 'Añadir Marca de Agua', desc: 'Estampa tu texto o copyright sobre la imagen con control total.', category: 'imagen', featured: false },
+    { slug: 'limpiar-exif', title: 'Eliminar Metadatos EXIF', desc: 'Borra GPS, cámara y fecha de tus fotos antes de compartirlas.', category: 'imagen', featured: true },
+    { slug: 'recortar-imagen', title: 'Recortar Imagen', desc: 'Recorta la zona que quieras conservar sin subir tu imagen.', category: 'imagen', featured: false }
   ];
 
   /* --- Icon SVGs (Lucide-style inline) --- */
@@ -81,7 +87,13 @@
     'combinar-lineas-listas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="12" r="2"/><path d="M8 6c6 0 6 12 8 12" /><path d="M8 18c6 0 6-12 8-12"/></svg>',
     'generador-permutaciones': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="0"/><rect x="15" y="3" width="6" height="6" rx="0"/><rect x="3" y="15" width="6" height="6" rx="0"/><rect x="15" y="15" width="6" height="6" rx="0"/></svg>',
     'contador-clics': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="8 12 11 15 16 9"/></svg>',
-    'separar-keywords-genero': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5"/><circle cx="17" cy="17" r="3"/><line x1="12" y1="12" x2="8" y2="16"/></svg>'
+    'separar-keywords-genero': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5"/><circle cx="17" cy="17" r="3"/><line x1="12" y1="12" x2="8" y2="16"/></svg>',
+    'comprimir-imagen': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 14 10 14 10 20"/><polyline points="20 10 14 10 14 4"/><line x1="14" y1="10" x2="21" y2="3"/><line x1="3" y1="21" x2="10" y2="14"/></svg>',
+    'convertir-imagen': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>',
+    'redimensionar-imagen': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>',
+    'marca-de-agua': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>',
+    'limpiar-exif': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20H7L3 16l8-8 9 9-3 3z"/><path d="M6.0001 17.9999l3-3"/><line x1="18" y1="2" x2="22" y2="6"/><line x1="22" y1="2" x2="18" y2="6"/></svg>',
+    'recortar-imagen': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></svg>'
   };
 
   /* --- Render Card (cards iguales en home y relacionadas) --- */

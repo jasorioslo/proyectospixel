@@ -14,6 +14,17 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=10` + SW `pp-v10`
 
 ### Added
+- **🖼️ FASE 2 — 6 herramientas de Imagen** (14/10/2026, QA end-to-end en navegador con imágenes generadas):
+  - **Comprimir Imagen** (calidad + escala + formato): probado 2.8 MB → 97 KB (**-97%**)
+  - **Convertir Imagen** a WebP/PNG/JPG con detección de soporte del navegador (aviso y fallback a PNG en Safari/Firefox)
+  - **Redimensionar Imagen** (px o %, proporción bloqueable): probado 1200×800 → 400×267
+  - **Añadir Marca de Agua** (texto, tamaño, color, opacidad, 9 posiciones, sombra de legibilidad)
+  - **Eliminar Metadatos EXIF** (re-encode + lectura informativa de metadatos antes de limpiar)
+  - **Recortar Imagen** (zona en %, validación de límites)
+  - Infra nueva: `js/tools/image-utils.js` (drag&drop, pegar desde portapapeles, canvas→blob, descarga, formateo de bytes) + estilos `.drop-zone/.image-preview/.image-meta`
+  - Categoría `/herramientas/imagen/` activada en pills home, nav, footer, sitemap (51 URLs) y SW (pp-v11)
+  - **Above-the-Fold móvil**: cabecera compacta, textarea 150px, controles inline y **barra de acción sticky** — verificado en 375×667 (botón de procesar siempre visible)
+  - Total del sitio: **41 herramientas** en 6 categorías
 - **🚀 PROYECTO EN LÍNEA — TAREA-11.1/11.2/11.5 completadas:**
   - 5 páginas de categoría en `/herramientas/{texto,conversion,seguridad,desarrollo,matematicas}/` con SEO propio (title/description/canonical/OG + JSON-LD `CollectionPage`), grid de cards generado desde `tools-data.js` (nuevo helper `renderCategoryGrid`)
   - Breadcrumbs de las 35 tools ahora apuntan a su página de categoría real (ej. Cifrador César → "Seguridad" → `/herramientas/seguridad/`), con mapeo automático desde `tools-data.js`

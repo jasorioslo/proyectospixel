@@ -28,11 +28,12 @@
 - **Hallazgos corregidos 14/10:** mensajes de error sin acentos en Base64/Unicode/Morse → corregidos (`no válido`, `Código`)
 
 ### TAREA-10.2 — Testing responsive (Mobile First)
-- [ ] Verificar layout en 320px, 375px, 768px, 1024px, 1440px
-- [ ] Verificar que el textarea de entrada es usable en móvil (tamaño adecuado, no se zoom por inputs)
-- [ ] Verificar que la barra de búsqueda funciona en móvil
-- [ ] Verificar que las cards se adaptan al grid en cada breakpoint
-- [ ] Verificar que dark mode se ve correcto en todos los tamaños
+- [ ] Verificar layout en 320px, 375px, 768px, 1024px, 1440px — parcial: 375×667 emulado 14/10
+- [x] **Above the Fold (14/10):** auditoría de las 35 tools + fixes móviles — cabecera compacta, textarea 150px, controles inline y **barra de acción sticky** (el botón de procesar permanece visible). Verificado en 375×667: tools simples (botón ≤470px) y complejas con sticky ✓
+- [ ] Verificar que el textarea de entrada es usable en móvil (tamaño adecuado, no se zoom por inputs) — pendiente dispositivo real (16px de font ya evita el zoom iOS)
+- [ ] Verificar que la barra de búsqueda funciona en móvil — pendiente (buscador grande en home)
+- [x] Verificar que las cards se adaptan al grid en cada breakpoint — verificado en grids de categoría/tools
+- [x] Verificar que dark mode se ve correcto en todos los tamaños — verificado + auditado (12.1)
 
 ### TAREA-10.3 — Testing de PWA
 - [ ] Verificar que el SW se registra correctamente

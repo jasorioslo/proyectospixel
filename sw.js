@@ -1,8 +1,8 @@
-﻿/* =========================================================
+/* =========================================================
    ProyectosPixel Tools - Service Worker (PWA)
    ========================================================= */
 
-var CACHE_NAME = 'pp-v10';
+var CACHE_NAME = 'pp-v11';
 var ASSETS = [
   '/',
   '/index.html',
@@ -14,6 +14,13 @@ var ASSETS = [
   '/herramientas/seguridad/',
   '/herramientas/desarrollo/',
   '/herramientas/matematicas/',
+  '/herramientas/imagen/',
+  '/herramientas/imagen/comprimir-imagen/',
+  '/herramientas/imagen/convertir-imagen/',
+  '/herramientas/imagen/redimensionar-imagen/',
+  '/herramientas/imagen/marca-de-agua/',
+  '/herramientas/imagen/limpiar-exif/',
+  '/herramientas/imagen/recortar-imagen/',
   '/css/styles.css',
   '/js/components.js',
   '/js/tools-data.js',
@@ -94,7 +101,14 @@ var ASSETS = [
   '/js/tools/combinar-lineas-listas.js',
   '/js/tools/generador-permutaciones.js',
   '/js/tools/contador-clics.js',
-  '/js/tools/separar-keywords-genero.js'
+  '/js/tools/separar-keywords-genero.js',
+  '/js/tools/image-utils.js',
+  '/js/tools/comprimir-imagen.js',
+  '/js/tools/convertir-imagen.js',
+  '/js/tools/redimensionar-imagen.js',
+  '/js/tools/marca-de-agua.js',
+  '/js/tools/limpiar-exif.js',
+  '/js/tools/recortar-imagen.js'
 ];
 
 // Install: cache static assets
