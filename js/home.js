@@ -14,18 +14,24 @@
   function renderMostUsed() {
     var container = document.getElementById('most-used-tools');
     if (!container) return;
-    var mostUsed = api.getMostUsedTools(8);
-    if (mostUsed.length === 0) {
-      // Sin datos aún: mostrar una selección de destacadas como punto de partida
-      var featured = tools.filter(function (t) { return t.featured; });
-      container.innerHTML = featured.slice(0, 8).map(function (t) { return api.renderCardTool(t); }).join('');
-      return;
-    }
-    var html = mostUsed.map(function (item) {
+    var LIMIT = 8;
+    var mostUsed = api.getMostUsedTools(LIMIT);
+    var picked = [];
+    var seen = {};
+
+    mostUsed.forEach(function (item) {
       var tool = tools.find(function (t) { return t.slug === item.slug; });
-      return tool ? api.renderCardTool(tool) : '';
-    }).filter(Boolean).join('');
-    container.innerHTML = html;
+      if (tool && !seen[tool.slug]) { seen[tool.slug] = true; picked.push(tool); }
+    });
+    // Rellenar hasta LIMIT con destacadas (y si no, con el resto)
+    tools.filter(function (t) { return t.featured; }).forEach(function (t) {
+      if (picked.length < LIMIT && !seen[t.slug]) { seen[t.slug] = true; picked.push(t); }
+    });
+    tools.forEach(function (t) {
+      if (picked.length < LIMIT && !seen[t.slug]) { seen[t.slug] = true; picked.push(t); }
+    });
+
+    container.innerHTML = picked.map(function (t) { return api.renderCardTool(t); }).join('');
   }
 
   function renderAllTools() {
