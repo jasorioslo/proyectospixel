@@ -94,26 +94,31 @@
   /* --- Anuncios (AdSense, con lazy-load y sin romper CWV) --- */
   var AD_CLIENT = 'ca-pub-4553600515484019';
   var AD_SLOTS = { top: '4318614334', mid: '9277006553', bottom: '4327932200' };
-  var adsScriptRequested = false;
+  var adsScriptState = 'idle'; // idle | loading | ready
+  var adsCallbacks = [];
 
   function loadAdsScript(callback) {
-    if (adsScriptRequested || document.querySelector('script[data-adsense]')) {
-      adsScriptRequested = true;
-      callback();
-      return;
-    }
-    adsScriptRequested = true;
+    if (adsScriptState === 'ready') { callback(); return; }
+    adsCallbacks.push(callback);
+    if (adsScriptState === 'loading') return;
+    adsScriptState = 'loading';
     var s = document.createElement('script');
     s.async = true;
     s.crossOrigin = 'anonymous';
     s.setAttribute('data-adsense', '1');
     s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + AD_CLIENT;
-    s.onload = function () { callback(); };
+    s.onload = function () {
+      adsScriptState = 'ready';
+      var q = adsCallbacks; adsCallbacks = [];
+      q.forEach(function (fn) { try { fn(); } catch (e) {} });
+    };
     s.onerror = function () { /* bloqueado (adblock/CSP): no rompemos la página */ };
     document.head.appendChild(s);
   }
 
   function mountAd(zoneEl) {
+    if (zoneEl.getAttribute('data-ad-mounted') === '1') return; // guarda anti-duplicado
+    zoneEl.setAttribute('data-ad-mounted', '1');
     var zone = zoneEl.classList.contains('ad-top') ? 'top'
       : zoneEl.classList.contains('ad-bottom') ? 'bottom' : 'mid';
     if (!AD_SLOTS[zone]) return;
