@@ -126,6 +126,36 @@ Checklist obligatorio por cada tool:
 
 ---
 
+## 10. SPRINT 7 — FASE 5: Seguridad ✅ (14/10/2026)
+
+| # | Nombre SEO | Slug | Estado |
+|---|---|---|---|
+| 1 | Cifrar y Descifrar Texto (AES-256) | `cifrar-texto-aes` | ✅ QA: round-trip + clave mala |
+| 2 | Generador de HMAC | `generador-hmac` | ✅ QA: vector oficial exacto |
+| 3 | Decodificador de JWT | `decodificar-jwt` | ✅ QA: header/payload/expiración |
+| 4 | Comparar Hash y Texto | `comparar-hashes` | ✅ QA: md5("abc") coincide |
+| 5 | Generar Par de Claves (RSA/ECDSA) | `generar-par-claves` | ✅ WebCrypto PEM |
+| — | _helper_ `hash-utils.js` | — | MD5 + SHA + HMAC compartidos |
+
+## 11. SPRINT 8 — FASE 6: Matemáticas ✅ (14/10/2026)
+
+| # | Nombre SEO | Slug | Estado |
+|---|---|---|---|
+| 1 | Calculadora de Porcentajes | `calculadora-porcentajes` | ✅ QA: 15% de 240 = 36 |
+| 2 | Calculadora de Descuentos e IVA | `calculadora-descuentos` | ✅ QA: 96,80 € |
+| 3 | Estadística Básica | `estadistica-basica` | ✅ QA exacto |
+| 4 | Conversor de Unidades | `conversor-unidades` | ✅ QA: 100°C = 212°F |
+| 5 | Convertidor de Bases | `convertidor-bases` | ✅ QA: 1010₂ = 10 |
+| 6 | Regla de Tres | `regla-de-tres` | ✅ QA: 6 → 15 |
+| 7 | Tablas de Multiplicar | `generador-tabla-multiplicar` | ✅ QA ✓ |
+
+**Total del sitio: 66 herramientas** (texto 24 · matemáticas 12 · seguridad 11 · conversión 7 · desarrollo 6 · imagen 6). sitemap 76 URLs, SW pp-v16.
+
+### Pendiente conocido (Fase 4)
+- **PDF → imágenes**: requiere vendorizar pdf.js (~800KB) en `/js/vendor/` — pospuesto por decisión (mencionado en CHANGELOG).
+
+---
+
 ## 4. Registro de incidencias (control de fallos)
 
 Cada fallo de QA se registra con: tool, síntoma, causa, fix y fecha. Regla: NO marcar ✅ sin pasar el checklist completo.

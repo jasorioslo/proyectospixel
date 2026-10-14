@@ -12,8 +12,8 @@ Marketplace de herramientas online **gratuitas, rápidas y 100% privadas**: todo
 |-----------|-------|----------|
 | Texto | 24 | Contar palabras y caracteres, Quitar acentos, Buscar y reemplazar, Filtrar líneas, Fusionar listas |
 | Conversión | 7 | Morse, Base64, Unicode, Binario, JSON↔CSV, Markdown→HTML, Imágenes→PDF |
-| Matemáticas | 5 | Generar lista de números, Combinaciones, Permutaciones, Combinar listas (A×B), Contador de clics |
-| Seguridad | 6 | Contraseñas, ROT13, César, UUID, Verificador, Hashes |
+| Matemáticas | 12 | Generar lista de números, Combinaciones, Permutaciones, Combinar listas (A×B), Contador de clics |
+| Seguridad | 11 | Contraseñas, ROT13, César, UUID, Verificador, Hashes, AES, HMAC, JWT, Comparar hash, Claves |
 | Desarrollo | 6 | Formatear JSON, Minificar, Regex tester, Diff, Limpiar URLs, Codificar URL |
 | Imagen | 6 | Comprimir, Convertir, Redimensionar, Marca de agua, Limpiar EXIF, Recortar |
 

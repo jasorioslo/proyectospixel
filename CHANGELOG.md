@@ -14,6 +14,25 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=10` + SW `pp-v10`
 
 ### Added
+- **🔐 FASE 5 — Seguridad (5 herramientas nuevas)** (14/10/2026):
+  - **Cifrar y Descifrar Texto (AES-256-GCM + PBKDF2)** — formato `v1:iteraciones:base64`, contraseña incorrecta detectada; QA: round-trip ✓ y error con clave mala ✓
+  - **Generador de HMAC** (SHA-256/384/512) — QA con vector oficial: `f7bc83f4…3cd8` exacto ✓
+  - **Decodificador de JWT** (header/payload/fechas + avisos de expirado y alg none)
+  - **Comparar Hash y Texto** (detección automática de algoritmo por longitud)
+  - **Generar Par de Claves** RSA-2048 (RSA-OAEP) o ECDSA P-256 en PEM, vía WebCrypto
+  - Nuevo helper compartido `js/tools/hash-utils.js` (MD5 + SHA + HMAC)
+- **🧮 FASE 6 — Matemáticas (7 herramientas nuevas)** (14/10/2026):
+  - **Calculadora de Porcentajes** (5 operaciones: X% de Y, qué %, variación, aumento, descuento) — QA: 15% de 240 = 36 ✓
+  - **Calculadora de Descuentos e IVA** — QA: 100€ -20% + 21% IVA = 96,80€ ✓
+  - **Estadística Básica** (media, mediana, moda, cuartiles, varianza y desviación pobl./muestral) — QA exacto ✓
+  - **Conversor de Unidades** (longitud, masa, volumen, área, velocidad, datos, tiempo y temperatura) — QA: 100°C = 212°F ✓
+  - **Convertidor de Bases** (bin/oct/dec/hex con validación) — QA: 1010₂ = 10 ✓
+  - **Regla de Tres** (directa e inversa) — QA: 4→10, 6→15 ✓
+  - **Generador de Tablas de Multiplicar** (una o un rango, multiplicador máximo configurable)
+- Total del sitio: **66 herramientas** en 6 categorías · sitemap **76 URLs** · SW `pp-v16`
+
+### Fixed
+- **Bug MD5** (afectaba a Generador de Hashes y Comparar Hashes): el bucle de conversión hex emitía solo 16 caracteres en lugar de 32 → corregido; validado con vectores oficiales (`md5("")` y `md5("abc")`)
 - **🧰 LOTE TEXTO/SEGURIDAD — 6 herramientas nuevas** (14/10/2026):
   - **Generador de Slugs** (títulos → URLs limpias, quita tildes/símbolos, separador y límite configurables)
   - **Codificar y Decodificar URL** (percent-encoding, componente o URL completa, con manejo de escapes inválidos)
