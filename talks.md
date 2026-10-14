@@ -167,8 +167,9 @@
 - [ ] 1.1b (dueño) Crear **CMP de Google** (obligatorio UE/EEE): AdSense → Privacidad y mensajes → mensaje GDPR
 - [x] 1.2 **`/cookies.html`** + link en footer + sección 5.bis en `privacidad.html` + sitemap (77 URLs) — HECHO 14/10
 - [x] 1.3 **CSP** en `_headers` con dominios de AdSense (script/frame/img/connect) — HECHO 14/10
-- [x] 1.4 Zonas activadas + **unidades**: Home top+mid · Tools/Categorías mid+bottom · 404/legales sin anuncios — HECHO 14/10
-- [x] 1.5 **Lazy-load** con IntersectionObserver (rootMargin 300px) + min-heights (90/100px) anti-CLS — HECHO 14/10
+- [x] 1.4 Zonas activadas + **unidades**: **Home SIN anuncios (decisión del dueño 14/10)** · Tools/Categorías mid+bottom · 404/legales sin anuncios — HECHO 14/10
+- [x] 1.4b Fix de condición de carrera que duplicaba `<ins>` (cola de carga + guarda `data-ad-mounted`) — verificado: 1 `<ins>` por zona
+- [x] 1.5 **Lazy-load** con IntersectionObserver (rootMargin 300px) + **fallback tras load+idle** (requestIdleCallback) + min-heights (90/100px) anti-CLS — HECHO 14/10
 - [ ] 1.6 Re-medir CWV post-ads (CLS <0.1, sin degradar LCP >10%) — tras empezar a servir anuncios
 
 ### FASE 2 — SEO por herramienta con Tavily (sin Python)

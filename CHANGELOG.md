@@ -23,7 +23,9 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - Cliente `ca-pub-4553600515484019` + 3 unidades: **top** `4318614334` · **mid** `9277006553` · **bottom** `4327932200`
   - **Montaje centralizado en `components.js`** (`initAds`/`mountAd`): script de AdSense cargado **una sola vez** y **lazy** (IntersectionObserver con rootMargin 300px) → no bloquea el render ni LCP
   - **Reparto de zonas**: Home → top + mid · Tools y categorías → mid + bottom · 404 y legales → **sin anuncios** (además de la exclusión por ruta)
-  - **`.ad-container`** activado (antes `display:none`) con reserva anti-CLS de 90/100px y estilos para las `<ins>`
+  - **Home SIN anuncios** (decisión del dueño, 14/10): contenedores eliminados de `index.html`; los anuncios quedan solo en tools y categorías (mid + bottom)
+  - **Fix de duplicado**: condición de carrera entre el observer y el fallback podía inyectar 2 `<ins>` por zona → resuelto con cola de carga del script + guarda por contenedor (verificado: 1 por zona)
+  - `.ad-container` activado (antes `display:none`) con reserva anti-CLS de 90/100px y estilos para las `<ins>`
   - **`/cookies.html`**: política de cookies completa (CMP UE, cookies de Google Ads, cómo revocar) + enlace en el footer + sección 5.bis en `privacidad.html` + sitemap (77 URLs)
   - **CSP ampliada** en `_headers` con dominios de AdSense (script/frame/img/connect)
   - Bump `?v=20` + SW `pp-v20`
