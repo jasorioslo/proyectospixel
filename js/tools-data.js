@@ -164,14 +164,15 @@
     imagen: 'badge-primary'
   };
 
-  function renderCardTool(tool) {
+  function renderCardTool(tool, opts) {
+    var compact = opts && opts.compact;
     var icon = icons[tool.slug] || '';
     var catLabel = CATEGORY_LABELS[tool.category] || tool.category;
     var badge = tool.featured ? '<span class="badge badge-secondary">Destacada</span>' : '<span class="badge ' + (CATEGORY_BADGE[tool.category] || 'badge-primary') + '">' + catLabel + '</span>';
-    return '<a href="/herramientas/' + tool.category + '/' + tool.slug + '/" class="card-tool" data-slug="' + tool.slug + '" data-title="' + tool.title.toLowerCase() + '" data-desc="' + tool.desc.toLowerCase() + '" data-category="' + tool.category + '">' +
+    return '<a href="/herramientas/' + tool.category + '/' + tool.slug + '/" class="card-tool' + (compact ? ' card-tool-compact' : '') + '" data-slug="' + tool.slug + '" data-title="' + tool.title.toLowerCase() + '" data-desc="' + tool.desc.toLowerCase() + '" data-category="' + tool.category + '">' +
       icon +
       '<div class="card-title">' + tool.title + '</div>' +
-      '<div class="card-desc">' + tool.desc + '</div>' +
+      (compact ? '' : '<div class="card-desc">' + tool.desc + '</div>') +
       badge +
     '</a>';
   }
@@ -212,7 +213,7 @@
     pushByFilter(function () { return true; });
 
     if (picked.length === 0) { container.innerHTML = ''; return; }
-    container.innerHTML = picked.map(renderCardTool).join('');
+    container.innerHTML = picked.map(function (t) { return renderCardTool(t, { compact: true }); }).join('');
   }
 
   /* --- localStorage: Track Usage --- */

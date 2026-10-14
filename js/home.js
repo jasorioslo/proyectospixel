@@ -15,7 +15,7 @@
     var container = document.getElementById('featured-tools');
     if (!container) return;
     var featured = tools.filter(function (t) { return t.featured; });
-    container.innerHTML = featured.map(api.renderCardTool).join('');
+    container.innerHTML = featured.map(function (t) { return api.renderCardTool(t); }).join('');
   }
 
   function renderMostUsed() {
@@ -25,7 +25,7 @@
     if (mostUsed.length === 0) {
       // No data yet, show featured tools
       var featured = tools.filter(function (t) { return t.featured; });
-      container.innerHTML = featured.map(api.renderCardTool).join('');
+      container.innerHTML = featured.map(function (t) { return api.renderCardTool(t); }).join('');
       return;
     }
     var html = mostUsed.map(function (item) {
@@ -38,7 +38,7 @@
   function renderAllTools() {
     var container = document.getElementById('all-tools');
     if (!container) return;
-    container.innerHTML = tools.map(api.renderCardTool).join('');
+    container.innerHTML = tools.map(function (t) { return api.renderCardTool(t); }).join('');
   }
 
   /* --- Search & Filter --- */

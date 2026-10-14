@@ -193,6 +193,20 @@ textarea.input-text {
   transform: translateY(-2px);
 }
 
+/* Cards compactas (Tools Relacionadas): solo icono + título + badge, altura uniforme */
+.card-tool-compact {
+  min-height: 156px;
+  justify-content: flex-start;
+}
+
+.card-tool-compact .card-title {
+  font-size: 15px;
+}
+
+.card-tool-compact .badge {
+  margin-top: auto;
+}
+
 .card-tool .card-icon {
   width: 32px;
   height: 32px;
