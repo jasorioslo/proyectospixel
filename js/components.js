@@ -58,6 +58,7 @@
             '<a href="/herramientas/">Todas las herramientas</a>',
             '<a href="/#mas-usadas">Más usadas</a>',
             '<a href="/privacidad.html">Política de Privacidad</a>',
+            '<a href="/cookies.html">Política de Cookies</a>',
             '<a href="/terminos.html">Términos de Uso</a>',
           '</nav>',
         '</div>',
@@ -88,6 +89,75 @@
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('/sw.js').catch(function () {});
     });
+  }
+
+  /* --- Anuncios (AdSense, con lazy-load y sin romper CWV) --- */
+  var AD_CLIENT = 'ca-pub-4553600515484019';
+  var AD_SLOTS = { top: '4318614334', mid: '9277006553', bottom: '4327932200' };
+  var adsScriptRequested = false;
+
+  function loadAdsScript(callback) {
+    if (adsScriptRequested || document.querySelector('script[data-adsense]')) {
+      adsScriptRequested = true;
+      callback();
+      return;
+    }
+    adsScriptRequested = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.crossOrigin = 'anonymous';
+    s.setAttribute('data-adsense', '1');
+    s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + AD_CLIENT;
+    s.onload = function () { callback(); };
+    s.onerror = function () { /* bloqueado (adblock/CSP): no rompemos la página */ };
+    document.head.appendChild(s);
+  }
+
+  function mountAd(zoneEl) {
+    var zone = zoneEl.classList.contains('ad-top') ? 'top'
+      : zoneEl.classList.contains('ad-bottom') ? 'bottom' : 'mid';
+    if (!AD_SLOTS[zone]) return;
+    loadAdsScript(function () {
+      if (zoneEl.querySelector('ins.adsbygoogle')) return;
+      var ins = document.createElement('ins');
+      ins.className = 'adsbygoogle';
+      ins.style.display = 'block';
+      ins.setAttribute('data-ad-client', AD_CLIENT);
+      ins.setAttribute('data-ad-slot', AD_SLOTS[zone]);
+      ins.setAttribute('data-ad-format', 'auto');
+      ins.setAttribute('data-full-width-responsive', 'true');
+      zoneEl.appendChild(ins);
+      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
+    });
+  }
+
+  function initAds() {
+    var zones = document.querySelectorAll('.ad-container');
+    if (!zones.length) return;
+    // Nunca en páginas legales o de error
+    if (/^\/(404|cookies|privacidad|terminos)/.test(location.pathname)) return;
+
+    var isHome = location.pathname === '/' || /\/index\.html$/.test(location.pathname);
+    var targets = [];
+    Array.prototype.forEach.call(zones, function (z) {
+      if (z.classList.contains('ad-top') && !isHome) return;
+      if (z.classList.contains('ad-bottom') && isHome) return;
+      targets.push(z);
+    });
+    if (!targets.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+      targets.forEach(mountAd);
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        mountAd(entry.target);
+      });
+    }, { rootMargin: '300px 0px' });
+    targets.forEach(function (z) { observer.observe(z); });
   }
 
   /* --- Theme Toggle --- */
@@ -130,5 +200,12 @@
 
   // Auto-registro del SW (se salta en localhost para facilitar desarrollo)
   initServiceWorker();
+
+  // Anuncios: montaje diferido por zona (no bloquea el render)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAds);
+  } else {
+    initAds();
+  }
 
 })();

@@ -16,8 +16,8 @@
   --border-strong: rgba(10, 10, 10, 0.28);
   --error: #EF4444;
   --success: #22C55E;
-  --ad-top-bottom: 30px;
-  --ad-mid: 60px;
+  --ad-top-bottom: 90px;
+  --ad-mid: 100px;
   /* Radios (híbrido: suavidad de mcpmarket sobre base brutalista) */
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -262,13 +262,18 @@ textarea.input-text {
 }
 
 /* --- Ad Containers (CLS Prevention) --- */
-/* TODO: Descomentar para producción cuando se activen los ads */
 .ad-container {
-  display: none;
+  display: block;
   width: 100%;
   max-width: 728px;
   margin: 0 auto;
   background: transparent;
+  overflow: hidden;
+}
+
+.ad-container ins.adsbygoogle {
+  display: block;
+  width: 100%;
 }
 
 .ad-container.ad-top,

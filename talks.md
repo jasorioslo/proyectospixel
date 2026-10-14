@@ -157,18 +157,19 @@
 
 ### FASE 0 — Cierre técnico
 - [x] 0.1 Acortar títulos >65 chars: `codificar-url` y `conversor-unidades` — HECHO 14/10 (51 chars cada uno)
-- [ ] 0.2 (dueño) **Redirect Rule www → raíz** (301) — Rules → Redirect Rules → "Redirect from WWW to root"
-- [ ] 0.3 (dueño) **Secretos CI**: `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` en GitHub → activa auto-deploy (la guarda ya evita correos de fallo)
+- [x] 0.2 (dueño) **Redirect Rule www → raíz** (301) — HECHO Y VERIFICADO 14/10: se resolvió con **Bulk Redirects** (las Redirect Rules de zona no interceptan dominios custom de Pages). Las 4 pruebas pasan (raíz, con ruta, con query, raíz sin tocar)
+- [x] 0.3 (dueño) **Secretos CI** — HECHO 14/10: workflow en verde y nuevo deployment creado por el CI (9ae05a1f). Auto-deploy por push activo
 - [x] 0.4 Medir CWV lab — HECHO 14/10: **CLS = 0** (perfecto) · TTFB 204-719ms (varía con red) · DCL 326-790ms · 7 peticiones · PSI API sin key dio 429 → LCP/INP formales pendientes de PSI con API key gratis o pagespeed.web.dev
 - [ ] 0.5 (2-4 semanas) Revisar **GSC → Core Web Vitals** con datos de campo reales
 
 ### FASE 1 — AdSense (aprobado, falta activar)
-- [ ] 1.1 Crear **CMP de Google** (obligatorio UE/EEE): AdSense → Privacidad y mensajes
-- [ ] 1.2 **`/cookies.html`** + link en footer + ampliar `privacidad.html` + añadir a sitemap
-- [ ] 1.3 **CSP** en `_headers`: permitir dominios de AdSense (script-src, frame-src, img-src, connect-src)
-- [ ] 1.4 Activar zonas: quitar `display:none` + script + `<ins>` — **Home: top+mid · Tools: mid+bottom**
-- [ ] 1.5 **Lazy-load** con IntersectionObserver + min-heights anti-CLS
-- [ ] 1.6 Re-medir CWV post-ads (CLS <0.1, sin degradar LCP >10%)
+- [x] 1.1 **Datos de AdSense**: cliente `ca-pub-4553600515484019` + 3 slots (top `4318614334` · mid `9277006553` · bottom `4327932200`) — HECHO 14/10
+- [ ] 1.1b (dueño) Crear **CMP de Google** (obligatorio UE/EEE): AdSense → Privacidad y mensajes → mensaje GDPR
+- [x] 1.2 **`/cookies.html`** + link en footer + sección 5.bis en `privacidad.html` + sitemap (77 URLs) — HECHO 14/10
+- [x] 1.3 **CSP** en `_headers` con dominios de AdSense (script/frame/img/connect) — HECHO 14/10
+- [x] 1.4 Zonas activadas + **unidades**: Home top+mid · Tools/Categorías mid+bottom · 404/legales sin anuncios — HECHO 14/10
+- [x] 1.5 **Lazy-load** con IntersectionObserver (rootMargin 300px) + min-heights (90/100px) anti-CLS — HECHO 14/10
+- [ ] 1.6 Re-medir CWV post-ads (CLS <0.1, sin degradar LCP >10%) — tras empezar a servir anuncios
 
 ### FASE 2 — SEO por herramienta con Tavily (sin Python)
 - [ ] 2.1 `tools/seo/research.mjs <slug>` (Node): **Tavily Search** (keyword + "cómo usar" → top 5) + **Tavily Extract** (top 3-5) → guarda `seo/research/<slug>.md`
