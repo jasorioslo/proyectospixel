@@ -24,3 +24,7 @@ npm-debug.log*
 # Backups temporales
 *.bak
 *~
+
+# Research SEO (contiene texto de terceros: no se commitea)
+seo/research/
+

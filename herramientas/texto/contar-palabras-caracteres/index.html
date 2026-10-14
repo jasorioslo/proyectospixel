@@ -16,7 +16,7 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=23">
+  <link rel="stylesheet" href="/css/styles.css?v=24">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,6 +31,22 @@
     "operatingSystem": "Any",
     "offers": { "@type": "Offer", "price": "0" }
   }
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"HowTo","name":"Cómo contar palabras y caracteres online","description":"Cuenta palabras, caracteres, oraciones y párrafos de un texto en segundos desde el navegador.","totalTime":"PT1M","step":[
+      {"@type":"HowToStep","position":1,"name":"Pega o escribe tu texto","text":"Introduce el texto en el recuadro: los contadores se actualizan mientras escribes."},
+      {"@type":"HowToStep","position":2,"name":"Consulta los contadores","text":"Verás palabras, caracteres totales, caracteres sin espacios, oraciones y párrafos en tiempo real."},
+      {"@type":"HowToStep","position":3,"name":"Copia el resumen","text":"Pulsa Copiar resultado para obtener un resumen de las métricas y usarlo donde lo necesites."}
+    ]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"¿El contador de palabras es gratis y sin límites?","acceptedAnswer":{"@type":"Answer","text":"Sí. Es gratuito, sin registro, sin límite de caracteres ni de uso."}},
+      {"@type":"Question","name":"¿Se guarda mi texto en algún servidor?","acceptedAnswer":{"@type":"Answer","text":"No. El conteo ocurre en tu navegador en tiempo real; tu texto no se envía ni se almacena."}},
+      {"@type":"Question","name":"¿Cuenta caracteres con espacios y sin espacios?","acceptedAnswer":{"@type":"Answer","text":"Sí: muestra el total de caracteres y también el conteo sin espacios, además de oraciones y párrafos."}},
+      {"@type":"Question","name":"¿Cómo determina qué es una palabra?","acceptedAnswer":{"@type":"Answer","text":"Separa por espacios en blanco y saltos de línea, por lo que funciona igual de bien en español, inglés y otros idiomas."}},
+      {"@type":"Question","name":"¿Funciona en el móvil y sin conexión?","acceptedAnswer":{"@type":"Answer","text":"Sí. El diseño es mobile-first y, tras la primera visita, funciona offline como app instalable (PWA)."}}
+    ]}
+  ]}
   </script>
 </head>
 <body>
@@ -89,6 +105,38 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es un contador de palabras y caracteres</h2>
+          <p>Un <strong>contador de palabras</strong> mide en tiempo real la extensión de un texto: cuántas palabras, caracteres (con y sin espacios), oraciones y párrafos contiene. Es la herramienta imprescindible para ajustarse a límites: ensayos académicos, artículos SEO, descripciones de producto, subtítulos, publicaciones en redes o metadatos. Aquí el conteo se hace <strong>al escribir</strong>, sin botones y sin enviar nada a Internet.</p>
+
+          <h2>Cómo usar el contador paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega o escribe el texto</strong> en el recuadro. Los contadores se actualizan automáticamente con cada pulsación.</li>
+            <li><strong>Lee las cinco métricas:</strong> palabras, caracteres totales, caracteres sin espacios, oraciones y párrafos.</li>
+            <li><strong>Copia el resumen</strong> con <em>Copiar resultado</em> si necesitas registrarlo (por ejemplo, en una entrega o un informe).</li>
+          </ol>
+
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Estudiantes y opositores:</strong> comprueba si tu ensayo llega a las 1.500 palabras exigidas.</li>
+            <li><strong>SEO y redactores:</strong> ajusta <em>title</em> (≈60 caracteres) y <em>meta description</em> (≈155) al límite donde Google no trunca.</li>
+            <li><strong>Redes sociales:</strong> verifica si tu texto entra en X, Instagram o WhatsApp (temas de X: 280).</li>
+            <li><strong>Traducción y subtitulado:</strong> mide la longitud original y final por si el idioma destino ocupa más.</li>
+            <li><strong>Locución y vídeo:</strong> calcula cuántas palabras necesitas para una duración concreta.</li>
+          </ul>
+
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Es gratis y sin límite de texto?</summary><p>Sí: gratis, sin registro y sin límite práctico de longitud (depende solo de tu navegador).</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto en algún servidor?</summary><p>No. El conteo se hace en tu navegador y tu texto no se envía a ningún sitio. Nuestro compromiso es la privacidad real.</p></details>
+            <details class="faq-item"><summary>¿Cuenta caracteres con espacios y sin espacios?</summary><p>Sí, muestra ambos. También oraciones (puntuadas con . ! ?) y párrafos (separados por líneas en blanco).</p></details>
+            <details class="faq-item"><summary>¿Funciona en otros idiomas?</summary><p>Sí. La separación por espacios funciona en español, inglés, francés, alemán y cualquier idioma con palabras separadas.</p></details>
+            <details class="faq-item"><summary>¿Funciona en el móvil y sin conexión?</summary><p>Sí: diseño mobile-first y, tras la primera visita, funciona offline como app instalable (PWA).</p></details>
+          </div>
+
+          <h2>Herramientas relacionadas</h2>
+          <p>Combínalo con el <a href="/herramientas/texto/frecuencia-palabras/">analizador de frecuencia de palabras</a>, el <a href="/herramientas/texto/limites-redes/">comprobador de límites de redes sociales</a> o el <a href="/herramientas/texto/quitar-espacios-duplicados/">limpiador de espacios</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -98,12 +146,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=23"></script>
-  <script src="/js/tools-data.js?v=23"></script>
+  <script src="/js/components.js?v=24"></script>
+  <script src="/js/tools-data.js?v=24"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/contar-palabras.js?v=23"></script>
+  <script src="/js/tools/contar-palabras.js?v=24"></script>
 </body>
 </html>

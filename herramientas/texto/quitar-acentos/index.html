@@ -16,12 +16,29 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=23">
+  <link rel="stylesheet" href="/css/styles.css?v=24">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Quitar Acentos","description":"Elimina acentos y tildes de cualquier texto rápido y fácil.","url":"https://proyectospixel.com/herramientas/texto/quitar-acentos/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"HowTo","name":"Cómo quitar acentos de un texto online","description":"Elimina tildes y diacríticos de cualquier texto en tres pasos, directamente en tu navegador.","totalTime":"PT1M","step":[
+      {"@type":"HowToStep","position":1,"name":"Pega tu texto","text":"Escribe o pega en el recuadro el texto del que quieres eliminar los acentos."},
+      {"@type":"HowToStep","position":2,"name":"Pulsa Quitar acentos","text":"La herramienta transforma el texto al instante mediante normalización Unicode (NFD)."},
+      {"@type":"HowToStep","position":3,"name":"Copia el resultado","text":"Usa el botón Copiar resultado para llevarte el texto limpio a donde necesites."}
+    ]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"¿Quitar acentos online es gratis y sin registro?","acceptedAnswer":{"@type":"Answer","text":"Sí. La herramienta es 100% gratuita, no pide registro ni cuenta y no tiene límite de uso."}},
+      {"@type":"Question","name":"¿Se guarda o se envía mi texto a algún servidor?","acceptedAnswer":{"@type":"Answer","text":"No. Todo el proceso ocurre en tu navegador: tu texto nunca se envía ni se guarda en ningún servidor."}},
+      {"@type":"Question","name":"¿Qué pasa con la letra ñ y la diéresis?","acceptedAnswer":{"@type":"Answer","text":"La herramienta elimina los diacríticos: la ñ se convierte en n y la ü en u. Es exactamente lo que se necesita para crear URLs, nombres de archivo o identificadores."}},
+      {"@type":"Question","name":"¿Sirve para crear slugs y URLs amigables?","acceptedAnswer":{"@type":"Answer","text":"Sí, es el primer paso. Después puedes usar el Generador de Slugs para convertir el resultado en una URL limpia con guiones."}},
+      {"@type":"Question","name":"¿La herramienta cambia las mayúsculas?","acceptedAnswer":{"@type":"Answer","text":"No. Respeta mayúsculas y minúsculas del original; solo elimina acentos y diacríticos."}},
+      {"@type":"Question","name":"¿Funciona sin conexión a internet?","acceptedAnswer":{"@type":"Answer","text":"Sí. Es 100% client-side, así que tras la primera visita funciona sin conexión como una app instalable (PWA)."}}
+    ]}
+  ]}
   </script>
 </head>
 <body>
@@ -55,15 +72,55 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es y para qué sirve quitar acentos</h2>
+          <p>Quitar los acentos (y el resto de <strong>signos diacríticos</strong>: diéresis, tildes de la ñ…) consiste en transformar un texto a su versión "plana" sin marcas. Aunque un acento no cambia el significado en un apunte rápido, sí puede romper cosas cuando el texto se usa como <strong>dato técnico</strong>: URLs, nombres de archivo, etiquetas, claves de bases de datos, CSV o campañas de publicidad. Esta herramienta hace esa limpieza al instante y sin subir tu texto a ningún sitio.</p>
+
+          <h2>Cómo quitar acentos paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega tu texto</strong> en el recuadro superior (o escríbelo directamente).</li>
+            <li><strong>Pulsa «Quitar acentos»</strong>: la conversión usa normalización Unicode, así que funciona con cualquier combinación de idiomas y símbolos.</li>
+            <li><strong>Copia el resultado</strong> con el botón <em>Copiar resultado</em>. El texto original permanece intacto en el recuadro por si quieres repetir el proceso.</li>
+          </ol>
+
+          <h2>Casos de uso reales</h2>
+          <ul>
+            <li><strong>URLs y slugs SEO:</strong> <code>canción de cuna</code> → <code>cancion-de-cuna</code>. Después, perfíla con el <a href="/herramientas/texto/generador-slugs/">Generador de Slugs</a>.</li>
+            <li><strong>Nombres de archivo y carpetas</strong> compatibles con cualquier sistema (sin caracteres que se rompen al compartir).</li>
+            <li><strong>Listas y bases de datos:</strong> unifica datos exportados de Excel, CRM o formularios donde conviven "Málaga" y "Malaga".</li>
+            <li><strong>Campañas y etiquetas</strong> donde las tildes generan duplicados invisibles.</li>
+            <li><strong>Teclados sin acentos</strong> o dispositivos donde escribir tildes es incómodo.</li>
+          </ul>
+
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>Canción de cuna</code> → <code>Cancion de cuna</code></li>
+            <li><code>Pingüino malagueño</code> → <code>Pinguino malagueno</code></li>
+            <li><code>¿Añadir más? Sí</code> → <code>¿Anadir mas? Si</code></li>
+          </ul>
+
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Quitar acentos online es gratis y sin registro?</summary><p>Sí: 100% gratis, sin cuenta y sin límite de uso.</p></details>
+            <details class="faq-item"><summary>¿Se guarda o se envía mi texto a algún servidor?</summary><p>No. Todo ocurre en tu navegador; tu texto nunca se envía ni se almacena en servidores. Es la diferencia clave frente a herramientas que procesan tu texto en la nube.</p></details>
+            <details class="faq-item"><summary>¿Qué pasa con la letra ñ y la diéresis (ü)?</summary><p>Se convierten en <code>n</code> y <code>u</code> respectivamente, porque son diacríticos. Es lo deseable para URLs o identificadores.</p></details>
+            <details class="faq-item"><summary>¿Sirve para crear slugs y URLs amigables?</summary><p>Sí, es el primer paso. Luego usa el <a href="/herramientas/texto/generador-slugs/">Generador de Slugs</a> para obtener la URL final con guiones.</p></details>
+            <details class="faq-item"><summary>¿La herramienta cambia las mayúsculas?</summary><p>No: mantiene mayúsculas y minúsculas exactamente igual; solo elimina acentos.</p></details>
+            <details class="faq-item"><summary>¿Funciona sin conexión a internet?</summary><p>Sí. Tras la primera visita funciona offline (PWA) y puedes instalarla como app en el móvil.</p></details>
+          </div>
+
+          <h2>Herramientas relacionadas</h2>
+          <p>Combínala con el <a href="/herramientas/texto/contar-palabras-caracteres/">contador de palabras y caracteres</a>, el <a href="/herramientas/desarrollo/codificar-url/">codificador de URL</a> o el <a href="/herramientas/desarrollo/limpiar-lista-urls/">limpiador de listas de URLs</a> para dejar tus datos perfectos.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools"><h2 class="section-title">Tools Relacionadas</h2><div id="related-tools" class="grid-tools grid-tools-all"></div></section>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=23"></script>
-  <script src="/js/tools-data.js?v=23"></script>
+  <script src="/js/components.js?v=24"></script>
+  <script src="/js/tools-data.js?v=24"></script>
   <script>ProyectosPixel.renderHeader();ProyectosPixel.renderFooter();</script>
-  <script src="/js/tools/quitar-acentos.js?v=23"></script>
+  <script src="/js/tools/quitar-acentos.js?v=24"></script>
 </body>
 </html>

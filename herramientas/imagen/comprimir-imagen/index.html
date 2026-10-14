@@ -19,9 +19,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=23">
+  <link rel="stylesheet" href="/css/styles.css?v=24">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Comprimir Imagen","description":"Comprime imágenes JPG, PNG y WebP online sin perder calidad visible. Reduce el peso hasta un 80%. Gratis y 100% privado: tu imagen no sale de tu navegador.","url":"https://proyectospixel.com/herramientas/imagen/comprimir-imagen/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"HowTo","name":"Cómo comprimir una imagen online sin subirla","description":"Reduce el peso de una imagen eligiendo calidad, escala y formato, 100% en tu navegador.","totalTime":"PT2M","step":[
+      {"@type":"HowToStep","position":1,"name":"Elige o arrastra tu imagen","text":"Arrastra el archivo, haz clic para seleccionarlo o pega con Ctrl+V. Puedes ver su tamaño y dimensiones al momento."},
+      {"@type":"HowToStep","position":2,"name":"Ajusta calidad, formato y escala","text":"Mueve el control de calidad, elige JPG, WebP o PNG y, si quieres, reduce las dimensiones al 75%, 50% o 25%."},
+      {"@type":"HowToStep","position":3,"name":"Procesa y descarga","text":"Pulsa Comprimir imagen, compara el antes/después con el porcentaje de ahorro y descarga el archivo resultante."}
+    ]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"¿Se sube mi imagen a algún servidor para comprimirla?","acceptedAnswer":{"@type":"Answer","text":"No. La compresión ocurre dentro de tu navegador con Canvas; tu foto nunca se sube ni se almacena en servidores. Es la gran diferencia frente a los compresores en la nube."}},
+      {"@type":"Question","name":"¿Cuánto peso puedo reducir?","acceptedAnswer":{"@type":"Answer","text":"En fotos JPG suele reducirse entre un 50% y un 90% ajustando calidad; con escala al 50% el ahorro es aún mayor."}},
+      {"@type":"Question","name":"¿Pierde calidad la imagen?","acceptedAnswer":{"@type":"Answer","text":"Con JPG y WebP hay compresión con pérdida controlable: a calidad 70-80% la diferencia visual suele ser imperceptible. PNG es sin pérdida y apenas reduce el peso de las fotos."}},
+      {"@type":"Question","name":"¿Convierte a WebP?","acceptedAnswer":{"@type":"Answer","text":"Sí, puedes elegir WebP (el formato más ligero). Si tu navegador no puede generar WebP (ocurre en algunos Safari/Firefox antiguos), la herramienta usa PNG automáticamente."}},
+      {"@type":"Question","name":"¿Por qué mi PNG no baja de peso?","acceptedAnswer":{"@type":"Answer","text":"PNG es un formato sin pérdida y no admite ajuste de calidad; para reducir el peso de una foto conviene salir en JPG o WebP."}},
+      {"@type":"Question","name":"¿Se pueden comprimir varias imágenes a la vez?","acceptedAnswer":{"@type":"Answer","text":"De momento se procesan de una en una. Para unir varias en un único archivo puedes usar la herramienta Imágenes a PDF."}}
+    ]}
+  ]}
   </script>
 </head>
 <body>
@@ -99,6 +116,43 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el compresor de imágenes</h2>
+          <p>Comprimir una imagen es reducir su <strong>peso en disco</strong> (KB/MB) manteniendo el tamaño en píxeles y una calidad visual aceptable. Un peso menor significa webs más rápidas, correos que no rebotan y menos espacio ocupado. Esta herramienta comprime <strong>dentro de tu navegador</strong>: puedes ajustar calidad, formato y escala, ver el porcentaje de ahorro exacto y descargar el resultado. Tu foto no se sube nunca.</p>
+
+          <h2>Cómo comprimir una imagen paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige o arrastra tu imagen</strong> (también puedes pegar con <code>Ctrl+V</code>). Verás su peso, formato y dimensiones al instante.</li>
+            <li><strong>Ajusta la compresión:</strong> calidad (70-80% suele ser el punto dulce), formato de salida (JPG, WebP o PNG) y escala si quieres reducir dimensiones (75%, 50%, 25%).</li>
+            <li><strong>Pulsa «Comprimir imagen»</strong> y compara: la herramienta muestra <em>antes → después</em> y el ahorro conseguido.</li>
+            <li><strong>Descarga el archivo</strong> con el botón <em>Descargar</em>. El original queda intacto en tu equipo.</li>
+          </ol>
+
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Web y Core Web Vitals:</strong> imágenes más ligeras = mejor LCP y mejor posicionamiento.</li>
+            <li><strong>Email:</strong> evita el límite de adjuntos de Gmail/Outlook (25 MB).</li>
+            <li><strong>WhatsApp y redes:</strong> comparte fotos sin que se degraden aún más por la app.</li>
+            <li><strong>Portales con límite de subida</strong> (administraciones, formularios, marketplaces).</li>
+            <li><strong>Tiendas online:</strong> decenas de fotos de producto que suman gigabytes.</li>
+          </ul>
+
+          <h2>Ejemplo real</h2>
+          <p>Una foto de 2,8 MB en JPG a calidad 70% puede quedar en torno a <strong>100 KB (-96%)</strong> sin diferencia visible en pantalla. Con fotos muy detalladas el ahorro típico está entre el 50% y el 80%.</p>
+
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se sube mi imagen a algún servidor?</summary><p>No. Todo el procesamiento es local (Canvas API). Tu imagen no viaja a ningún sitio ni se guarda: privacidad real.</p></details>
+            <details class="faq-item"><summary>¿Cuánto peso puedo reducir?</summary><p>En JPG/WebP, entre el 50% y el 90% según calidad y escala. La herramienta te muestra el ahorro exacto tras procesar.</p></details>
+            <details class="faq-item"><summary>¿Pierde calidad?</summary><p>JPG y WebP usan compresión con pérdida <em>controlable</em>: a 70-80% la diferencia es imperceptible en pantalla. PNG es sin pérdida y apenas baja el peso de fotos.</p></details>
+            <details class="faq-item"><summary>¿Por qué mi PNG no baja de peso?</summary><p>Porque PNG es sin pérdida y no admite ajuste de calidad. Si es una foto, sal en JPG o WebP.</p></details>
+            <details class="faq-item"><summary>¿Puedo convertir a WebP?</summary><p>Sí. Es el formato más ligero; si tu navegador no puede generarlo, se usa PNG automáticamente.</p></details>
+            <details class="faq-item"><summary>¿Funciona en el móvil y sin conexión?</summary><p>Sí: es responsive y, tras la primera visita, funciona offline (PWA instalable).</p></details>
+          </div>
+
+          <h2>Herramientas relacionadas</h2>
+          <p>Después de comprimir, quizá necesites <a href="/herramientas/imagen/convertir-imagen/">convertir el formato</a>, <a href="/herramientas/imagen/redimensionar-imagen/">redimensionar</a>, <a href="/herramientas/imagen/limpiar-exif/">eliminar los metadatos EXIF</a> (importante para privacidad) o <a href="/herramientas/imagen/recortar-imagen/">recortar</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -108,13 +162,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=23"></script>
-  <script src="/js/tools-data.js?v=23"></script>
-  <script src="/js/tools/image-utils.js?v=23"></script>
+  <script src="/js/components.js?v=24"></script>
+  <script src="/js/tools-data.js?v=24"></script>
+  <script src="/js/tools/image-utils.js?v=24"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/comprimir-imagen.js?v=23"></script>
+  <script src="/js/tools/comprimir-imagen.js?v=24"></script>
 </body>
 </html>
