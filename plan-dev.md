@@ -103,6 +103,29 @@ Checklist obligatorio por cada tool:
 
 ---
 
+## 8. SPRINT 5 — Lote Texto/Seguridad ✅ (14/10/2026)
+
+| # | Nombre SEO | Slug | Cat | Estado |
+|---|---|---|---|---|
+| 1 | Generador de Slugs | `generador-slugs` | texto | ✅ QA: acentos/símbolos ✓ |
+| 2 | Codificar y Decodificar URL | `codificar-url` | desarrollo | ✅ QA: round-trip ✓ |
+| 3 | Generador de UUID | `generador-uuid` | seguridad | ✅ QA: v4 válido ×10 ✓ |
+| 4 | Verificador de Contraseñas | `verificador-contrasenas` | seguridad | ✅ QA: 72 bits, "Muy fuerte" ✓ |
+| 5 | Generador de Hashes | `generador-hashes` | seguridad | ✅ QA: SHA-256("abc") correcto ✓ |
+| 6 | Límites de Redes Sociales | `limites-redes` | texto | ✅ QA: 8 plataformas, excede avisa ✓ |
+
+## 9. SPRINT 6 — FASE 4: Conversión ✅ (14/10/2026)
+
+| # | Nombre SEO | Slug | Estado |
+|---|---|---|---|
+| 1 | Convertir JSON a CSV (y viceversa) | `json-a-csv` | ✅ QA: quoting CSV + round-trip |
+| 2 | Convertir Markdown a HTML | `markdown-a-html` | ✅ QA: parser propio + seguro (fix citas) |
+| 3 | Convertir Imágenes a PDF | `imagen-a-pdf` | ✅ QA: PDF 2 páginas generado (escritor propio) |
+
+**Total del sitio: 54 herramientas** (texto 24 · conversión 7 · seguridad 6 · desarrollo 6 · imagen 6 · matemáticas 5). sitemap 64 URLs, SW pp-v15.
+
+---
+
 ## 4. Registro de incidencias (control de fallos)
 
 Cada fallo de QA se registra con: tool, síntoma, causa, fix y fecha. Regla: NO marcar ✅ sin pasar el checklist completo.

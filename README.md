@@ -10,11 +10,11 @@ Marketplace de herramientas online **gratuitas, rápidas y 100% privadas**: todo
 
 | Categoría | Tools | Ejemplos |
 |-----------|-------|----------|
-| Texto | 22 | Contar palabras y caracteres, Quitar acentos, Buscar y reemplazar, Filtrar líneas, Fusionar listas |
-| Conversión | 4 | Texto a Morse, Base64, Unicode, Texto a Binario |
+| Texto | 24 | Contar palabras y caracteres, Quitar acentos, Buscar y reemplazar, Filtrar líneas, Fusionar listas |
+| Conversión | 7 | Morse, Base64, Unicode, Binario, JSON↔CSV, Markdown→HTML, Imágenes→PDF |
 | Matemáticas | 5 | Generar lista de números, Combinaciones, Permutaciones, Combinar listas (A×B), Contador de clics |
-| Seguridad | 3 | Generador de contraseñas, Cifrado ROT13, Cifrador César |
-| Desarrollo | 5 | Formatear JSON, Minificar código, Regex tester, Comparar textos, Limpiar URLs |
+| Seguridad | 6 | Contraseñas, ROT13, César, UUID, Verificador, Hashes |
+| Desarrollo | 6 | Formatear JSON, Minificar, Regex tester, Diff, Limpiar URLs, Codificar URL |
 | Imagen | 6 | Comprimir, Convertir, Redimensionar, Marca de agua, Limpiar EXIF, Recortar |
 
 **Full list:** `js/tools-data.js` (fuente única de verdad — añadir ahí cada tool nueva).

@@ -14,6 +14,23 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=10` + SW `pp-v10`
 
 ### Added
+- **🧰 LOTE TEXTO/SEGURIDAD — 6 herramientas nuevas** (14/10/2026):
+  - **Generador de Slugs** (títulos → URLs limpias, quita tildes/símbolos, separador y límite configurables)
+  - **Codificar y Decodificar URL** (percent-encoding, componente o URL completa, con manejo de escapes inválidos)
+  - **Generador de UUID** v4 (hasta 100, mayúsculas, sin guiones — usa WebCrypto)
+  - **Verificador de Contraseñas** (entropía, fortaleza 0-5 con barras, chequeos y **tiempo de descifrado estimado**)
+  - **Generador de Hashes** (SHA-1/256/384/512 vía WebCrypto + **MD5 implementado a mano**; validado: SHA-256("abc") correcto)
+  - **Límites de Redes Sociales** (8 plataformas con barras de progreso: X, IG, TikTok, Meta/Título SEO, SMS, WhatsApp, YouTube)
+- **🔄 FASE 4 — Conversión de archivos (3 herramientas)**, todas sin dependencias externas:
+  - **JSON ↔ CSV** bidireccional (CSV quoting correcto, delimitadores , ; tab, cabeceras, límite 10k filas)
+  - **Markdown → HTML** con **parser propio** (títulos, negritas/cursivas, código inline/bloque, listas, citas, enlaces, imágenes, hr) + vista previa + escape seguro de HTML (verificado: 0 scripts inyectables)
+  - **Imágenes → PDF** con **escritor PDF propio** (PDF 1.4, JPEG DCTDecode, páginas A4 centrada o tamaño imagen, múltiples imágenes) — cero librerías, coherente con la promesa offline
+  - Estilos nuevos: `.md-preview`
+- Total del sitio: **54 herramientas** · sitemap **64 URLs** · SW `pp-v15`
+
+### Fixed
+- **Parser Markdown**: el escape de HTML se aplicaba antes del parseo y rompía la sintaxis `>` (citas) — refactorizado (estructura sobre texto crudo, escape solo en el contenido)
+- **Verificador de Contraseñas**: el HTML del resumen se mostraba literal (`<strong>`) → ahora usa `innerHTML` controlado
 - **⚙️ FASE 3 — 4 herramientas de Desarrollo** (14/10/2026, QA verificado en navegador):
   - **Formatear y Validar JSON** (indentación 2/4/tab, ordenar claves, validación en vivo con línea y columna del error)
   - **Minificar HTML, CSS y JS** (con estimación de ahorro; JS conservador con aviso)
