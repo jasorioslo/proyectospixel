@@ -10,7 +10,7 @@
     '<header class="site-header">',
       '<div class="header-capsule">',
         '<div class="header-inner">',
-          '<a href="/" class="header-logo" aria-label="ProyectosPixel - Inicio">',
+          '<a href="/" class="header-logo">',
             '<span class="logo-mark" aria-hidden="true">Px</span>',
             '<span class="logo-text">ProyectosPixel</span>',
           '</a>',

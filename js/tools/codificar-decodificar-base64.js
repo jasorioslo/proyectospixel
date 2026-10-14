@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   'use strict';
   var input = document.getElementById('tool-input');
   var result = document.getElementById('tool-result');
@@ -19,7 +19,7 @@
     try {
       return decodeURIComponent(escape(atob(base64.trim())));
     } catch (e) {
-      showError('Base64 no valido. Verifica que el texto sea Base64 correcto.');
+      showError('Base64 no válido. Verifica que el texto sea Base64 correcto.');
       return null;
     }
   }
@@ -34,7 +34,7 @@
 
   document.getElementById('btn-decode').addEventListener('click', function () {
     var text = input.value;
-    if (!text.trim()) { showError('Escribe o pega codigo Base64 primero.'); return; }
+    if (!text.trim()) { showError('Escribe o pega código Base64 primero.'); return; }
     hideError();
     var output = decodeBase64(text);
     if (output !== null) { result.textContent = output; btnCopy.disabled = false; }

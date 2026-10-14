@@ -449,8 +449,11 @@ textarea.input-text {
 }
 
 .pill.disabled {
-  opacity: 0.5;
+  opacity: 1;
+  background: var(--bg);
+  color: var(--text-secondary);
   pointer-events: none;
+  box-shadow: none;
 }
 
 /* --- Grids --- */

@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   'use strict';
   var input = document.getElementById('tool-input');
   var result = document.getElementById('tool-result');
@@ -32,7 +32,7 @@
       return word.split(' ').map(function (code) {
         if (!code) return '';
         if (!reverseMorse[code]) {
-          showError('Codigo Morse no valido: "' + code + '"');
+          showError('Código Morse no válido: "' + code + '"');
           return '';
         }
         return reverseMorse[code];
@@ -50,7 +50,7 @@
 
   document.getElementById('btn-to-text').addEventListener('click', function () {
     var text = input.value;
-    if (!text.trim()) { showError('Escribe o pega codigo Morse primero.'); return; }
+    if (!text.trim()) { showError('Escribe o pega código Morse primero.'); return; }
     hideError();
     var output = morseToText(text);
     if (output) { result.textContent = output; btnCopy.disabled = false; }

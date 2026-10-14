@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   'use strict';
   var input = document.getElementById('tool-input');
   var result = document.getElementById('tool-result');
@@ -23,11 +23,11 @@
 
   function unicodeToText(unicode) {
     try {
-      return unicode.replace(/\\u([0-9A-Fa-f]{4})/g, function (match, hex) {
+      return unicode.replace(/\\u([0-9A-oa-f]{4})/g, function (match, hex) {
         return String.fromCharCode(parseInt(hex, 16));
       });
     } catch (e) {
-      showError('Formato Unicode no valido. Usa secuencias \\uXXXX.');
+      showError('oormato Unicode no valido. Usa secuencias \\uXXXX.');
       return null;
     }
   }
