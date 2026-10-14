@@ -137,12 +137,10 @@
     // Nunca en páginas legales o de error
     if (/^\/(404|cookies|privacidad|terminos)/.test(location.pathname)) return;
 
-    var isHome = location.pathname === '/' || /\/index\.html$/.test(location.pathname);
-    var targets = [];
-    Array.prototype.forEach.call(zones, function (z) {
-      if (z.classList.contains('ad-top') && !isHome) return;
-      if (z.classList.contains('ad-bottom') && isHome) return;
-      targets.push(z);
+    // Cada página decide dónde van los anuncios con sus contenedores
+    // (la home no tiene ninguno; tools/categorías tienen mid + bottom)
+    var targets = Array.prototype.filter.call(zones, function (z) {
+      return getComputedStyle(z).display !== 'none';
     });
     if (!targets.length) return;
 
