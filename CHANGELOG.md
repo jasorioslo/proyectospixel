@@ -14,6 +14,13 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=10` + SW `pp-v10`
 
 ### Added
+- **⚙️ FASE 3 — 4 herramientas de Desarrollo** (14/10/2026, QA verificado en navegador):
+  - **Formatear y Validar JSON** (indentación 2/4/tab, ordenar claves, validación en vivo con línea y columna del error)
+  - **Minificar HTML, CSS y JS** (con estimación de ahorro; JS conservador con aviso)
+  - **Probador de Expresiones Regulares** (resaltado de coincidencias, flags g/i/m/s/u, tabla de grupos capturados)
+  - **Comparar Dos Textos (diff)** con algoritmo LCS (líneas añadidas/eliminadas coloreadas + estadísticas)
+  - Estilos nuevos: `.regex-highlight`, `.diff-view/.diff-add/.diff-del`
+  - Categoría Desarrollo ahora con 5 tools; sitemap 55 URLs; SW pp-v13; **total del sitio: 45 herramientas**
 - **🖼️ FASE 2 — 6 herramientas de Imagen** (14/10/2026, QA end-to-end en navegador con imágenes generadas):
   - **Comprimir Imagen** (calidad + escala + formato): probado 2.8 MB → 97 KB (**-97%**)
   - **Convertir Imagen** a WebP/PNG/JPG con detección de soporte del navegador (aviso y fallback a PNG en Safari/Firefox)

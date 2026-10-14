@@ -90,6 +90,19 @@ Checklist obligatorio por cada tool:
 
 ---
 
+## 7. SPRINT 4 — FASE 3: Desarrollo ✅ (14/10/2026)
+
+| # | Nombre SEO | Slug | Estado |
+|---|---|---|---|
+| 1 | Formatear y Validar JSON | `formatear-json` | ✅ QA: formatea + error con línea/columna |
+| 2 | Minificar HTML, CSS y JS | `minificar-codigo` | ✅ QA: HTML -46% de tamaño |
+| 3 | Probador de Expresiones Regulares | `regex-tester` | ✅ QA: 2 matches + grupos capturados |
+| 4 | Comparar Dos Textos (diff) | `comparar-textos` | ✅ QA: +2/-1 líneas con LCS |
+
+**Total del sitio: 45 herramientas.** sitemap 55 URLs, SW pp-v13.
+
+---
+
 ## 4. Registro de incidencias (control de fallos)
 
 Cada fallo de QA se registra con: tool, síntoma, causa, fix y fecha. Regla: NO marcar ✅ sin pasar el checklist completo.

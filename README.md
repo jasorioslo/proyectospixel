@@ -14,7 +14,7 @@ Marketplace de herramientas online **gratuitas, rápidas y 100% privadas**: todo
 | Conversión | 4 | Texto a Morse, Base64, Unicode, Texto a Binario |
 | Matemáticas | 5 | Generar lista de números, Combinaciones, Permutaciones, Combinar listas (A×B), Contador de clics |
 | Seguridad | 3 | Generador de contraseñas, Cifrado ROT13, Cifrador César |
-| Desarrollo | 1 | Limpiar lista de URLs (solo dominio) |
+| Desarrollo | 5 | Formatear JSON, Minificar código, Regex tester, Comparar textos, Limpiar URLs |
 | Imagen | 6 | Comprimir, Convertir, Redimensionar, Marca de agua, Limpiar EXIF, Recortar |
 
 **Full list:** `js/tools-data.js` (fuente única de verdad — añadir ahí cada tool nueva).
