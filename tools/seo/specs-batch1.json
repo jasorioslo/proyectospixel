@@ -1,0 +1,371 @@
+[
+  {
+    "slug": "convertir-mayusculas-minusculas",
+    "cat": "texto",
+    "keyword": "convertir mayúsculas minúsculas online",
+    "h2_que": "Qué hace el conversor de mayúsculas y minúsculas",
+    "que": [
+      "Transforma cualquier texto entre los formatos más usados al escribir: <strong>MAYÚSCULAS</strong>, <strong>minúsculas</strong>, <strong>Tipo Título</strong> (cada palabra con inicial mayúscula) y <strong>Tipo oración</strong> (mayúscula al inicio y después de cada punto).",
+      "Es útil para corregir textos escritos con Bloq Mayús, normalizar títulos, preparar encabezados o citas, y unificar datos importados de hojas de cálculo o formularios."
+    ],
+    "h2_pasos": "Cómo cambiar mayúsculas y minúsculas paso a paso",
+    "howtoName": "Cómo convertir mayúsculas y minúsculas online",
+    "howtoSteps": ["Pega tu texto", "Elige el formato", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega tu texto</strong> en el recuadro superior.",
+      "<strong>Pulsa el formato</strong> que quieras: MAYÚSCULAS, minúsculas, Tipo Título o tipo oración. El resultado aparece al instante.",
+      "<strong>Copia el resultado</strong> con el botón correspondiente y pégalo donde lo necesites."
+    ],
+    "usos": [
+      "<strong>Títulos y encabezados:</strong> pasa a Tipo Título en un clic, sin reescribir.",
+      "<strong>Corregir Bloq Mayús:</strong> convierte «HOLA MUNDO» a minúsculas en segundos.",
+      "<strong>Redes sociales:</strong> prepara ganchos en minúsculas o gritos en mayúsculas.",
+      "<strong>Datos y listas:</strong> unifica el formato de nombres y categorías importadas."
+    ],
+    "ejemplos": [
+      "hola mundo → HOLA MUNDO",
+      "HOLA MUNDO → hola mundo",
+      "hola mundo → Hola Mundo (Tipo Título)",
+      "hola mundo. otra frase → Hola mundo. Otra frase (tipo oración)"
+    ],
+    "faqs": [
+      { "q": "¿Es gratis y sin registro?", "a": "Sí: 100% gratis, sin cuenta y sin límite de uso." },
+      { "q": "¿Se envía mi texto a algún servidor?", "a": "No. La conversión ocurre en tu navegador; tu texto nunca sale de tu dispositivo." },
+      { "q": "¿Qué significa «Tipo Título»?", "a": "Cada palabra comienza con mayúscula (Hola Mundo), el estilo de titulares y encabezados." },
+      { "q": "¿Y «tipo oración»?", "a": "Pone en mayúscula la primera letra del texto y la primera después de cada punto, interrogación o exclamación." },
+      { "q": "¿Funciona en el móvil y sin internet?", "a": "Sí. Es responsive y funciona offline tras la primera visita (PWA)." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/quitar-acentos/", "label": "Quitar acentos" },
+      { "url": "/herramientas/texto/generador-slugs/", "label": "Generador de Slugs" },
+      { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar" }
+    ]
+  },
+  {
+    "slug": "quitar-espacios-duplicados",
+    "cat": "texto",
+    "keyword": "quitar espacios duplicados online",
+    "h2_que": "Qué hace el limpiador de espacios",
+    "que": [
+      "Elimina los espacios sobrantes: convierte cualquier secuencia de espacios, tabulaciones y saltos de línea en un <strong>único espacio</strong> y recorta los extremos del texto.",
+      "Ojo: al colapsar <em>todo</em> el espacio en blanco, también une las líneas. Si quieres conservar los saltos de línea, usa el limpiador de espacios línea a línea o el de líneas vacías."
+    ],
+    "h2_pasos": "Cómo limpiar los espacios paso a paso",
+    "howtoName": "Cómo quitar espacios duplicados de un texto",
+    "howtoSteps": ["Pega el texto", "Pulsa limpiar", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> con espacios de más.",
+      "<strong>Pulsa «Limpiar espacios»</strong>: el resultado deja un solo espacio entre palabras.",
+      "<strong>Copia el resultado</strong> y revisa si te interesa conservar saltos de línea (en ese caso, usa las herramientas específicas)."
+    ],
+    "usos": [
+      "<strong>Texto copiado de PDF o Word</strong> que llega con espacios dobles o triples.",
+      "<strong>Redes sociales y mensajes</strong> donde los espacios extra desalinean todo.",
+      "<strong>Datos para bases de datos</strong>: valores limpios evitan duplicados invisibles.",
+      "<strong>Subtítulos y guiones</strong> que deben leerse de corrido."
+    ],
+    "ejemplos": [
+      "hola    mundo  → hola mundo",
+      "texto con    tabulador → texto con tabulador"
+    ],
+    "faqs": [
+      { "q": "¿Se guarda mi texto?", "a": "No. La limpieza es 100% local en tu navegador." },
+      { "q": "¿Elimina también los saltos de línea?", "a": "Sí, por diseño los colapsa a un espacio. Si quieres conservar las líneas, usa la herramienta «quitar líneas vacías» o «filtrar líneas»." },
+      { "q": "¿Quita solo los espacios del principio y el final?", "a": "Además de eso, también reduce los grupos de espacios intermedios a uno solo." },
+      { "q": "¿Es gratis?", "a": "Sí, gratis y sin registro." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/quitar-saltos-de-linea/", "label": "Quitar saltos de línea" },
+      { "url": "/herramientas/texto/eliminar-lineas-vacias/", "label": "Eliminar líneas vacías" },
+      { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar" }
+    ]
+  },
+  {
+    "slug": "quitar-saltos-de-linea",
+    "cat": "texto",
+    "keyword": "quitar saltos de línea online",
+    "h2_que": "Qué hace la herramienta de quitar saltos de línea",
+    "que": [
+      "Convierte un texto multilínea en un <strong>solo párrafo continuo</strong>: elimina los saltos y colapsa los espacios sobrantes.",
+      "Perfecta para pegar correos, apuntes o listas que llegan cortados en líneas y necesitan quedar de corrido."
+    ],
+    "h2_pasos": "Cómo quitar los saltos de línea paso a paso",
+    "howtoName": "Cómo quitar saltos de línea de un texto",
+    "howtoSteps": ["Pega el texto", "Pulsa unir", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> con saltos de línea.",
+      "<strong>Pulsa el botón</strong>: las líneas se unen con un espacio.",
+      "<strong>Copia el resultado</strong> ya como párrafo único."
+    ],
+    "usos": [
+      "<strong>Correos y mensajes</strong> que llegan cortados línea a línea.",
+      "<strong>Copiar de un PDF</strong> sin reconstruir el párrafo a mano.",
+      "<strong>Metadatos y descripciones</strong> que deben ser una sola cadena.",
+      "<strong>Traducciones</strong> que necesitan el mismo formato que el original."
+    ],
+    "ejemplos": [ "línea 1\\nlínea 2\\nlínea 3 → línea 1 línea 2 línea 3" ],
+    "faqs": [
+      { "q": "¿Puedo mantener los párrafos originales?", "a": "Esta herramienta une todo. Para respetar párrafos, usa «eliminar líneas vacías» o «filtrar líneas»." },
+      { "q": "¿Se guarda mi texto?", "a": "No, todo ocurre en tu navegador." },
+      { "q": "¿Funciona con textos largos?", "a": "Sí, sin límite práctico más allá de tu navegador." },
+      { "q": "¿Diferencia entre quitar saltos y quitar espacios?", "a": "Aquí unimos líneas con un espacio; el limpiador de espacios reduce grupos de espacios dentro de cada línea." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/anadir-saltos-de-linea/", "label": "Añadir saltos de línea" },
+      { "url": "/herramientas/texto/quitar-espacios-duplicados/", "label": "Quitar espacios duplicados" },
+      { "url": "/herramientas/texto/eliminar-lineas-vacias/", "label": "Eliminar líneas vacías" }
+    ]
+  },
+  {
+    "slug": "invertir-texto",
+    "cat": "texto",
+    "keyword": "invertir texto online",
+    "h2_que": "Qué hace la herramienta de invertir texto",
+    "que": [
+      "Da la vuelta a cualquier texto de dos maneras: <strong>letra por letra</strong> (el orden de los caracteres) o <strong>palabra por palabra</strong> (el orden de las palabras).",
+      "Sirve para juegos, retos, letras al revés, análisis de palíndromos o simplemente para darle un toque original a un mensaje."
+    ],
+    "h2_pasos": "Cómo invertir un texto paso a paso",
+    "howtoName": "Cómo invertir texto online",
+    "howtoSteps": ["Pega el texto", "Elige el modo", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> que quieres dar la vuelta.",
+      "<strong>Elige «letras» o «palabras»</strong> según el efecto que busques.",
+      "<strong>Copia el resultado</strong> para usarlo donde quieras."
+    ],
+    "usos": [
+      "<strong>Palíndromos:</strong> comprueba si tu frase se lee igual al revés.",
+      "<strong>Juegos y retos</strong> en redes o en clase.",
+      "<strong>Letras y textos decorativos</strong> con efecto espejo.",
+      "<strong>Pruebas de estrés de fuentes</strong> o tipografías."
+    ],
+    "ejemplos": [ "hola → aloh (letras)", "hola mundo → mundo hola (palabras)" ],
+    "faqs": [
+      { "q": "¿Se conservan los emojis?", "a": "Puede que sí al invertir por palabras; al invertir por letras, los emojis compuestos dependen de tu navegador." },
+      { "q": "¿Se envía mi texto?", "a": "No, la inversión es local en tu navegador." },
+      { "q": "¿Puedo invertir solo una parte?", "a": "Pega esa parte como texto independiente y vuelve a pegar el resultado." },
+      { "q": "¿Es gratis?", "a": "Sí, gratis y sin registro." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/cifrado-rot13/", "label": "Cifrado ROT13" },
+      { "url": "/herramientas/texto/mezclar-letras-palabras/", "label": "Mezclar letras" },
+      { "url": "/herramientas/texto/quitar-acentos/", "label": "Quitar acentos" }
+    ]
+  },
+  {
+    "slug": "frecuencia-palabras",
+    "cat": "texto",
+    "keyword": "frecuencia de palabras online",
+    "h2_que": "Qué hace el analizador de frecuencia de palabras",
+    "que": [
+      "Cuenta <strong>cuántas veces se repite cada palabra</strong> en tu texto y ordena el resultado de mayor a menor, con su porcentaje relativo.",
+      "Una forma rapidísima de detectar repeticiones, evaluar densidad (útil para SEO) o revisar si un texto abusa de una palabra."
+    ],
+    "h2_pasos": "Cómo analizar la frecuencia paso a paso",
+    "howtoName": "Cómo analizar la frecuencia de palabras en un texto",
+    "howtoSteps": ["Pega el texto", "Pulsa analizar", "Revisa la tabla"],
+    "pasos": [
+      "<strong>Pega el texto</strong> a analizar.",
+      "<strong>Pulsa «Analizar»</strong>: verás una tabla con cada palabra y sus apariciones.",
+      "<strong>Ordena tu criterio:</strong> las primeras filas son las más repetidas; detecta muletillas y repeticiones."
+    ],
+    "usos": [
+      "<strong>SEO:</strong> comprueba la frecuencia natural de la keyword (sin forzar densidad).",
+      "<strong>Redacción:</strong> detecta muletillas o palabras que abusas.",
+      "<strong>Traducción:</strong> verifica terminología consistente.",
+      "<strong>Investigación:</strong> análisis rápido de palabras clave en artículos o apuntes."
+    ],
+    "ejemplos": [ "sol luna sol estrella sol → sol: 3 · luna: 1 · estrella: 1" ],
+    "faqs": [
+      { "q": "¿Distingue mayúsculas?", "a": "No: se compara en minúsculas, así «Sol» y «sol» cuentan juntas." },
+      { "q": "¿Ignora puntos y signos?", "a": "Sí, se limpian los signos antes de contar." },
+      { "q": "¿Se guarda mi texto?", "a": "No, el análisis es local." },
+      { "q": "¿Sirve para SEO?", "a": "Sí, como referencia de repetición. No fuerces la densidad: escribe natural." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/contar-palabras-caracteres/", "label": "Contar palabras y caracteres" },
+      { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar" },
+      { "url": "/herramientas/texto/separar-keywords-genero/", "label": "Separar keywords por género" }
+    ]
+  },
+  {
+    "slug": "eliminar-caracteres-especiales",
+    "cat": "texto",
+    "keyword": "eliminar caracteres especiales online",
+    "h2_que": "Qué hace la herramienta de eliminar caracteres especiales",
+    "que": [
+      "Limpia tu texto dejando únicamente <strong>letras y números</strong>, eliminando símbolos, signos y caracteres raros. Puedes conservar acentos y espacios si lo necesitas.",
+      "Ideal para generar identificadores seguros: nombres de archivo, claves de base de datos, etiquetas o slugs."
+    ],
+    "h2_pasos": "Cómo eliminar caracteres especiales paso a paso",
+    "howtoName": "Cómo quitar caracteres especiales de un texto",
+    "howtoSteps": ["Pega el texto", "Elige opciones", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> con símbolos o caracteres no deseados.",
+      "<strong>Elige si conservar</strong> acentos y espacios según tu caso.",
+      "<strong>Pulsa el botón y copia</strong> el texto ya limpio."
+    ],
+    "usos": [
+      "<strong>Identificadores y claves</strong> sin símbolos problemáticos.",
+      "<strong>Nombres de archivo</strong> compatibles con todos los sistemas.",
+      "<strong>Datos importados</strong> de formularios o Excel.",
+      "<strong>Preparación de slugs</strong> antes de convertirlos en URL."
+    ],
+    "ejemplos": [ "hola@mundo#123! → holamundo123" ],
+    "faqs": [
+      { "q": "¿Qué se considera carácter especial?", "a": "Todo lo que no sea letra o número: signos de puntuación, símbolos (#, @, $...), emojis y espacios (salvo que los conserves)." },
+      { "q": "¿Puedo conservar los espacios?", "a": "Sí, hay una opción para mantenerlos y que no se peguen las palabras." },
+      { "q": "¿Y los acentos?", "a": "Puedes conservarlos o eliminarlos con la opción correspondiente." },
+      { "q": "¿Se guarda mi texto?", "a": "No, todo se procesa en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/quitar-acentos/", "label": "Quitar acentos" },
+      { "url": "/herramientas/texto/generador-slugs/", "label": "Generador de Slugs" },
+      { "url": "/herramientas/desarrollo/limpiar-lista-urls/", "label": "Limpiar lista de URLs" }
+    ]
+  },
+  {
+    "slug": "buscar-reemplazar-texto",
+    "cat": "texto",
+    "keyword": "buscar y reemplazar texto online",
+    "h2_que": "Qué hace la herramienta de buscar y reemplazar",
+    "que": [
+      "Encuentra todas las apariciones de una palabra o frase y las sustituye por otra, mostrando además <strong>cuántas coincidencias</strong> ha hecho.",
+      "Incluye opciones de <strong>sensible a mayúsculas</strong> y de <strong>expresión regular</strong> para búsquedas avanzadas (patrones, números, correos...)."
+    ],
+    "h2_pasos": "Cómo buscar y reemplazar texto paso a paso",
+    "howtoName": "Cómo buscar y reemplazar texto online",
+    "howtoSteps": ["Pega el texto", "Define buscar y reemplazo", "Pulsa reemplazar"],
+    "pasos": [
+      "<strong>Pega el texto</strong> original.",
+      "<strong>Escribe qué buscar</strong> y por qué reemplazarlo. Activa «sensible a mayúsculas» o «regex» si lo necesitas.",
+      "<strong>Pulsa «Reemplazar»</strong> y revisa el número de sustituciones realizadas."
+    ],
+    "usos": [
+      "<strong>Renombrar términos</strong> en documentos largos de una pasada.",
+      "<strong>Corregir nombres propios</strong> escritos de varias formas.",
+      "<strong>Normalizar datos</strong> antes de exportar (guiones, comas, unidades).",
+      "<strong>Limpieza con regex:</strong> borrar números, correos o etiquetas concretas."
+    ],
+    "ejemplos": [ "manzana platano manzana · buscar: manzana → reemplazar: pera → pera platano pera" ],
+    "faqs": [
+      { "q": "¿Puedo usar expresiones regulares?", "a": "Sí, activa la opción «regex» y escribe el patrón (por ejemplo, \\d+ para números)." },
+      { "q": "¿Diferencia entre literal y regex?", "a": "El modo literal busca el texto exacto; regex interpreta caracteres especiales como patrones." },
+      { "q": "¿Cuántos reemplazos hace?", "a": "Todos los que encuentre, y te muestra el contador de coincidencias." },
+      { "q": "¿Se guarda mi texto?", "a": "No, el reemplazo es local en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/regex-tester/", "label": "Probador de regex" },
+      { "url": "/herramientas/texto/filtrar-lineas-texto/", "label": "Filtrar líneas" },
+      { "url": "/herramientas/texto/convertir-mayusculas-minusculas/", "label": "Convertir mayúsculas/minúsculas" }
+    ]
+  },
+  {
+    "slug": "generar-lorem-ipsum",
+    "cat": "texto",
+    "keyword": "generar lorem ipsum online",
+    "h2_que": "Qué es Lorem Ipsum y para qué sirve",
+    "que": [
+      "Lorem Ipsum es el <strong>texto de relleno</strong> estándar en diseño y maquetación: permite ver cómo queda una página o una app sin que el contenido distraiga.",
+      "Elige cuántos párrafos quieres y esta herramienta genera texto desde el clásico latino para tus prototipos, plantillas o demos."
+    ],
+    "h2_pasos": "Cómo generar Lorem Ipsum paso a paso",
+    "howtoName": "Cómo generar texto Lorem Ipsum",
+    "howtoSteps": ["Elige los párrafos", "Pulsa generar", "Copia el texto"],
+    "pasos": [
+      "<strong>Elige la cantidad de párrafos</strong> con el control (2 por defecto).",
+      "<strong>Pulsa «Generar»</strong>: obtendrás texto de relleno listo para maquetar.",
+      "<strong>Copia el resultado</strong> y pégalo en tu diseño."
+    ],
+    "usos": [
+      "<strong>Prototipos y maquetas</strong> de webs o apps.",
+      "<strong>Plantillas de diseño</strong> en Figma, Canva o WordPress.",
+      "<strong>Presentaciones</strong> donde el texto aún no está definido.",
+      "<strong>Pruebas de tipografía</strong> y de anchos de columna."
+    ],
+    "faqs": [
+      { "q": "¿Se puede elegir el idioma de relleno?", "a": "Generamos el clásico Lorem Ipsum latino, el estándar de la industria del diseño." },
+      { "q": "¿Puedo pedir más párrafos?", "a": "Sí, ajusta la cantidad con el control y vuelve a generar." },
+      { "q": "¿Sirve para SEO?", "a": "No: el lorem ipsum es solo para pruebas visuales. No lo publiques como contenido real." },
+      { "q": "¿Es gratis y privado?", "a": "Sí, gratis y generado en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/contar-palabras-caracteres/", "label": "Contar palabras y caracteres" },
+      { "url": "/herramientas/texto/convertir-mayusculas-minusculas/", "label": "Convertir mayúsculas/minúsculas" },
+      { "url": "/herramientas/texto/quitar-espacios-duplicados/", "label": "Quitar espacios duplicados" }
+    ]
+  },
+  {
+    "slug": "justificar-texto",
+    "cat": "texto",
+    "keyword": "justificar texto online",
+    "h2_que": "Qué hace la herramienta de justificar texto",
+    "que": [
+      "Alinea tu texto a <strong>ambos lados</strong> ajustando los espacios entre palabras para que cada línea termine a la misma altura, como en un periódico.",
+      "Configura el ancho de línea en caracteres y obtén un bloque de ancho uniforme, ideal para columnas, informes o maquetas de texto plano."
+    ],
+    "h2_pasos": "Cómo justificar un texto paso a paso",
+    "howtoName": "Cómo justificar texto online",
+    "howtoSteps": ["Ajusta el ancho", "Pega el texto", "Pulsa justificar"],
+    "pasos": [
+      "<strong>Define el ancho de línea</strong> en caracteres (por defecto 80).",
+      "<strong>Pega tu texto</strong> y pulsa «Justificar».",
+      "<strong>Copia el resultado</strong>: verás el bloque alineado con los espacios distribuidos."
+    ],
+    "usos": [
+      "<strong>Columnas de texto plano</strong> para correos o documentos TXT.",
+      "<strong>Informes y actas</strong> con aspecto uniforme.",
+      "<strong>Maquetas de periódico</strong> o boletines.",
+      "<strong>Firmas y bloques ASCII</strong> alineados."
+    ],
+    "faqs": [
+      { "q": "¿Por qué añade espacios raros?", "a": "La justificación distribuye el espacio sobrante entre palabras; es el comportamiento correcto para alinear a ambos lados." },
+      { "q": "¿Se puede elegir el ancho?", "a": "Sí, define el ancho en caracteres según tu diseño." },
+      { "q": "¿Se guarda mi texto?", "a": "No, el proceso es local." },
+      { "q": "¿Funciona con cualquier idioma?", "a": "Sí, trabaja con palabras separadas por espacios." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/anadir-saltos-de-linea/", "label": "Añadir saltos de línea" },
+      { "url": "/herramientas/texto/quitar-saltos-de-linea/", "label": "Quitar saltos de línea" },
+      { "url": "/herramientas/texto/contar-palabras-caracteres/", "label": "Contar palabras y caracteres" }
+    ]
+  },
+  {
+    "slug": "generador-slugs",
+    "cat": "texto",
+    "keyword": "generador de slugs online",
+    "h2_que": "Qué es un slug y por qué importa",
+    "que": [
+      "Un <strong>slug</strong> es la parte final y legible de una URL: en <code>tusitio.com/como-hacer-un-blog</code>, el slug es <code>como-hacer-un-blog</code>. Se construye con minúsculas y guiones, sin tildes ni símbolos.",
+      "Un buen slug mejora el <strong>SEO</strong> (describe el contenido), la <strong>legibilidad</strong> en los resultados de búsqueda y la posibilidad de compartir la URL sin caracteres raros."
+    ],
+    "h2_pasos": "Cómo generar un slug paso a paso",
+    "howtoName": "Cómo generar un slug de URL",
+    "howtoSteps": ["Pega el título", "Elige separador y opciones", "Copia el slug"],
+    "pasos": [
+      "<strong>Pega el título o frase</strong> del que quieres la URL.",
+      "<strong>Elige separador</strong> (guion o guion bajo), minúsculas y longitud máxima.",
+      "<strong>Copia el slug</strong> y úsalo como URL del artículo o página."
+    ],
+    "usos": [
+      "<strong>Blogs y artículos:</strong> URLs descriptivas con la keyword.",
+      "<strong>Tiendas online:</strong> rutas de productos limpias.",
+      "<strong>SEO técnico:</strong> evita caracteres problemáticos y duplicados.",
+      "<strong>Landing pages</strong> y campañas con nombres legibles."
+    ],
+    "ejemplos": [
+      "Cómo hacer un Blog en 10 Pasos (¡rápido!) → como-hacer-un-blog-en-10-pasos-rapido"
+    ],
+    "faqs": [
+      { "q": "¿Guion o guion bajo?", "a": "Google recomienda el guion (-). El guion bajo se une y se lee peor; resérvalo si tu sistema lo exige." },
+      { "q": "¿Longitud recomendada?", "a": "Corta y descriptiva: 3-6 palabras. Si necesitas limitarla, usa el control de longitud máxima." },
+      { "q": "¿Se eliminan las tildes?", "a": "Sí, se normalizan automáticamente (á → a, ñ → n)." },
+      { "q": "¿Se guarda mi texto?", "a": "No: el slug se genera en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/quitar-acentos/", "label": "Quitar acentos" },
+      { "url": "/herramientas/desarrollo/codificar-url/", "label": "Codificar URL" },
+      { "url": "/herramientas/desarrollo/limpiar-lista-urls/", "label": "Limpiar lista de URLs" }
+    ]
+  }
+]

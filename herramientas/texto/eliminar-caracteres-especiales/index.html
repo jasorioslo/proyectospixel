@@ -16,12 +16,15 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=24">
+  <link rel="stylesheet" href="/css/styles.css?v=25">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Eliminar Caracteres Especiales","description":"Limpia tu texto dejando solo letras y números, ideal para URLs.","url":"https://proyectospixel.com/herramientas/texto/eliminar-caracteres-especiales/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo quitar caracteres especiales de un texto","description":"Qué hace la herramienta de eliminar caracteres especiales","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto con símbolos o caracteres no deseados."},{"@type":"HowToStep","position":2,"name":"Elige opciones","text":"Elige si conservar acentos y espacios según tu caso."},{"@type":"HowToStep","position":3,"name":"Copia el resultado","text":"Pulsa el botón y copia el texto ya limpio."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué se considera carácter especial?","acceptedAnswer":{"@type":"Answer","text":"Todo lo que no sea letra o número: signos de puntuación, símbolos (#, @, $...), emojis y espacios (salvo que los conserves)."}},{"@type":"Question","name":"¿Puedo conservar los espacios?","acceptedAnswer":{"@type":"Answer","text":"Sí, hay una opción para mantenerlos y que no se peguen las palabras."}},{"@type":"Question","name":"¿Y los acentos?","acceptedAnswer":{"@type":"Answer","text":"Puedes conservarlos o eliminarlos con la opción correspondiente."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, todo se procesa en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -59,15 +62,46 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de eliminar caracteres especiales</h2>
+          <p>Limpia tu texto dejando únicamente <strong>letras y números</strong>, eliminando símbolos, signos y caracteres raros. Puedes conservar acentos y espacios si lo necesitas.</p>
+          <p>Ideal para generar identificadores seguros: nombres de archivo, claves de base de datos, etiquetas o slugs.</p>
+          <h2>Cómo eliminar caracteres especiales paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> con símbolos o caracteres no deseados.</li>
+            <li><strong>Elige si conservar</strong> acentos y espacios según tu caso.</li>
+            <li><strong>Pulsa el botón y copia</strong> el texto ya limpio.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Identificadores y claves</strong> sin símbolos problemáticos.</li>
+            <li><strong>Nombres de archivo</strong> compatibles con todos los sistemas.</li>
+            <li><strong>Datos importados</strong> de formularios o Excel.</li>
+            <li><strong>Preparación de slugs</strong> antes de convertirlos en URL.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>hola@mundo#123! → holamundo123</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué se considera carácter especial?</summary><p>Todo lo que no sea letra o número: signos de puntuación, símbolos (#, @, $...), emojis y espacios (salvo que los conserves).</p></details>
+            <details class="faq-item"><summary>¿Puedo conservar los espacios?</summary><p>Sí, hay una opción para mantenerlos y que no se peguen las palabras.</p></details>
+            <details class="faq-item"><summary>¿Y los acentos?</summary><p>Puedes conservarlos o eliminarlos con la opción correspondiente.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No, todo se procesa en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/quitar-acentos/">Quitar acentos</a>, <a href="/herramientas/texto/generador-slugs/">Generador de Slugs</a> o <a href="/herramientas/desarrollo/limpiar-lista-urls/">Limpiar lista de URLs</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools"><h2 class="section-title">Tools Relacionadas</h2><div id="related-tools" class="grid-tools grid-tools-all"></div></section>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=24"></script>
-  <script src="/js/tools-data.js?v=24"></script>
+  <script src="/js/components.js?v=25"></script>
+  <script src="/js/tools-data.js?v=25"></script>
   <script>ProyectosPixel.renderHeader();ProyectosPixel.renderFooter();</script>
-  <script src="/js/tools/eliminar-caracteres-especiales.js?v=24"></script>
+  <script src="/js/tools/eliminar-caracteres-especiales.js?v=25"></script>
 </body>
 </html>

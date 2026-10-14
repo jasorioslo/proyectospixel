@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=24">
+  <link rel="stylesheet" href="/css/styles.css?v=25">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Generador de Slugs","description":"Convierte cualquier título en un slug limpio para URLs: quita tildes, símbolos y espacios. Gratis y 100% privado en tu navegador.","url":"https://proyectospixel.com/herramientas/texto/generador-slugs/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo generar un slug de URL","description":"Qué es un slug y por qué importa","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el título","text":"Pega el título o frase del que quieres la URL."},{"@type":"HowToStep","position":2,"name":"Elige separador y opciones","text":"Elige separador (guion o guion bajo), minúsculas y longitud máxima."},{"@type":"HowToStep","position":3,"name":"Copia el slug","text":"Copia el slug y úsalo como URL del artículo o página."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Guion o guion bajo?","acceptedAnswer":{"@type":"Answer","text":"Google recomienda el guion (-). El guion bajo se une y se lee peor; resérvalo si tu sistema lo exige."}},{"@type":"Question","name":"¿Longitud recomendada?","acceptedAnswer":{"@type":"Answer","text":"Corta y descriptiva: 3-6 palabras. Si necesitas limitarla, usa el control de longitud máxima."}},{"@type":"Question","name":"¿Se eliminan las tildes?","acceptedAnswer":{"@type":"Answer","text":"Sí, se normalizan automáticamente (á → a, ñ → n)."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No: el slug se genera en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -77,6 +80,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es un slug y por qué importa</h2>
+          <p>Un <strong>slug</strong> es la parte final y legible de una URL: en <code>tusitio.com/como-hacer-un-blog</code>, el slug es <code>como-hacer-un-blog</code>. Se construye con minúsculas y guiones, sin tildes ni símbolos.</p>
+          <p>Un buen slug mejora el <strong>SEO</strong> (describe el contenido), la <strong>legibilidad</strong> en los resultados de búsqueda y la posibilidad de compartir la URL sin caracteres raros.</p>
+          <h2>Cómo generar un slug paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el título o frase</strong> del que quieres la URL.</li>
+            <li><strong>Elige separador</strong> (guion o guion bajo), minúsculas y longitud máxima.</li>
+            <li><strong>Copia el slug</strong> y úsalo como URL del artículo o página.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Blogs y artículos:</strong> URLs descriptivas con la keyword.</li>
+            <li><strong>Tiendas online:</strong> rutas de productos limpias.</li>
+            <li><strong>SEO técnico:</strong> evita caracteres problemáticos y duplicados.</li>
+            <li><strong>Landing pages</strong> y campañas con nombres legibles.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>Cómo hacer un Blog en 10 Pasos (¡rápido!) → como-hacer-un-blog-en-10-pasos-rapido</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Guion o guion bajo?</summary><p>Google recomienda el guion (-). El guion bajo se une y se lee peor; resérvalo si tu sistema lo exige.</p></details>
+            <details class="faq-item"><summary>¿Longitud recomendada?</summary><p>Corta y descriptiva: 3-6 palabras. Si necesitas limitarla, usa el control de longitud máxima.</p></details>
+            <details class="faq-item"><summary>¿Se eliminan las tildes?</summary><p>Sí, se normalizan automáticamente (á → a, ñ → n).</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No: el slug se genera en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/quitar-acentos/">Quitar acentos</a>, <a href="/herramientas/desarrollo/codificar-url/">Codificar URL</a> o <a href="/herramientas/desarrollo/limpiar-lista-urls/">Limpiar lista de URLs</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -86,12 +120,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=24"></script>
-  <script src="/js/tools-data.js?v=24"></script>
+  <script src="/js/components.js?v=25"></script>
+  <script src="/js/tools-data.js?v=25"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/generador-slugs.js?v=24"></script>
+  <script src="/js/tools/generador-slugs.js?v=25"></script>
 </body>
 </html>

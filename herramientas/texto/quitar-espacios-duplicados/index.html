@@ -16,12 +16,15 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=24">
+  <link rel="stylesheet" href="/css/styles.css?v=25">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Quitar Espacios Duplicados","description":"Limpia tu texto eliminando los espacios en blanco sobrantes.","url":"https://proyectospixel.com/herramientas/texto/quitar-espacios-duplicados/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo quitar espacios duplicados de un texto","description":"Qué hace el limpiador de espacios","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto con espacios de más."},{"@type":"HowToStep","position":2,"name":"Pulsa limpiar","text":"Pulsa «Limpiar espacios»: el resultado deja un solo espacio entre palabras."},{"@type":"HowToStep","position":3,"name":"Copia el resultado","text":"Copia el resultado y revisa si te interesa conservar saltos de línea (en ese caso, usa las herramientas específicas)."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No. La limpieza es 100% local en tu navegador."}},{"@type":"Question","name":"¿Elimina también los saltos de línea?","acceptedAnswer":{"@type":"Answer","text":"Sí, por diseño los colapsa a un espacio. Si quieres conservar las líneas, usa la herramienta «quitar líneas vacías» o «filtrar líneas»."}},{"@type":"Question","name":"¿Quita solo los espacios del principio y el final?","acceptedAnswer":{"@type":"Answer","text":"Además de eso, también reduce los grupos de espacios intermedios a uno solo."}},{"@type":"Question","name":"¿Es gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí, gratis y sin registro."}}]}]}
   </script>
 </head>
 <body>
@@ -55,15 +58,47 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el limpiador de espacios</h2>
+          <p>Elimina los espacios sobrantes: convierte cualquier secuencia de espacios, tabulaciones y saltos de línea en un <strong>único espacio</strong> y recorta los extremos del texto.</p>
+          <p>Ojo: al colapsar <em>todo</em> el espacio en blanco, también une las líneas. Si quieres conservar los saltos de línea, usa el limpiador de espacios línea a línea o el de líneas vacías.</p>
+          <h2>Cómo limpiar los espacios paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> con espacios de más.</li>
+            <li><strong>Pulsa «Limpiar espacios»</strong>: el resultado deja un solo espacio entre palabras.</li>
+            <li><strong>Copia el resultado</strong> y revisa si te interesa conservar saltos de línea (en ese caso, usa las herramientas específicas).</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Texto copiado de PDF o Word</strong> que llega con espacios dobles o triples.</li>
+            <li><strong>Redes sociales y mensajes</strong> donde los espacios extra desalinean todo.</li>
+            <li><strong>Datos para bases de datos</strong>: valores limpios evitan duplicados invisibles.</li>
+            <li><strong>Subtítulos y guiones</strong> que deben leerse de corrido.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>hola    mundo  → hola mundo</code></li>
+            <li><code>texto con    tabulador → texto con tabulador</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No. La limpieza es 100% local en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Elimina también los saltos de línea?</summary><p>Sí, por diseño los colapsa a un espacio. Si quieres conservar las líneas, usa la herramienta «quitar líneas vacías» o «filtrar líneas».</p></details>
+            <details class="faq-item"><summary>¿Quita solo los espacios del principio y el final?</summary><p>Además de eso, también reduce los grupos de espacios intermedios a uno solo.</p></details>
+            <details class="faq-item"><summary>¿Es gratis?</summary><p>Sí, gratis y sin registro.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/quitar-saltos-de-linea/">Quitar saltos de línea</a>, <a href="/herramientas/texto/eliminar-lineas-vacias/">Eliminar líneas vacías</a> o <a href="/herramientas/texto/buscar-reemplazar-texto/">Buscar y reemplazar</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools"><h2 class="section-title">Tools Relacionadas</h2><div id="related-tools" class="grid-tools grid-tools-all"></div></section>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=24"></script>
-  <script src="/js/tools-data.js?v=24"></script>
+  <script src="/js/components.js?v=25"></script>
+  <script src="/js/tools-data.js?v=25"></script>
   <script>ProyectosPixel.renderHeader();ProyectosPixel.renderFooter();</script>
-  <script src="/js/tools/quitar-espacios-duplicados.js?v=24"></script>
+  <script src="/js/tools/quitar-espacios-duplicados.js?v=25"></script>
 </body>
 </html>

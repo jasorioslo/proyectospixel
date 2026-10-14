@@ -16,12 +16,15 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=24">
+  <link rel="stylesheet" href="/css/styles.css?v=25">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Frecuencia de Palabras","description":"Analiza tu texto y muestra cuántas veces se repite cada palabra.","url":"https://proyectospixel.com/herramientas/texto/frecuencia-palabras/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo analizar la frecuencia de palabras en un texto","description":"Qué hace el analizador de frecuencia de palabras","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto a analizar."},{"@type":"HowToStep","position":2,"name":"Pulsa analizar","text":"Pulsa «Analizar»: verás una tabla con cada palabra y sus apariciones."},{"@type":"HowToStep","position":3,"name":"Revisa la tabla","text":"Ordena tu criterio: las primeras filas son las más repetidas; detecta muletillas y repeticiones."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Distingue mayúsculas?","acceptedAnswer":{"@type":"Answer","text":"No: se compara en minúsculas, así «Sol» y «sol» cuentan juntas."}},{"@type":"Question","name":"¿Ignora puntos y signos?","acceptedAnswer":{"@type":"Answer","text":"Sí, se limpian los signos antes de contar."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, el análisis es local."}},{"@type":"Question","name":"¿Sirve para SEO?","acceptedAnswer":{"@type":"Answer","text":"Sí, como referencia de repetición. No fuerces la densidad: escribe natural."}}]}]}
   </script>
 </head>
 <body>
@@ -55,15 +58,46 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el analizador de frecuencia de palabras</h2>
+          <p>Cuenta <strong>cuántas veces se repite cada palabra</strong> en tu texto y ordena el resultado de mayor a menor, con su porcentaje relativo.</p>
+          <p>Una forma rapidísima de detectar repeticiones, evaluar densidad (útil para SEO) o revisar si un texto abusa de una palabra.</p>
+          <h2>Cómo analizar la frecuencia paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> a analizar.</li>
+            <li><strong>Pulsa «Analizar»</strong>: verás una tabla con cada palabra y sus apariciones.</li>
+            <li><strong>Ordena tu criterio:</strong> las primeras filas son las más repetidas; detecta muletillas y repeticiones.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>SEO:</strong> comprueba la frecuencia natural de la keyword (sin forzar densidad).</li>
+            <li><strong>Redacción:</strong> detecta muletillas o palabras que abusas.</li>
+            <li><strong>Traducción:</strong> verifica terminología consistente.</li>
+            <li><strong>Investigación:</strong> análisis rápido de palabras clave en artículos o apuntes.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>sol luna sol estrella sol → sol: 3 · luna: 1 · estrella: 1</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Distingue mayúsculas?</summary><p>No: se compara en minúsculas, así «Sol» y «sol» cuentan juntas.</p></details>
+            <details class="faq-item"><summary>¿Ignora puntos y signos?</summary><p>Sí, se limpian los signos antes de contar.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No, el análisis es local.</p></details>
+            <details class="faq-item"><summary>¿Sirve para SEO?</summary><p>Sí, como referencia de repetición. No fuerces la densidad: escribe natural.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/contar-palabras-caracteres/">Contar palabras y caracteres</a>, <a href="/herramientas/texto/buscar-reemplazar-texto/">Buscar y reemplazar</a> o <a href="/herramientas/texto/separar-keywords-genero/">Separar keywords por género</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools"><h2 class="section-title">Tools Relacionadas</h2><div id="related-tools" class="grid-tools grid-tools-all"></div></section>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=24"></script>
-  <script src="/js/tools-data.js?v=24"></script>
+  <script src="/js/components.js?v=25"></script>
+  <script src="/js/tools-data.js?v=25"></script>
   <script>ProyectosPixel.renderHeader();ProyectosPixel.renderFooter();</script>
-  <script src="/js/tools/frecuencia-palabras.js?v=24"></script>
+  <script src="/js/tools/frecuencia-palabras.js?v=25"></script>
 </body>
 </html>
