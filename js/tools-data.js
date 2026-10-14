@@ -48,7 +48,11 @@
     { slug: 'redimensionar-imagen', title: 'Redimensionar Imagen', desc: 'Cambia el tamaño en píxeles o porcentaje manteniendo la proporción.', category: 'imagen', featured: false },
     { slug: 'marca-de-agua', title: 'Añadir Marca de Agua', desc: 'Estampa tu texto o copyright sobre la imagen con control total.', category: 'imagen', featured: false },
     { slug: 'limpiar-exif', title: 'Eliminar Metadatos EXIF', desc: 'Borra GPS, cámara y fecha de tus fotos antes de compartirlas.', category: 'imagen', featured: false },
-    { slug: 'recortar-imagen', title: 'Recortar Imagen', desc: 'Recorta la zona que quieras conservar sin subir tu imagen.', category: 'imagen', featured: false }
+    { slug: 'recortar-imagen', title: 'Recortar Imagen', desc: 'Recorta la zona que quieras conservar sin subir tu imagen.', category: 'imagen', featured: false },
+    { slug: 'formatear-json', title: 'Formatear y Validar JSON', desc: 'Embellece, valida y ordena tu JSON con detección de errores.', category: 'desarrollo', featured: false },
+    { slug: 'minificar-codigo', title: 'Minificar HTML, CSS y JS', desc: 'Reduce el tamaño de tu código quitando comentarios y espacios.', category: 'desarrollo', featured: false },
+    { slug: 'regex-tester', title: 'Probador de Expresiones Regulares', desc: 'Prueba tus regex con coincidencias resaltadas y grupos capturados.', category: 'desarrollo', featured: false },
+    { slug: 'comparar-textos', title: 'Comparar Dos Textos (Diff)', desc: 'Ve las diferencias línea por línea entre dos textos o versiones.', category: 'desarrollo', featured: false }
   ];
 
   /* --- Icon SVGs (Lucide-style inline) --- */
@@ -93,7 +97,11 @@
     'redimensionar-imagen': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>',
     'marca-de-agua': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>',
     'limpiar-exif': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20H7L3 16l8-8 9 9-3 3z"/><path d="M6.0001 17.9999l3-3"/><line x1="18" y1="2" x2="22" y2="6"/><line x1="22" y1="2" x2="18" y2="6"/></svg>',
-    'recortar-imagen': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></svg>'
+    'recortar-imagen': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></svg>',
+    'formatear-json': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1"/><path d="M16 3h1a2 2 0 0 1 2 2v5a2 2 0 0 0 2 2 2 2 0 0 0-2 2v5a2 2 0 0 1-2 2h-1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="8" r="1"/><circle cx="12" cy="16" r="1"/></svg>',
+    'minificar-codigo': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="10" y1="12" x2="14" y2="12"/></svg>',
+    'regex-tester': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="10" y1="7" x2="10" y2="13"/><line x1="7" y1="10" x2="13" y2="10"/></svg>',
+    'comparar-textos': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M15 21h4a2 2 0 0 0 2-2v-4"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="12" y1="3" x2="12" y2="21"/></svg>'
   };
 
   /* --- Render Card (cards iguales en home y relacionadas) --- */

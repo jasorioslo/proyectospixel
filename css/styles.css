@@ -787,6 +787,76 @@ pre.justified {
   font-weight: 600;
 }
 
+/* --- Tools de Desarrollo: regex tester + diff --- */
+.regex-highlight mark {
+  background: var(--secondary);
+  color: #0A0A0A;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+.regex-groups {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.regex-groups table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.regex-groups th,
+.regex-groups td {
+  text-align: left;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+  font-family: 'GeistPixelSquare', 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12.5px;
+}
+
+.diff-view {
+  max-height: 460px;
+  overflow: auto;
+  font-family: 'GeistPixelSquare', 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+}
+
+.diff-line {
+  padding: 1px 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.diff-add {
+  background: rgba(34, 197, 94, 0.14);
+  border-left: 3px solid var(--success, #22C55E);
+}
+
+.diff-del {
+  background: rgba(239, 68, 68, 0.12);
+  border-left: 3px solid var(--error, #EF4444);
+}
+
+.diff-same {
+  border-left: 3px solid transparent;
+}
+
+.diff-stats {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-family: 'GeistPixelSquare', 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.diff-stats .add { color: var(--success, #22C55E); font-weight: 600; }
+.diff-stats .del { color: var(--error, #EF4444); font-weight: 600; }
+
 /* --- Tool Input Label --- */
 .tool-input-label {
   display: block;

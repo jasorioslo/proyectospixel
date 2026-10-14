@@ -1,8 +1,8 @@
-﻿/* =========================================================
+/* =========================================================
    ProyectosPixel Tools - Service Worker (PWA)
    ========================================================= */
 
-var CACHE_NAME = 'pp-v12';
+var CACHE_NAME = 'pp-v13';
 var ASSETS = [
   '/',
   '/index.html',
@@ -15,6 +15,10 @@ var ASSETS = [
   '/herramientas/desarrollo/',
   '/herramientas/matematicas/',
   '/herramientas/imagen/',
+  '/herramientas/desarrollo/formatear-json/',
+  '/herramientas/desarrollo/minificar-codigo/',
+  '/herramientas/desarrollo/regex-tester/',
+  '/herramientas/desarrollo/comparar-textos/',
   '/herramientas/imagen/comprimir-imagen/',
   '/herramientas/imagen/convertir-imagen/',
   '/herramientas/imagen/redimensionar-imagen/',
@@ -108,7 +112,11 @@ var ASSETS = [
   '/js/tools/redimensionar-imagen.js',
   '/js/tools/marca-de-agua.js',
   '/js/tools/limpiar-exif.js',
-  '/js/tools/recortar-imagen.js'
+  '/js/tools/recortar-imagen.js',
+  '/js/tools/formatear-json.js',
+  '/js/tools/minificar-codigo.js',
+  '/js/tools/regex-tester.js',
+  '/js/tools/comparar-textos.js'
 ];
 
 // Install: cache static assets
