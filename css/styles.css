@@ -857,6 +857,49 @@ pre.justified {
 .diff-stats .add { color: var(--success, #22C55E); font-weight: 600; }
 .diff-stats .del { color: var(--error, #EF4444); font-weight: 600; }
 
+/* --- Preview de Markdown --- */
+.md-preview {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+.md-preview h1, .md-preview h2, .md-preview h3 { margin: 16px 0 8px; }
+.md-preview h1 { font-size: 24px; }
+.md-preview h2 { font-size: 20px; }
+.md-preview h3 { font-size: 17px; }
+.md-preview p { margin: 8px 0; }
+.md-preview ul, .md-preview ol { margin: 8px 0 8px 22px; }
+.md-preview code {
+  font-family: 'GeistPixelSquare', 'Geist Mono', ui-monospace, monospace;
+  font-size: 13px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+}
+.md-preview pre {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 12px;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+.md-preview pre code { border: 0; background: transparent; padding: 0; }
+.md-preview blockquote {
+  border-left: 3px solid var(--primary);
+  padding-left: 12px;
+  color: var(--text-secondary);
+  margin: 10px 0;
+}
+.md-preview a { color: var(--text-primary); text-decoration: underline; }
+.md-preview img { max-width: 100%; }
+.md-preview hr { border: 0; border-top: 1px solid var(--border); margin: 16px 0; }
+
 /* --- Tool Input Label --- */
 .tool-input-label {
   display: block;

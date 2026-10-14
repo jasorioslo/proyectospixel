@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertir JSON a CSV y CSV a JSON Online | ProyectosPixel</title>
+  <meta name="description" content="Convierte JSON a CSV o CSV a JSON online al instante, con delimitador configurable y cabeceras. Gratis y 100% privado en tu navegador.">
+  <link rel="canonical" href="https://proyectospixel.com/herramientas/conversion/json-a-csv/">
+  <meta property="og:title" content="Convertir JSON a CSV y CSV a JSON Online | ProyectosPixel">
+  <meta property="og:description" content="Convierte JSON a CSV o CSV a JSON online al instante, con delimitador configurable y cabeceras. Gratis y 100% privado en tu navegador.">
+  <meta property="og:url" content="https://proyectospixel.com/herramientas/conversion/json-a-csv/">
+  <meta property="og:image" content="https://proyectospixel.com/assets/img/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css?v=15">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Convertir JSON a CSV (y viceversa)","description":"Convierte JSON a CSV o CSV a JSON online al instante, con delimitador configurable y cabeceras. Gratis y 100% privado en tu navegador.","url":"https://proyectospixel.com/herramientas/conversion/json-a-csv/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div id="header"></div>
+    <main>
+      <div class="container tool-container">
+        <nav class="breadcrumb">
+          <a href="/">Inicio</a>
+          <span class="sep">/</span>
+          <a href="/herramientas/conversion/">Conversión</a>
+          <span class="sep">/</span>
+          <span>Convertir JSON a CSV (y viceversa)</span>
+        </nav>
+        <h1 class="tool-h1">Convertir JSON a CSV (y viceversa)</h1>
+        <p class="tool-description">Pasa de JSON a CSV o de CSV a JSON con control de delimitador y cabeceras. Todo local.</p>
+        <div id="ad-banner-mid" class="ad-container ad-mid" style="margin-bottom:32px"></div>
+        <div class="tool-workzone">
+          <div class="tool-section">
+            <label for="tool-input" class="tool-input-label">Tu JSON o CSV</label>
+            <textarea id="tool-input" class="input-text" placeholder='[{"nombre":"Ana","edad":30},{"nombre":"Luis","edad":28}]'></textarea>
+            <div id="tool-error" class="error-msg"></div>
+          </div>
+          <div class="tool-section">
+            <div class="tool-controls">
+              <div>
+                <label for="ctl-direction">Dirección</label>
+                <select id="ctl-direction">
+                  <option value="json2csv" selected>JSON → CSV</option>
+                  <option value="csv2json">CSV → JSON</option>
+                </select>
+              </div>
+              <div>
+                <label for="ctl-delim">Delimitador CSV</label>
+                <select id="ctl-delim">
+                  <option value="," selected>Coma (,)</option>
+                  <option value=";">Punto y coma (;)</option>
+                  <option value="tab">Tabulación</option>
+                </select>
+              </div>
+              <label><input type="checkbox" id="ctl-header" checked> Incluir cabecera</label>
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button id="btn-process" class="btn-primary">Convertir</button>
+          </div>
+          <div class="tool-section">
+            <label class="tool-input-label">Resultado</label>
+            <div id="tool-result" class="result-area"></div>
+            <div class="result-actions">
+              <button id="btn-copy" class="btn-secondary copy-feedback" disabled>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="0"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                Copiar resultado
+              </button>
+              <button id="btn-download" class="btn-secondary" style="display:none">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Descargar
+              </button>
+              <button id="btn-clear" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                Limpiar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
+        <section class="related-tools">
+          <h2 class="section-title">Tools Relacionadas</h2>
+          <div id="related-tools" class="grid-tools grid-tools-all"></div>
+        </section>
+      </div>
+    </main>
+    <div id="footer"></div>
+  </div>
+  <script src="/js/components.js?v=15"></script>
+  <script src="/js/tools-data.js?v=15"></script>
+  <script>
+    ProyectosPixel.renderHeader();
+    ProyectosPixel.renderFooter();
+  </script>
+  <script src="/js/tools/json-a-csv.js?v=15"></script>
+</body>
+</html>

@@ -58,7 +58,10 @@
     { slug: 'generador-uuid', title: 'Generador de UUID', desc: 'Crea identificadores únicos UUID v4 con el generador seguro del navegador.', category: 'seguridad', featured: false },
     { slug: 'verificador-contrasenas', title: 'Verificador de Contraseñas', desc: 'Analiza la fortaleza y el tiempo de descifrado sin enviarla a ningún sitio.', category: 'seguridad', featured: false },
     { slug: 'generador-hashes', title: 'Generador de Hashes', desc: 'Calcula hash SHA-1, SHA-256, SHA-384, SHA-512 y MD5 en tu navegador.', category: 'seguridad', featured: false },
-    { slug: 'limites-redes', title: 'Límites de Redes Sociales', desc: 'Comprueba si tu texto cabe en X, Instagram, TikTok, WhatsApp, SMS y SEO.', category: 'texto', featured: false }
+    { slug: 'limites-redes', title: 'Límites de Redes Sociales', desc: 'Comprueba si tu texto cabe en X, Instagram, TikTok, WhatsApp, SMS y SEO.', category: 'texto', featured: false },
+    { slug: 'json-a-csv', title: 'Convertir JSON a CSV', desc: 'Pasa de JSON a CSV o de CSV a JSON con delimitador y cabeceras configurables.', category: 'conversion', featured: false },
+    { slug: 'markdown-a-html', title: 'Convertir Markdown a HTML', desc: 'Transforma Markdown en HTML limpio con vista previa renderizada.', category: 'conversion', featured: false },
+    { slug: 'imagen-a-pdf', title: 'Convertir Imágenes a PDF', desc: 'Une varias imágenes en un único PDF sin subirlas a ningún servidor.', category: 'conversion', featured: false }
   ];
 
   /* --- Icon SVGs (Lucide-style inline) --- */
@@ -113,7 +116,10 @@
     'generador-uuid': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="0"/><path d="M8 8h2v8H8z"/><path d="M14 8h2v4h-2z"/><path d="M14 14h2v2h-2z"/></svg>',
     'verificador-contrasenas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>',
     'generador-hashes': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>',
-    'limites-redes': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H7l-3 3z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="12" x2="13" y2="12"/></svg>'
+    'limites-redes': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H7l-3 3z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="12" x2="13" y2="12"/></svg>',
+    'json-a-csv': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="0"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="12" y1="3" x2="12" y2="21"/></svg>',
+    'markdown-a-html': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="1"/><path d="M6 15V9l3 4 3-4v6"/><path d="M16 9v6"/><path d="m14 13 2 2 2-2"/></svg>',
+    'imagen-a-pdf': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><circle cx="9" cy="13" r="1.5"/><path d="m19 19-4-4-2 2"/></svg>'
   };
 
   /* --- Render Card (cards iguales en home y relacionadas) --- */

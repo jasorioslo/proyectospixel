@@ -2,7 +2,7 @@
    ProyectosPixel Tools - Service Worker (PWA)
    ========================================================= */
 
-var CACHE_NAME = 'pp-v14';
+var CACHE_NAME = 'pp-v15';
 var ASSETS = [
   '/',
   '/index.html',
@@ -25,6 +25,9 @@ var ASSETS = [
   '/herramientas/seguridad/verificador-contrasenas/',
   '/herramientas/seguridad/generador-hashes/',
   '/herramientas/texto/limites-redes/',
+  '/herramientas/conversion/json-a-csv/',
+  '/herramientas/conversion/markdown-a-html/',
+  '/herramientas/conversion/imagen-a-pdf/',
   '/herramientas/imagen/comprimir-imagen/',
   '/herramientas/imagen/convertir-imagen/',
   '/herramientas/imagen/redimensionar-imagen/',
@@ -128,7 +131,10 @@ var ASSETS = [
   '/js/tools/generador-uuid.js',
   '/js/tools/verificador-contrasenas.js',
   '/js/tools/generador-hashes.js',
-  '/js/tools/limites-redes.js'
+  '/js/tools/limites-redes.js',
+  '/js/tools/json-a-csv.js',
+  '/js/tools/markdown-a-html.js',
+  '/js/tools/imagen-a-pdf.js'
 ];
 
 // Install: cache static assets
