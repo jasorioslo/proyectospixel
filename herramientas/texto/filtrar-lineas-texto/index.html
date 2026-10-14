@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Filtrar Líneas de Texto","description":"Conserva o elimina las líneas que contengan una palabra o frase específica.","url":"https://proyectospixel.com/herramientas/texto/filtrar-lineas-texto/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo filtrar líneas de texto por palabra","description":"Qué hace el filtro de líneas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega la lista","text":"Pega la lista, una línea por elemento."},{"@type":"HowToStep","position":2,"name":"Escribe la palabra","text":"Escribe la palabra o frase y elige el modo: conservar las que la contienen o eliminar las que la contienen."},{"@type":"HowToStep","position":3,"name":"Pulsa filtrar","text":"Pulsa «Filtrar» y copia el resultado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Puedo filtrar por varias palabras?","acceptedAnswer":{"@type":"Answer","text":"Una condición por pasada; encadena filtros repitiendo el proceso."}},{"@type":"Question","name":"¿Distingue mayúsculas?","acceptedAnswer":{"@type":"Answer","text":"Tiene opción: por defecto no las distingue."}},{"@type":"Question","name":"¿Se guarda mi lista?","acceptedAnswer":{"@type":"Answer","text":"No, se filtra en tu navegador."}},{"@type":"Question","name":"¿Qué pasa si nada coincide?","acceptedAnswer":{"@type":"Answer","text":"La herramienta te avisa de que ninguna línea cumple el filtro."}}]}]}
   </script>
 </head>
 <body>
@@ -73,6 +76,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el filtro de líneas</h2>
+          <p>Conserva solo las líneas que <strong>contienen</strong> (o que <strong>no contienen</strong>) una palabra o frase, según el modo que elijas.</p>
+          <p>Es el filtro perfecto para listas grandes: quédate con las filas que mencionan «gmail», descarta las que contienen «test», etc.</p>
+          <h2>Cómo filtrar líneas paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega la lista</strong>, una línea por elemento.</li>
+            <li><strong>Escribe la palabra o frase</strong> y elige el modo: conservar las que la contienen o eliminar las que la contienen.</li>
+            <li><strong>Pulsa «Filtrar»</strong> y copia el resultado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Depurar listas de correos:</strong> quédate solo con las direcciones de un dominio.</li>
+            <li><strong>Logs y registros:</strong> extrae las líneas con «ERROR».</li>
+            <li><strong>Keywords:</strong> separa las que mencionan «gratis».</li>
+            <li><strong>Inventarios:</strong> descarta referencias de una familia concreta.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>usuario1@gmail.com\nusuario2@hotmail.com · filtro «gmail» (conservar) → usuario1@gmail.com</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Puedo filtrar por varias palabras?</summary><p>Una condición por pasada; encadena filtros repitiendo el proceso.</p></details>
+            <details class="faq-item"><summary>¿Distingue mayúsculas?</summary><p>Tiene opción: por defecto no las distingue.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi lista?</summary><p>No, se filtra en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Qué pasa si nada coincide?</summary><p>La herramienta te avisa de que ninguna línea cumple el filtro.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/buscar-reemplazar-texto/">Buscar y reemplazar</a>, <a href="/herramientas/texto/eliminar-lineas-duplicadas/">Quitar líneas duplicadas</a> o <a href="/herramientas/matematicas/extraer-columnas-texto/">Extraer columnas</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -82,12 +116,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/filtrar-lineas-texto.js?v=25"></script>
+  <script src="/js/tools/filtrar-lineas-texto.js?v=26"></script>
 </body>
 </html>

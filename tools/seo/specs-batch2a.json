@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "eliminar-lineas-duplicadas",
+    "cat": "texto",
+    "keyword": "eliminar líneas duplicadas online",
+    "h2_que": "Qué hace la herramienta de quitar líneas duplicadas",
+    "que": [
+      "Elimina las líneas repetidas de una lista, conservando solo la <strong>primera aparición</strong> de cada valor. Incluye opciones para recortar espacios y para no distinguir mayúsculas de minúsculas.",
+      "Perfecta para limpiar listas de correos, dominios, SKUs o etiquetas donde los duplicados generan errores costosos."
+    ],
+    "h2_pasos": "Cómo eliminar líneas duplicadas paso a paso",
+    "howtoName": "Cómo quitar líneas duplicadas de una lista",
+    "howtoSteps": ["Pega la lista", "Ajusta las opciones", "Pulsa quitar duplicadas"],
+    "pasos": [
+      "<strong>Pega la lista</strong>, una entrada por línea.",
+      "<strong>Elige opciones:</strong> quitar espacios al inicio/final y no distinguir mayúsculas (útil para correos o dominios).",
+      "<strong>Pulsa «Quitar duplicadas»</strong> y copia el resultado ya limpio."
+    ],
+    "usos": [
+      "<strong>Listas de correos o dominios:</strong> evita enviar dos veces al mismo destinatario.",
+      "<strong>Inventario y SKUs:</strong> detecta referencias repetidas.",
+      "<strong>Etiquetas y keywords:</strong> unifica repetidos con distintas mayúsculas.",
+      "<strong>Datos exportados:</strong> deja una fila por valor único."
+    ],
+    "ejemplos": [ "manzana\\npera\\nmanzana → manzana\\npera" ],
+    "faqs": [
+      { "q": "¿Qué aparición conserva?", "a": "La primera que aparece; el resto se elimina." },
+      { "q": "¿Diferencia mayúsculas?", "a": "Por defecto sí; puedes activar la opción para que «Pera» y «pera» cuenten como el mismo valor." },
+      { "q": "¿Se guarda mi lista?", "a": "No: todo el proceso es local en tu navegador." },
+      { "q": "¿Mantiene el orden original?", "a": "Sí, conserva el orden de la primera aparición de cada valor." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/eliminar-lineas-vacias/", "label": "Eliminar líneas vacías" },
+      { "url": "/herramientas/texto/filtrar-lineas-texto/", "label": "Filtrar líneas" },
+      { "url": "/herramientas/desarrollo/limpiar-lista-urls/", "label": "Limpiar lista de URLs" }
+    ]
+  },
+  {
+    "slug": "eliminar-lineas-vacias",
+    "cat": "texto",
+    "keyword": "eliminar líneas vacías online",
+    "h2_que": "Qué hace la herramienta de eliminar líneas vacías",
+    "que": [
+      "Quita las líneas en blanco (incluidas las que solo tienen espacios) para dejar un texto compacto, sin huecos.",
+      "Muy útil cuando pegas desde PDF o Word y aparecen líneas fantasma entre párrafos o al final del texto."
+    ],
+    "h2_pasos": "Cómo eliminar líneas vacías paso a paso",
+    "howtoName": "Cómo quitar líneas vacías de un texto",
+    "howtoSteps": ["Pega el texto", "Pulsa eliminar", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> con líneas en blanco.",
+      "<strong>Pulsa «Eliminar líneas vacías»</strong>: cada línea con contenido se conserva.",
+      "<strong>Copia el resultado</strong> ya sin huecos."
+    ],
+    "usos": [
+      "<strong>Limpiar copias de PDF o Word</strong> con líneas fantasma.",
+      "<strong>Listas:</strong> elimina espacios entre elementos para reutilizarlas.",
+      "<strong>CSV y datos:</strong> evita filas vacías que rompen importaciones.",
+      "<strong>Código y configuraciones:</strong> compacta bloques separados por dobles saltos."
+    ],
+    "faqs": [
+      { "q": "¿Cuenta como vacía una línea con espacios?", "a": "Sí: las líneas de solo espacios también se eliminan." },
+      { "q": "¿Conserva los párrafos?", "a": "Conserva una línea por cada párrafo; si quieres un solo párrafo usa «quitar saltos de línea»." },
+      { "q": "¿Se guarda mi texto?", "a": "No, es 100% local." },
+      { "q": "¿Es gratis?", "a": "Sí, gratis y sin registro." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/quitar-espacios-duplicados/", "label": "Quitar espacios duplicados" },
+      { "url": "/herramientas/texto/eliminar-lineas-duplicadas/", "label": "Quitar líneas duplicadas" },
+      { "url": "/herramientas/texto/quitar-saltos-de-linea/", "label": "Quitar saltos de línea" }
+    ]
+  },
+  {
+    "slug": "filtrar-lineas-texto",
+    "cat": "texto",
+    "keyword": "filtrar líneas de texto online",
+    "h2_que": "Qué hace el filtro de líneas",
+    "que": [
+      "Conserva solo las líneas que <strong>contienen</strong> (o que <strong>no contienen</strong>) una palabra o frase, según el modo que elijas.",
+      "Es el filtro perfecto para listas grandes: quédate con las filas que mencionan «gmail», descarta las que contienen «test», etc."
+    ],
+    "h2_pasos": "Cómo filtrar líneas paso a paso",
+    "howtoName": "Cómo filtrar líneas de texto por palabra",
+    "howtoSteps": ["Pega la lista", "Escribe la palabra", "Pulsa filtrar"],
+    "pasos": [
+      "<strong>Pega la lista</strong>, una línea por elemento.",
+      "<strong>Escribe la palabra o frase</strong> y elige el modo: conservar las que la contienen o eliminar las que la contienen.",
+      "<strong>Pulsa «Filtrar»</strong> y copia el resultado."
+    ],
+    "usos": [
+      "<strong>Depurar listas de correos:</strong> quédate solo con las direcciones de un dominio.",
+      "<strong>Logs y registros:</strong> extrae las líneas con «ERROR».",
+      "<strong>Keywords:</strong> separa las que mencionan «gratis».",
+      "<strong>Inventarios:</strong> descarta referencias de una familia concreta."
+    ],
+    "ejemplos": [ "usuario1@gmail.com\\nusuario2@hotmail.com · filtro «gmail» (conservar) → usuario1@gmail.com" ],
+    "faqs": [
+      { "q": "¿Puedo filtrar por varias palabras?", "a": "Una condición por pasada; encadena filtros repitiendo el proceso." },
+      { "q": "¿Distingue mayúsculas?", "a": "Tiene opción: por defecto no las distingue." },
+      { "q": "¿Se guarda mi lista?", "a": "No, se filtra en tu navegador." },
+      { "q": "¿Qué pasa si nada coincide?", "a": "La herramienta te avisa de que ninguna línea cumple el filtro." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar" },
+      { "url": "/herramientas/texto/eliminar-lineas-duplicadas/", "label": "Quitar líneas duplicadas" },
+      { "url": "/herramientas/matematicas/extraer-columnas-texto/", "label": "Extraer columnas" }
+    ]
+  },
+  {
+    "slug": "numerar-lineas-texto",
+    "cat": "texto",
+    "keyword": "numerar líneas de texto online",
+    "h2_que": "Qué hace la herramienta de numerar líneas",
+    "que": [
+      "Añade un número al principio de cada línea de tu texto, con <strong>cinco formatos</strong> de separador (1. / 1) / - 1 / [1] / 1:) y la opción de no numerar las líneas vacías.",
+      "Esencial para listados, inventarios, actas o cualquier lista que necesite referencia por número."
+    ],
+    "h2_pasos": "Cómo numerar líneas paso a paso",
+    "howtoName": "Cómo numerar líneas de un texto",
+    "howtoSteps": ["Pega el texto", "Elige separador e inicio", "Pulsa numerar"],
+    "pasos": [
+      "<strong>Pega tu texto</strong>, una línea por elemento.",
+      "<strong>Ajusta:</strong> número inicial, formato del separador y si las líneas vacías se numeran o se dejan tal cual.",
+      "<strong>Pulsa «Numerar líneas»</strong> y copia el resultado."
+    ],
+    "usos": [
+      "<strong>Inventarios y checklists</strong> referenciables por número.",
+      "<strong>Actas y documentos</strong> donde cada punto debe numerarse.",
+      "<strong>Listas de tareas</strong> para seguimiento.",
+      "<strong>Textos legales o bases</strong> que se citan por renglón."
+    ],
+    "ejemplos": [ "uno\\ndos → 1. uno\\n2. dos" ],
+    "faqs": [
+      { "q": "¿Puedo empezar en otro número?", "a": "Sí, define el número inicial (por defecto 1)." },
+      { "q": "¿Numera las líneas vacías?", "a": "Por defecto no: se conservan sin número para no romper el formato." },
+      { "q": "¿Qué formatos hay?", "a": "1., 1), - 1, [1] y 1:." },
+      { "q": "¿Se guarda mi texto?", "a": "No, todo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/generar-lista-numeros/", "label": "Generar lista de números" },
+      { "url": "/herramientas/texto/anadir-prefijo-sufijo-lineas/", "label": "Añadir prefijo y sufijo" },
+      { "url": "/herramientas/texto/eliminar-lineas-vacias/", "label": "Eliminar líneas vacías" }
+    ]
+  },
+  {
+    "slug": "anadir-prefijo-sufijo-lineas",
+    "cat": "texto",
+    "keyword": "añadir prefijo y sufijo a cada línea",
+    "h2_que": "Qué hace la herramienta de prefijo y sufijo",
+    "que": [
+      "Inserta un <strong>prefijo</strong> al inicio y/o un <strong>sufijo</strong> al final de cada línea, de una sola pasada.",
+      "La forma más rápida de preparar listas para SQL, CSV, JSON o código: añade comillas, comas, guiones o cualquier envoltorio a miles de líneas."
+    ],
+    "h2_pasos": "Cómo añadir prefijo y sufijo paso a paso",
+    "howtoName": "Cómo añadir prefijo y sufijo a cada línea",
+    "howtoSteps": ["Pega la lista", "Define prefijo/sufijo", "Pulsa añadir"],
+    "pasos": [
+      "<strong>Pega la lista</strong>, una entrada por línea.",
+      "<strong>Escribe el prefijo y el sufijo</strong> (por ejemplo <code>'</code> y <code>',</code> para SQL).",
+      "<strong>Pulsa «Añadir»</strong> y copia el resultado."
+    ],
+    "usos": [
+      "<strong>SQL:</strong> envuelve valores en comillas para un <code>IN (...)</code>.",
+      "<strong>CSV:</strong> añade comas al final de cada línea.",
+      "<strong>Markdown/HTML:</strong> convierte una lista de textos en elementos con prefijo fijo.",
+      "<strong>Plantillas:</strong> genera líneas repetitivas para correos o documentos."
+    ],
+    "ejemplos": [ "uno\\ndos · prefijo '-' · sufijo ',' → -uno,\\n-dos," ],
+    "faqs": [
+      { "q": "¿Puedo usar solo prefijo o solo sufijo?", "a": "Sí: si dejas uno vacío, solo se aplica el otro." },
+      { "q": "¿Afecta a las líneas vacías?", "a": "Por defecto se dejan intactas, salvo que actives la opción de recortar." },
+      { "q": "¿Se guarda mi lista?", "a": "No, todo se procesa en tu navegador." },
+      { "q": "¿Sirve para miles de líneas?", "a": "Sí, sin límite práctico más allá de tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/numerar-lineas-texto/", "label": "Numerar líneas" },
+      { "url": "/herramientas/conversion/json-a-csv/", "label": "Convertir JSON a CSV" },
+      { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar" }
+    ]
+  }
+]

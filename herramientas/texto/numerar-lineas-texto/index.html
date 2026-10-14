@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Numerar Líneas de Texto","description":"Añade un número a cada línea de tu texto con separador configurable.","url":"https://proyectospixel.com/herramientas/texto/numerar-lineas-texto/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo numerar líneas de un texto","description":"Qué hace la herramienta de numerar líneas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega tu texto, una línea por elemento."},{"@type":"HowToStep","position":2,"name":"Elige separador e inicio","text":"Ajusta: número inicial, formato del separador y si las líneas vacías se numeran o se dejan tal cual."},{"@type":"HowToStep","position":3,"name":"Pulsa numerar","text":"Pulsa «Numerar líneas» y copia el resultado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Puedo empezar en otro número?","acceptedAnswer":{"@type":"Answer","text":"Sí, define el número inicial (por defecto 1)."}},{"@type":"Question","name":"¿Numera las líneas vacías?","acceptedAnswer":{"@type":"Answer","text":"Por defecto no: se conservan sin número para no romper el formato."}},{"@type":"Question","name":"¿Qué formatos hay?","acceptedAnswer":{"@type":"Answer","text":"1., 1), - 1, [1] y 1:."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, todo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -73,6 +76,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de numerar líneas</h2>
+          <p>Añade un número al principio de cada línea de tu texto, con <strong>cinco formatos</strong> de separador (1. / 1) / - 1 / [1] / 1:) y la opción de no numerar las líneas vacías.</p>
+          <p>Esencial para listados, inventarios, actas o cualquier lista que necesite referencia por número.</p>
+          <h2>Cómo numerar líneas paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega tu texto</strong>, una línea por elemento.</li>
+            <li><strong>Ajusta:</strong> número inicial, formato del separador y si las líneas vacías se numeran o se dejan tal cual.</li>
+            <li><strong>Pulsa «Numerar líneas»</strong> y copia el resultado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Inventarios y checklists</strong> referenciables por número.</li>
+            <li><strong>Actas y documentos</strong> donde cada punto debe numerarse.</li>
+            <li><strong>Listas de tareas</strong> para seguimiento.</li>
+            <li><strong>Textos legales o bases</strong> que se citan por renglón.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>uno\ndos → 1. uno\n2. dos</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Puedo empezar en otro número?</summary><p>Sí, define el número inicial (por defecto 1).</p></details>
+            <details class="faq-item"><summary>¿Numera las líneas vacías?</summary><p>Por defecto no: se conservan sin número para no romper el formato.</p></details>
+            <details class="faq-item"><summary>¿Qué formatos hay?</summary><p>1., 1), - 1, [1] y 1:.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No, todo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/generar-lista-numeros/">Generar lista de números</a>, <a href="/herramientas/texto/anadir-prefijo-sufijo-lineas/">Añadir prefijo y sufijo</a> o <a href="/herramientas/texto/eliminar-lineas-vacias/">Eliminar líneas vacías</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -82,12 +116,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/numerar-lineas-texto.js?v=25"></script>
+  <script src="/js/tools/numerar-lineas-texto.js?v=26"></script>
 </body>
 </html>

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Eliminar Líneas Vacías","description":"Elimina las líneas vacías o en blanco de tu texto al instante.","url":"https://proyectospixel.com/herramientas/texto/eliminar-lineas-vacias/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo quitar líneas vacías de un texto","description":"Qué hace la herramienta de eliminar líneas vacías","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto con líneas en blanco."},{"@type":"HowToStep","position":2,"name":"Pulsa eliminar","text":"Pulsa «Eliminar líneas vacías»: cada línea con contenido se conserva."},{"@type":"HowToStep","position":3,"name":"Copia el resultado","text":"Copia el resultado ya sin huecos."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuenta como vacía una línea con espacios?","acceptedAnswer":{"@type":"Answer","text":"Sí: las líneas de solo espacios también se eliminan."}},{"@type":"Question","name":"¿Conserva los párrafos?","acceptedAnswer":{"@type":"Answer","text":"Conserva una línea por cada párrafo; si quieres un solo párrafo usa «quitar saltos de línea»."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, es 100% local."}},{"@type":"Question","name":"¿Es gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí, gratis y sin registro."}}]}]}
   </script>
 </head>
 <body>
@@ -63,6 +66,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de eliminar líneas vacías</h2>
+          <p>Quita las líneas en blanco (incluidas las que solo tienen espacios) para dejar un texto compacto, sin huecos.</p>
+          <p>Muy útil cuando pegas desde PDF o Word y aparecen líneas fantasma entre párrafos o al final del texto.</p>
+          <h2>Cómo eliminar líneas vacías paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> con líneas en blanco.</li>
+            <li><strong>Pulsa «Eliminar líneas vacías»</strong>: cada línea con contenido se conserva.</li>
+            <li><strong>Copia el resultado</strong> ya sin huecos.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Limpiar copias de PDF o Word</strong> con líneas fantasma.</li>
+            <li><strong>Listas:</strong> elimina espacios entre elementos para reutilizarlas.</li>
+            <li><strong>CSV y datos:</strong> evita filas vacías que rompen importaciones.</li>
+            <li><strong>Código y configuraciones:</strong> compacta bloques separados por dobles saltos.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cuenta como vacía una línea con espacios?</summary><p>Sí: las líneas de solo espacios también se eliminan.</p></details>
+            <details class="faq-item"><summary>¿Conserva los párrafos?</summary><p>Conserva una línea por cada párrafo; si quieres un solo párrafo usa «quitar saltos de línea».</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No, es 100% local.</p></details>
+            <details class="faq-item"><summary>¿Es gratis?</summary><p>Sí, gratis y sin registro.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/quitar-espacios-duplicados/">Quitar espacios duplicados</a>, <a href="/herramientas/texto/eliminar-lineas-duplicadas/">Quitar líneas duplicadas</a> o <a href="/herramientas/texto/quitar-saltos-de-linea/">Quitar saltos de línea</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -72,12 +102,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/eliminar-lineas-vacias.js?v=25"></script>
+  <script src="/js/tools/eliminar-lineas-vacias.js?v=26"></script>
 </body>
 </html>

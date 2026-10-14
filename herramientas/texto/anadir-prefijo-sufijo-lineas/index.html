@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Añadir Prefijo y Sufijo a Líneas","description":"Añade un prefijo y/o sufijo a cada línea de tu texto al instante.","url":"https://proyectospixel.com/herramientas/texto/anadir-prefijo-sufijo-lineas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo añadir prefijo y sufijo a cada línea","description":"Qué hace la herramienta de prefijo y sufijo","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega la lista","text":"Pega la lista, una entrada por línea."},{"@type":"HowToStep","position":2,"name":"Define prefijo/sufijo","text":"Escribe el prefijo y el sufijo (por ejemplo ' y ', para SQL)."},{"@type":"HowToStep","position":3,"name":"Pulsa añadir","text":"Pulsa «Añadir» y copia el resultado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Puedo usar solo prefijo o solo sufijo?","acceptedAnswer":{"@type":"Answer","text":"Sí: si dejas uno vacío, solo se aplica el otro."}},{"@type":"Question","name":"¿Afecta a las líneas vacías?","acceptedAnswer":{"@type":"Answer","text":"Por defecto se dejan intactas, salvo que actives la opción de recortar."}},{"@type":"Question","name":"¿Se guarda mi lista?","acceptedAnswer":{"@type":"Answer","text":"No, todo se procesa en tu navegador."}},{"@type":"Question","name":"¿Sirve para miles de líneas?","acceptedAnswer":{"@type":"Answer","text":"Sí, sin límite práctico más allá de tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -76,6 +79,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de prefijo y sufijo</h2>
+          <p>Inserta un <strong>prefijo</strong> al inicio y/o un <strong>sufijo</strong> al final de cada línea, de una sola pasada.</p>
+          <p>La forma más rápida de preparar listas para SQL, CSV, JSON o código: añade comillas, comas, guiones o cualquier envoltorio a miles de líneas.</p>
+          <h2>Cómo añadir prefijo y sufijo paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega la lista</strong>, una entrada por línea.</li>
+            <li><strong>Escribe el prefijo y el sufijo</strong> (por ejemplo <code>'</code> y <code>',</code> para SQL).</li>
+            <li><strong>Pulsa «Añadir»</strong> y copia el resultado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>SQL:</strong> envuelve valores en comillas para un <code>IN (...)</code>.</li>
+            <li><strong>CSV:</strong> añade comas al final de cada línea.</li>
+            <li><strong>Markdown/HTML:</strong> convierte una lista de textos en elementos con prefijo fijo.</li>
+            <li><strong>Plantillas:</strong> genera líneas repetitivas para correos o documentos.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>uno\ndos · prefijo '-' · sufijo ',' → -uno,\n-dos,</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Puedo usar solo prefijo o solo sufijo?</summary><p>Sí: si dejas uno vacío, solo se aplica el otro.</p></details>
+            <details class="faq-item"><summary>¿Afecta a las líneas vacías?</summary><p>Por defecto se dejan intactas, salvo que actives la opción de recortar.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi lista?</summary><p>No, todo se procesa en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Sirve para miles de líneas?</summary><p>Sí, sin límite práctico más allá de tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/numerar-lineas-texto/">Numerar líneas</a>, <a href="/herramientas/conversion/json-a-csv/">Convertir JSON a CSV</a> o <a href="/herramientas/texto/buscar-reemplazar-texto/">Buscar y reemplazar</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -85,12 +119,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/anadir-prefijo-sufijo-lineas.js?v=25"></script>
+  <script src="/js/tools/anadir-prefijo-sufijo-lineas.js?v=26"></script>
 </body>
 </html>

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Mezclar Letras de Palabras","description":"Desordena las letras de las palabras de tu texto al instante.","url":"https://proyectospixel.com/herramientas/texto/mezclar-letras-palabras/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo mezclar las letras de las palabras de un texto","description":"Qué hace el mezclador de letras","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto que quieres desordenar."},{"@type":"HowToStep","position":2,"name":"Elige opciones","text":"Elige opciones: conservar primera/última letra (más legible) o mezclar palabras completas."},{"@type":"HowToStep","position":3,"name":"Pulsa mezclar","text":"Pulsa «Mezclar»: el resultado aparece al azar (puedes repetirlo pulsando de nuevo)."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Por qué el texto sigue leyéndose?","acceptedAnswer":{"@type":"Answer","text":"Porque con la opción activada dejamos la primera y la última letra en su sitio; el cerebro reordena el resto."}},{"@type":"Question","name":"¿Puedo desordenar palabras completas?","acceptedAnswer":{"@type":"Answer","text":"Sí: activa «mezclar palabras completas» para barajar el orden de las palabras."}},{"@type":"Question","name":"¿Es aleatorio de verdad?","acceptedAnswer":{"@type":"Answer","text":"Sí, usa el generador criptográfico del navegador."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, todo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -69,6 +72,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el mezclador de letras</h2>
+          <p>Desordena las letras dentro de cada palabra (o baraja palabras completas, si lo prefieres). Con la opción de <strong>conservar la primera y la última letra</strong>, el texto sigue siendo legible.</p>
+          <p>Ideal para retos mentales, juegos, textos divertidos o para comprobar cómo nuestro cerebro lee «desordenado».</p>
+          <h2>Cómo mezclar letras paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> que quieres desordenar.</li>
+            <li><strong>Elige opciones:</strong> conservar primera/última letra (más legible) o mezclar palabras completas.</li>
+            <li><strong>Pulsa «Mezclar»</strong>: el resultado aparece al azar (puedes repetirlo pulsando de nuevo).</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Juegos y pasatiempos</strong> para adivinar palabras.</li>
+            <li><strong>Clases de idiomas</strong> y ejercicios de lectoescritura.</li>
+            <li><strong>Posts y juegos en redes</strong> sociales.</li>
+            <li><strong>Demostrar</strong> el efecto de legibilidad del orden de las letras.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>palabras (conservando extremos) → p a a b l a r s ~ pbaaals</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Por qué el texto sigue leyéndose?</summary><p>Porque con la opción activada dejamos la primera y la última letra en su sitio; el cerebro reordena el resto.</p></details>
+            <details class="faq-item"><summary>¿Puedo desordenar palabras completas?</summary><p>Sí: activa «mezclar palabras completas» para barajar el orden de las palabras.</p></details>
+            <details class="faq-item"><summary>¿Es aleatorio de verdad?</summary><p>Sí, usa el generador criptográfico del navegador.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No, todo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/invertir-texto/">Invertir texto</a>, <a href="/herramientas/texto/cifrado-rot13/">Cifrado ROT13</a> o <a href="/herramientas/texto/quitar-vocales-texto/">Quitar vocales</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -78,12 +112,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/mezclar-letras-palabras.js?v=25"></script>
+  <script src="/js/tools/mezclar-letras-palabras.js?v=26"></script>
 </body>
 </html>

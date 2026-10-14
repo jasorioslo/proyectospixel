@@ -33,6 +33,7 @@
         out.push(parts[col - 1]);
       } else {
         skipped++;
+        if (!ctlSkip.checked) out.push(''); // conserva una línea vacía en su lugar
       }
     });
 

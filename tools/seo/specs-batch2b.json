@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "anadir-saltos-de-linea",
+    "cat": "texto",
+    "keyword": "añadir saltos de línea a un texto",
+    "h2_que": "Qué hace la herramienta de añadir saltos de línea",
+    "que": [
+      "Divide tu texto insertando saltos de línea cada <strong>N caracteres</strong> o cada <strong>N palabras</strong>, sin cortar palabras a la mitad.",
+      "Útil para formatear párrafos largos, limitar el ancho de columnas, preparar textos para carteles o encajar contenido en campos con restricciones."
+    ],
+    "h2_pasos": "Cómo añadir saltos de línea paso a paso",
+    "howtoName": "Cómo añadir saltos de línea cada N caracteres o palabras",
+    "howtoSteps": ["Pega el texto", "Elige modo y N", "Pulsa añadir saltos"],
+    "pasos": [
+      "<strong>Pega el texto</strong> que quieres dividir.",
+      "<strong>Elige el modo</strong> (por caracteres o por palabras) y el valor de N (por defecto 80 caracteres).",
+      "<strong>Pulsa «Añadir saltos»</strong>: el texto quedará dividido en líneas sin romper palabras."
+    ],
+    "usos": [
+      "<strong>Columnas de ancho fijo</strong> para TXT o correos.",
+      "<strong>Formatear párrafos</strong> largos para lectura cómoda.",
+      "<strong>Carteles y presentaciones</strong> con líneas de longitud controlada.",
+      "<strong>Campos con límite</strong> que necesitan cortes previsibles."
+    ],
+    "faqs": [
+      { "q": "¿Corta palabras a la mitad?", "a": "No: en modo caracteres salta a la siguiente línea cuando la palabra no cabe (solo corta palabras gigantes sin espacios)." },
+      { "q": "¿Puedo dividir cada N palabras?", "a": "Sí, cambia el modo a «Cada N palabras»." },
+      { "q": "¿Se guarda mi texto?", "a": "No, todo ocurre en tu navegador." },
+      { "q": "¿Es lo contrario de «quitar saltos»?", "a": "Exacto: esta herramienta añade; la otra los elimina." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/quitar-saltos-de-linea/", "label": "Quitar saltos de línea" },
+      { "url": "/herramientas/texto/justificar-texto/", "label": "Justificar texto" },
+      { "url": "/herramientas/texto/numerar-lineas-texto/", "label": "Numerar líneas" }
+    ]
+  },
+  {
+    "slug": "extraer-columnas-texto",
+    "cat": "texto",
+    "keyword": "extraer columna de texto delimitado",
+    "h2_que": "Qué hace el extractor de columnas",
+    "que": [
+      "Extrae la <strong>columna N</strong> de un texto delimitado (CSV, TSV, listas separadas por comas, punto y coma, barras o espacios).",
+      "Convierte datos tabulares en listas simples: solo los correos, solo los precios, solo los dominios, en un clic."
+    ],
+    "h2_pasos": "Cómo extraer una columna paso a paso",
+    "howtoName": "Cómo extraer una columna de un texto delimitado",
+    "howtoSteps": ["Pega los datos", "Elige delimitador y columna", "Pulsa extraer"],
+    "pasos": [
+      "<strong>Pega tus datos</strong>, una fila por línea.",
+      "<strong>Elige el delimitador</strong> (coma, tabulador, punto y coma, espacio o barra) y el número de columna (1 = primera).",
+      "<strong>Pulsa «Extraer columna»</strong>: obtendrás solo esa columna, ideal para copiar a otra herramienta."
+    ],
+    "usos": [
+      "<strong>CSV grandes:</strong> quédate con la columna de correos o de importes.",
+      "<strong>Logs:</strong> extrae el campo de fecha o el código de estado.",
+      "<strong>Facturas o inventarios</strong> exportados como tabla.",
+      "<strong>Listas de URLs</strong> para alimentar el limpiador de dominios."
+    ],
+    "ejemplos": [ "nombre,email\\nana,a@x.com · delimitador coma, columna 2 → a@x.com" ],
+    "faqs": [
+      { "q": "¿Qué delimitadores soporta?", "a": "Coma, punto y coma, tabulador, espacio y barra vertical." },
+      { "q": "¿Qué pasa con las filas incompletas?", "a": "Se omiten por defecto; puedes desactivar la opción para conservar una línea vacía en su lugar." },
+      { "q": "¿Se guardan mis datos?", "a": "No, la extracción es 100% local." },
+      { "q": "¿Numeración de columnas?", "a": "Empieza en 1: la columna 1 es la primera de la izquierda." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/json-a-csv/", "label": "Convertir JSON a CSV" },
+      { "url": "/herramientas/texto/fusionar-texto-lineas/", "label": "Fusionar dos listas" },
+      { "url": "/herramientas/desarrollo/limpiar-lista-urls/", "label": "Limpiar lista de URLs" }
+    ]
+  },
+  {
+    "slug": "fusionar-texto-lineas",
+    "cat": "texto",
+    "keyword": "fusionar dos listas de texto",
+    "h2_que": "Qué hace la herramienta de fusionar listas",
+    "que": [
+      "Une <strong>dos listas línea por línea</strong> con el separador que elijas: la línea 1 de la lista A con la línea 1 de la lista B, y así sucesivamente.",
+      "Si una lista es más larga, las líneas que sobran se conservan solas, sin perder datos."
+    ],
+    "h2_pasos": "Cómo fusionar dos listas paso a paso",
+    "howtoName": "Cómo fusionar dos listas de texto línea por línea",
+    "howtoSteps": ["Pega la lista A", "Pega la lista B", "Pulsa fusionar"],
+    "pasos": [
+      "<strong>Pega la primera lista</strong> (A) y la segunda (B), una entrada por línea.",
+      "<strong>Escribe el separador</strong> entre ambas (un espacio, « - », «: », etc.).",
+      "<strong>Pulsa «Fusionar»</strong> y copia el resultado."
+    ],
+    "usos": [
+      "<strong>Nombres + correos:</strong> genera líneas «Nombre <correo>».",
+      "<strong>Claves y valores:</strong> prepara pares para configuraciones.",
+      "<strong>Productos y precios:</strong> une dos columnas exportadas por separado.",
+      "<strong>Campañas:</strong> combina ciudades con servicios o palabras clave."
+    ],
+    "ejemplos": [ "A: a\\nb · B: 1\\n2 · sep «-» → a-1\\nb-2" ],
+    "faqs": [
+      { "q": "¿Qué pasa si las listas tienen distinto tamaño?", "a": "Las líneas sobrantes de la lista más larga se mantienen tal cual." },
+      { "q": "¿Puedo usar varios caracteres como separador?", "a": "Sí, el separador es libre (por ejemplo « → »)." },
+      { "q": "¿Se guardan mis listas?", "a": "No, todo es local en tu navegador." },
+      { "q": "¿Diferencia con combinar listas?", "a": "Fusionar une por índice (1 con 1); combinar genera todas las cruces posibles." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/combinar-lineas-listas/", "label": "Combinar líneas (A×B)" },
+      { "url": "/herramientas/matematicas/extraer-columnas-texto/", "label": "Extraer columnas" },
+      { "url": "/herramientas/texto/anadir-prefijo-sufijo-lineas/", "label": "Añadir prefijo y sufijo" }
+    ]
+  },
+  {
+    "slug": "mezclar-letras-palabras",
+    "cat": "texto",
+    "keyword": "mezclar letras de palabras online",
+    "h2_que": "Qué hace el mezclador de letras",
+    "que": [
+      "Desordena las letras dentro de cada palabra (o baraja palabras completas, si lo prefieres). Con la opción de <strong>conservar la primera y la última letra</strong>, el texto sigue siendo legible.",
+      "Ideal para retos mentales, juegos, textos divertidos o para comprobar cómo nuestro cerebro lee «desordenado»."
+    ],
+    "h2_pasos": "Cómo mezclar letras paso a paso",
+    "howtoName": "Cómo mezclar las letras de las palabras de un texto",
+    "howtoSteps": ["Pega el texto", "Elige opciones", "Pulsa mezclar"],
+    "pasos": [
+      "<strong>Pega el texto</strong> que quieres desordenar.",
+      "<strong>Elige opciones:</strong> conservar primera/última letra (más legible) o mezclar palabras completas.",
+      "<strong>Pulsa «Mezclar»</strong>: el resultado aparece al azar (puedes repetirlo pulsando de nuevo)."
+    ],
+    "usos": [
+      "<strong>Juegos y pasatiempos</strong> para adivinar palabras.",
+      "<strong>Clases de idiomas</strong> y ejercicios de lectoescritura.",
+      "<strong>Posts y juegos en redes</strong> sociales.",
+      "<strong>Demostrar</strong> el efecto de legibilidad del orden de las letras."
+    ],
+    "ejemplos": [ "palabras (conservando extremos) → p a a b l a r s ~ pbaaals" ],
+    "faqs": [
+      { "q": "¿Por qué el texto sigue leyéndose?", "a": "Porque con la opción activada dejamos la primera y la última letra en su sitio; el cerebro reordena el resto." },
+      { "q": "¿Puedo desordenar palabras completas?", "a": "Sí: activa «mezclar palabras completas» para barajar el orden de las palabras." },
+      { "q": "¿Es aleatorio de verdad?", "a": "Sí, usa el generador criptográfico del navegador." },
+      { "q": "¿Se guarda mi texto?", "a": "No, todo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/invertir-texto/", "label": "Invertir texto" },
+      { "url": "/herramientas/texto/cifrado-rot13/", "label": "Cifrado ROT13" },
+      { "url": "/herramientas/texto/quitar-vocales-texto/", "label": "Quitar vocales" }
+    ]
+  },
+  {
+    "slug": "quitar-vocales-texto",
+    "cat": "texto",
+    "keyword": "quitar vocales de un texto",
+    "h2_que": "Qué hace la herramienta de quitar vocales",
+    "que": [
+      "Elimina todas las vocales (<strong>incluidas las acentuadas</strong> áéíóúü) de un texto, con la opción extra de eliminar también la letra Y.",
+      "Perfecta para retos, textos disemvowelados, pruebas de tipografía de consonantes o ejercicios lingüísticos."
+    ],
+    "h2_pasos": "Cómo quitar las vocales paso a paso",
+    "howtoName": "Cómo quitar las vocales de un texto",
+    "howtoSteps": ["Pega el texto", "Elige opciones", "Pulsa quitar vocales"],
+    "pasos": [
+      "<strong>Pega el texto</strong> original.",
+      "<strong>Elige opciones:</strong> incluir vocales acentuadas y/o eliminar también la Y.",
+      "<strong>Pulsa «Quitar vocales»</strong> y copia el resultado."
+    ],
+    "usos": [
+      "<strong>Retos y juegos</strong> de palabras.",
+      "<strong>Ejercicios de lenguaje</strong> y fonética.",
+      "<strong>Diseño y tipografía:</strong> prueba bloques solo de consonantes.",
+      "<strong>Textos humorísticos</strong> en redes."
+    ],
+    "ejemplos": [ "Hola mundo → Hl mnd" ],
+    "faqs": [
+      { "q": "¿Incluye las vocales con tilde?", "a": "Sí, cuando la opción está activa también elimina á, é, í, ó, ú y ü." },
+      { "q": "¿Puedo quitar la Y?", "a": "Sí, hay una opción específica para tratarla como semivocal." },
+      { "q": "¿Respeta los espacios y líneas?", "a": "Sí: solo elimina vocales; el resto del formato se conserva." },
+      { "q": "¿Se guarda mi texto?", "a": "No, se procesa en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/quitar-acentos/", "label": "Quitar acentos" },
+      { "url": "/herramientas/texto/eliminar-caracteres-especiales/", "label": "Eliminar caracteres especiales" },
+      { "url": "/herramientas/texto/mezclar-letras-palabras/", "label": "Mezclar letras" }
+    ]
+  }
+]

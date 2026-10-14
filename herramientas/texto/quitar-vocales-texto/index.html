@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Quitar Vocales del Texto","description":"Elimina todas las vocales (incluidas acentuadas) desplazando su texto al instante.","url":"https://proyectospixel.com/herramientas/texto/quitar-vocales-texto/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo quitar las vocales de un texto","description":"Qué hace la herramienta de quitar vocales","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto original."},{"@type":"HowToStep","position":2,"name":"Elige opciones","text":"Elige opciones: incluir vocales acentuadas y/o eliminar también la Y."},{"@type":"HowToStep","position":3,"name":"Pulsa quitar vocales","text":"Pulsa «Quitar vocales» y copia el resultado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Incluye las vocales con tilde?","acceptedAnswer":{"@type":"Answer","text":"Sí, cuando la opción está activa también elimina á, é, í, ó, ú y ü."}},{"@type":"Question","name":"¿Puedo quitar la Y?","acceptedAnswer":{"@type":"Answer","text":"Sí, hay una opción específica para tratarla como semivocal."}},{"@type":"Question","name":"¿Respeta los espacios y líneas?","acceptedAnswer":{"@type":"Answer","text":"Sí: solo elimina vocales; el resto del formato se conserva."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, se procesa en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -69,6 +72,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de quitar vocales</h2>
+          <p>Elimina todas las vocales (<strong>incluidas las acentuadas</strong> áéíóúü) de un texto, con la opción extra de eliminar también la letra Y.</p>
+          <p>Perfecta para retos, textos disemvowelados, pruebas de tipografía de consonantes o ejercicios lingüísticos.</p>
+          <h2>Cómo quitar las vocales paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> original.</li>
+            <li><strong>Elige opciones:</strong> incluir vocales acentuadas y/o eliminar también la Y.</li>
+            <li><strong>Pulsa «Quitar vocales»</strong> y copia el resultado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Retos y juegos</strong> de palabras.</li>
+            <li><strong>Ejercicios de lenguaje</strong> y fonética.</li>
+            <li><strong>Diseño y tipografía:</strong> prueba bloques solo de consonantes.</li>
+            <li><strong>Textos humorísticos</strong> en redes.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>Hola mundo → Hl mnd</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Incluye las vocales con tilde?</summary><p>Sí, cuando la opción está activa también elimina á, é, í, ó, ú y ü.</p></details>
+            <details class="faq-item"><summary>¿Puedo quitar la Y?</summary><p>Sí, hay una opción específica para tratarla como semivocal.</p></details>
+            <details class="faq-item"><summary>¿Respeta los espacios y líneas?</summary><p>Sí: solo elimina vocales; el resto del formato se conserva.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No, se procesa en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/quitar-acentos/">Quitar acentos</a>, <a href="/herramientas/texto/eliminar-caracteres-especiales/">Eliminar caracteres especiales</a> o <a href="/herramientas/texto/mezclar-letras-palabras/">Mezclar letras</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -78,12 +112,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/quitar-vocales-texto.js?v=25"></script>
+  <script src="/js/tools/quitar-vocales-texto.js?v=26"></script>
 </body>
 </html>

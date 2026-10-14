@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Fusionar Texto Línea por Línea","description":"Une dos listas de texto línea por línea con separador configurable.","url":"https://proyectospixel.com/herramientas/texto/fusionar-texto-lineas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo fusionar dos listas de texto línea por línea","description":"Qué hace la herramienta de fusionar listas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega la lista A","text":"Pega la primera lista (A) y la segunda (B), una entrada por línea."},{"@type":"HowToStep","position":2,"name":"Pega la lista B","text":"Escribe el separador entre ambas (un espacio, « - », «: », etc.)."},{"@type":"HowToStep","position":3,"name":"Pulsa fusionar","text":"Pulsa «Fusionar» y copia el resultado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué pasa si las listas tienen distinto tamaño?","acceptedAnswer":{"@type":"Answer","text":"Las líneas sobrantes de la lista más larga se mantienen tal cual."}},{"@type":"Question","name":"¿Puedo usar varios caracteres como separador?","acceptedAnswer":{"@type":"Answer","text":"Sí, el separador es libre (por ejemplo « → »)."}},{"@type":"Question","name":"¿Se guardan mis listas?","acceptedAnswer":{"@type":"Answer","text":"No, todo es local en tu navegador."}},{"@type":"Question","name":"¿Diferencia con combinar listas?","acceptedAnswer":{"@type":"Answer","text":"Fusionar une por índice (1 con 1); combinar genera todas las cruces posibles."}}]}]}
   </script>
 </head>
 <body>
@@ -76,6 +79,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de fusionar listas</h2>
+          <p>Une <strong>dos listas línea por línea</strong> con el separador que elijas: la línea 1 de la lista A con la línea 1 de la lista B, y así sucesivamente.</p>
+          <p>Si una lista es más larga, las líneas que sobran se conservan solas, sin perder datos.</p>
+          <h2>Cómo fusionar dos listas paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega la primera lista</strong> (A) y la segunda (B), una entrada por línea.</li>
+            <li><strong>Escribe el separador</strong> entre ambas (un espacio, « - », «: », etc.).</li>
+            <li><strong>Pulsa «Fusionar»</strong> y copia el resultado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Nombres + correos:</strong> genera líneas «Nombre <correo>».</li>
+            <li><strong>Claves y valores:</strong> prepara pares para configuraciones.</li>
+            <li><strong>Productos y precios:</strong> une dos columnas exportadas por separado.</li>
+            <li><strong>Campañas:</strong> combina ciudades con servicios o palabras clave.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>A: a\nb · B: 1\n2 · sep «-» → a-1\nb-2</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué pasa si las listas tienen distinto tamaño?</summary><p>Las líneas sobrantes de la lista más larga se mantienen tal cual.</p></details>
+            <details class="faq-item"><summary>¿Puedo usar varios caracteres como separador?</summary><p>Sí, el separador es libre (por ejemplo « → »).</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis listas?</summary><p>No, todo es local en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Diferencia con combinar listas?</summary><p>Fusionar une por índice (1 con 1); combinar genera todas las cruces posibles.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/combinar-lineas-listas/">Combinar líneas (A×B)</a>, <a href="/herramientas/matematicas/extraer-columnas-texto/">Extraer columnas</a> o <a href="/herramientas/texto/anadir-prefijo-sufijo-lineas/">Añadir prefijo y sufijo</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -85,12 +119,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/fusionar-texto-lineas.js?v=25"></script>
+  <script src="/js/tools/fusionar-texto-lineas.js?v=26"></script>
 </body>
 </html>

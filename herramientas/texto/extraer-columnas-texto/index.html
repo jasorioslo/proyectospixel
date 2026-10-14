@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Extractor de Columnas de Texto","description":"Extrae una columna específica de texto delimitado por comas, tabs o punto y coma.","url":"https://proyectospixel.com/herramientas/texto/extraer-columnas-texto/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo extraer una columna de un texto delimitado","description":"Qué hace el extractor de columnas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega los datos","text":"Pega tus datos, una fila por línea."},{"@type":"HowToStep","position":2,"name":"Elige delimitador y columna","text":"Elige el delimitador (coma, tabulador, punto y coma, espacio o barra) y el número de columna (1 = primera)."},{"@type":"HowToStep","position":3,"name":"Pulsa extraer","text":"Pulsa «Extraer columna»: obtendrás solo esa columna, ideal para copiar a otra herramienta."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué delimitadores soporta?","acceptedAnswer":{"@type":"Answer","text":"Coma, punto y coma, tabulador, espacio y barra vertical."}},{"@type":"Question","name":"¿Qué pasa con las filas incompletas?","acceptedAnswer":{"@type":"Answer","text":"Se omiten por defecto; puedes desactivar la opción para conservar una línea vacía en su lugar."}},{"@type":"Question","name":"¿Se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"No, la extracción es 100% local."}},{"@type":"Question","name":"¿Numeración de columnas?","acceptedAnswer":{"@type":"Answer","text":"Empieza en 1: la columna 1 es la primera de la izquierda."}}]}]}
   </script>
 </head>
 <body>
@@ -73,6 +76,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el extractor de columnas</h2>
+          <p>Extrae la <strong>columna N</strong> de un texto delimitado (CSV, TSV, listas separadas por comas, punto y coma, barras o espacios).</p>
+          <p>Convierte datos tabulares en listas simples: solo los correos, solo los precios, solo los dominios, en un clic.</p>
+          <h2>Cómo extraer una columna paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega tus datos</strong>, una fila por línea.</li>
+            <li><strong>Elige el delimitador</strong> (coma, tabulador, punto y coma, espacio o barra) y el número de columna (1 = primera).</li>
+            <li><strong>Pulsa «Extraer columna»</strong>: obtendrás solo esa columna, ideal para copiar a otra herramienta.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>CSV grandes:</strong> quédate con la columna de correos o de importes.</li>
+            <li><strong>Logs:</strong> extrae el campo de fecha o el código de estado.</li>
+            <li><strong>Facturas o inventarios</strong> exportados como tabla.</li>
+            <li><strong>Listas de URLs</strong> para alimentar el limpiador de dominios.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>nombre,email\nana,a@x.com · delimitador coma, columna 2 → a@x.com</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué delimitadores soporta?</summary><p>Coma, punto y coma, tabulador, espacio y barra vertical.</p></details>
+            <details class="faq-item"><summary>¿Qué pasa con las filas incompletas?</summary><p>Se omiten por defecto; puedes desactivar la opción para conservar una línea vacía en su lugar.</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis datos?</summary><p>No, la extracción es 100% local.</p></details>
+            <details class="faq-item"><summary>¿Numeración de columnas?</summary><p>Empieza en 1: la columna 1 es la primera de la izquierda.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/conversion/json-a-csv/">Convertir JSON a CSV</a>, <a href="/herramientas/texto/fusionar-texto-lineas/">Fusionar dos listas</a> o <a href="/herramientas/desarrollo/limpiar-lista-urls/">Limpiar lista de URLs</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -82,12 +116,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/extraer-columnas-texto.js?v=25"></script>
+  <script src="/js/tools/extraer-columnas-texto.js?v=26"></script>
 </body>
 </html>

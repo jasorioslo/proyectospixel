@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Quitar Líneas Duplicadas","description":"Elimina las líneas duplicadas de tu texto o lista al instante.","url":"https://proyectospixel.com/herramientas/texto/eliminar-lineas-duplicadas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo quitar líneas duplicadas de una lista","description":"Qué hace la herramienta de quitar líneas duplicadas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega la lista","text":"Pega la lista, una entrada por línea."},{"@type":"HowToStep","position":2,"name":"Ajusta las opciones","text":"Elige opciones: quitar espacios al inicio/final y no distinguir mayúsculas (útil para correos o dominios)."},{"@type":"HowToStep","position":3,"name":"Pulsa quitar duplicadas","text":"Pulsa «Quitar duplicadas» y copia el resultado ya limpio."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué aparición conserva?","acceptedAnswer":{"@type":"Answer","text":"La primera que aparece; el resto se elimina."}},{"@type":"Question","name":"¿Diferencia mayúsculas?","acceptedAnswer":{"@type":"Answer","text":"Por defecto sí; puedes activar la opción para que «Pera» y «pera» cuenten como el mismo valor."}},{"@type":"Question","name":"¿Se guarda mi lista?","acceptedAnswer":{"@type":"Answer","text":"No: todo el proceso es local en tu navegador."}},{"@type":"Question","name":"¿Mantiene el orden original?","acceptedAnswer":{"@type":"Answer","text":"Sí, conserva el orden de la primera aparición de cada valor."}}]}]}
   </script>
 </head>
 <body>
@@ -69,6 +72,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de quitar líneas duplicadas</h2>
+          <p>Elimina las líneas repetidas de una lista, conservando solo la <strong>primera aparición</strong> de cada valor. Incluye opciones para recortar espacios y para no distinguir mayúsculas de minúsculas.</p>
+          <p>Perfecta para limpiar listas de correos, dominios, SKUs o etiquetas donde los duplicados generan errores costosos.</p>
+          <h2>Cómo eliminar líneas duplicadas paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega la lista</strong>, una entrada por línea.</li>
+            <li><strong>Elige opciones:</strong> quitar espacios al inicio/final y no distinguir mayúsculas (útil para correos o dominios).</li>
+            <li><strong>Pulsa «Quitar duplicadas»</strong> y copia el resultado ya limpio.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Listas de correos o dominios:</strong> evita enviar dos veces al mismo destinatario.</li>
+            <li><strong>Inventario y SKUs:</strong> detecta referencias repetidas.</li>
+            <li><strong>Etiquetas y keywords:</strong> unifica repetidos con distintas mayúsculas.</li>
+            <li><strong>Datos exportados:</strong> deja una fila por valor único.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>manzana\npera\nmanzana → manzana\npera</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué aparición conserva?</summary><p>La primera que aparece; el resto se elimina.</p></details>
+            <details class="faq-item"><summary>¿Diferencia mayúsculas?</summary><p>Por defecto sí; puedes activar la opción para que «Pera» y «pera» cuenten como el mismo valor.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi lista?</summary><p>No: todo el proceso es local en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Mantiene el orden original?</summary><p>Sí, conserva el orden de la primera aparición de cada valor.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/eliminar-lineas-vacias/">Eliminar líneas vacías</a>, <a href="/herramientas/texto/filtrar-lineas-texto/">Filtrar líneas</a> o <a href="/herramientas/desarrollo/limpiar-lista-urls/">Limpiar lista de URLs</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -78,12 +112,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/eliminar-lineas-duplicadas.js?v=25"></script>
+  <script src="/js/tools/eliminar-lineas-duplicadas.js?v=26"></script>
 </body>
 </html>

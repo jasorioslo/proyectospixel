@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=25">
+  <link rel="stylesheet" href="/css/styles.css?v=26">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Añadir Saltos de Línea al Texto","description":"Inserta saltos de línea en tu texto cada N caracteres o palabras.","url":"https://proyectospixel.com/herramientas/texto/anadir-saltos-de-linea/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo añadir saltos de línea cada N caracteres o palabras","description":"Qué hace la herramienta de añadir saltos de línea","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto que quieres dividir."},{"@type":"HowToStep","position":2,"name":"Elige modo y N","text":"Elige el modo (por caracteres o por palabras) y el valor de N (por defecto 80 caracteres)."},{"@type":"HowToStep","position":3,"name":"Pulsa añadir saltos","text":"Pulsa «Añadir saltos»: el texto quedará dividido en líneas sin romper palabras."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Corta palabras a la mitad?","acceptedAnswer":{"@type":"Answer","text":"No: en modo caracteres salta a la siguiente línea cuando la palabra no cabe (solo corta palabras gigantes sin espacios)."}},{"@type":"Question","name":"¿Puedo dividir cada N palabras?","acceptedAnswer":{"@type":"Answer","text":"Sí, cambia el modo a «Cada N palabras»."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, todo ocurre en tu navegador."}},{"@type":"Question","name":"¿Es lo contrario de «quitar saltos»?","acceptedAnswer":{"@type":"Answer","text":"Exacto: esta herramienta añade; la otra los elimina."}}]}]}
   </script>
 </head>
 <body>
@@ -72,6 +75,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de añadir saltos de línea</h2>
+          <p>Divide tu texto insertando saltos de línea cada <strong>N caracteres</strong> o cada <strong>N palabras</strong>, sin cortar palabras a la mitad.</p>
+          <p>Útil para formatear párrafos largos, limitar el ancho de columnas, preparar textos para carteles o encajar contenido en campos con restricciones.</p>
+          <h2>Cómo añadir saltos de línea paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> que quieres dividir.</li>
+            <li><strong>Elige el modo</strong> (por caracteres o por palabras) y el valor de N (por defecto 80 caracteres).</li>
+            <li><strong>Pulsa «Añadir saltos»</strong>: el texto quedará dividido en líneas sin romper palabras.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Columnas de ancho fijo</strong> para TXT o correos.</li>
+            <li><strong>Formatear párrafos</strong> largos para lectura cómoda.</li>
+            <li><strong>Carteles y presentaciones</strong> con líneas de longitud controlada.</li>
+            <li><strong>Campos con límite</strong> que necesitan cortes previsibles.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Corta palabras a la mitad?</summary><p>No: en modo caracteres salta a la siguiente línea cuando la palabra no cabe (solo corta palabras gigantes sin espacios).</p></details>
+            <details class="faq-item"><summary>¿Puedo dividir cada N palabras?</summary><p>Sí, cambia el modo a «Cada N palabras».</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No, todo ocurre en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Es lo contrario de «quitar saltos»?</summary><p>Exacto: esta herramienta añade; la otra los elimina.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/quitar-saltos-de-linea/">Quitar saltos de línea</a>, <a href="/herramientas/texto/justificar-texto/">Justificar texto</a> o <a href="/herramientas/texto/numerar-lineas-texto/">Numerar líneas</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -81,12 +111,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=25"></script>
-  <script src="/js/tools-data.js?v=25"></script>
+  <script src="/js/components.js?v=26"></script>
+  <script src="/js/tools-data.js?v=26"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/anadir-saltos-de-linea.js?v=25"></script>
+  <script src="/js/tools/anadir-saltos-de-linea.js?v=26"></script>
 </body>
 </html>
