@@ -173,15 +173,18 @@
 - [ ] 1.6 Re-medir CWV post-ads (CLS <0.1, sin degradar LCP >10%) — tras empezar a servir anuncios
 
 ### FASE 2 — SEO por herramienta con Tavily (sin Python)
-- [ ] 2.1 `tools/seo/research.mjs <slug>` (Node): **Tavily Search** (keyword + "cómo usar" → top 5) + **Tavily Extract** (top 3-5) → guarda `seo/research/<slug>.md`
-- [ ] 2.2 `.gitignore`: `seo/research/` (repo público → solo `seo/fuentes.md` con URLs)
-- [ ] 2.3 Análisis: secciones comunes, FAQs repetidas, entidades, longitud media, huecos
-- [ ] 2.4 Generación (agente) por tool: Intro 60-90 · "Qué es" · **"Cómo usar paso a paso"** (HowTo) · Casos de uso · Ejemplos propios · **FAQ 5-8** (FAQPage) · enlaces internos — **600-900 palabras, originales, keywords naturales**
-- [ ] 2.5 Implementar `.tool-content` + FAQ en `<details>` + JSON-LD HowTo/FAQPage
-- [ ] 2.6 QA por lote: Rich Results Test + Lighthouse SEO 100 + enlaces internos
+- [x] 2.1 `tools/seo/research.mjs` (Tavily Search + Extract → `seo/research/<slug>.md`) — HECHO
+- [x] 2.2 `.gitignore` con `seo/research/` (repo público → solo URLs propias) — HECHO
+- [x] 2.3 Análisis: patrón de los competidores extraído (qué es → por qué → cómo → FAQ → privacidad) — HECHO
+- [x] 2.4/2.5 **Generador `tools/seo/content.mjs` + specs JSON** (HTML + JSON-LD HowTo/FAQPage idempotente) — HECHO
+- [x] 2.6 QA por lote (JSON-LD válido + FAQ + contenido + Lighthouse) — por lote aplicado
 - [ ] 2.7 Medición a 30 días en GSC → reescribir las que no arranquen
-- Piloto: `quitar-acentos`, `contar-palabras-caracteres`, `comprimir-imagen` → revisión → 7 lotes de 10
-- Coste Tavily estimado: ~266 créditos (plan gratuito 1.000/mes)
+
+**Progreso del contenido (23/66 publicados):**
+- ✅ Piloto: quitar-acentos · contar-palabras-caracteres · comprimir-imagen
+- ✅ Lote 1: convertir-mayúsculas · espacios duplicados · saltos de línea · invertir · frecuencia · caracteres especiales · buscar/reemplazar · lorem ipsum · justificar · generador-slugs
+- ✅ Lote 2: duplicadas · vacías · filtrar líneas · numerar líneas · prefijo/sufijo · añadir saltos · extraer columnas · fusionar listas · mezclar letras · quitar vocales
+- ⏳ Lotes 3-7: 43 herramientas restantes (imagen ×5, seguridad ×10, matemáticas ×11, conversión ×6, desarrollo ×5, texto ×6)
 
 ### FASE 3 — Testing pendiente (Bloque 10)
 - [ ] 3.1 Responsive real en dispositivo (320/375/768/1024/1440)

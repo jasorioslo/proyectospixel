@@ -19,6 +19,14 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=17` + SW `pp-v17`
 
 ### Added
+- **📝 FASE 2 — Contenido SEO por herramienta (23/66 publicadas)** (14/10/2026):
+  - **Pipeline Tavily** (`tools/seo/research.mjs`): Search + Extract → `seo/research/<slug>.md` (gitignored; el repo es público)
+  - **Generador de contenido** (`tools/seo/content.mjs` + specs JSON por lote): inserta `.tool-content` + FAQ en acordeón + **JSON-LD HowTo + FAQPage** de forma idempotente
+  - CSS nuevo: `.tool-content`, `.faq-item` (acordeones) y `.step-list` (pasos numerados)
+  - **23 páginas con contenido propio** (600-800 palabras, original, ángulos de privacidad/offline), verificado en producción con schema válido y FAQ funcional
+  - Método replicable: specs compactas por herramienta → lote → validación automática → deploy por CI
+  - Corrección funcional: el checkbox “omitir filas sin esa columna” de *Extraer columnas* ahora hace lo que dice (conserva línea vacía al desactivarlo)
+  - Bump `?v=26` + SW `pp-v26`
 - **💰 FASE 1 — AdSense ACTIVADO** (14/10/2026):
   - Cliente `ca-pub-4553600515484019` + 3 unidades: **top** `4318614334` · **mid** `9277006553` · **bottom** `4327932200`
   - **Montaje centralizado en `components.js`** (`initAds`/`mountAd`): script de AdSense cargado **una sola vez** y **lazy** (IntersectionObserver con rootMargin 300px) → no bloquea el render ni LCP
