@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=26">
+  <link rel="stylesheet" href="/css/styles.css?v=27">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Limpiar Lista de URLs","description":"Recorta una lista de URLs dejando solo el dominio raíz. Filter y dedup opcionales.","url":"https://proyectospixel.com/herramientas/desarrollo/limpiar-lista-urls/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo limpiar una lista de URLs dejando solo los dominios","description":"Qué hace el limpiador de listas de URLs","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega tus URLs","text":"Pega las URLs, una por línea."},{"@type":"HowToStep","position":2,"name":"Elige qué conservar","text":"Elige el modo: solo dominio (sin www ni rutas), dominio con www, o URL raíz con https://."},{"@type":"HowToStep","position":3,"name":"Limpia y copia","text":"Pulsa limpiar y copia el resultado (sin duplicados)."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Quita los duplicados?","acceptedAnswer":{"@type":"Answer","text":"Sí, por defecto. Si el mismo dominio aparece varias veces, se conserva una sola línea."}},{"@type":"Question","name":"¿Y los subdominios?","acceptedAnswer":{"@type":"Answer","text":"Se normalizan quitando «www»; otros subdominios se conservan como parte del dominio."}},{"@type":"Question","name":"¿Valida las URLs?","acceptedAnswer":{"@type":"Answer","text":"Sí: descarta las que no son direcciones válidas."}},{"@type":"Question","name":"¿Se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"No: el análisis es local en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -69,6 +72,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el limpiador de listas de URLs</h2>
+          <p>Convierte una lista de direcciones en una lista limpia de <strong>dominios raíz</strong>: quita protocolo, «www», rutas y parámetros, y elimina duplicados automáticamente.</p>
+          <p>Ideal para SEO técnico y análisis: saber de qué dominios tienes enlaces, consolidar menciones o preparar disavow.</p>
+          <h2>Cómo limpiar una lista de URLs paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega las URLs</strong>, una por línea.</li>
+            <li><strong>Elige el modo:</strong> solo dominio (sin www ni rutas), dominio con www, o URL raíz con https://.</li>
+            <li><strong>Pulsa limpiar</strong> y copia el resultado (sin duplicados).</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Auditoría de enlaces:</strong> lista limpia de dominios que te enlazan.</li>
+            <li><strong>Menciones de marca:</strong> consolida todas las apariciones de cada sitio.</li>
+            <li><strong>Investigación de competencia:</strong> deduplica sus fuentes de backlinks.</li>
+            <li><strong>Listas de contacto web:</strong> extrae el dominio de una lista de webs.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>https://www.ejemplo.com/ruta?x=1 → ejemplo.com</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Quita los duplicados?</summary><p>Sí, por defecto. Si el mismo dominio aparece varias veces, se conserva una sola línea.</p></details>
+            <details class="faq-item"><summary>¿Y los subdominios?</summary><p>Se normalizan quitando «www»; otros subdominios se conservan como parte del dominio.</p></details>
+            <details class="faq-item"><summary>¿Valida las URLs?</summary><p>Sí: descarta las que no son direcciones válidas.</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis datos?</summary><p>No: el análisis es local en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/desarrollo/codificar-url/">Codificar y decodificar URL</a>, <a href="/herramientas/texto/eliminar-lineas-duplicadas/">Quitar líneas duplicadas</a> o <a href="/herramientas/texto/generador-slugs/">Generador de Slugs</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -78,12 +112,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=26"></script>
-  <script src="/js/tools-data.js?v=26"></script>
+  <script src="/js/components.js?v=27"></script>
+  <script src="/js/tools-data.js?v=27"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/limpiar-lista-urls.js?v=26"></script>
+  <script src="/js/tools/limpiar-lista-urls.js?v=27"></script>
 </body>
 </html>

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=26">
+  <link rel="stylesheet" href="/css/styles.css?v=27">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Recortar Imagen","description":"Recorta imágenes online indicando zona en porcentajes: elige desde dónde y qué tamaño conservar. Gratis, sin subir la imagen y 100% privado.","url":"https://proyectospixel.com/herramientas/imagen/recortar-imagen/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo recortar una imagen online","description":"Qué hace el recortador de imágenes","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige la imagen","text":"Elige o arrastra la imagen."},{"@type":"HowToStep","position":2,"name":"Define la zona","text":"Define la zona: «desde X/Y» (0-100%) y «ancho/alto» del recorte. Verás la resolución final mientras ajustas."},{"@type":"HowToStep","position":3,"name":"Recorta y descarga","text":"Pulsa recortar y descarga el PNG resultante."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Puedo recortar a un formato concreto (1:1, 16:9)?","acceptedAnswer":{"@type":"Answer","text":"Ajusta los porcentajes para conseguir la proporción: por ejemplo, en una imagen cuadrada, un recorte de ancho 100% y alto 56% es ≈16:9."}},{"@type":"Question","name":"¿Se pierde la parte recortada?","acceptedAnswer":{"@type":"Answer","text":"El recorte descarta esa zona en el archivo generado; el original queda intacto en tu equipo."}},{"@type":"Question","name":"¿Se sube mi imagen?","acceptedAnswer":{"@type":"Answer","text":"No: el recorte se hace en tu navegador."}},{"@type":"Question","name":"¿Por qué en porcentajes?","acceptedAnswer":{"@type":"Answer","text":"Porque es proporcional: el mismo recorte funciona igual en móvil y en un original de 6000 px."}}]}]}
   </script>
 </head>
 <body>
@@ -94,6 +97,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el recortador de imágenes</h2>
+          <p>Recorta la zona de la imagen que quieras conservar indicando, en <strong>porcentajes</strong>, el punto de inicio y el tamaño (así funciona igual en cualquier resolución).</p>
+          <p>Valida que la selección no se salga de la imagen y te muestra en vivo las dimensiones exactas del recorte resultante.</p>
+          <h2>Cómo recortar una imagen paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige o arrastra la imagen.</strong></li>
+            <li><strong>Define la zona:</strong> «desde X/Y» (0-100%) y «ancho/alto» del recorte. Verás la resolución final mientras ajustas.</li>
+            <li><strong>Pulsa recortar</strong> y descarga el PNG resultante.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Quitar bordes o marcos</strong> no deseados.</li>
+            <li><strong>Centrar al sujeto</strong> en fotos de producto o retratos.</li>
+            <li><strong>Encajar en formato cuadrado</strong> para redes sin deformar.</li>
+            <li><strong>Recortar capturas</strong> para documentación o tutoriales.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Puedo recortar a un formato concreto (1:1, 16:9)?</summary><p>Ajusta los porcentajes para conseguir la proporción: por ejemplo, en una imagen cuadrada, un recorte de ancho 100% y alto 56% es ≈16:9.</p></details>
+            <details class="faq-item"><summary>¿Se pierde la parte recortada?</summary><p>El recorte descarta esa zona en el archivo generado; el original queda intacto en tu equipo.</p></details>
+            <details class="faq-item"><summary>¿Se sube mi imagen?</summary><p>No: el recorte se hace en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Por qué en porcentajes?</summary><p>Porque es proporcional: el mismo recorte funciona igual en móvil y en un original de 6000 px.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/imagen/redimensionar-imagen/">Redimensionar imagen</a>, <a href="/herramientas/imagen/comprimir-imagen/">Comprimir imagen</a> o <a href="/herramientas/imagen/marca-de-agua/">Añadir marca de agua</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -103,13 +133,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=26"></script>
-  <script src="/js/tools-data.js?v=26"></script>
-  <script src="/js/tools/image-utils.js?v=26"></script>
+  <script src="/js/components.js?v=27"></script>
+  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/tools/image-utils.js?v=27"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/recortar-imagen.js?v=26"></script>
+  <script src="/js/tools/recortar-imagen.js?v=27"></script>
 </body>
 </html>

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=26">
+  <link rel="stylesheet" href="/css/styles.css?v=27">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Codificar y Decodificar URL","description":"Codifica o decodifica URLs online (percent-encoding) al instante. Compatible con encodeURIComponent y decodeURI. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/desarrollo/codificar-url/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo codificar y decodificar URLs online","description":"Qué es codificar una URL (percent-encoding)","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto o URL","text":"Pega el texto o la URL."},{"@type":"HowToStep","position":2,"name":"Elige acción y alcance","text":"Elige acción (codificar o decodificar) y alcance (componente o URL completa)."},{"@type":"HowToStep","position":3,"name":"Copia el resultado","text":"Pulsa el botón y copia el resultado: ya tienes la versión segura o legible."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Componente o URL completa?","acceptedAnswer":{"@type":"Answer","text":"Componente codifica todo (incluso /, ? y =), para valores; URL completa respeta la estructura de la dirección, para enlaces enteros."}},{"@type":"Question","name":"¿Qué pasa si decodifico algo inválido?","acceptedAnswer":{"@type":"Answer","text":"La herramienta avisa con un error claro: la secuencia de escapes no es válida."}},{"@type":"Question","name":"¿Se envía mi texto?","acceptedAnswer":{"@type":"Answer","text":"No: la conversión es local en tu navegador."}},{"@type":"Question","name":"¿Diferencia con Base64?","acceptedAnswer":{"@type":"Answer","text":"Percent-encoding deja el texto legible dentro de una URL; Base64 es una codificación alfabética distinta, ideal para datos."}}]}]}
   </script>
 </head>
 <body>
@@ -76,6 +79,38 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es codificar una URL (percent-encoding)</h2>
+          <p>Codificar una URL consiste en sustituir los caracteres que no son seguros en una dirección (espacios, tildes, símbolos, &) por su equivalente <strong>%XX</strong>: «búsqueda ñ» → «b%C3%BAsqueda%20%C3%B1».</p>
+          <p>Es la operación que ocurre cuando pasas un texto por un enlace: sin ella, los parámetros se rompen. Puedes hacerla sobre un <strong>componente</strong> (encodeURIComponent) o sobre una <strong>URL completa</strong> (encodeURI).</p>
+          <h2>Cómo codificar o decodificar una URL paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto o la URL.</strong></li>
+            <li><strong>Elige acción</strong> (codificar o decodificar) y <strong>alcance</strong> (componente o URL completa).</li>
+            <li><strong>Pulsa el botón</strong> y copia el resultado: ya tienes la versión segura o legible.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Parámetros de búsqueda:</strong> construir enlaces con espacios y tildes.</li>
+            <li><strong>APIs y formularios:</strong> enviar valores con símbolos.</li>
+            <li><strong>Depurar:</strong> decodificar URLs largas para leer su contenido.</li>
+            <li><strong>Analítica:</strong> preparar utm_campaign con texto legible.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>búsqueda con ñ → b%C3%BAsqueda%20con%20%C3%B1</code></li>
+            <li><code>b%C3%BAsqueda → búsqueda</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Componente o URL completa?</summary><p>Componente codifica todo (incluso /, ? y =), para valores; URL completa respeta la estructura de la dirección, para enlaces enteros.</p></details>
+            <details class="faq-item"><summary>¿Qué pasa si decodifico algo inválido?</summary><p>La herramienta avisa con un error claro: la secuencia de escapes no es válida.</p></details>
+            <details class="faq-item"><summary>¿Se envía mi texto?</summary><p>No: la conversión es local en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Diferencia con Base64?</summary><p>Percent-encoding deja el texto legible dentro de una URL; Base64 es una codificación alfabética distinta, ideal para datos.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/conversion/codificar-decodificar-base64/">Codificar Base64</a>, <a href="/herramientas/texto/generador-slugs/">Generador de Slugs</a> o <a href="/herramientas/desarrollo/limpiar-lista-urls/">Limpiar lista de URLs</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -85,12 +120,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=26"></script>
-  <script src="/js/tools-data.js?v=26"></script>
+  <script src="/js/components.js?v=27"></script>
+  <script src="/js/tools-data.js?v=27"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/codificar-url.js?v=26"></script>
+  <script src="/js/tools/codificar-url.js?v=27"></script>
 </body>
 </html>

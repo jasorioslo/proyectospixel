@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=26">
+  <link rel="stylesheet" href="/css/styles.css?v=27">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Añadir Marca de Agua","description":"Añade una marca de agua de texto a tus imágenes online: elige texto, tamaño, color, opacidad y posición. Gratis, sin subir la foto y 100% privado.","url":"https://proyectospixel.com/herramientas/imagen/marca-de-agua/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo poner una marca de agua a una imagen","description":"Qué hace la herramienta de marca de agua","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige la imagen","text":"Elige o arrastra la imagen a proteger."},{"@type":"HowToStep","position":2,"name":"Escribe y ajusta la marca","text":"Escribe el texto de la marca y ajusta tamaño, opacidad, color y posición."},{"@type":"HowToStep","position":3,"name":"Aplica y descarga","text":"Pulsa aplicar, revisa el resultado y descarga la imagen marcada."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se sube mi imagen?","acceptedAnswer":{"@type":"Answer","text":"No: la marca se dibuja localmente. Tu foto nunca sale del navegador."}},{"@type":"Question","name":"¿Puedo usar una imagen como marca?","acceptedAnswer":{"@type":"Answer","text":"De momento la marca es de texto. Para logos gráficos, reserva esta función para una versión futura."}},{"@type":"Question","name":"¿La marca estropea la foto?","acceptedAnswer":{"@type":"Answer","text":"Se controla con la opacidad (50% por defecto) y lleva una sombra suave para integrarse."}},{"@type":"Question","name":"¿En qué formatos guarda?","acceptedAnswer":{"@type":"Answer","text":"JPEG (calidad 92%) o PNG si el original era PNG, para conservar la transparencia."}}]}]}
   </script>
 </head>
 <body>
@@ -107,6 +110,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace la herramienta de marca de agua</h2>
+          <p>Estampa un <strong>texto sobre tu imagen</strong> —tu marca, copyright, handle o aviso— con control de tamaño, color, opacidad y 9 posiciones (esquinas, bordes y centro).</p>
+          <p>La marca se dibuja encima con una sombra sutil para mantenerla legible sin tapar la foto. Todo en tu navegador.</p>
+          <h2>Cómo añadir una marca de agua paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige o arrastra la imagen</strong> a proteger.</li>
+            <li><strong>Escribe el texto de la marca</strong> y ajusta tamaño, opacidad, color y posición.</li>
+            <li><strong>Pulsa aplicar</strong>, revisa el resultado y descarga la imagen marcada.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Fotógrafos y creadores:</strong> firma digital visible en cada publicación.</li>
+            <li><strong>Catálogos:</strong> marca de propiedad en fotos de producto.</li>
+            <li><strong>Borradores para clientes:</strong> «MUESTRA» en propuestas.</li>
+            <li><strong>Museos, inmobiliarias o escuelas:</strong> autoría visible en material compartido.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se sube mi imagen?</summary><p>No: la marca se dibuja localmente. Tu foto nunca sale del navegador.</p></details>
+            <details class="faq-item"><summary>¿Puedo usar una imagen como marca?</summary><p>De momento la marca es de texto. Para logos gráficos, reserva esta función para una versión futura.</p></details>
+            <details class="faq-item"><summary>¿La marca estropea la foto?</summary><p>Se controla con la opacidad (50% por defecto) y lleva una sombra suave para integrarse.</p></details>
+            <details class="faq-item"><summary>¿En qué formatos guarda?</summary><p>JPEG (calidad 92%) o PNG si el original era PNG, para conservar la transparencia.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/imagen/recortar-imagen/">Recortar imagen</a>, <a href="/herramientas/imagen/redimensionar-imagen/">Redimensionar imagen</a> o <a href="/herramientas/imagen/limpiar-exif/">Eliminar metadatos EXIF</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -116,13 +146,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=26"></script>
-  <script src="/js/tools-data.js?v=26"></script>
-  <script src="/js/tools/image-utils.js?v=26"></script>
+  <script src="/js/components.js?v=27"></script>
+  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/tools/image-utils.js?v=27"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/marca-de-agua.js?v=26"></script>
+  <script src="/js/tools/marca-de-agua.js?v=27"></script>
 </body>
 </html>

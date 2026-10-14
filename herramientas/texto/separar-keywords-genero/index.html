@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=26">
+  <link rel="stylesheet" href="/css/styles.css?v=27">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Separar Keywords por Género","description":"Separa keywords masculino/femenino y singular/plural automáticamente.","url":"https://proyectospixel.com/herramientas/texto/separar-keywords-genero/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo separar keywords por género y número","description":"Qué hace el separador de keywords por género","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega tus keywords","text":"Pega las keywords, una por línea."},{"@type":"HowToStep","position":2,"name":"Pulsa separar","text":"Pulsa «Separar keywords»: la heurística analiza la última palabra de cada una y la clasifica."},{"@type":"HowToStep","position":3,"name":"Copia los grupos","text":"Copia cada grupo para tus anuncios, fichas de producto o campañas."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cómo decide el género?","acceptedAnswer":{"@type":"Answer","text":"Por la terminación: acaba en -a (femenino) o -o (masculino). Palabras terminadas en -e, consonante o extranjerismos quedan en «Sin determinar»."}},{"@type":"Question","name":"¿Y el plural?","acceptedAnswer":{"@type":"Answer","text":"Detecta -as (femenino plural), -os (masculino plural) y -es (plural de género ambiguo)."}},{"@type":"Question","name":"¿Es infalible?","acceptedAnswer":{"@type":"Answer","text":"Es una heurística lingüística: acierta en la mayoría de casos comunes, pero puede fallar en excepciones. Revisa el grupo «Sin determinar»."}},{"@type":"Question","name":"¿Se guardan mis keywords?","acceptedAnswer":{"@type":"Answer","text":"No: todo el análisis es local en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -63,6 +66,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el separador de keywords por género</h2>
+          <p>Clasifica automáticamente una lista de keywords en cuatro grupos: <strong>masculino singular</strong>, <strong>masculino plural</strong>, <strong>femenino singular</strong> y <strong>femenino plural</strong>, según las terminaciones del español (-o/-os/-a/-as/-es).</p>
+          <p>Es la herramienta perfecta para estructurar campañas de publicidad, catálogos de producto o investigaciones de keywords, donde necesitas variantes separadas por género y número.</p>
+          <h2>Cómo separar keywords por género paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega las keywords</strong>, una por línea.</li>
+            <li><strong>Pulsa «Separar keywords»</strong>: la heurística analiza la última palabra de cada una y la clasifica.</li>
+            <li><strong>Copia cada grupo</strong> para tus anuncios, fichas de producto o campañas.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Google Ads:</strong> grupos de anuncios por género (zapatos vs zapatillas de mujer).</li>
+            <li><strong>E-commerce:</strong> variantes por género en títulos y meta descripciones.</li>
+            <li><strong>SEO:</strong> descubre si tu catálogo está cubriendo las variantes femeninas y plurales.</li>
+            <li><strong>Campañas de keywords</strong> donde atenerse al género mejora el CTR.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>zapato → Masculino singular · camisas → Femenino plural</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cómo decide el género?</summary><p>Por la terminación: acaba en -a (femenino) o -o (masculino). Palabras terminadas en -e, consonante o extranjerismos quedan en «Sin determinar».</p></details>
+            <details class="faq-item"><summary>¿Y el plural?</summary><p>Detecta -as (femenino plural), -os (masculino plural) y -es (plural de género ambiguo).</p></details>
+            <details class="faq-item"><summary>¿Es infalible?</summary><p>Es una heurística lingüística: acierta en la mayoría de casos comunes, pero puede fallar en excepciones. Revisa el grupo «Sin determinar».</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis keywords?</summary><p>No: todo el análisis es local en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/frecuencia-palabras/">Frecuencia de palabras</a>, <a href="/herramientas/texto/eliminar-lineas-duplicadas/">Quitar líneas duplicadas</a> o <a href="/herramientas/texto/generador-slugs/">Generador de Slugs</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -72,12 +106,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=26"></script>
-  <script src="/js/tools-data.js?v=26"></script>
+  <script src="/js/components.js?v=27"></script>
+  <script src="/js/tools-data.js?v=27"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/separar-keywords-genero.js?v=26"></script>
+  <script src="/js/tools/separar-keywords-genero.js?v=27"></script>
 </body>
 </html>

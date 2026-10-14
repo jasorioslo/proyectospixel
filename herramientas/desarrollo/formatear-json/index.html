@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=26">
+  <link rel="stylesheet" href="/css/styles.css?v=27">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Formatear y Validar JSON","description":"Formatea, valida y ordena JSON online. Detecta errores indicando línea y columna. 100% privado: tu JSON no sale de tu navegador.","url":"https://proyectospixel.com/herramientas/desarrollo/formatear-json/","applicationCategory":"DeveloperApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo formatear, validar y ordenar JSON","description":"Qué hace el formateador de JSON","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el JSON","text":"Pega el JSON (minificado o no)."},{"@type":"HowToStep","position":2,"name":"Formatea o revisa el error","text":"Pulsa «Formatear JSON»: si hay un error, lo indica con línea, columna y el motivo exacto."},{"@type":"HowToStep","position":3,"name":"Copia el resultado","text":"Copia el resultado ya indentado; si quieres, activa «ordenar claves» antes de formatear."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Detecta dónde está el error?","acceptedAnswer":{"@type":"Answer","text":"Sí: muestra el mensaje nativo, la línea y la columna del fallo (y valida mientras escribes)."}},{"@type":"Question","name":"¿Puede ordenar las claves?","acceptedAnswer":{"@type":"Answer","text":"Sí, activa la opción y las claves se ordenan alfabéticamente, de forma recursiva."}},{"@type":"Question","name":"¿Soporta JSON grandes?","acceptedAnswer":{"@type":"Answer","text":"Sí, sin límite práctico más allá de la memoria de tu navegador."}},{"@type":"Question","name":"¿Se envía mi JSON?","acceptedAnswer":{"@type":"Answer","text":"No: la validación es local. Nada sale de tu dispositivo."}}]}]}
   </script>
 </head>
 <body>
@@ -78,6 +81,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el formateador de JSON</h2>
+          <p>Embellece un JSON en <strong>un clic</strong> (indentación 2/4 espacios o tabulación), lo <strong>valida</strong> al instante indicando <strong>línea y columna</strong> del error y permite <strong>ordenar las claves</strong> alfabéticamente.</p>
+          <p>El compañero ideal para depurar una API o revisar configuraciones sin instalar nada.</p>
+          <h2>Cómo formatear y validar un JSON paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el JSON</strong> (minificado o no).</li>
+            <li><strong>Pulsa «Formatear JSON»</strong>: si hay un error, lo indica con línea, columna y el motivo exacto.</li>
+            <li><strong>Copia el resultado</strong> ya indentado; si quieres, activa «ordenar claves» antes de formatear.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Depurar APIs:</strong> lee respuestas minificadas.</li>
+            <li><strong>Configuraciones:</strong> valida un package.json o un archivo de ajustes.</li>
+            <li><strong>Comparar:</strong> formatea dos JSON y usa el comparador de textos.</li>
+            <li><strong>Enseñar ejemplos</strong> legibles en documentación.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Detecta dónde está el error?</summary><p>Sí: muestra el mensaje nativo, la línea y la columna del fallo (y valida mientras escribes).</p></details>
+            <details class="faq-item"><summary>¿Puede ordenar las claves?</summary><p>Sí, activa la opción y las claves se ordenan alfabéticamente, de forma recursiva.</p></details>
+            <details class="faq-item"><summary>¿Soporta JSON grandes?</summary><p>Sí, sin límite práctico más allá de la memoria de tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Se envía mi JSON?</summary><p>No: la validación es local. Nada sale de tu dispositivo.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/desarrollo/minificar-codigo/">Minificar HTML, CSS y JS</a>, <a href="/herramientas/conversion/json-a-csv/">Convertir JSON a CSV</a> o <a href="/herramientas/desarrollo/comparar-textos/">Comparar dos textos</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -87,12 +117,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=26"></script>
-  <script src="/js/tools-data.js?v=26"></script>
+  <script src="/js/components.js?v=27"></script>
+  <script src="/js/tools-data.js?v=27"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/formatear-json.js?v=26"></script>
+  <script src="/js/tools/formatear-json.js?v=27"></script>
 </body>
 </html>

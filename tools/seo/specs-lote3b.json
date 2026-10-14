@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "limpiar-exif",
+    "cat": "imagen",
+    "keyword": "eliminar metadatos exif de una imagen",
+    "h2_que": "Qué son los metadatos EXIF y por qué eliminarlos",
+    "que": [
+      "Cada foto de móvil o cámara guarda <strong>metadatos EXIF</strong>: modelo de cámara, fecha y hora e, incluso, <strong>coordenadas GPS</strong> del lugar donde se tomó. Al compartirla, esos datos viajan con ella.",
+      "Esta herramienta re-codifica la imagen para dejarla <strong>limpia de metadatos</strong>, sin alterar su apariencia, conservando su tamaño original."
+    ],
+    "h2_pasos": "Cómo eliminar los metadatos EXIF paso a paso",
+    "howtoName": "Cómo eliminar los metadatos EXIF de una foto",
+    "howtoSteps": ["Elige la foto", "Revisa qué metadatos tiene", "Limpia y descarga"],
+    "pasos": [
+      "<strong>Elige o arrastra la foto:</strong> la herramienta intentará leer qué metadatos contiene (fecha, orientación, EXIF).",
+      "<strong>Revisa el resumen</strong> que aparece bajo la vista previa.",
+      "<strong>Pulsa limpiar</strong> y descarga la imagen sin metadatos (con el peso y dimensiones en pantalla)."
+    ],
+    "usos": [
+      "<strong>Publicar en redes o foros</strong> sin revelar dónde vives.",
+      "<strong>Vender fotos o compartir con clientes</strong> sin datos personales.",
+      "<strong>Documentos y peritajes:</strong> evita filtrar detalles de cámara o fecha.",
+      "<strong>Privacidad profesional:</strong> enviar imágenes a terceros sin rastro de tu equipo."
+    ],
+    "faqs": [
+      { "q": "¿Elimina también el GPS?", "a": "Sí: al re-codificar se descartan todos los metadatos, incluido el GPS." },
+      { "q": "¿Se nota la diferencia en la imagen?", "a": "No: la apariencia es la misma; los metadatos son información aparte, no píxeles." },
+      { "q": "¿Pierdo calidad?", "a": "En JPG se re-codifica con calidad 95% (inapreciable). En PNG no hay pérdida." },
+      { "q": "¿Se sube mi foto?", "a": "No: todo el proceso es local. Ningún servidor ve tu imagen ni sus datos." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/imagen/comprimir-imagen/", "label": "Comprimir imagen" },
+      { "url": "/herramientas/imagen/convertir-imagen/", "label": "Convertir formato" },
+      { "url": "/privacidad.html", "label": "Política de Privacidad" }
+    ]
+  },
+  {
+    "slug": "recortar-imagen",
+    "cat": "imagen",
+    "keyword": "recortar imagen online",
+    "h2_que": "Qué hace el recortador de imágenes",
+    "que": [
+      "Recorta la zona de la imagen que quieras conservar indicando, en <strong>porcentajes</strong>, el punto de inicio y el tamaño (así funciona igual en cualquier resolución).",
+      "Valida que la selección no se salga de la imagen y te muestra en vivo las dimensiones exactas del recorte resultante."
+    ],
+    "h2_pasos": "Cómo recortar una imagen paso a paso",
+    "howtoName": "Cómo recortar una imagen online",
+    "howtoSteps": ["Elige la imagen", "Define la zona", "Recorta y descarga"],
+    "pasos": [
+      "<strong>Elige o arrastra la imagen.</strong>",
+      "<strong>Define la zona:</strong> «desde X/Y» (0-100%) y «ancho/alto» del recorte. Verás la resolución final mientras ajustas.",
+      "<strong>Pulsa recortar</strong> y descarga el PNG resultante."
+    ],
+    "usos": [
+      "<strong>Quitar bordes o marcos</strong> no deseados.",
+      "<strong>Centrar al sujeto</strong> en fotos de producto o retratos.",
+      "<strong>Encajar en formato cuadrado</strong> para redes sin deformar.",
+      "<strong>Recortar capturas</strong> para documentación o tutoriales."
+    ],
+    "faqs": [
+      { "q": "¿Puedo recortar a un formato concreto (1:1, 16:9)?", "a": "Ajusta los porcentajes para conseguir la proporción: por ejemplo, en una imagen cuadrada, un recorte de ancho 100% y alto 56% es ≈16:9." },
+      { "q": "¿Se pierde la parte recortada?", "a": "El recorte descarta esa zona en el archivo generado; el original queda intacto en tu equipo." },
+      { "q": "¿Se sube mi imagen?", "a": "No: el recorte se hace en tu navegador." },
+      { "q": "¿Por qué en porcentajes?", "a": "Porque es proporcional: el mismo recorte funciona igual en móvil y en un original de 6000 px." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/imagen/redimensionar-imagen/", "label": "Redimensionar imagen" },
+      { "url": "/herramientas/imagen/comprimir-imagen/", "label": "Comprimir imagen" },
+      { "url": "/herramientas/imagen/marca-de-agua/", "label": "Añadir marca de agua" }
+    ]
+  },
+  {
+    "slug": "codificar-url",
+    "cat": "desarrollo",
+    "keyword": "codificar y decodificar url online",
+    "h2_que": "Qué es codificar una URL (percent-encoding)",
+    "que": [
+      "Codificar una URL consiste en sustituir los caracteres que no son seguros en una dirección (espacios, tildes, símbolos, &) por su equivalente <strong>%XX</strong>: «búsqueda ñ» → «b%C3%BAsqueda%20%C3%B1».",
+      "Es la operación que ocurre cuando pasas un texto por un enlace: sin ella, los parámetros se rompen. Puedes hacerla sobre un <strong>componente</strong> (encodeURIComponent) o sobre una <strong>URL completa</strong> (encodeURI)."
+    ],
+    "h2_pasos": "Cómo codificar o decodificar una URL paso a paso",
+    "howtoName": "Cómo codificar y decodificar URLs online",
+    "howtoSteps": ["Pega el texto o URL", "Elige acción y alcance", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto o la URL.</strong>",
+      "<strong>Elige acción</strong> (codificar o decodificar) y <strong>alcance</strong> (componente o URL completa).",
+      "<strong>Pulsa el botón</strong> y copia el resultado: ya tienes la versión segura o legible."
+    ],
+    "usos": [
+      "<strong>Parámetros de búsqueda:</strong> construir enlaces con espacios y tildes.",
+      "<strong>APIs y formularios:</strong> enviar valores con símbolos.",
+      "<strong>Depurar:</strong> decodificar URLs largas para leer su contenido.",
+      "<strong>Analítica:</strong> preparar utm_campaign con texto legible."
+    ],
+    "ejemplos": [
+      "búsqueda con ñ → b%C3%BAsqueda%20con%20%C3%B1",
+      "b%C3%BAsqueda → búsqueda"
+    ],
+    "faqs": [
+      { "q": "¿Componente o URL completa?", "a": "Componente codifica todo (incluso /, ? y =), para valores; URL completa respeta la estructura de la dirección, para enlaces enteros." },
+      { "q": "¿Qué pasa si decodifico algo inválido?", "a": "La herramienta avisa con un error claro: la secuencia de escapes no es válida." },
+      { "q": "¿Se envía mi texto?", "a": "No: la conversión es local en tu navegador." },
+      { "q": "¿Diferencia con Base64?", "a": "Percent-encoding deja el texto legible dentro de una URL; Base64 es una codificación alfabética distinta, ideal para datos." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/codificar-decodificar-base64/", "label": "Codificar Base64" },
+      { "url": "/herramientas/texto/generador-slugs/", "label": "Generador de Slugs" },
+      { "url": "/herramientas/desarrollo/limpiar-lista-urls/", "label": "Limpiar lista de URLs" }
+    ]
+  },
+  {
+    "slug": "limpiar-lista-urls",
+    "cat": "desarrollo",
+    "keyword": "limpiar lista de urls",
+    "h2_que": "Qué hace el limpiador de listas de URLs",
+    "que": [
+      "Convierte una lista de direcciones en una lista limpia de <strong>dominios raíz</strong>: quita protocolo, «www», rutas y parámetros, y elimina duplicados automáticamente.",
+      "Ideal para SEO técnico y análisis: saber de qué dominios tienes enlaces, consolidar menciones o preparar disavow."
+    ],
+    "h2_pasos": "Cómo limpiar una lista de URLs paso a paso",
+    "howtoName": "Cómo limpiar una lista de URLs dejando solo los dominios",
+    "howtoSteps": ["Pega tus URLs", "Elige qué conservar", "Limpia y copia"],
+    "pasos": [
+      "<strong>Pega las URLs</strong>, una por línea.",
+      "<strong>Elige el modo:</strong> solo dominio (sin www ni rutas), dominio con www, o URL raíz con https://.",
+      "<strong>Pulsa limpiar</strong> y copia el resultado (sin duplicados)."
+    ],
+    "usos": [
+      "<strong>Auditoría de enlaces:</strong> lista limpia de dominios que te enlazan.",
+      "<strong>Menciones de marca:</strong> consolida todas las apariciones de cada sitio.",
+      "<strong>Investigación de competencia:</strong> deduplica sus fuentes de backlinks.",
+      "<strong>Listas de contacto web:</strong> extrae el dominio de una lista de webs."
+    ],
+    "ejemplos": [ "https://www.ejemplo.com/ruta?x=1 → ejemplo.com" ],
+    "faqs": [
+      { "q": "¿Quita los duplicados?", "a": "Sí, por defecto. Si el mismo dominio aparece varias veces, se conserva una sola línea." },
+      { "q": "¿Y los subdominios?", "a": "Se normalizan quitando «www»; otros subdominios se conservan como parte del dominio." },
+      { "q": "¿Valida las URLs?", "a": "Sí: descarta las que no son direcciones válidas." },
+      { "q": "¿Se guardan mis datos?", "a": "No: el análisis es local en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/codificar-url/", "label": "Codificar y decodificar URL" },
+      { "url": "/herramientas/texto/eliminar-lineas-duplicadas/", "label": "Quitar líneas duplicadas" },
+      { "url": "/herramientas/texto/generador-slugs/", "label": "Generador de Slugs" }
+    ]
+  },
+  {
+    "slug": "formatear-json",
+    "cat": "desarrollo",
+    "keyword": "formatear y validar json online",
+    "h2_que": "Qué hace el formateador de JSON",
+    "que": [
+      "Embellece un JSON en <strong>un clic</strong> (indentación 2/4 espacios o tabulación), lo <strong>valida</strong> al instante indicando <strong>línea y columna</strong> del error y permite <strong>ordenar las claves</strong> alfabéticamente.",
+      "El compañero ideal para depurar una API o revisar configuraciones sin instalar nada."
+    ],
+    "h2_pasos": "Cómo formatear y validar un JSON paso a paso",
+    "howtoName": "Cómo formatear, validar y ordenar JSON",
+    "howtoSteps": ["Pega el JSON", "Formatea o revisa el error", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el JSON</strong> (minificado o no).",
+      "<strong>Pulsa «Formatear JSON»</strong>: si hay un error, lo indica con línea, columna y el motivo exacto.",
+      "<strong>Copia el resultado</strong> ya indentado; si quieres, activa «ordenar claves» antes de formatear."
+    ],
+    "usos": [
+      "<strong>Depurar APIs:</strong> lee respuestas minificadas.",
+      "<strong>Configuraciones:</strong> valida un package.json o un archivo de ajustes.",
+      "<strong>Comparar:</strong> formatea dos JSON y usa el comparador de textos.",
+      "<strong>Enseñar ejemplos</strong> legibles en documentación."
+    ],
+    "faqs": [
+      { "q": "¿Detecta dónde está el error?", "a": "Sí: muestra el mensaje nativo, la línea y la columna del fallo (y valida mientras escribes)." },
+      { "q": "¿Puede ordenar las claves?", "a": "Sí, activa la opción y las claves se ordenan alfabéticamente, de forma recursiva." },
+      { "q": "¿Soporta JSON grandes?", "a": "Sí, sin límite práctico más allá de la memoria de tu navegador." },
+      { "q": "¿Se envía mi JSON?", "a": "No: la validación es local. Nada sale de tu dispositivo." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/minificar-codigo/", "label": "Minificar HTML, CSS y JS" },
+      { "url": "/herramientas/conversion/json-a-csv/", "label": "Convertir JSON a CSV" },
+      { "url": "/herramientas/desarrollo/comparar-textos/", "label": "Comparar dos textos" }
+    ]
+  }
+]

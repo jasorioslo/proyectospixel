@@ -1,0 +1,179 @@
+[
+  {
+    "slug": "separar-keywords-genero",
+    "cat": "texto",
+    "keyword": "separar keywords masculino femenino",
+    "h2_que": "Qué hace el separador de keywords por género",
+    "que": [
+      "Clasifica automáticamente una lista de keywords en cuatro grupos: <strong>masculino singular</strong>, <strong>masculino plural</strong>, <strong>femenino singular</strong> y <strong>femenino plural</strong>, según las terminaciones del español (-o/-os/-a/-as/-es).",
+      "Es la herramienta perfecta para estructurar campañas de publicidad, catálogos de producto o investigaciones de keywords, donde necesitas variantes separadas por género y número."
+    ],
+    "h2_pasos": "Cómo separar keywords por género paso a paso",
+    "howtoName": "Cómo separar keywords por género y número",
+    "howtoSteps": ["Pega tus keywords", "Pulsa separar", "Copia los grupos"],
+    "pasos": [
+      "<strong>Pega las keywords</strong>, una por línea.",
+      "<strong>Pulsa «Separar keywords»</strong>: la heurística analiza la última palabra de cada una y la clasifica.",
+      "<strong>Copia cada grupo</strong> para tus anuncios, fichas de producto o campañas."
+    ],
+    "usos": [
+      "<strong>Google Ads:</strong> grupos de anuncios por género (zapatos vs zapatillas de mujer).",
+      "<strong>E-commerce:</strong> variantes por género en títulos y meta descripciones.",
+      "<strong>SEO:</strong> descubre si tu catálogo está cubriendo las variantes femeninas y plurales.",
+      "<strong>Campañas de keywords</strong> donde atenerse al género mejora el CTR."
+    ],
+    "ejemplos": [ "zapato → Masculino singular · camisas → Femenino plural" ],
+    "faqs": [
+      { "q": "¿Cómo decide el género?", "a": "Por la terminación: acaba en -a (femenino) o -o (masculino). Palabras terminadas en -e, consonante o extranjerismos quedan en «Sin determinar»." },
+      { "q": "¿Y el plural?", "a": "Detecta -as (femenino plural), -os (masculino plural) y -es (plural de género ambiguo)." },
+      { "q": "¿Es infalible?", "a": "Es una heurística lingüística: acierta en la mayoría de casos comunes, pero puede fallar en excepciones. Revisa el grupo «Sin determinar»." },
+      { "q": "¿Se guardan mis keywords?", "a": "No: todo el análisis es local en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/frecuencia-palabras/", "label": "Frecuencia de palabras" },
+      { "url": "/herramientas/texto/eliminar-lineas-duplicadas/", "label": "Quitar líneas duplicadas" },
+      { "url": "/herramientas/texto/generador-slugs/", "label": "Generador de Slugs" }
+    ]
+  },
+  {
+    "slug": "limites-redes",
+    "cat": "texto",
+    "keyword": "contador de caracteres para redes sociales",
+    "h2_que": "Qué hace el comprobador de límites de redes",
+    "que": [
+      "Mide tu texto contra los límites de <strong>8 plataformas</strong> a la vez (X, Instagram, TikTok, Meta description, title SEO, SMS, WhatsApp y YouTube) con barras de progreso por plataforma.",
+      "Así no vuelves a publicar algo que se corta a medias: ves de un vistazo si caben los caracteres o cuántos te pasas."
+    ],
+    "h2_pasos": "Cómo comprobar los límites paso a paso",
+    "howtoName": "Cómo comprobar los límites de caracteres por red social",
+    "howtoSteps": ["Pega tu texto", "Revisa las barras", "Ajusta y copia"],
+    "pasos": [
+      "<strong>Escribe o pega el texto</strong>: las barras se actualizan al instante.",
+      "<strong>Revisa cada plataforma:</strong> la barra en rojo indica que te has pasado, con los caracteres exactos que sobran.",
+      "<strong>Ajusta el texto</strong> hasta que todas las plataformas que te importan estén en verde y cópialo."
+    ],
+    "usos": [
+      "<strong>Social media manager:</strong> adapta un mismo mensaje a cada red.",
+      "<strong>SEO on-page:</strong> no truncar title (≈60) ni meta description (≈155-160).",
+      "<strong>SMS y WhatsApp:</strong> evita el doble mensaje y los costes extra.",
+      "<strong>YT/TikTok:</strong> títulos y descripciones dentro de su límite."
+    ],
+    "faqs": [
+      { "q": "¿Qué límites usa?", "a": "X 280 · Instagram 2200 · TikTok 2200 · Meta description 160 · Title 60 · SMS 160 · WhatsApp 700 · YouTube 100. Son los valores de referencia a 2026." },
+      { "q": "¿Cuenta caracteres o palabras?", "a": "Caracteres (con y sin espacios): es lo que limitan las plataformas." },
+      { "q": "¿Se guarda mi texto?", "a": "No: todo se calcula en tu navegador." },
+      { "q": "¿Y los emojis?", "a": "Cuentan como caracteres (algunos compuestos pueden contar doble según la plataforma)." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/contar-palabras-caracteres/", "label": "Contar palabras y caracteres" },
+      { "url": "/herramientas/texto/quitar-espacios-duplicados/", "label": "Quitar espacios duplicados" },
+      { "url": "/herramientas/texto/generador-slugs/", "label": "Generador de Slugs" }
+    ]
+  },
+  {
+    "slug": "convertir-imagen",
+    "cat": "imagen",
+    "keyword": "convertir imagen a webp png jpg",
+    "h2_que": "Qué hace el conversor de formatos de imagen",
+    "que": [
+      "Cambia el formato de una imagen a <strong>WebP</strong> (el más ligero), <strong>PNG</strong> (sin pérdida y con transparencias) o <strong>JPG</strong> (compatible con todo), ajustando la calidad si el formato lo permite.",
+      "La conversión ocurre <strong>en tu navegador</strong>: subir una imagen a un servidor de terceros ya no es necesario para cambiar su formato."
+    ],
+    "h2_pasos": "Cómo convertir una imagen de formato paso a paso",
+    "howtoName": "Cómo convertir una imagen a WebP, PNG o JPG",
+    "howtoSteps": ["Elige la imagen", "Selecciona el formato", "Convierte y descarga"],
+    "pasos": [
+      "<strong>Elige o arrastra la imagen</strong> (o pega con Ctrl+V).",
+      "<strong>Selecciona el formato de salida</strong> y ajusta la calidad si eliges JPG o WebP.",
+      "<strong>Pulsa convertir</strong>, compara el peso antes/después y descarga el archivo."
+    ],
+    "usos": [
+      "<strong>Web más ligera:</strong> pasar JPG grandes a WebP reduce peso y mejora CWV.",
+      "<strong>Transparencias:</strong> convierte a PNG cuando necesites fondo transparente.",
+      "<strong>Compatibilidad:</strong> convierte WebP/PNG a JPG para sistemas antiguos.",
+      "<strong>Tienda online:</strong> unifica el formato de todas las fotos de catálogo."
+    ],
+    "faqs": [
+      { "q": "¿Se sube mi imagen a algún servidor?", "a": "No: la conversión es local (Canvas). Tu archivo no sale de tu dispositivo." },
+      { "q": "¿Qué formato pesa menos?", "a": "WebP suele ser el más ligero conservando buena calidad; JPG es la alternativa compatible." },
+      { "q": "¿Convertir a PNG engorda la foto?", "a": "Puede: PNG no comprime fotos con pérdida. Para fotografías, JPG o WebP son mejores." },
+      { "q": "¿Y si mi navegador no genera WebP?", "a": "Algunos Safari/Firefox antiguos no pueden: la herramienta lo detecta y usa PNG automáticamente, avisándote." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/imagen/comprimir-imagen/", "label": "Comprimir imagen" },
+      { "url": "/herramientas/imagen/redimensionar-imagen/", "label": "Redimensionar imagen" },
+      { "url": "/herramientas/imagen/limpiar-exif/", "label": "Eliminar metadatos EXIF" }
+    ]
+  },
+  {
+    "slug": "redimensionar-imagen",
+    "cat": "imagen",
+    "keyword": "redimensionar imagen online",
+    "h2_que": "Qué hace el redimensionador de imágenes",
+    "que": [
+      "Cambia el tamaño de una imagen indicando <strong>ancho y alto en píxeles</strong> o una <strong>escala porcentual</strong> (100/75/50/25/10%), con la proporción bloqueada para que no se deforme.",
+      "Útil para adaptar fotos a tamaños concretos: web, redes sociales, miniaturas, impresión o correo."
+    ],
+    "h2_pasos": "Cómo redimensionar una imagen paso a paso",
+    "howtoName": "Cómo redimensionar una imagen online",
+    "howtoSteps": ["Elige la imagen", "Define el tamaño", "Redimensiona y descarga"],
+    "pasos": [
+      "<strong>Elige o arrastra la imagen:</strong> verás sus dimensiones originales.",
+      "<strong>Indica el ancho o el alto</strong> (o usa la escala rápida). Con «mantener proporción» activo, el otro lado se calcula solo.",
+      "<strong>Pulsa redimensionar</strong> y descarga el resultado (PNG sin pérdida)."
+    ],
+    "usos": [
+      "<strong>Redes sociales:</strong> ajusta a 1080×1080 (Instagram), 1200×630 (OG/Twitter), 1280×720 (YouTube).",
+      "<strong>Web:</strong> no sirvas una foto de 4000 px donde caben 1200.",
+      "<strong>Miniaturas</strong> de catálogo o blog.",
+      "<strong>Correo y adjuntos</strong> con límite de tamaño."
+    ],
+    "ejemplos": [ "1200×800 px con ancho 400 → 400×267 px (proporción automática)" ],
+    "faqs": [
+      { "q": "¿Se deforma la imagen?", "a": "No si mantienes activada la proporción: al cambiar un lado, el otro se recalcula." },
+      { "q": "¿Hasta qué tamaño puedo llegar?", "a": "Hasta 10.000 px por lado; más allá tu navegador puede quedarse sin memoria." },
+      { "q": "¿Amplía o solo reduce?", "a": "Puede hacer ambas, aunque ampliar no añade detalle real: para calidad, parte de una imagen mayor." },
+      { "q": "¿Se sube mi imagen?", "a": "No: el redimensionado es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/imagen/comprimir-imagen/", "label": "Comprimir imagen" },
+      { "url": "/herramientas/imagen/recortar-imagen/", "label": "Recortar imagen" },
+      { "url": "/herramientas/imagen/convertir-imagen/", "label": "Convertir formato" }
+    ]
+  },
+  {
+    "slug": "marca-de-agua",
+    "cat": "imagen",
+    "keyword": "añadir marca de agua a una imagen",
+    "h2_que": "Qué hace la herramienta de marca de agua",
+    "que": [
+      "Estampa un <strong>texto sobre tu imagen</strong> —tu marca, copyright, handle o aviso— con control de tamaño, color, opacidad y 9 posiciones (esquinas, bordes y centro).",
+      "La marca se dibuja encima con una sombra sutil para mantenerla legible sin tapar la foto. Todo en tu navegador."
+    ],
+    "h2_pasos": "Cómo añadir una marca de agua paso a paso",
+    "howtoName": "Cómo poner una marca de agua a una imagen",
+    "howtoSteps": ["Elige la imagen", "Escribe y ajusta la marca", "Aplica y descarga"],
+    "pasos": [
+      "<strong>Elige o arrastra la imagen</strong> a proteger.",
+      "<strong>Escribe el texto de la marca</strong> y ajusta tamaño, opacidad, color y posición.",
+      "<strong>Pulsa aplicar</strong>, revisa el resultado y descarga la imagen marcada."
+    ],
+    "usos": [
+      "<strong>Fotógrafos y creadores:</strong> firma digital visible en cada publicación.",
+      "<strong>Catálogos:</strong> marca de propiedad en fotos de producto.",
+      "<strong>Borradores para clientes:</strong> «MUESTRA» en propuestas.",
+      "<strong>Museos, inmobiliarias o escuelas:</strong> autoría visible en material compartido."
+    ],
+    "faqs": [
+      { "q": "¿Se sube mi imagen?", "a": "No: la marca se dibuja localmente. Tu foto nunca sale del navegador." },
+      { "q": "¿Puedo usar una imagen como marca?", "a": "De momento la marca es de texto. Para logos gráficos, reserva esta función para una versión futura." },
+      { "q": "¿La marca estropea la foto?", "a": "Se controla con la opacidad (50% por defecto) y lleva una sombra suave para integrarse." },
+      { "q": "¿En qué formatos guarda?", "a": "JPEG (calidad 92%) o PNG si el original era PNG, para conservar la transparencia." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/imagen/recortar-imagen/", "label": "Recortar imagen" },
+      { "url": "/herramientas/imagen/redimensionar-imagen/", "label": "Redimensionar imagen" },
+      { "url": "/herramientas/imagen/limpiar-exif/", "label": "Eliminar metadatos EXIF" }
+    ]
+  }
+]

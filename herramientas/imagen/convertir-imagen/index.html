@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=26">
+  <link rel="stylesheet" href="/css/styles.css?v=27">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Convertir Imagen de Formato","description":"Convierte imágenes a WebP, PNG o JPG online al instante. Sin subir archivos, 100% privado en tu navegador. Gratis y sin registro.","url":"https://proyectospixel.com/herramientas/imagen/convertir-imagen/","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo convertir una imagen a WebP, PNG o JPG","description":"Qué hace el conversor de formatos de imagen","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige la imagen","text":"Elige o arrastra la imagen (o pega con Ctrl+V)."},{"@type":"HowToStep","position":2,"name":"Selecciona el formato","text":"Selecciona el formato de salida y ajusta la calidad si eliges JPG o WebP."},{"@type":"HowToStep","position":3,"name":"Convierte y descarga","text":"Pulsa convertir, compara el peso antes/después y descarga el archivo."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se sube mi imagen a algún servidor?","acceptedAnswer":{"@type":"Answer","text":"No: la conversión es local (Canvas). Tu archivo no sale de tu dispositivo."}},{"@type":"Question","name":"¿Qué formato pesa menos?","acceptedAnswer":{"@type":"Answer","text":"WebP suele ser el más ligero conservando buena calidad; JPG es la alternativa compatible."}},{"@type":"Question","name":"¿Convertir a PNG engorda la foto?","acceptedAnswer":{"@type":"Answer","text":"Puede: PNG no comprime fotos con pérdida. Para fotografías, JPG o WebP son mejores."}},{"@type":"Question","name":"¿Y si mi navegador no genera WebP?","acceptedAnswer":{"@type":"Answer","text":"Algunos Safari/Firefox antiguos no pueden: la herramienta lo detecta y usa PNG automáticamente, avisándote."}}]}]}
   </script>
 </head>
 <body>
@@ -90,6 +93,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el conversor de formatos de imagen</h2>
+          <p>Cambia el formato de una imagen a <strong>WebP</strong> (el más ligero), <strong>PNG</strong> (sin pérdida y con transparencias) o <strong>JPG</strong> (compatible con todo), ajustando la calidad si el formato lo permite.</p>
+          <p>La conversión ocurre <strong>en tu navegador</strong>: subir una imagen a un servidor de terceros ya no es necesario para cambiar su formato.</p>
+          <h2>Cómo convertir una imagen de formato paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige o arrastra la imagen</strong> (o pega con Ctrl+V).</li>
+            <li><strong>Selecciona el formato de salida</strong> y ajusta la calidad si eliges JPG o WebP.</li>
+            <li><strong>Pulsa convertir</strong>, compara el peso antes/después y descarga el archivo.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Web más ligera:</strong> pasar JPG grandes a WebP reduce peso y mejora CWV.</li>
+            <li><strong>Transparencias:</strong> convierte a PNG cuando necesites fondo transparente.</li>
+            <li><strong>Compatibilidad:</strong> convierte WebP/PNG a JPG para sistemas antiguos.</li>
+            <li><strong>Tienda online:</strong> unifica el formato de todas las fotos de catálogo.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se sube mi imagen a algún servidor?</summary><p>No: la conversión es local (Canvas). Tu archivo no sale de tu dispositivo.</p></details>
+            <details class="faq-item"><summary>¿Qué formato pesa menos?</summary><p>WebP suele ser el más ligero conservando buena calidad; JPG es la alternativa compatible.</p></details>
+            <details class="faq-item"><summary>¿Convertir a PNG engorda la foto?</summary><p>Puede: PNG no comprime fotos con pérdida. Para fotografías, JPG o WebP son mejores.</p></details>
+            <details class="faq-item"><summary>¿Y si mi navegador no genera WebP?</summary><p>Algunos Safari/Firefox antiguos no pueden: la herramienta lo detecta y usa PNG automáticamente, avisándote.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/imagen/comprimir-imagen/">Comprimir imagen</a>, <a href="/herramientas/imagen/redimensionar-imagen/">Redimensionar imagen</a> o <a href="/herramientas/imagen/limpiar-exif/">Eliminar metadatos EXIF</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -99,13 +129,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=26"></script>
-  <script src="/js/tools-data.js?v=26"></script>
-  <script src="/js/tools/image-utils.js?v=26"></script>
+  <script src="/js/components.js?v=27"></script>
+  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/tools/image-utils.js?v=27"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/convertir-imagen.js?v=26"></script>
+  <script src="/js/tools/convertir-imagen.js?v=27"></script>
 </body>
 </html>
