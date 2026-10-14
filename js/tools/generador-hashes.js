@@ -72,7 +72,10 @@
     var blocks = toBlocks(bytes);
     var res = cycle(blocks);
     var out = '';
-    for (var i = 0; i < res.length * 4; i++) out += ('0' + ((res[i >> 2] >> ((i % 4) * 8 + 4)) & 0x0F).toString(16)).slice(-1);
+    for (var i = 0; i < res.length * 4; i++) {
+      out += ((res[i >> 2] >> ((i % 4) * 8 + 4)) & 0x0F).toString(16);
+      out += ((res[i >> 2] >> ((i % 4) * 8)) & 0x0F).toString(16);
+    }
     return out;
   }
 

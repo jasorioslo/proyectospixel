@@ -2,7 +2,7 @@
    ProyectosPixel Tools - Service Worker (PWA)
    ========================================================= */
 
-var CACHE_NAME = 'pp-v15';
+var CACHE_NAME = 'pp-v16';
 var ASSETS = [
   '/',
   '/index.html',
@@ -28,6 +28,18 @@ var ASSETS = [
   '/herramientas/conversion/json-a-csv/',
   '/herramientas/conversion/markdown-a-html/',
   '/herramientas/conversion/imagen-a-pdf/',
+  '/herramientas/seguridad/cifrar-texto-aes/',
+  '/herramientas/seguridad/generador-hmac/',
+  '/herramientas/seguridad/decodificar-jwt/',
+  '/herramientas/seguridad/comparar-hashes/',
+  '/herramientas/seguridad/generar-par-claves/',
+  '/herramientas/matematicas/calculadora-porcentajes/',
+  '/herramientas/matematicas/calculadora-descuentos/',
+  '/herramientas/matematicas/estadistica-basica/',
+  '/herramientas/matematicas/conversor-unidades/',
+  '/herramientas/matematicas/convertidor-bases/',
+  '/herramientas/matematicas/regla-de-tres/',
+  '/herramientas/matematicas/generador-tabla-multiplicar/',
   '/herramientas/imagen/comprimir-imagen/',
   '/herramientas/imagen/convertir-imagen/',
   '/herramientas/imagen/redimensionar-imagen/',
@@ -134,7 +146,20 @@ var ASSETS = [
   '/js/tools/limites-redes.js',
   '/js/tools/json-a-csv.js',
   '/js/tools/markdown-a-html.js',
-  '/js/tools/imagen-a-pdf.js'
+  '/js/tools/imagen-a-pdf.js',
+  '/js/tools/hash-utils.js',
+  '/js/tools/cifrar-texto-aes.js',
+  '/js/tools/generador-hmac.js',
+  '/js/tools/decodificar-jwt.js',
+  '/js/tools/comparar-hashes.js',
+  '/js/tools/generar-par-claves.js',
+  '/js/tools/calculadora-porcentajes.js',
+  '/js/tools/calculadora-descuentos.js',
+  '/js/tools/estadistica-basica.js',
+  '/js/tools/conversor-unidades.js',
+  '/js/tools/convertidor-bases.js',
+  '/js/tools/regla-de-tres.js',
+  '/js/tools/generador-tabla-multiplicar.js'
 ];
 
 // Install: cache static assets
