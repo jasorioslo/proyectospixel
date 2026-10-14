@@ -52,7 +52,13 @@
     { slug: 'formatear-json', title: 'Formatear y Validar JSON', desc: 'Embellece, valida y ordena tu JSON con detección de errores.', category: 'desarrollo', featured: false },
     { slug: 'minificar-codigo', title: 'Minificar HTML, CSS y JS', desc: 'Reduce el tamaño de tu código quitando comentarios y espacios.', category: 'desarrollo', featured: false },
     { slug: 'regex-tester', title: 'Probador de Expresiones Regulares', desc: 'Prueba tus regex con coincidencias resaltadas y grupos capturados.', category: 'desarrollo', featured: false },
-    { slug: 'comparar-textos', title: 'Comparar Dos Textos (Diff)', desc: 'Ve las diferencias línea por línea entre dos textos o versiones.', category: 'desarrollo', featured: false }
+    { slug: 'comparar-textos', title: 'Comparar Dos Textos (Diff)', desc: 'Ve las diferencias línea por línea entre dos textos o versiones.', category: 'desarrollo', featured: false },
+    { slug: 'generador-slugs', title: 'Generador de Slugs', desc: 'Convierte un título en un slug de URL limpio y amigable para SEO.', category: 'texto', featured: false },
+    { slug: 'codificar-url', title: 'Codificar y Decodificar URL', desc: 'Convierte texto a percent-encoding o revierte los escapes a texto legible.', category: 'desarrollo', featured: false },
+    { slug: 'generador-uuid', title: 'Generador de UUID', desc: 'Crea identificadores únicos UUID v4 con el generador seguro del navegador.', category: 'seguridad', featured: false },
+    { slug: 'verificador-contrasenas', title: 'Verificador de Contraseñas', desc: 'Analiza la fortaleza y el tiempo de descifrado sin enviarla a ningún sitio.', category: 'seguridad', featured: false },
+    { slug: 'generador-hashes', title: 'Generador de Hashes', desc: 'Calcula hash SHA-1, SHA-256, SHA-384, SHA-512 y MD5 en tu navegador.', category: 'seguridad', featured: false },
+    { slug: 'limites-redes', title: 'Límites de Redes Sociales', desc: 'Comprueba si tu texto cabe en X, Instagram, TikTok, WhatsApp, SMS y SEO.', category: 'texto', featured: false }
   ];
 
   /* --- Icon SVGs (Lucide-style inline) --- */
@@ -101,7 +107,13 @@
     'formatear-json': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1"/><path d="M16 3h1a2 2 0 0 1 2 2v5a2 2 0 0 0 2 2 2 2 0 0 0-2 2v5a2 2 0 0 1-2 2h-1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="8" r="1"/><circle cx="12" cy="16" r="1"/></svg>',
     'minificar-codigo': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="10" y1="12" x2="14" y2="12"/></svg>',
     'regex-tester': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="10" y1="7" x2="10" y2="13"/><line x1="7" y1="10" x2="13" y2="10"/></svg>',
-    'comparar-textos': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M15 21h4a2 2 0 0 0 2-2v-4"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="12" y1="3" x2="12" y2="21"/></svg>'
+    'comparar-textos': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M15 21h4a2 2 0 0 0 2-2v-4"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="12" y1="3" x2="12" y2="21"/></svg>',
+    'generador-slugs': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1 1"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1-1"/></svg>',
+    'codificar-url': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/><line x1="8" y1="8" x2="16" y2="16"/></svg>',
+    'generador-uuid': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="0"/><path d="M8 8h2v8H8z"/><path d="M14 8h2v4h-2z"/><path d="M14 14h2v2h-2z"/></svg>',
+    'verificador-contrasenas': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>',
+    'generador-hashes': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg>',
+    'limites-redes': '<svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H7l-3 3z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="12" x2="13" y2="12"/></svg>'
   };
 
   /* --- Render Card (cards iguales en home y relacionadas) --- */

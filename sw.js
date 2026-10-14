@@ -2,7 +2,7 @@
    ProyectosPixel Tools - Service Worker (PWA)
    ========================================================= */
 
-var CACHE_NAME = 'pp-v13';
+var CACHE_NAME = 'pp-v14';
 var ASSETS = [
   '/',
   '/index.html',
@@ -19,6 +19,12 @@ var ASSETS = [
   '/herramientas/desarrollo/minificar-codigo/',
   '/herramientas/desarrollo/regex-tester/',
   '/herramientas/desarrollo/comparar-textos/',
+  '/herramientas/texto/generador-slugs/',
+  '/herramientas/desarrollo/codificar-url/',
+  '/herramientas/seguridad/generador-uuid/',
+  '/herramientas/seguridad/verificador-contrasenas/',
+  '/herramientas/seguridad/generador-hashes/',
+  '/herramientas/texto/limites-redes/',
   '/herramientas/imagen/comprimir-imagen/',
   '/herramientas/imagen/convertir-imagen/',
   '/herramientas/imagen/redimensionar-imagen/',
@@ -116,7 +122,13 @@ var ASSETS = [
   '/js/tools/formatear-json.js',
   '/js/tools/minificar-codigo.js',
   '/js/tools/regex-tester.js',
-  '/js/tools/comparar-textos.js'
+  '/js/tools/comparar-textos.js',
+  '/js/tools/generador-slugs.js',
+  '/js/tools/codificar-url.js',
+  '/js/tools/generador-uuid.js',
+  '/js/tools/verificador-contrasenas.js',
+  '/js/tools/generador-hashes.js',
+  '/js/tools/limites-redes.js'
 ];
 
 // Install: cache static assets

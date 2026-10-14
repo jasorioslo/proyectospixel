@@ -330,4 +330,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url><loc>https://proyectospixel.com/herramientas/texto/generador-slugs/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://proyectospixel.com/herramientas/desarrollo/codificar-url/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://proyectospixel.com/herramientas/seguridad/generador-uuid/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://proyectospixel.com/herramientas/seguridad/verificador-contrasenas/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://proyectospixel.com/herramientas/seguridad/generador-hashes/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://proyectospixel.com/herramientas/texto/limites-redes/</loc><lastmod>2026-10-14</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
