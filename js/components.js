@@ -158,6 +158,16 @@
       });
     }, { rootMargin: '300px 0px' });
     targets.forEach(function (z) { observer.observe(z); });
+
+    // Fallback de seguridad: tras el load (LCP ya pintado), montar lo que falte.
+    // Cubre pestañas en segundo plano, navegadores que no disparan IO y scroll restaurado.
+    window.addEventListener('load', function () {
+      var run = function () {
+        targets.forEach(function (z) { if (!z.querySelector('ins.adsbygoogle')) mountAd(z); });
+      };
+      if ('requestIdleCallback' in window) { requestIdleCallback(run, { timeout: 2500 }); }
+      else { setTimeout(run, 800); }
+    });
   }
 
   /* --- Theme Toggle --- */
