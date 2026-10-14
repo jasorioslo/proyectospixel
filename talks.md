@@ -147,3 +147,55 @@
 - [x] Optimizar la navegación desde la home hacia las categorías y tools — HECHO: pills activas (5 categorías) + header nav con enlaces reales
 - [x] Verificar que no haya páginas huérfanas (todas las tools tengan al menos 2 enlaces internos apuntando a ellas) — HECHO: cada tool recibe enlaces desde su página de categoría + breadcrumb padre + related tools de pares
 - [x] Crear estructura de enlaces internos que favorezca el SEO (anchor text descriptivos) — HECHO: anchors con nombres de tools (no "click aquí")
+
+---
+
+## BLOQUE 13: Plan Completo de Cierre (14/10/2026)
+
+> Estado base: 66 herramientas en producción, SEO técnico 100/100/100, PWA pp-v19.
+> Orden: Fase 0 + Fase 1 → deploy → Fase 2 (Tavily) → Fase 3 → Fase 4 → Fases 5/6.
+
+### FASE 0 — Cierre técnico
+- [x] 0.1 Acortar títulos >65 chars: `codificar-url` y `conversor-unidades` — HECHO 14/10 (51 chars cada uno)
+- [ ] 0.2 (dueño) **Redirect Rule www → raíz** (301) — Rules → Redirect Rules → "Redirect from WWW to root"
+- [ ] 0.3 (dueño) **Secretos CI**: `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` en GitHub → activa auto-deploy (la guarda ya evita correos de fallo)
+- [x] 0.4 Medir CWV lab — HECHO 14/10: **CLS = 0** (perfecto) · TTFB 204-719ms (varía con red) · DCL 326-790ms · 7 peticiones · PSI API sin key dio 429 → LCP/INP formales pendientes de PSI con API key gratis o pagespeed.web.dev
+- [ ] 0.5 (2-4 semanas) Revisar **GSC → Core Web Vitals** con datos de campo reales
+
+### FASE 1 — AdSense (aprobado, falta activar)
+- [ ] 1.1 Crear **CMP de Google** (obligatorio UE/EEE): AdSense → Privacidad y mensajes
+- [ ] 1.2 **`/cookies.html`** + link en footer + ampliar `privacidad.html` + añadir a sitemap
+- [ ] 1.3 **CSP** en `_headers`: permitir dominios de AdSense (script-src, frame-src, img-src, connect-src)
+- [ ] 1.4 Activar zonas: quitar `display:none` + script + `<ins>` — **Home: top+mid · Tools: mid+bottom**
+- [ ] 1.5 **Lazy-load** con IntersectionObserver + min-heights anti-CLS
+- [ ] 1.6 Re-medir CWV post-ads (CLS <0.1, sin degradar LCP >10%)
+
+### FASE 2 — SEO por herramienta con Tavily (sin Python)
+- [ ] 2.1 `tools/seo/research.mjs <slug>` (Node): **Tavily Search** (keyword + "cómo usar" → top 5) + **Tavily Extract** (top 3-5) → guarda `seo/research/<slug>.md`
+- [ ] 2.2 `.gitignore`: `seo/research/` (repo público → solo `seo/fuentes.md` con URLs)
+- [ ] 2.3 Análisis: secciones comunes, FAQs repetidas, entidades, longitud media, huecos
+- [ ] 2.4 Generación (agente) por tool: Intro 60-90 · "Qué es" · **"Cómo usar paso a paso"** (HowTo) · Casos de uso · Ejemplos propios · **FAQ 5-8** (FAQPage) · enlaces internos — **600-900 palabras, originales, keywords naturales**
+- [ ] 2.5 Implementar `.tool-content` + FAQ en `<details>` + JSON-LD HowTo/FAQPage
+- [ ] 2.6 QA por lote: Rich Results Test + Lighthouse SEO 100 + enlaces internos
+- [ ] 2.7 Medición a 30 días en GSC → reescribir las que no arranquen
+- Piloto: `quitar-acentos`, `contar-palabras-caracteres`, `comprimir-imagen` → revisión → 7 lotes de 10
+- Coste Tavily estimado: ~266 créditos (plan gratuito 1.000/mes)
+
+### FASE 3 — Testing pendiente (Bloque 10)
+- [ ] 3.1 Responsive real en dispositivo (320/375/768/1024/1440)
+- [ ] 3.2 PWA offline real + "Instalar como app" en móvil
+- [ ] 3.3 Cross-browser Safari + Firefox (WebP fallback, WebCrypto)
+- [ ] 3.4 Spot-check funcional de las 66 tools en producción
+
+### FASE 4 — Analítica (decisión pendiente)
+- [ ] Decidir: Cloudflare Web Analytics (1 clic, sin cookies, sin CMP) **o** Umami (eventos por tool + hosting + CMP/privacidad)
+
+### FASE 5 — Producto (opcional)
+- [ ] 5.1 PDF → imágenes (vendorizar pdf.js en `/js/vendor/` + precache SW)
+- [ ] 5.2 Contenido SEO también en las 6 páginas de categoría
+- [ ] 5.3 UX: favoritos en localStorage, badge "Nuevo", guías/blog
+
+### FASE 6 — Deuda técnica (baja prioridad)
+- [ ] 6.1 Deduplicar MD5 (`hash-utils.js` ↔ `generador-hashes.js`)
+- [ ] 6.2 `bump-versions.js` que también actualice `CACHE_NAME` del SW
+- [ ] 6.3 Script de chequeo automático de enlaces internos (200)
