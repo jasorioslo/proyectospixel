@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "minificar-codigo",
+    "cat": "desarrollo",
+    "keyword": "minificar html css js online",
+    "h2_que": "Qué es minificar código y cuándo usarlo",
+    "que": [
+      "Minificar es <strong>quitar comentarios y espacios sobrantes</strong> del código para que el archivo pese menos y cargue más rápido. Es un paso habitual antes de subir CSS o JavaScript a producción.",
+      "Elige el lenguaje (HTML, CSS o JavaScript), pega el código y obtén la versión compacta con el ahorro exacto de bytes."
+    ],
+    "h2_pasos": "Cómo minificar código paso a paso",
+    "howtoName": "Cómo minificar HTML, CSS y JavaScript online",
+    "howtoSteps": ["Elige el lenguaje", "Pega el código", "Minifica y copia"],
+    "pasos": [
+      "<strong>Elige el lenguaje</strong> (HTML, CSS o JavaScript).",
+      "<strong>Pega el código</strong> y pulsa minificar: la herramienta muestra la reducción conseguida.",
+      "<strong>Copia el resultado</strong> y pégalo en tu archivo de producción."
+    ],
+    "usos": [
+      "<strong>Optimizar CSS/JS</strong> antes de subirlo a producción.",
+      "<strong>Reducir HTML</strong> de plantillas y correos.",
+      "<strong>Aprender:</strong> comparar la versión legible y la minificada.",
+      "<strong>Preparación de snippets</strong> para insertar en un CMS."
+    ],
+    "faqs": [
+      { "q": "¿La minificación de JS es segura?", "a": "Es conservadora (quita comentarios y espacios, no renombra variables). Aun así, prueba el resultado: para minificado agresivo hacen falta herramientas con análisis sintáctico." },
+      { "q": "¿Sobra el punto y coma o las llaves?", "a": "No se eliminan símbolos funcionales: solo espacios, saltos y comentarios." },
+      { "q": "¿Se guarda mi código?", "a": "No: tu código se procesa en el navegador y nunca sale de él." },
+      { "q": "¿Cuánto peso suele ahorrar?", "a": "Entre un 15% y un 50% según los comentarios y la indentación del original." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/formatear-json/", "label": "Formatear y validar JSON" },
+      { "url": "/herramientas/desarrollo/regex-tester/", "label": "Probador de regex" },
+      { "url": "/herramientas/desarrollo/comparar-textos/", "label": "Comparar dos textos" }
+    ]
+  },
+  {
+    "slug": "regex-tester",
+    "cat": "desarrollo",
+    "keyword": "probador de expresiones regulares",
+    "h2_que": "Qué hace el probador de expresiones regulares",
+    "que": [
+      "Prueba tus <strong>expresiones regulares</strong> contra un texto de ejemplo y ves al instante las <strong>coincidencias resaltadas</strong>, sus posiciones y los <strong>grupos capturados</strong>.",
+      "Incluye los flags habituales (g, i, m, s, u) para probar cada escenario sin escribir una línea de código."
+    ],
+    "h2_pasos": "Cómo probar una regex paso a paso",
+    "howtoName": "Cómo probar expresiones regulares online",
+    "howtoSteps": ["Escribe el patrón", "Pega el texto", "Revisa coincidencias y grupos"],
+    "pasos": [
+      "<strong>Escribe el patrón</strong> de la expresión regular (por ejemplo <code>(\\d{4})-(\\d{2})-(\\d{2})</code>).",
+      "<strong>Pega un texto de prueba</strong> y marca los flags que necesites.",
+      "<strong>Pulsa probar:</strong> verás las coincidencias resaltadas, el número total y una tabla con los grupos capturados."
+    ],
+    "usos": [
+      "<strong>Validar formatos:</strong> fechas, correos, teléfonos, códigos postales.",
+      "<strong>Preparar búsquedas:</strong> probar el patrón antes de usarlo en tu código o en «buscar y reemplazar».",
+      "<strong>Extraer datos:</strong> capturar partes concretas de un texto en los grupos.",
+      "<strong>Enseñar regex:</strong> ver el efecto inmediato de cada símbolo."
+    ],
+    "ejemplos": [ "(\\d{4})-(\\d{2})-(\\d{2}) sobre «2026-10-14» → 3 grupos: 2026 · 10 · 14" ],
+    "faqs": [
+      { "q": "¿Qué significan los flags?", "a": "g busca todas las coincidencias, i ignora mayúsculas, m trata ^ y $ por línea, s hace que el punto incluya saltos y u activa el modo Unicode." },
+      { "q": "¿Y si mi patrón es inválido?", "a": "La herramienta muestra el error exacto que indica el motor de regex del navegador." },
+      { "q": "¿Cuántas coincidencias muestra?", "a": "Hasta 5.000 por seguridad, con resumen y tabla de grupos (primeras 50)." },
+      { "q": "¿Se envía mi texto?", "a": "No: todo se ejecuta localmente en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar (con regex)" },
+      { "url": "/herramientas/desarrollo/comparar-textos/", "label": "Comparar dos textos" },
+      { "url": "/herramientas/desarrollo/formatear-json/", "label": "Formatear JSON" }
+    ]
+  },
+  {
+    "slug": "comparar-textos",
+    "cat": "desarrollo",
+    "keyword": "comparar dos textos online",
+    "h2_que": "Qué hace el comparador de textos",
+    "que": [
+      "Compara dos versiones de un texto o código y muestra, <strong>línea a línea</strong>, qué se añadió (verde) y qué se eliminó (rojo), con el número de cambios.",
+      "Usa un algoritmo de diferencias (LCS) que también reconoce líneas iguales, así que solo se resaltan los cambios reales."
+    ],
+    "h2_pasos": "Cómo comparar dos textos paso a paso",
+    "howtoName": "Cómo comparar dos textos y ver las diferencias",
+    "howtoSteps": ["Pega el texto original", "Pega la versión modificada", "Compara y revisa"],
+    "pasos": [
+      "<strong>Pega el texto original</strong> (columna A) y la <strong>versión modificada</strong> (columna B).",
+      "<strong>Pulsa comparar:</strong> las líneas nuevas salen en verde y las eliminadas en rojo.",
+      "<strong>Revisa las estadísticas</strong> (+añadidas / −eliminadas / iguales) para saber el alcance del cambio."
+    ],
+    "usos": [
+      "<strong>Control de versiones ligero:</strong> ver qué cambió entre dos revisiones.",
+      "<strong>Traducciones:</strong> comparar original y traducción línea a línea.",
+      "<strong>Contratos y textos legales:</strong> identificar modificaciones al instante.",
+      "<strong>Configuraciones y CSV:</strong> detectar filas añadidas o eliminadas."
+    ],
+    "ejemplos": [ "3 líneas vs 4 con un cambio → +2 añadidas, −1 eliminada, 2 iguales" ],
+    "faqs": [
+      { "q": "¿Compara caracteres o líneas?", "a": "Línea a línea, que es lo práctico para textos y código." },
+      { "q": "¿Qué significa cada color?", "a": "Verde: líneas que existen en la versión B. Rojo: líneas que desaparecen respecto a A." },
+      { "q": "¿Hay límite de tamaño?", "a": "Sin límite práctico; textos enormes pueden tardar un instante en comparar." },
+      { "q": "¿Se guardan mis textos?", "a": "No: todo el diff se calcula en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar" },
+      { "url": "/herramientas/desarrollo/formatear-json/", "label": "Formatear JSON" },
+      { "url": "/herramientas/desarrollo/regex-tester/", "label": "Probador de regex" }
+    ]
+  },
+  {
+    "slug": "texto-a-morse",
+    "cat": "conversion",
+    "keyword": "texto a morse online",
+    "h2_que": "Qué hace el traductor a código Morse",
+    "que": [
+      "Traduce texto a <strong>código Morse</strong> y también al revés (Morse a texto), con validación: si el código tiene símbolos desconocidos, te avisa indicando cuál.",
+      "Usa el alfabeto Morse internacional, con letras, números y puntuación básica."
+    ],
+    "h2_pasos": "Cómo traducir texto a Morse paso a paso",
+    "howtoName": "Cómo convertir texto a código Morse y viceversa",
+    "howtoSteps": ["Pega el texto o Morse", "Elige el sentido", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> (o el código Morse con puntos, rayas y espacios).",
+      "<strong>Elige el sentido:</strong> texto → Morse o Morse → texto.",
+      "<strong>Copia el resultado</strong>. Si el Morse no es válido, verás el símbolo exacto que falla."
+    ],
+    "usos": [
+      "<strong>Historia y CTS:</strong> practicar radiocomunicaciones.",
+      "<strong>Juegos y escape rooms:</strong> crear mensajes en clave.",
+      "<strong>Actividad escolar</strong> y talleres de comunicación.",
+      "<strong>Retos y acertijos</strong> con mensajes ocultos."
+    ],
+    "ejemplos": [ "SOS → ... --- ..." ],
+    "faqs": [
+      { "q": "¿Separa las letras y las palabras?", "a": "Sí: un espacio entre letras y una barra «/» entre palabras, el estándar." },
+      { "q": "¿Soporta números y puntuación?", "a": "Sí, el alfabeto Morse internacional incluye números y signos básicos." },
+      { "q": "¿Y las tildes o la ñ?", "a": "Morse es un alfabeto limitado: se recomienda usar el generador de slugs o quitar acentos antes de traducir." },
+      { "q": "¿Funciona sin internet?", "a": "Sí, todo se procesa en tu navegador (PWA offline)." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/codificar-decodificar-base64/", "label": "Codificar Base64" },
+      { "url": "/herramientas/texto/cifrado-rot13/", "label": "Cifrado ROT13" },
+      { "url": "/herramientas/conversion/texto-a-binario/", "label": "Texto a binario" }
+    ]
+  },
+  {
+    "slug": "convertir-unicode-texto",
+    "cat": "conversion",
+    "keyword": "convertir unicode a texto online",
+    "h2_que": "Qué son las secuencias Unicode (\\uXXXX)",
+    "que": [
+      "En JavaScript y muchos lenguajes, los caracteres pueden escribirse como <strong>secuencias de escape Unicode</strong>: «á» es «\\u00E1», «ñ» es «\\u00F1». Esta herramienta convierte en ambos sentidos.",
+      "Útil para depurar datos, escribir cadenas seguras en código, mover texto entre sistemas o descifrar caracteres que aparecen como «\\uXXXX» en un JSON."
+    ],
+    "h2_pasos": "Cómo convertir Unicode paso a paso",
+    "howtoName": "Cómo convertir texto a Unicode y Unicode a texto",
+    "howtoSteps": ["Pega el texto o secuencias", "Elige la dirección", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> (o las secuencias \\uXXXX).",
+      "<strong>Elige dirección:</strong> texto → Unicode (escapes) o Unicode → texto (legible).",
+      "<strong>Copia el resultado</strong>; si una secuencia no es válida, la herramienta te avisa."
+    ],
+    "usos": [
+      "<strong>Programación:</strong> escribir caracteres especiales con escapes seguros.",
+      "<strong>Depurar JSON/APIs</strong> donde el texto llega codificado.",
+      "<strong>Traducciones técnicas</strong> que usan \\uXXXX de forma habitual.",
+      "<strong>Docencia:</strong> mostrar la diferencia entre carácter y código."
+    ],
+    "ejemplos": [ "ñ → \\u00F1", "\\u00F1 → ñ" ],
+    "faqs": [
+      { "q": "¿Qué formato usa?", "a": "Escapes de 4 dígitos hexadecimales (\\uXXXX), el estándar de JavaScript y JSON." },
+      { "q": "¿Soporta emojis (fuera del BMP)?", "a": "Los caracteres fuera del plano básico se expresan con pares de escapes; la herramienta avisa si el formato no es válido." },
+      { "q": "¿Se envía mi texto?", "a": "No: la conversión es local." },
+      { "q": "¿Diferencia con Base64?", "a": "Unicode deja el texto legible en código; Base64 lo transforma por completo para transporte de datos." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/codificar-decodificar-base64/", "label": "Codificar Base64" },
+      { "url": "/herramientas/conversion/texto-a-binario/", "label": "Texto a binario" },
+      { "url": "/herramientas/texto/quitar-acentos/", "label": "Quitar acentos" }
+    ]
+  }
+]

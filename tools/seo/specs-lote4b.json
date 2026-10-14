@@ -1,0 +1,180 @@
+[
+  {
+    "slug": "codificar-decodificar-base64",
+    "cat": "conversion",
+    "keyword": "codificar y decodificar base64 online",
+    "h2_que": "Qué es Base64 y para qué se usa",
+    "que": [
+      "Base64 es una codificación que representa datos binarios o texto usando <strong>64 caracteres seguros</strong> (letras, números, + y /). Sirve para transportar datos en entornos que solo aceptan texto: correos, URLs, JSON, tokens.",
+      "Con esta herramienta codificas cualquier texto a Base64 o descifras Base64 a texto legible, con validación y aviso si la cadena no es válida."
+    ],
+    "h2_pasos": "Cómo codificar y decodificar Base64 paso a paso",
+    "howtoName": "Cómo codificar y decodificar texto en Base64",
+    "howtoSteps": ["Pega el texto", "Elige codificar o decodificar", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> (o la cadena Base64).",
+      "<strong>Elige la acción:</strong> codificar (texto → Base64) o decodificar (Base64 → texto).",
+      "<strong>Pulsa el botón</strong> y copia el resultado. Si el Base64 es inválido, verás el error."
+    ],
+    "usos": [
+      "<strong>APIs y cabeceras:</strong> enviar credenciales o datos binarios como texto.",
+      "<strong>Tokens y JWT:</strong> entender sus partes codificadas.",
+      "<strong>Datos en JSON/XML:</strong> incrustar contenido seguro sin caracteres raros.",
+      "<strong>Aprendizaje:</strong> ver qué hay detrás de una cadena Base64."
+    ],
+    "ejemplos": [ "hola → aG9sYQ==" ],
+    "faqs": [
+      { "q": "¿Base64 cifra el texto?", "a": "No: lo codifica, no lo cifra. Cualquiera puede decodificarlo. Para proteger datos usa cifrado (AES)." },
+      { "q": "¿Con acentos y emojis?", "a": "Sí: se procesa en UTF-8, así que los caracteres no ASCII se conservan al decodificar." },
+      { "q": "¿Qué es el «=» del final?", "a": "El relleno (padding) para completar el último bloque; es normal y no es un error." },
+      { "q": "¿Se sube mi texto?", "a": "No: todo ocurre en tu navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES-256)" },
+      { "url": "/herramientas/desarrollo/decodificar-jwt/", "label": "Decodificar JWT" },
+      { "url": "/herramientas/desarrollo/codificar-url/", "label": "Codificar URL" }
+    ]
+  },
+  {
+    "slug": "texto-a-binario",
+    "cat": "conversion",
+    "keyword": "convertir texto a binario online",
+    "h2_que": "Qué hace el conversor de texto a binario",
+    "que": [
+      "Convierte texto a <strong>código binario real (UTF-8)</strong>: cada carácter se transforma en sus bytes y cada byte en 8 bits («H» → 01001000), y también lo revierte a texto.",
+      "Al usar UTF-8 de verdad, los acentos, la ñ y los emojis se codifican correctamente (a diferencia de las herramientas que solo trabajan ASCII)."
+    ],
+    "h2_pasos": "Cómo convertir texto a binario paso a paso",
+    "howtoName": "Cómo convertir texto a binario (y de binario a texto)",
+    "howtoSteps": ["Pega el texto o el binario", "Elige la dirección", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> (o el código binario).",
+      "<strong>Elige la dirección:</strong> Texto → binario o Binario → texto.",
+      "<strong>Copia el resultado</strong>. En modo binario→texto, la herramienta valida la longitud y los bytes UTF-8."
+    ],
+    "usos": [
+      "<strong>Informática básica:</strong> ver cómo se representa el texto en bits.",
+      "<strong>Docencia:</strong> explicar codificación de caracteres y UTF-8.",
+      "<strong>Retos y juegos</strong> con mensajes ocultos.",
+      "<strong>Depurar datos binarios</strong> de protocolos simples."
+    ],
+    "ejemplos": [ "Ho → 01001000 01101111", "01001000 01101111 → Ho" ],
+    "faqs": [
+      { "q": "¿Usa ASCII o UTF-8?", "a": "UTF-8: es lo que permite representar tildes, ñ, símbolos y emojis sin perder información." },
+      { "q": "¿Puedo quitar los espacios entre bytes?", "a": "Sí, hay una opción para separar los bytes con espacios o sin ellos." },
+      { "q": "¿Y si el binario no es válido?", "a": "La herramienta avisa: grupos incompletos (no múltiplos de 8) o bytes que no forman un texto UTF-8 correcto." },
+      { "q": "¿Se envía mi texto?", "a": "No: la conversión es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/convertir-unicode-texto/", "label": "Convertir Unicode/Texto" },
+      { "url": "/herramientas/matematicas/convertidor-bases/", "label": "Convertidor de bases" },
+      { "url": "/herramientas/conversion/codificar-decodificar-base64/", "label": "Codificar Base64" }
+    ]
+  },
+  {
+    "slug": "json-a-csv",
+    "cat": "conversion",
+    "keyword": "convertir json a csv online",
+    "h2_que": "Qué hace el conversor JSON ↔ CSV",
+    "que": [
+      "Pasa de <strong>JSON a CSV</strong> (ideal para abrir datos en Excel o Google Sheets) y de <strong>CSV a JSON</strong> (para APIs y código), con delimitador configurable y cabeceras.",
+      "Maneja correctamente el <strong>entrecomillado CSV</strong>: valores con comas, comillas o saltos de línea se exportan seguros."
+    ],
+    "h2_pasos": "Cómo convertir JSON a CSV (y viceversa) paso a paso",
+    "howtoName": "Cómo convertir JSON a CSV y CSV a JSON",
+    "howtoSteps": ["Elige la dirección", "Pega los datos", "Convierte y copia"],
+    "pasos": [
+      "<strong>Elige la dirección:</strong> JSON → CSV o CSV → JSON.",
+      "<strong>Pega los datos</strong> (array de objetos o filas con delimitador) y ajusta delimitador (coma, punto y coma, tabulador) y cabeceras.",
+      "<strong>Pulsa convertir</strong> y copia el resultado."
+    ],
+    "usos": [
+      "<strong>Análisis de datos:</strong> volcar una API JSON a una hoja de cálculo.",
+      "<strong>Importar/exportar</strong> a CRM, ERP o BI.",
+      "<strong>Preparar fixtures</strong> JSON a partir de una tabla CSV.",
+      "<strong>Limpieza previa:</strong> detectar claves irregulares (se unifican como columnas)."
+    ],
+    "ejemplos": [ "[{\"nombre\":\"Ana\",\"edad\":30}] → nombre,edad\\nAna,30" ],
+    "faqs": [
+      { "q": "¿Qué pasa si los objetos tienen claves distintas?", "a": "Se calcula la unión de todas las claves: las filas sin ese campo quedan vacías." },
+      { "q": "¿Respeta las comas dentro de los valores?", "a": "Sí: valores con comas, comillas o saltos se entrecomillan correctamente según el estándar CSV." },
+      { "q": "¿Hay límite de filas?", "a": "Hasta 10.000 filas por conversión, para no bloquear el navegador." },
+      { "q": "¿Se suben mis datos?", "a": "No: la conversión es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/formatear-json/", "label": "Formatear y validar JSON" },
+      { "url": "/herramientas/matematicas/convertidor-bases/", "label": "Convertidor de bases" },
+      { "url": "/herramientas/texto/extraer-columnas-texto/", "label": "Extraer columnas" }
+    ]
+  },
+  {
+    "slug": "markdown-a-html",
+    "cat": "conversion",
+    "keyword": "convertir markdown a html online",
+    "h2_que": "Qué hace el conversor de Markdown a HTML",
+    "que": [
+      "Transforma tu <strong>Markdown</strong> en <strong>HTML</strong> listo para pegar en una web, con vista previa renderizada: títulos, negritas, cursivas, listas, citas, código, enlaces e imágenes.",
+      "Incluye una opción de <strong>escapado seguro</strong> (recomendada) que neutraliza cualquier HTML del original para evitar inyecciones."
+    ],
+    "h2_pasos": "Cómo convertir Markdown a HTML paso a paso",
+    "howtoName": "Cómo convertir Markdown a HTML online",
+    "howtoSteps": ["Pega tu Markdown", "Elije las opciones", "Convierte y copia"],
+    "pasos": [
+      "<strong>Pega el Markdown</strong> (por ejemplo, el README de un proyecto).",
+      "<strong>Quédate con el escapado activo</strong> si vas a publicar contenido de terceros.",
+      "<strong>Pulsa convertir:</strong> verás la vista previa y el HTML generado, listo para copiar."
+    ],
+    "usos": [
+      "<strong>Documentación:</strong> convertir READMEs y apuntes a HTML.",
+      "<strong>Blogs y CMS</strong> que aceptan HTML pero no Markdown.",
+      "<strong>Correos HTML</strong> sencillos a partir de Markdown.",
+      "<strong>Migración</strong> de contenido entre plataformas."
+    ],
+    "faqs": [
+      { "q": "¿Qué sintaxis soporta?", "a": "Títulos (#), negritas, cursivas, código (inline y bloques), enlaces, imágenes, listas, citas y separadores." },
+      { "q": "¿Es seguro con HTML incrustado?", "a": "Con el escapado activado (por defecto), el HTML del original se muestra como texto, no se ejecuta." },
+      { "q": "¿Lo convierte a Markdown de vuelta?", "a": "No por ahora: esta herramienta va en un sentido (Markdown → HTML)." },
+      { "q": "¿Se guarda mi texto?", "a": "No: todo el parseo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/minificar-codigo/", "label": "Minificar HTML" },
+      { "url": "/herramientas/desarrollo/comparar-textos/", "label": "Comparar dos textos" },
+      { "url": "/herramientas/desarrollo/regex-tester/", "label": "Probador de regex" }
+    ]
+  },
+  {
+    "slug": "imagen-a-pdf",
+    "cat": "conversion",
+    "keyword": "convertir imagenes a pdf online",
+    "h2_que": "Qué hace el conversor de imágenes a PDF",
+    "que": [
+      "Une varias imágenes (JPG, PNG, WebP) en un <strong>único PDF</strong>, con cada imagen en su propia página. Eliges si cada página se ajusta al tamaño de la imagen o a un <strong>A4 centrado</strong> sin deformar.",
+      "El PDF se genera <strong>en tu navegador</strong>, escribiendo el archivo directamente: tus fotos no se suben a ningún servidor ni pasan por servicios de conversión."
+    ],
+    "h2_pasos": "Cómo convertir imágenes a PDF paso a paso",
+    "howtoName": "Cómo unir varias imágenes en un solo PDF",
+    "howtoSteps": ["Añade las imágenes", "Elige tamaño y calidad", "Genera y descarga el PDF"],
+    "pasos": [
+      "<strong>Arrastra o elige las imágenes</strong> (puedes añadir varias a la vez y quitar las que no quieras).",
+      "<strong>Configura</strong> tamaño de página (A4 o igual que la imagen) y calidad JPEG.",
+      "<strong>Pulsa generar PDF</strong> y descarga el archivo desde tu equipo."
+    ],
+    "usos": [
+      "<strong>Escaneos y apuntes:</strong> fotos de pizarra o documentos como un solo PDF.",
+      "<strong>Portafolios:</strong> varias láminas en un archivo ordenado.",
+      "<strong>Trámites:</strong> subir fotos donde solo se acepta PDF.",
+      "<strong>Compartir ordenado:</strong> una foto no se pierde, un PDF con 20 páginas tampoco."
+    ],
+    "faqs": [
+      { "q": "¿Se suben mis imágenes?", "a": "No: el PDF se construye en tu navegador con las imágenes que ya tienes cargadas en memoria. Nada sale de tu dispositivo." },
+      { "q": "¿Qué tamaño de página elijo?", "a": "A4 centra la imagen sin deformarla (ideal para imprimir); «igual que la imagen» conserva el tamaño original en puntos." },
+      { "q": "¿Cuántas imágenes puedo unir?", "a": "Sin un límite fijo, pero ten en cuenta la memoria del dispositivo: decenas de fotos grandes pueden tardar." },
+      { "q": "¿Mantiene la calidad?", "a": "Puedes ajustar la calidad JPEG (85% por defecto); a más calidad, más peso del PDF." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/imagen/comprimir-imagen/", "label": "Comprimir imagen" },
+      { "url": "/herramientas/imagen/limpiar-exif/", "label": "Eliminar metadatos EXIF" },
+      { "url": "/herramientas/imagen/convertir-imagen/", "label": "Convertir formato" }
+    ]
+  }
+]

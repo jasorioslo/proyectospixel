@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=27">
+  <link rel="stylesheet" href="/css/styles.css?v=28">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Convertir Imágenes a PDF","description":"Une varias imágenes en un solo PDF online (JPG, PNG, WebP). Ajusta calidad y tamaño de página. 100% privado: tus fotos no se suben.","url":"https://proyectospixel.com/herramientas/conversion/imagen-a-pdf/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo unir varias imágenes en un solo PDF","description":"Qué hace el conversor de imágenes a PDF","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Añade las imágenes","text":"Arrastra o elige las imágenes (puedes añadir varias a la vez y quitar las que no quieras)."},{"@type":"HowToStep","position":2,"name":"Elige tamaño y calidad","text":"Configura tamaño de página (A4 o igual que la imagen) y calidad JPEG."},{"@type":"HowToStep","position":3,"name":"Genera y descarga el PDF","text":"Pulsa generar PDF y descarga el archivo desde tu equipo."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se suben mis imágenes?","acceptedAnswer":{"@type":"Answer","text":"No: el PDF se construye en tu navegador con las imágenes que ya tienes cargadas en memoria. Nada sale de tu dispositivo."}},{"@type":"Question","name":"¿Qué tamaño de página elijo?","acceptedAnswer":{"@type":"Answer","text":"A4 centra la imagen sin deformarla (ideal para imprimir); «igual que la imagen» conserva el tamaño original en puntos."}},{"@type":"Question","name":"¿Cuántas imágenes puedo unir?","acceptedAnswer":{"@type":"Answer","text":"Sin un límite fijo, pero ten en cuenta la memoria del dispositivo: decenas de fotos grandes pueden tardar."}},{"@type":"Question","name":"¿Mantiene la calidad?","acceptedAnswer":{"@type":"Answer","text":"Puedes ajustar la calidad JPEG (85% por defecto); a más calidad, más peso del PDF."}}]}]}
   </script>
 </head>
 <body>
@@ -89,6 +92,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el conversor de imágenes a PDF</h2>
+          <p>Une varias imágenes (JPG, PNG, WebP) en un <strong>único PDF</strong>, con cada imagen en su propia página. Eliges si cada página se ajusta al tamaño de la imagen o a un <strong>A4 centrado</strong> sin deformar.</p>
+          <p>El PDF se genera <strong>en tu navegador</strong>, escribiendo el archivo directamente: tus fotos no se suben a ningún servidor ni pasan por servicios de conversión.</p>
+          <h2>Cómo convertir imágenes a PDF paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Arrastra o elige las imágenes</strong> (puedes añadir varias a la vez y quitar las que no quieras).</li>
+            <li><strong>Configura</strong> tamaño de página (A4 o igual que la imagen) y calidad JPEG.</li>
+            <li><strong>Pulsa generar PDF</strong> y descarga el archivo desde tu equipo.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Escaneos y apuntes:</strong> fotos de pizarra o documentos como un solo PDF.</li>
+            <li><strong>Portafolios:</strong> varias láminas en un archivo ordenado.</li>
+            <li><strong>Trámites:</strong> subir fotos donde solo se acepta PDF.</li>
+            <li><strong>Compartir ordenado:</strong> una foto no se pierde, un PDF con 20 páginas tampoco.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se suben mis imágenes?</summary><p>No: el PDF se construye en tu navegador con las imágenes que ya tienes cargadas en memoria. Nada sale de tu dispositivo.</p></details>
+            <details class="faq-item"><summary>¿Qué tamaño de página elijo?</summary><p>A4 centra la imagen sin deformarla (ideal para imprimir); «igual que la imagen» conserva el tamaño original en puntos.</p></details>
+            <details class="faq-item"><summary>¿Cuántas imágenes puedo unir?</summary><p>Sin un límite fijo, pero ten en cuenta la memoria del dispositivo: decenas de fotos grandes pueden tardar.</p></details>
+            <details class="faq-item"><summary>¿Mantiene la calidad?</summary><p>Puedes ajustar la calidad JPEG (85% por defecto); a más calidad, más peso del PDF.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/imagen/comprimir-imagen/">Comprimir imagen</a>, <a href="/herramientas/imagen/limpiar-exif/">Eliminar metadatos EXIF</a> o <a href="/herramientas/imagen/convertir-imagen/">Convertir formato</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -98,13 +128,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=27"></script>
-  <script src="/js/tools-data.js?v=27"></script>
-  <script src="/js/tools/image-utils.js?v=27"></script>
+  <script src="/js/components.js?v=28"></script>
+  <script src="/js/tools-data.js?v=28"></script>
+  <script src="/js/tools/image-utils.js?v=28"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/imagen-a-pdf.js?v=27"></script>
+  <script src="/js/tools/imagen-a-pdf.js?v=28"></script>
 </body>
 </html>

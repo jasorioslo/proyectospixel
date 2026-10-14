@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=27">
+  <link rel="stylesheet" href="/css/styles.css?v=28">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Minificar HTML, CSS y JS","description":"Minifica código HTML, CSS y JavaScript online: quita comentarios y espacios y reduce el peso. Gratis y 100% privado en tu navegador.","url":"https://proyectospixel.com/herramientas/desarrollo/minificar-codigo/","applicationCategory":"DeveloperApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo minificar HTML, CSS y JavaScript online","description":"Qué es minificar código y cuándo usarlo","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige el lenguaje","text":"Elige el lenguaje (HTML, CSS o JavaScript)."},{"@type":"HowToStep","position":2,"name":"Pega el código","text":"Pega el código y pulsa minificar: la herramienta muestra la reducción conseguida."},{"@type":"HowToStep","position":3,"name":"Minifica y copia","text":"Copia el resultado y pégalo en tu archivo de producción."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿La minificación de JS es segura?","acceptedAnswer":{"@type":"Answer","text":"Es conservadora (quita comentarios y espacios, no renombra variables). Aun así, prueba el resultado: para minificado agresivo hacen falta herramientas con análisis sintáctico."}},{"@type":"Question","name":"¿Sobra el punto y coma o las llaves?","acceptedAnswer":{"@type":"Answer","text":"No se eliminan símbolos funcionales: solo espacios, saltos y comentarios."}},{"@type":"Question","name":"¿Se guarda mi código?","acceptedAnswer":{"@type":"Answer","text":"No: tu código se procesa en el navegador y nunca sale de él."}},{"@type":"Question","name":"¿Cuánto peso suele ahorrar?","acceptedAnswer":{"@type":"Answer","text":"Entre un 15% y un 50% según los comentarios y la indentación del original."}}]}]}
   </script>
 </head>
 <body>
@@ -81,6 +84,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es minificar código y cuándo usarlo</h2>
+          <p>Minificar es <strong>quitar comentarios y espacios sobrantes</strong> del código para que el archivo pese menos y cargue más rápido. Es un paso habitual antes de subir CSS o JavaScript a producción.</p>
+          <p>Elige el lenguaje (HTML, CSS o JavaScript), pega el código y obtén la versión compacta con el ahorro exacto de bytes.</p>
+          <h2>Cómo minificar código paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige el lenguaje</strong> (HTML, CSS o JavaScript).</li>
+            <li><strong>Pega el código</strong> y pulsa minificar: la herramienta muestra la reducción conseguida.</li>
+            <li><strong>Copia el resultado</strong> y pégalo en tu archivo de producción.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Optimizar CSS/JS</strong> antes de subirlo a producción.</li>
+            <li><strong>Reducir HTML</strong> de plantillas y correos.</li>
+            <li><strong>Aprender:</strong> comparar la versión legible y la minificada.</li>
+            <li><strong>Preparación de snippets</strong> para insertar en un CMS.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿La minificación de JS es segura?</summary><p>Es conservadora (quita comentarios y espacios, no renombra variables). Aun así, prueba el resultado: para minificado agresivo hacen falta herramientas con análisis sintáctico.</p></details>
+            <details class="faq-item"><summary>¿Sobra el punto y coma o las llaves?</summary><p>No se eliminan símbolos funcionales: solo espacios, saltos y comentarios.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi código?</summary><p>No: tu código se procesa en el navegador y nunca sale de él.</p></details>
+            <details class="faq-item"><summary>¿Cuánto peso suele ahorrar?</summary><p>Entre un 15% y un 50% según los comentarios y la indentación del original.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/desarrollo/formatear-json/">Formatear y validar JSON</a>, <a href="/herramientas/desarrollo/regex-tester/">Probador de regex</a> o <a href="/herramientas/desarrollo/comparar-textos/">Comparar dos textos</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -90,12 +120,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=27"></script>
-  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/components.js?v=28"></script>
+  <script src="/js/tools-data.js?v=28"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/minificar-codigo.js?v=27"></script>
+  <script src="/js/tools/minificar-codigo.js?v=28"></script>
 </body>
 </html>

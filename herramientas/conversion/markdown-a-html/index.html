@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=27">
+  <link rel="stylesheet" href="/css/styles.css?v=28">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Convertir Markdown a HTML","description":"Convierte Markdown a HTML online con vista previa. Soporta títulos, negritas, listas, enlaces y código. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/conversion/markdown-a-html/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo convertir Markdown a HTML online","description":"Qué hace el conversor de Markdown a HTML","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega tu Markdown","text":"Pega el Markdown (por ejemplo, el README de un proyecto)."},{"@type":"HowToStep","position":2,"name":"Elije las opciones","text":"Quédate con el escapado activo si vas a publicar contenido de terceros."},{"@type":"HowToStep","position":3,"name":"Convierte y copia","text":"Pulsa convertir: verás la vista previa y el HTML generado, listo para copiar."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué sintaxis soporta?","acceptedAnswer":{"@type":"Answer","text":"Títulos (#), negritas, cursivas, código (inline y bloques), enlaces, imágenes, listas, citas y separadores."}},{"@type":"Question","name":"¿Es seguro con HTML incrustado?","acceptedAnswer":{"@type":"Answer","text":"Con el escapado activado (por defecto), el HTML del original se muestra como texto, no se ejecuta."}},{"@type":"Question","name":"¿Lo convierte a Markdown de vuelta?","acceptedAnswer":{"@type":"Answer","text":"No por ahora: esta herramienta va en un sentido (Markdown → HTML)."}},{"@type":"Question","name":"¿Se guarda mi texto?","acceptedAnswer":{"@type":"Answer","text":"No: todo el parseo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -73,6 +76,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el conversor de Markdown a HTML</h2>
+          <p>Transforma tu <strong>Markdown</strong> en <strong>HTML</strong> listo para pegar en una web, con vista previa renderizada: títulos, negritas, cursivas, listas, citas, código, enlaces e imágenes.</p>
+          <p>Incluye una opción de <strong>escapado seguro</strong> (recomendada) que neutraliza cualquier HTML del original para evitar inyecciones.</p>
+          <h2>Cómo convertir Markdown a HTML paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el Markdown</strong> (por ejemplo, el README de un proyecto).</li>
+            <li><strong>Quédate con el escapado activo</strong> si vas a publicar contenido de terceros.</li>
+            <li><strong>Pulsa convertir:</strong> verás la vista previa y el HTML generado, listo para copiar.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Documentación:</strong> convertir READMEs y apuntes a HTML.</li>
+            <li><strong>Blogs y CMS</strong> que aceptan HTML pero no Markdown.</li>
+            <li><strong>Correos HTML</strong> sencillos a partir de Markdown.</li>
+            <li><strong>Migración</strong> de contenido entre plataformas.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué sintaxis soporta?</summary><p>Títulos (#), negritas, cursivas, código (inline y bloques), enlaces, imágenes, listas, citas y separadores.</p></details>
+            <details class="faq-item"><summary>¿Es seguro con HTML incrustado?</summary><p>Con el escapado activado (por defecto), el HTML del original se muestra como texto, no se ejecuta.</p></details>
+            <details class="faq-item"><summary>¿Lo convierte a Markdown de vuelta?</summary><p>No por ahora: esta herramienta va en un sentido (Markdown → HTML).</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi texto?</summary><p>No: todo el parseo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/desarrollo/minificar-codigo/">Minificar HTML</a>, <a href="/herramientas/desarrollo/comparar-textos/">Comparar dos textos</a> o <a href="/herramientas/desarrollo/regex-tester/">Probador de regex</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -82,12 +112,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=27"></script>
-  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/components.js?v=28"></script>
+  <script src="/js/tools-data.js?v=28"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/markdown-a-html.js?v=27"></script>
+  <script src="/js/tools/markdown-a-html.js?v=28"></script>
 </body>
 </html>

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=27">
+  <link rel="stylesheet" href="/css/styles.css?v=28">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Convertir JSON a CSV (y viceversa)","description":"Convierte JSON a CSV o CSV a JSON online al instante, con delimitador configurable y cabeceras. Gratis y 100% privado en tu navegador.","url":"https://proyectospixel.com/herramientas/conversion/json-a-csv/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo convertir JSON a CSV y CSV a JSON","description":"Qué hace el conversor JSON ↔ CSV","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige la dirección","text":"Elige la dirección: JSON → CSV o CSV → JSON."},{"@type":"HowToStep","position":2,"name":"Pega los datos","text":"Pega los datos (array de objetos o filas con delimitador) y ajusta delimitador (coma, punto y coma, tabulador) y cabeceras."},{"@type":"HowToStep","position":3,"name":"Convierte y copia","text":"Pulsa convertir y copia el resultado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué pasa si los objetos tienen claves distintas?","acceptedAnswer":{"@type":"Answer","text":"Se calcula la unión de todas las claves: las filas sin ese campo quedan vacías."}},{"@type":"Question","name":"¿Respeta las comas dentro de los valores?","acceptedAnswer":{"@type":"Answer","text":"Sí: valores con comas, comillas o saltos se entrecomillan correctamente según el estándar CSV."}},{"@type":"Question","name":"¿Hay límite de filas?","acceptedAnswer":{"@type":"Answer","text":"Hasta 10.000 filas por conversión, para no bloquear el navegador."}},{"@type":"Question","name":"¿Se suben mis datos?","acceptedAnswer":{"@type":"Answer","text":"No: la conversión es local."}}]}]}
   </script>
 </head>
 <body>
@@ -87,6 +90,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el conversor JSON ↔ CSV</h2>
+          <p>Pasa de <strong>JSON a CSV</strong> (ideal para abrir datos en Excel o Google Sheets) y de <strong>CSV a JSON</strong> (para APIs y código), con delimitador configurable y cabeceras.</p>
+          <p>Maneja correctamente el <strong>entrecomillado CSV</strong>: valores con comas, comillas o saltos de línea se exportan seguros.</p>
+          <h2>Cómo convertir JSON a CSV (y viceversa) paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige la dirección:</strong> JSON → CSV o CSV → JSON.</li>
+            <li><strong>Pega los datos</strong> (array de objetos o filas con delimitador) y ajusta delimitador (coma, punto y coma, tabulador) y cabeceras.</li>
+            <li><strong>Pulsa convertir</strong> y copia el resultado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Análisis de datos:</strong> volcar una API JSON a una hoja de cálculo.</li>
+            <li><strong>Importar/exportar</strong> a CRM, ERP o BI.</li>
+            <li><strong>Preparar fixtures</strong> JSON a partir de una tabla CSV.</li>
+            <li><strong>Limpieza previa:</strong> detectar claves irregulares (se unifican como columnas).</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>[{"nombre":"Ana","edad":30}] → nombre,edad\nAna,30</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué pasa si los objetos tienen claves distintas?</summary><p>Se calcula la unión de todas las claves: las filas sin ese campo quedan vacías.</p></details>
+            <details class="faq-item"><summary>¿Respeta las comas dentro de los valores?</summary><p>Sí: valores con comas, comillas o saltos se entrecomillan correctamente según el estándar CSV.</p></details>
+            <details class="faq-item"><summary>¿Hay límite de filas?</summary><p>Hasta 10.000 filas por conversión, para no bloquear el navegador.</p></details>
+            <details class="faq-item"><summary>¿Se suben mis datos?</summary><p>No: la conversión es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/desarrollo/formatear-json/">Formatear y validar JSON</a>, <a href="/herramientas/matematicas/convertidor-bases/">Convertidor de bases</a> o <a href="/herramientas/texto/extraer-columnas-texto/">Extraer columnas</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -96,12 +130,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=27"></script>
-  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/components.js?v=28"></script>
+  <script src="/js/tools-data.js?v=28"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/json-a-csv.js?v=27"></script>
+  <script src="/js/tools/json-a-csv.js?v=28"></script>
 </body>
 </html>

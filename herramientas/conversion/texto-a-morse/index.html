@@ -16,12 +16,15 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=27">
+  <link rel="stylesheet" href="/css/styles.css?v=28">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Texto a Morse","description":"Traduce texto a código Morse y de Morse a texto.","url":"https://proyectospixel.com/herramientas/conversion/texto-a-morse/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo convertir texto a código Morse y viceversa","description":"Qué hace el traductor a código Morse","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto o Morse","text":"Pega el texto (o el código Morse con puntos, rayas y espacios)."},{"@type":"HowToStep","position":2,"name":"Elige el sentido","text":"Elige el sentido: texto → Morse o Morse → texto."},{"@type":"HowToStep","position":3,"name":"Copia el resultado","text":"Copia el resultado. Si el Morse no es válido, verás el símbolo exacto que falla."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Separa las letras y las palabras?","acceptedAnswer":{"@type":"Answer","text":"Sí: un espacio entre letras y una barra «/» entre palabras, el estándar."}},{"@type":"Question","name":"¿Soporta números y puntuación?","acceptedAnswer":{"@type":"Answer","text":"Sí, el alfabeto Morse internacional incluye números y signos básicos."}},{"@type":"Question","name":"¿Y las tildes o la ñ?","acceptedAnswer":{"@type":"Answer","text":"Morse es un alfabeto limitado: se recomienda usar el generador de slugs o quitar acentos antes de traducir."}},{"@type":"Question","name":"¿Funciona sin internet?","acceptedAnswer":{"@type":"Answer","text":"Sí, todo se procesa en tu navegador (PWA offline)."}}]}]}
   </script>
 </head>
 <body>
@@ -58,15 +61,46 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el traductor a código Morse</h2>
+          <p>Traduce texto a <strong>código Morse</strong> y también al revés (Morse a texto), con validación: si el código tiene símbolos desconocidos, te avisa indicando cuál.</p>
+          <p>Usa el alfabeto Morse internacional, con letras, números y puntuación básica.</p>
+          <h2>Cómo traducir texto a Morse paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong> (o el código Morse con puntos, rayas y espacios).</li>
+            <li><strong>Elige el sentido:</strong> texto → Morse o Morse → texto.</li>
+            <li><strong>Copia el resultado</strong>. Si el Morse no es válido, verás el símbolo exacto que falla.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Historia y CTS:</strong> practicar radiocomunicaciones.</li>
+            <li><strong>Juegos y escape rooms:</strong> crear mensajes en clave.</li>
+            <li><strong>Actividad escolar</strong> y talleres de comunicación.</li>
+            <li><strong>Retos y acertijos</strong> con mensajes ocultos.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>SOS → ... --- ...</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Separa las letras y las palabras?</summary><p>Sí: un espacio entre letras y una barra «/» entre palabras, el estándar.</p></details>
+            <details class="faq-item"><summary>¿Soporta números y puntuación?</summary><p>Sí, el alfabeto Morse internacional incluye números y signos básicos.</p></details>
+            <details class="faq-item"><summary>¿Y las tildes o la ñ?</summary><p>Morse es un alfabeto limitado: se recomienda usar el generador de slugs o quitar acentos antes de traducir.</p></details>
+            <details class="faq-item"><summary>¿Funciona sin internet?</summary><p>Sí, todo se procesa en tu navegador (PWA offline).</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/conversion/codificar-decodificar-base64/">Codificar Base64</a>, <a href="/herramientas/texto/cifrado-rot13/">Cifrado ROT13</a> o <a href="/herramientas/conversion/texto-a-binario/">Texto a binario</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools"><h2 class="section-title">Tools Relacionadas</h2><div id="related-tools" class="grid-tools grid-tools-all"></div></section>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=27"></script>
-  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/components.js?v=28"></script>
+  <script src="/js/tools-data.js?v=28"></script>
   <script>ProyectosPixel.renderHeader();ProyectosPixel.renderFooter();</script>
-  <script src="/js/tools/texto-a-morse.js?v=27"></script>
+  <script src="/js/tools/texto-a-morse.js?v=28"></script>
 </body>
 </html>

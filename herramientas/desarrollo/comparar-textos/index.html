@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=27">
+  <link rel="stylesheet" href="/css/styles.css?v=28">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Comparar Dos Textos (Diff)","description":"Compara dos textos online y ve las diferencias línea por línea (añadido/eliminado). Ideal para código y documentos. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/desarrollo/comparar-textos/","applicationCategory":"DeveloperApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo comparar dos textos y ver las diferencias","description":"Qué hace el comparador de textos","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto original","text":"Pega el texto original (columna A) y la versión modificada (columna B)."},{"@type":"HowToStep","position":2,"name":"Pega la versión modificada","text":"Pulsa comparar: las líneas nuevas salen en verde y las eliminadas en rojo."},{"@type":"HowToStep","position":3,"name":"Compara y revisa","text":"Revisa las estadísticas (+añadidas / −eliminadas / iguales) para saber el alcance del cambio."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Compara caracteres o líneas?","acceptedAnswer":{"@type":"Answer","text":"Línea a línea, que es lo práctico para textos y código."}},{"@type":"Question","name":"¿Qué significa cada color?","acceptedAnswer":{"@type":"Answer","text":"Verde: líneas que existen en la versión B. Rojo: líneas que desaparecen respecto a A."}},{"@type":"Question","name":"¿Hay límite de tamaño?","acceptedAnswer":{"@type":"Answer","text":"Sin límite práctico; textos enormes pueden tardar un instante en comparar."}},{"@type":"Question","name":"¿Se guardan mis textos?","acceptedAnswer":{"@type":"Answer","text":"No: todo el diff se calcula en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -71,6 +74,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el comparador de textos</h2>
+          <p>Compara dos versiones de un texto o código y muestra, <strong>línea a línea</strong>, qué se añadió (verde) y qué se eliminó (rojo), con el número de cambios.</p>
+          <p>Usa un algoritmo de diferencias (LCS) que también reconoce líneas iguales, así que solo se resaltan los cambios reales.</p>
+          <h2>Cómo comparar dos textos paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto original</strong> (columna A) y la <strong>versión modificada</strong> (columna B).</li>
+            <li><strong>Pulsa comparar:</strong> las líneas nuevas salen en verde y las eliminadas en rojo.</li>
+            <li><strong>Revisa las estadísticas</strong> (+añadidas / −eliminadas / iguales) para saber el alcance del cambio.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Control de versiones ligero:</strong> ver qué cambió entre dos revisiones.</li>
+            <li><strong>Traducciones:</strong> comparar original y traducción línea a línea.</li>
+            <li><strong>Contratos y textos legales:</strong> identificar modificaciones al instante.</li>
+            <li><strong>Configuraciones y CSV:</strong> detectar filas añadidas o eliminadas.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>3 líneas vs 4 con un cambio → +2 añadidas, −1 eliminada, 2 iguales</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Compara caracteres o líneas?</summary><p>Línea a línea, que es lo práctico para textos y código.</p></details>
+            <details class="faq-item"><summary>¿Qué significa cada color?</summary><p>Verde: líneas que existen en la versión B. Rojo: líneas que desaparecen respecto a A.</p></details>
+            <details class="faq-item"><summary>¿Hay límite de tamaño?</summary><p>Sin límite práctico; textos enormes pueden tardar un instante en comparar.</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis textos?</summary><p>No: todo el diff se calcula en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/buscar-reemplazar-texto/">Buscar y reemplazar</a>, <a href="/herramientas/desarrollo/formatear-json/">Formatear JSON</a> o <a href="/herramientas/desarrollo/regex-tester/">Probador de regex</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -80,12 +114,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=27"></script>
-  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/components.js?v=28"></script>
+  <script src="/js/tools-data.js?v=28"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/comparar-textos.js?v=27"></script>
+  <script src="/js/tools/comparar-textos.js?v=28"></script>
 </body>
 </html>

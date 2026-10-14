@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=27">
+  <link rel="stylesheet" href="/css/styles.css?v=28">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Probador de Expresiones Regulares","description":"Prueba expresiones regulares online con resaltado de coincidencias, grupos capturados y flags. Gratis y 100% privado: todo en tu navegador.","url":"https://proyectospixel.com/herramientas/desarrollo/regex-tester/","applicationCategory":"DeveloperApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo probar expresiones regulares online","description":"Qué hace el probador de expresiones regulares","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Escribe el patrón","text":"Escribe el patrón de la expresión regular (por ejemplo (\\d{4})-(\\d{2})-(\\d{2}))."},{"@type":"HowToStep","position":2,"name":"Pega el texto","text":"Pega un texto de prueba y marca los flags que necesites."},{"@type":"HowToStep","position":3,"name":"Revisa coincidencias y grupos","text":"Pulsa probar: verás las coincidencias resaltadas, el número total y una tabla con los grupos capturados."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué significan los flags?","acceptedAnswer":{"@type":"Answer","text":"g busca todas las coincidencias, i ignora mayúsculas, m trata ^ y $ por línea, s hace que el punto incluya saltos y u activa el modo Unicode."}},{"@type":"Question","name":"¿Y si mi patrón es inválido?","acceptedAnswer":{"@type":"Answer","text":"La herramienta muestra el error exacto que indica el motor de regex del navegador."}},{"@type":"Question","name":"¿Cuántas coincidencias muestra?","acceptedAnswer":{"@type":"Answer","text":"Hasta 5.000 por seguridad, con resumen y tabla de grupos (primeras 50)."}},{"@type":"Question","name":"¿Se envía mi texto?","acceptedAnswer":{"@type":"Answer","text":"No: todo se ejecuta localmente en tu navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -78,6 +81,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el probador de expresiones regulares</h2>
+          <p>Prueba tus <strong>expresiones regulares</strong> contra un texto de ejemplo y ves al instante las <strong>coincidencias resaltadas</strong>, sus posiciones y los <strong>grupos capturados</strong>.</p>
+          <p>Incluye los flags habituales (g, i, m, s, u) para probar cada escenario sin escribir una línea de código.</p>
+          <h2>Cómo probar una regex paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Escribe el patrón</strong> de la expresión regular (por ejemplo <code>(\d{4})-(\d{2})-(\d{2})</code>).</li>
+            <li><strong>Pega un texto de prueba</strong> y marca los flags que necesites.</li>
+            <li><strong>Pulsa probar:</strong> verás las coincidencias resaltadas, el número total y una tabla con los grupos capturados.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Validar formatos:</strong> fechas, correos, teléfonos, códigos postales.</li>
+            <li><strong>Preparar búsquedas:</strong> probar el patrón antes de usarlo en tu código o en «buscar y reemplazar».</li>
+            <li><strong>Extraer datos:</strong> capturar partes concretas de un texto en los grupos.</li>
+            <li><strong>Enseñar regex:</strong> ver el efecto inmediato de cada símbolo.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>(\d{4})-(\d{2})-(\d{2}) sobre «2026-10-14» → 3 grupos: 2026 · 10 · 14</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué significan los flags?</summary><p>g busca todas las coincidencias, i ignora mayúsculas, m trata ^ y $ por línea, s hace que el punto incluya saltos y u activa el modo Unicode.</p></details>
+            <details class="faq-item"><summary>¿Y si mi patrón es inválido?</summary><p>La herramienta muestra el error exacto que indica el motor de regex del navegador.</p></details>
+            <details class="faq-item"><summary>¿Cuántas coincidencias muestra?</summary><p>Hasta 5.000 por seguridad, con resumen y tabla de grupos (primeras 50).</p></details>
+            <details class="faq-item"><summary>¿Se envía mi texto?</summary><p>No: todo se ejecuta localmente en tu navegador.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/buscar-reemplazar-texto/">Buscar y reemplazar (con regex)</a>, <a href="/herramientas/desarrollo/comparar-textos/">Comparar dos textos</a> o <a href="/herramientas/desarrollo/formatear-json/">Formatear JSON</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -87,12 +121,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=27"></script>
-  <script src="/js/tools-data.js?v=27"></script>
+  <script src="/js/components.js?v=28"></script>
+  <script src="/js/tools-data.js?v=28"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/regex-tester.js?v=27"></script>
+  <script src="/js/tools/regex-tester.js?v=28"></script>
 </body>
 </html>
