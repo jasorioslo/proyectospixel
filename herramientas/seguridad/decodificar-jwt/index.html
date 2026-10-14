@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=28">
+  <link rel="stylesheet" href="/css/styles.css?v=29">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Decodificador de JWT","description":"Decodifica tokens JWT online: mira header, payload, expiración y avisos de seguridad. 100% privado: el token no sale de tu navegador.","url":"https://proyectospixel.com/herramientas/seguridad/decodificar-jwt/","applicationCategory":"SecurityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo inspeccionar y entender un token JWT","description":"Qué es un JWT y cómo se inspecciona","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el token","text":"Pega el token JWT completo (con sus dos puntos)."},{"@type":"HowToStep","position":2,"name":"Decodifica","text":"Pulsa decodificar: verás el header, el payload y la firma."},{"@type":"HowToStep","position":3,"name":"Revisa payload y avisos","text":"Revisa los avisos: si está expirado, si aún no es válido o si viene sin firma."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Verifica la firma?","acceptedAnswer":{"@type":"Answer","text":"No: verificarla exige la clave secreta o la pública del emisor. Aquí solo se inspecciona el contenido."}},{"@type":"Question","name":"¿Es seguro pegar un token real?","acceptedAnswer":{"@type":"Answer","text":"El análisis es local, pero un JWT real da acceso mientras siga vigente: si es de producción, mejor usa uno de pruebas."}},{"@type":"Question","name":"¿Qué significa «alg: none»?","acceptedAnswer":{"@type":"Answer","text":"Que el token no está firmado: es una señal de alarma en aplicaciones reales."}},{"@type":"Question","name":"¿Qué son exp, iat y nbf?","acceptedAnswer":{"@type":"Answer","text":"Fechas estándar: expiración, emisión y «no válido antes de». Se muestran en UTC."}}]}]}
   </script>
 </head>
 <body>
@@ -71,6 +74,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es un JWT y cómo se inspecciona</h2>
+          <p>Un <strong>JWT</strong> (JSON Web Token) es un token con tres partes separadas por puntos: <code>header.payload.signature</code>, donde las dos primeras van en Base64URL. Transporta la identidad y los permisos en aplicaciones modernas.</p>
+          <p>Esta herramienta decodifica el <strong>header</strong> y el <strong>payload</strong> para que los leas, muestra las fechas (exp/iat/nbf) y avisa si ha expirado o si el algoritmo es «none». Eso sí: <strong>no verifica la firma</strong> (eso requiere la clave del servidor).</p>
+          <h2>Cómo decodificar un JWT paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el token JWT</strong> completo (con sus dos puntos).</li>
+            <li><strong>Pulsa decodificar:</strong> verás el header, el payload y la firma.</li>
+            <li><strong>Revisa los avisos:</strong> si está expirado, si aún no es válido o si viene sin firma.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Depurar autenticación:</strong> ver qué claims viajan en el token.</li>
+            <li><strong>Comprobar expiración:</strong> evitar el clásico «token expired».</li>
+            <li><strong>Seguridad:</strong> detectar tokens con algoritmos débiles o claims raros.</li>
+            <li><strong>Aprendizaje:</strong> entender la estructura de los JWT.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Verifica la firma?</summary><p>No: verificarla exige la clave secreta o la pública del emisor. Aquí solo se inspecciona el contenido.</p></details>
+            <details class="faq-item"><summary>¿Es seguro pegar un token real?</summary><p>El análisis es local, pero un JWT real da acceso mientras siga vigente: si es de producción, mejor usa uno de pruebas.</p></details>
+            <details class="faq-item"><summary>¿Qué significa «alg: none»?</summary><p>Que el token no está firmado: es una señal de alarma en aplicaciones reales.</p></details>
+            <details class="faq-item"><summary>¿Qué son exp, iat y nbf?</summary><p>Fechas estándar: expiración, emisión y «no válido antes de». Se muestran en UTC.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/conversion/codificar-decodificar-base64/">Codificar Base64</a>, <a href="/herramientas/seguridad/generador-hashes/">Generador de hashes</a> o <a href="/herramientas/desarrollo/formatear-json/">Formatear JSON</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -80,12 +110,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=28"></script>
-  <script src="/js/tools-data.js?v=28"></script>
+  <script src="/js/components.js?v=29"></script>
+  <script src="/js/tools-data.js?v=29"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/decodificar-jwt.js?v=28"></script>
+  <script src="/js/tools/decodificar-jwt.js?v=29"></script>
 </body>
 </html>

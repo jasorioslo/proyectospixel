@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=28">
+  <link rel="stylesheet" href="/css/styles.css?v=29">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Comparar Hash y Texto","description":"Verifica si un hash (MD5, SHA-1, SHA-256, SHA-384, SHA-512) corresponde a un texto. Detección automática del algoritmo. 100% privado.","url":"https://proyectospixel.com/herramientas/seguridad/comparar-hashes/","applicationCategory":"SecurityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo verificar si un hash coincide con un texto","description":"Qué hace el comparador de hash y texto","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto original en el primer campo."},{"@type":"HowToStep","position":2,"name":"Pega el hash esperado","text":"Pega el hash que quieres verificar (la herramienta detecta el algoritmo por su longitud)."},{"@type":"HowToStep","position":3,"name":"Comprueba la coincidencia","text":"Pulsa comprobar: verás «COINCIDE» o «NO COINCIDE» junto a ambos valores."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cómo sabe el algoritmo?","acceptedAnswer":{"@type":"Answer","text":"Por la longitud: 32 hex = MD5, 40 = SHA-1, 64 = SHA-256, 96 = SHA-384 y 128 = SHA-512. También puedes elegirlo a mano."}},{"@type":"Question","name":"¿Distingue mayúsculas en el hash?","acceptedAnswer":{"@type":"Answer","text":"No: la comparación es insensible a mayúsculas/minúsculas en el hash."}},{"@type":"Question","name":"¿Se envía mi texto?","acceptedAnswer":{"@type":"Answer","text":"No: la comprobación es local."}},{"@type":"Question","name":"¿Puedo usarlo para «descifrar» un hash?","acceptedAnswer":{"@type":"Answer","text":"No: solo compara. Si tienes el texto candidato, verifica si produce ese hash."}}]}]}
   </script>
 </head>
 <body>
@@ -85,6 +88,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el comparador de hash y texto</h2>
+          <p>Comprueba si un hash (<strong>MD5, SHA-1, SHA-256, SHA-384 o SHA-512</strong>) corresponde a un texto concreto: pega el texto y el hash esperado y la herramienta recalcula y compara (detecta solo el algoritmo por la longitud del hash).</p>
+          <p>Es la forma rápida de verificar integridad sin descargar utilidades: «¿este archivo es el original?», «¿este hash es de mi contraseña?».</p>
+          <h2>Cómo comprobar un hash paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto original</strong> en el primer campo.</li>
+            <li><strong>Pega el hash</strong> que quieres verificar (la herramienta detecta el algoritmo por su longitud).</li>
+            <li><strong>Pulsa comprobar:</strong> verás «COINCIDE» o «NO COINCIDE» junto a ambos valores.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Verificar descargas:</strong> compara el hash publicado con el de tu archivo (usando el texto correspondiente).</li>
+            <li><strong>Depurar:</strong> comprobar si un hash almacenado viene del texto esperado.</li>
+            <li><strong>Testing:</strong> validar que tu función de hash devuelve el valor correcto.</li>
+            <li><strong>Aprender:</strong> comprobar que a un texto le corresponde exactamente ese hash.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>md5(abc) = 900150983cd24fb0d6963f7d28e17f72 → COINCIDE</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cómo sabe el algoritmo?</summary><p>Por la longitud: 32 hex = MD5, 40 = SHA-1, 64 = SHA-256, 96 = SHA-384 y 128 = SHA-512. También puedes elegirlo a mano.</p></details>
+            <details class="faq-item"><summary>¿Distingue mayúsculas en el hash?</summary><p>No: la comparación es insensible a mayúsculas/minúsculas en el hash.</p></details>
+            <details class="faq-item"><summary>¿Se envía mi texto?</summary><p>No: la comprobación es local.</p></details>
+            <details class="faq-item"><summary>¿Puedo usarlo para «descifrar» un hash?</summary><p>No: solo compara. Si tienes el texto candidato, verifica si produce ese hash.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/seguridad/generador-hashes/">Generador de hashes</a>, <a href="/herramientas/seguridad/generador-hmac/">Generador de HMAC</a> o <a href="/herramientas/seguridad/verificador-contrasenas/">Verificador de contraseñas</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -94,13 +128,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=28"></script>
-  <script src="/js/tools-data.js?v=28"></script>
-  <script src="/js/tools/hash-utils.js?v=28"></script>
+  <script src="/js/components.js?v=29"></script>
+  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/tools/hash-utils.js?v=29"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/comparar-hashes.js?v=28"></script>
+  <script src="/js/tools/comparar-hashes.js?v=29"></script>
 </body>
 </html>

@@ -1,0 +1,179 @@
+[
+  {
+    "slug": "generador-hashes",
+    "cat": "seguridad",
+    "keyword": "generador de hashes online",
+    "h2_que": "Qué es un hash y para qué sirve",
+    "que": [
+      "Un <strong>hash</strong> es una huella digital del texto: una función matemática que lo transforma en una cadena de longitud fija. El mismo texto produce siempre el mismo hash, pero del hash no se puede recuperar el original.",
+      "Sirve para verificar integridad (¿cambió el archivo?), comparar datos sin almacenarlos, firmar y generar identificadores. Aquí calculas <strong>SHA-1, SHA-256, SHA-384, SHA-512 y MD5</strong> en un clic."
+    ],
+    "h2_pasos": "Cómo calcular un hash paso a paso",
+    "howtoName": "Cómo generar hashes SHA y MD5",
+    "howtoSteps": ["Marca los algoritmos", "Pega el texto", "Calcula y copia"],
+    "pasos": [
+      "<strong>Marca los algoritmos</strong> que necesites (SHA-256 por defecto).",
+      "<strong>Pega el texto</strong> y pulsa calcular.",
+      "<strong>Copia el resultado:</strong> cada algoritmo aparece etiquetado con su hash en hexadecimal."
+    ],
+    "usos": [
+      "<strong>Integridad de datos:</strong> comprobar que un contenido no ha cambiado.",
+      "<strong>Seguridad informática:</strong> identificar archivos o comprobar firmas.",
+      "<strong>Desarrollo:</strong> generar claves de caché o de deduplicación.",
+      "<strong>Docencia:</strong> ver cómo el mínimo cambio altera el hash por completo."
+    ],
+    "ejemplos": [ "SHA-256 de «abc» → ba7816bf...20015ad (valor estándar verificable)" ],
+    "faqs": [
+      { "q": "¿Se envía mi texto?", "a": "No: los hashes SHA se calculan con WebCrypto en tu navegador; MD5 en JavaScript local." },
+      { "q": "¿Cuál debería usar?", "a": "SHA-256 es el estándar recomendado. MD5 y SHA-1 se consideran débiles para seguridad, pero valen para integridad no crítica." },
+      { "q": "¿Hash es lo mismo que cifrar?", "a": "No: un hash es de un solo sentido (no se descifra); el cifrado sí permite recuperar el original con la clave." },
+      { "q": "¿Con acentos y emojis?", "a": "Sí: el texto se codifica en UTF-8 antes de calcular, por lo que los caracteres no ASCII funcionan igual." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/comparar-hashes/", "label": "Comparar hash y texto" },
+      { "url": "/herramientas/seguridad/generador-hmac/", "label": "Generador de HMAC" },
+      { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES-256)" }
+    ]
+  },
+  {
+    "slug": "cifrar-texto-aes",
+    "cat": "seguridad",
+    "keyword": "cifrar texto online aes",
+    "h2_que": "Qué hace el cifrador de texto AES-256",
+    "que": [
+      "Cifra un texto con una contraseña usando <strong>AES-256-GCM</strong>, el mismo estándar que usan los bancos y los servicios de mensajería modernos, con derivación de clave <strong>PBKDF2</strong> (150.000 iteraciones por defecto) para que la contraseña sea difícil de atacar.",
+      "Genera un texto cifrado con formato <code>v1:iteraciones:datos</code> que solo se puede descifrar con la contraseña correcta. <strong>Todo ocurre en tu navegador</strong>: la contraseña y el texto jamás se transmiten."
+    ],
+    "h2_pasos": "Cómo cifrar un texto paso a paso",
+    "howtoName": "Cómo cifrar y descifrar texto con AES-256",
+    "howtoSteps": ["Elige cifrar", "Escribe texto y contraseña", "Copia el texto cifrado"],
+    "pasos": [
+      "<strong>Selecciona «Cifrar»</strong>.",
+      "<strong>Escribe el texto y la contraseña</strong> (la que será la clave; sin ella no hay recuperación posible).",
+      "<strong>Pulsa el botón</strong> y copia el resultado: empieza por <code>v1:</code> y contiene todo lo necesario para descifrar."
+    ],
+    "usos": [
+      "<strong>Compartir algo sensible:</strong> envía el texto cifrado por un canal y la contraseña por otro.",
+      "<strong>Notas privadas:</strong> guarda apuntes cifrados en tu nube sin confiar en ella.",
+      "<strong>Ejercicios de seguridad:</strong> entender cifrado autenticado y derivación de claves.",
+      "<strong>Mensajes en foros</strong> que solo debe leer un destinatario."
+    ],
+    "faqs": [
+      { "q": "¿Qué pasa si olvido la contraseña?", "a": "El texto no se puede recuperar: no hay servidor que la guarde ni puerta trasera. Es el precio de la privacidad real." },
+      { "q": "¿Cómo sabe si la contraseña es incorrecta?", "a": "AES-GCM autentica los datos: si la clave no es la correcta o el texto se alteró, el descifrado falla y te avisa." },
+      { "q": "¿Puedo descifrar en otro sitio?", "a": "El formato estándar de AES-GCM y PBKDF2 permite descifrarlo con cualquier herramienta que use los mismos parámetros (hay que respetar iteraciones y codificación)." },
+      { "q": "¿Se envía mi texto?", "a": "No. Ni el texto ni la contraseña salen de tu dispositivo." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/generar-contrasenas/", "label": "Generador de contraseñas" },
+      { "url": "/herramientas/seguridad/verificador-contrasenas/", "label": "Verificador de contraseñas" },
+      { "url": "/herramientas/seguridad/cifrado-rot13/", "label": "Cifrado ROT13 (no seguro)" }
+    ]
+  },
+  {
+    "slug": "generador-hmac",
+    "cat": "seguridad",
+    "keyword": "generador de hmac online",
+    "h2_que": "Qué es un HMAC",
+    "que": [
+      "Un <strong>HMAC</strong> es un código de autenticación: mezcla un mensaje con una <strong>clave secreta</strong> para demostrar que el mensaje es auténtico y no ha sido alterado. A diferencia de un hash normal, necesita la clave.",
+      "Es la pieza que firma multitud de APIs (Webhooks de pago, AWS, Stripe...). Aquí lo calculas con SHA-256, SHA-384 o SHA-512 sin enviar nada."
+    ],
+    "h2_pasos": "Cómo calcular un HMAC paso a paso",
+    "howtoName": "Cómo generar un HMAC con clave secreta",
+    "howtoSteps": ["Escribe la clave y el mensaje", "Elige el algoritmo", "Calcula y copia"],
+    "pasos": [
+      "<strong>Escribe la clave secreta</strong> (key) y el <strong>mensaje</strong>.",
+      "<strong>Elige el algoritmo</strong> (SHA-256, SHA-384 o SHA-512).",
+      "<strong>Pulsa calcular</strong> y copia el HMAC en hexadecimal."
+    ],
+    "usos": [
+      "<strong>Webhooks:</strong> verificar que el pago o la notificación viene de quien dice.",
+      "<strong>APIs firmadas:</strong> reproducir la firma HMAC que espera el servicio.",
+      "<strong>Integridad autenticada:</strong> asegurarte de que un mensaje no se alteró y conoce la clave.",
+      "<strong>Depuración de integraciones</strong> que fallan por una firma incorrecta."
+    ],
+    "faqs": [
+      { "q": "¿HMAC o hash?", "a": "El hash solo depende del mensaje; el HMAC necesita además la clave, por eso sirve para autenticar." },
+      { "q": "¿Se envía mi clave?", "a": "No: el cálculo es local con WebCrypto. Tu clave secreta no sale del navegador." },
+      { "q": "¿Qué algoritmo es el más habitual?", "a": "HMAC-SHA256 es el estándar en la mayoría de APIs." },
+      { "q": "¿El resultado es hexadecimal?", "a": "Sí, en minúsculas y sin separadores, que es el formato que esperan los servicios." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/generador-hashes/", "label": "Generador de hashes" },
+      { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES-256)" },
+      { "url": "/herramientas/conversion/codificar-decodificar-base64/", "label": "Codificar Base64" }
+    ]
+  },
+  {
+    "slug": "decodificar-jwt",
+    "cat": "seguridad",
+    "keyword": "decodificar jwt online",
+    "h2_que": "Qué es un JWT y cómo se inspecciona",
+    "que": [
+      "Un <strong>JWT</strong> (JSON Web Token) es un token con tres partes separadas por puntos: <code>header.payload.signature</code>, donde las dos primeras van en Base64URL. Transporta la identidad y los permisos en aplicaciones modernas.",
+      "Esta herramienta decodifica el <strong>header</strong> y el <strong>payload</strong> para que los leas, muestra las fechas (exp/iat/nbf) y avisa si ha expirado o si el algoritmo es «none». Eso sí: <strong>no verifica la firma</strong> (eso requiere la clave del servidor)."
+    ],
+    "h2_pasos": "Cómo decodificar un JWT paso a paso",
+    "howtoName": "Cómo inspeccionar y entender un token JWT",
+    "howtoSteps": ["Pega el token", "Decodifica", "Revisa payload y avisos"],
+    "pasos": [
+      "<strong>Pega el token JWT</strong> completo (con sus dos puntos).",
+      "<strong>Pulsa decodificar:</strong> verás el header, el payload y la firma.",
+      "<strong>Revisa los avisos:</strong> si está expirado, si aún no es válido o si viene sin firma."
+    ],
+    "usos": [
+      "<strong>Depurar autenticación:</strong> ver qué claims viajan en el token.",
+      "<strong>Comprobar expiración:</strong> evitar el clásico «token expired».",
+      "<strong>Seguridad:</strong> detectar tokens con algoritmos débiles o claims raros.",
+      "<strong>Aprendizaje:</strong> entender la estructura de los JWT."
+    ],
+    "faqs": [
+      { "q": "¿Verifica la firma?", "a": "No: verificarla exige la clave secreta o la pública del emisor. Aquí solo se inspecciona el contenido." },
+      { "q": "¿Es seguro pegar un token real?", "a": "El análisis es local, pero un JWT real da acceso mientras siga vigente: si es de producción, mejor usa uno de pruebas." },
+      { "q": "¿Qué significa «alg: none»?", "a": "Que el token no está firmado: es una señal de alarma en aplicaciones reales." },
+      { "q": "¿Qué son exp, iat y nbf?", "a": "Fechas estándar: expiración, emisión y «no válido antes de». Se muestran en UTC." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/codificar-decodificar-base64/", "label": "Codificar Base64" },
+      { "url": "/herramientas/seguridad/generador-hashes/", "label": "Generador de hashes" },
+      { "url": "/herramientas/desarrollo/formatear-json/", "label": "Formatear JSON" }
+    ]
+  },
+  {
+    "slug": "comparar-hashes",
+    "cat": "seguridad",
+    "keyword": "comprobar si un hash corresponde a un texto",
+    "h2_que": "Qué hace el comparador de hash y texto",
+    "que": [
+      "Comprueba si un hash (<strong>MD5, SHA-1, SHA-256, SHA-384 o SHA-512</strong>) corresponde a un texto concreto: pega el texto y el hash esperado y la herramienta recalcula y compara (detecta solo el algoritmo por la longitud del hash).",
+      "Es la forma rápida de verificar integridad sin descargar utilidades: «¿este archivo es el original?», «¿este hash es de mi contraseña?»."
+    ],
+    "h2_pasos": "Cómo comprobar un hash paso a paso",
+    "howtoName": "Cómo verificar si un hash coincide con un texto",
+    "howtoSteps": ["Pega el texto", "Pega el hash esperado", "Comprueba la coincidencia"],
+    "pasos": [
+      "<strong>Pega el texto original</strong> en el primer campo.",
+      "<strong>Pega el hash</strong> que quieres verificar (la herramienta detecta el algoritmo por su longitud).",
+      "<strong>Pulsa comprobar:</strong> verás «COINCIDE» o «NO COINCIDE» junto a ambos valores."
+    ],
+    "usos": [
+      "<strong>Verificar descargas:</strong> compara el hash publicado con el de tu archivo (usando el texto correspondiente).",
+      "<strong>Depurar:</strong> comprobar si un hash almacenado viene del texto esperado.",
+      "<strong>Testing:</strong> validar que tu función de hash devuelve el valor correcto.",
+      "<strong>Aprender:</strong> comprobar que a un texto le corresponde exactamente ese hash."
+    ],
+    "ejemplos": [ "md5(abc) = 900150983cd24fb0d6963f7d28e17f72 → COINCIDE" ],
+    "faqs": [
+      { "q": "¿Cómo sabe el algoritmo?", "a": "Por la longitud: 32 hex = MD5, 40 = SHA-1, 64 = SHA-256, 96 = SHA-384 y 128 = SHA-512. También puedes elegirlo a mano." },
+      { "q": "¿Distingue mayúsculas en el hash?", "a": "No: la comparación es insensible a mayúsculas/minúsculas en el hash." },
+      { "q": "¿Se envía mi texto?", "a": "No: la comprobación es local." },
+      { "q": "¿Puedo usarlo para «descifrar» un hash?", "a": "No: solo compara. Si tienes el texto candidato, verifica si produce ese hash." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/generador-hashes/", "label": "Generador de hashes" },
+      { "url": "/herramientas/seguridad/generador-hmac/", "label": "Generador de HMAC" },
+      { "url": "/herramientas/seguridad/verificador-contrasenas/", "label": "Verificador de contraseñas" }
+    ]
+  }
+]

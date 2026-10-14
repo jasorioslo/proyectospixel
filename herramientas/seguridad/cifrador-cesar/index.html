@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=28">
+  <link rel="stylesheet" href="/css/styles.css?v=29">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Cifrador César de Texto","description":"Cifra o descifra texto con el cifrado César con desplazamiento configurable.","url":"https://proyectospixel.com/herramientas/seguridad/cifrador-cesar/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo cifrar y descifrar con el cifrado César","description":"Qué es el cifrado César","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega el texto","text":"Pega el texto."},{"@type":"HowToStep","position":2,"name":"Elige cifrar o descifrar y el desplazamiento","text":"Elige acción (cifrar o descifrar) y el desplazamiento entre 1 y 25."},{"@type":"HowToStep","position":3,"name":"Aplica y copia","text":"Pulsa aplicar y copia el resultado (para descifrar, usa el mismo desplazamiento)."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cómo descifro un mensaje?","acceptedAnswer":{"@type":"Answer","text":"Selecciona «Descifrar» y usa el mismo desplazamiento con el que se cifró."}},{"@type":"Question","name":"¿Por qué no acepta 26?","acceptedAnswer":{"@type":"Answer","text":"Porque 26 equivale a cero: la letra no cambia. El rango útil es 1-25."}},{"@type":"Question","name":"¿Respeta mayúsculas y símbolos?","acceptedAnswer":{"@type":"Answer","text":"Sí: las mayúsculas se mantienen y los signos o números no se modifican."}},{"@type":"Question","name":"¿Se envía mi texto?","acceptedAnswer":{"@type":"Answer","text":"No, la operación es local."}}]}]}
   </script>
 </head>
 <body>
@@ -72,6 +75,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es el cifrado César</h2>
+          <p>El cifrado César es el <strong>abuelo de los cifrados</strong>: desplaza cada letra N posiciones (Julio César usaba 3). Con ROT13 el desplazamiento es 13 y no se puede elegir; aquí <strong>tú decides el desplazamiento (1-25)</strong>.</p>
+          <p>Útil para ejercicios de criptografía, juegos y mensajes informales. No lo uses para información sensible: se rompe por fuerza bruta en segundos.</p>
+          <h2>Cómo cifrar con César paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega el texto</strong>.</li>
+            <li><strong>Elige acción</strong> (cifrar o descifrar) y el <strong>desplazamiento</strong> entre 1 y 25.</li>
+            <li><strong>Pulsa aplicar</strong> y copia el resultado (para descifrar, usa el mismo desplazamiento).</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Clases de criptografía</strong> y talleres.</li>
+            <li><strong>Juegos de espías y escape rooms.</strong></li>
+            <li><strong>Retos de ingenio:</strong> cifra con un desplazamiento y que lo adivinen.</li>
+            <li><strong>Mensajes informales</strong> para que no se lean de reojo.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>abc con desplazamiento 3 → def</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cómo descifro un mensaje?</summary><p>Selecciona «Descifrar» y usa el mismo desplazamiento con el que se cifró.</p></details>
+            <details class="faq-item"><summary>¿Por qué no acepta 26?</summary><p>Porque 26 equivale a cero: la letra no cambia. El rango útil es 1-25.</p></details>
+            <details class="faq-item"><summary>¿Respeta mayúsculas y símbolos?</summary><p>Sí: las mayúsculas se mantienen y los signos o números no se modifican.</p></details>
+            <details class="faq-item"><summary>¿Se envía mi texto?</summary><p>No, la operación es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/seguridad/cifrado-rot13/">Cifrado ROT13</a>, <a href="/herramientas/seguridad/cifrar-texto-aes/">Cifrar texto (AES-256)</a> o <a href="/herramientas/seguridad/comparar-hashes/">Comparar hash y texto</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -81,12 +115,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=28"></script>
-  <script src="/js/tools-data.js?v=28"></script>
+  <script src="/js/components.js?v=29"></script>
+  <script src="/js/tools-data.js?v=29"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/cifrador-cesar.js?v=28"></script>
+  <script src="/js/tools/cifrador-cesar.js?v=29"></script>
 </body>
 </html>

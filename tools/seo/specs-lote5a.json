@@ -1,0 +1,179 @@
+[
+  {
+    "slug": "generar-contrasenas",
+    "cat": "seguridad",
+    "keyword": "generar contraseñas seguras online",
+    "h2_que": "Qué hace el generador de contraseñas",
+    "que": [
+      "Crea contraseñas aleatorias y fuertes usando el <strong>generador criptográfico</strong> del navegador (no un simple Math.random), con control de longitud y de qué incluir: mayúsculas, minúsculas, números y símbolos.",
+      "Incluye un medidor de fortaleza y, muy importante: <strong>la contraseña se genera en tu dispositivo y nunca se envía</strong>, así que nadie la conoce salvo tú."
+    ],
+    "h2_pasos": "Cómo generar una contraseña segura paso a paso",
+    "howtoName": "Cómo generar contraseñas seguras online",
+    "howtoSteps": ["Define longitud y opciones", "Genera la contraseña", "Cópiala y guárdala"],
+    "pasos": [
+      "<strong>Define la longitud</strong> (16-20 caracteres es un buen equilibrio) y marca los conjuntos de caracteres que quieras incluir.",
+      "<strong>Pulsa generar:</strong> verás la contraseña y su nivel de fortaleza.",
+      "<strong>Cópiala y guárdala</strong> en tu gestor de contraseñas antes de cerrar la página."
+    ],
+    "usos": [
+      "<strong>Nuevas cuentas:</strong> empezar con una contraseña fuerte por defecto.",
+      "<strong>Rotación de claves</strong> tras una filtración.",
+      "<strong>Wi-Fi y dispositivos:</strong> claves largas fáciles de copiar.",
+      "<strong>Aprender:</strong> jugar con longitud y símbolos para ver cómo cambia la fortaleza."
+    ],
+    "faqs": [
+      { "q": "¿Es puramente aleatoria?", "a": "Sí: usa crypto.getRandomValues, el generador criptográfico del navegador, apto para usos de seguridad." },
+      { "q": "¿Se envía la contraseña?", "a": "No: se genera localmente. Ni nosotros ni nadie puede verla." },
+      { "q": "¿Cuántos caracteres uso?", "a": "Como mínimo 12-16 para cuentas sensibles; más longitud es más seguro que más símbolos." },
+      { "q": "¿Puedo generar varias?", "a": "Sí: pulsa generar de nuevo y obtendrás otra distinta." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/verificador-contrasenas/", "label": "Verificador de contraseñas" },
+      { "url": "/herramientas/seguridad/generador-uuid/", "label": "Generador de UUID" },
+      { "url": "/herramientas/seguridad/generador-hashes/", "label": "Generador de hashes" }
+    ]
+  },
+  {
+    "slug": "cifrado-rot13",
+    "cat": "seguridad",
+    "keyword": "cifrado rot13 online",
+    "h2_que": "Qué es el cifrado ROT13",
+    "que": [
+      "ROT13 es un cifrado clásico que <strong>desplaza cada letra 13 posiciones</strong> en el alfabeto: «hola» → «ubyn». Su gran particularidad es que <strong>es su propio inverso</strong>: aplicar el mismo proceso dos veces devuelve el texto original.",
+      "No es un cifrado real (no protege información sensible), pero es perfecto para ocultar spoilers, bromas, puzles o mensajes que no quieres leer por accidente."
+    ],
+    "h2_pasos": "Cómo aplicar ROT13 paso a paso",
+    "howtoName": "Cómo cifrar y descifrar con ROT13",
+    "howtoSteps": ["Pega el texto", "Pulsa aplicar ROT13", "Copia el resultado"],
+    "pasos": [
+      "<strong>Pega el texto</strong> que quieres cifrar o descifrar.",
+      "<strong>Pulsa «Aplicar ROT13»:</strong> el mismo botón sirve para ambas direcciones.",
+      "<strong>Copia el resultado</strong> y, si quieres volver al original, pega el resultado y vuelve a pulsar."
+    ],
+    "usos": [
+      "<strong>Spoilers y chistes</strong> en foros y redes.",
+      "<strong>Puzles y escape rooms.</strong>",
+      "<strong>Clases de criptografía:</strong> primer ejemplo de cifrado.",
+      "<strong>Comentarios ocultos</strong> en código (notas internas)."
+    ],
+    "ejemplos": [ "Hello world → Uryyb jbeyq", "Uryyb jbeyq → Hello world" ],
+    "faqs": [
+      { "q": "¿Cifra números y símbolos?", "a": "No: solo letras ASCII (a-z, A-Z); el resto de caracteres se dejan igual." },
+      { "q": "¿Y la ñ o los acentos?", "a": "No forman parte del alfabeto ROT13 clásico: se conservan sin cambio." },
+      { "q": "¿Es seguro para datos secretos?", "a": "No: cualquiera puede decodificarlo al instante. Para eso está el cifrado AES." },
+      { "q": "¿Se envía mi texto?", "a": "No: todo el cálculo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/cifrador-cesar/", "label": "Cifrador César" },
+      { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES-256)" },
+      { "url": "/herramientas/texto/invertir-texto/", "label": "Invertir texto" }
+    ]
+  },
+  {
+    "slug": "cifrador-cesar",
+    "cat": "seguridad",
+    "keyword": "cifrado cesar online",
+    "h2_que": "Qué es el cifrado César",
+    "que": [
+      "El cifrado César es el <strong>abuelo de los cifrados</strong>: desplaza cada letra N posiciones (Julio César usaba 3). Con ROT13 el desplazamiento es 13 y no se puede elegir; aquí <strong>tú decides el desplazamiento (1-25)</strong>.",
+      "Útil para ejercicios de criptografía, juegos y mensajes informales. No lo uses para información sensible: se rompe por fuerza bruta en segundos."
+    ],
+    "h2_pasos": "Cómo cifrar con César paso a paso",
+    "howtoName": "Cómo cifrar y descifrar con el cifrado César",
+    "howtoSteps": ["Pega el texto", "Elige cifrar o descifrar y el desplazamiento", "Aplica y copia"],
+    "pasos": [
+      "<strong>Pega el texto</strong>.",
+      "<strong>Elige acción</strong> (cifrar o descifrar) y el <strong>desplazamiento</strong> entre 1 y 25.",
+      "<strong>Pulsa aplicar</strong> y copia el resultado (para descifrar, usa el mismo desplazamiento)."
+    ],
+    "usos": [
+      "<strong>Clases de criptografía</strong> y talleres.",
+      "<strong>Juegos de espías y escape rooms.</strong>",
+      "<strong>Retos de ingenio:</strong> cifra con un desplazamiento y que lo adivinen.",
+      "<strong>Mensajes informales</strong> para que no se lean de reojo."
+    ],
+    "ejemplos": [ "abc con desplazamiento 3 → def" ],
+    "faqs": [
+      { "q": "¿Cómo descifro un mensaje?", "a": "Selecciona «Descifrar» y usa el mismo desplazamiento con el que se cifró." },
+      { "q": "¿Por qué no acepta 26?", "a": "Porque 26 equivale a cero: la letra no cambia. El rango útil es 1-25." },
+      { "q": "¿Respeta mayúsculas y símbolos?", "a": "Sí: las mayúsculas se mantienen y los signos o números no se modifican." },
+      { "q": "¿Se envía mi texto?", "a": "No, la operación es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/cifrado-rot13/", "label": "Cifrado ROT13" },
+      { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES-256)" },
+      { "url": "/herramientas/seguridad/comparar-hashes/", "label": "Comparar hash y texto" }
+    ]
+  },
+  {
+    "slug": "generador-uuid",
+    "cat": "seguridad",
+    "keyword": "generador de uuid online",
+    "h2_que": "Qué es un UUID v4",
+    "que": [
+      "Un <strong>UUID v4</strong> es un identificador único universal de 128 bits que se genera al azar (por ejemplo <code>60d34853-d2c7-4508-b52a-4ad270812875</code>). Su probabilidad de repetirse es prácticamente nula.",
+      "Se usa como ID de usuarios, pedidos, sesiones, registros y archivos. Esta herramienta los genera con el <strong>generador criptográfico</strong> del navegador y te deja generar hasta 100 de golpe."
+    ],
+    "h2_pasos": "Cómo generar UUIDs paso a paso",
+    "howtoName": "Cómo generar UUID v4 online",
+    "howtoSteps": ["Elige la cantidad", "Genera", "Copia la lista"],
+    "pasos": [
+      "<strong>Elige la cantidad</strong> (1 a 100) y, si lo necesitas, mayúsculas o sin guiones.",
+      "<strong>Pulsa generar:</strong> obtendrás la lista, uno por línea.",
+      "<strong>Copia la lista</strong> y úsala en tu base de datos o seed."
+    ],
+    "usos": [
+      "<strong>Bases de datos:</strong> claves primarias sin colisiones.",
+      "<strong>Tests y seeds:</strong> datos falsos pero válidos.",
+      "<strong>APIs:</strong> identificadores de peticiones (request-id).",
+      "<strong>Nombres de archivo</strong> únicos sin sobrescribir nada."
+    ],
+    "faqs": [
+      { "q": "¿Son únicos de verdad?", "a": "Estadísticamente sí: el espacio de 122 bits aleatorios hace que las colisiones sean prácticamente imposibles." },
+      { "q": "¿Qué significa «v4»?", "a": "Es la versión de UUID basada en números aleatorios (las otras se basan en tiempo o en el nombre del recurso)." },
+      { "q": "¿Se envía algo al servidor?", "a": "No: se generan en tu navegador con crypto.getRandomValues." },
+      { "q": "¿Puedo guardarlos para reutilizarlos?", "a": "Cópialos antes de recargar: la lista no se guarda." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/generar-contrasenas/", "label": "Generador de contraseñas" },
+      { "url": "/herramientas/seguridad/generador-hashes/", "label": "Generador de hashes" },
+      { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES)" }
+    ]
+  },
+  {
+    "slug": "verificador-contrasenas",
+    "cat": "seguridad",
+    "keyword": "verificador de seguridad de contraseñas",
+    "h2_que": "Qué mide el verificador de contraseñas",
+    "que": [
+      "Analiza una contraseña y te dice <strong>qué tan fuerte es</strong>: su entropía estimada (en bits), qué criterios cumple (longitud, mayúsculas, números, símbolos, sin secuencias) y el <strong>tiempo estimado que tardaría un ataque de fuerza bruta</strong> en descifrarla.",
+      "Y lo más importante: <strong>la contraseña nunca sale de tu navegador</strong>. No se envía ni se registra en ningún sitio, a diferencia de muchos «testers» que la envían a un servidor."
+    ],
+    "h2_pasos": "Cómo verificar la seguridad de una contraseña paso a paso",
+    "howtoName": "Cómo comprobar la fortaleza de una contraseña",
+    "howtoSteps": ["Escribe la contraseña", "Lee la fortaleza y los criterios", "Mejora lo que falle"],
+    "pasos": [
+      "<strong>Escribe la contraseña</strong> (nada se envía; se analiza localmente).",
+      "<strong>Lee el resultado:</strong> barra de fortaleza, entropía en bits y tiempo estimado de descifrado.",
+      "<strong>Corrige los puntos en rojo</strong> (longitud, falta de variedad, secuencias) hasta subir de nivel."
+    ],
+    "usos": [
+      "<strong>Auditar tus claves</strong> actuales sin exponerlas.",
+      "<strong>Comprobar una nueva</strong> antes de guardarla.",
+      "<strong>Formación:</strong> entender por qué 12 caracteres variados superan a 8 con símbolos.",
+      "<strong>Políticas de equipo:</strong> ver qué patrones están penalizando."
+    ],
+    "faqs": [
+      { "q": "¿Se envía mi contraseña?", "a": "No, jamás. Todo el análisis ocurre en el navegador: es una diferencia clave frente a otras herramientas." },
+      { "q": "¿Qué es la entropía?", "a": "Una medida de lo imprevisible que es la contraseña; a más bits, más intentos harían falta para adivinarla." },
+      { "q": "¿Cómo estima el tiempo?", "a": "Con un escenario de ataque muy rápido (≈10.000 millones de intentos por segundo) para ser prudente." },
+      { "q": "¿Detecta contraseñas filtradas?", "a": "Detecta las más comunes de una lista local; no consulta bases de filtraciones externas." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/generar-contrasenas/", "label": "Generador de contraseñas" },
+      { "url": "/herramientas/seguridad/generador-hashes/", "label": "Generador de hashes" },
+      { "url": "/herramientas/seguridad/generador-hmac/", "label": "Generador de HMAC" }
+    ]
+  }
+]

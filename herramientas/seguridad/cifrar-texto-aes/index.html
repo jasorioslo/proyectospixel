@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=28">
+  <link rel="stylesheet" href="/css/styles.css?v=29">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Cifrar y Descifrar Texto","description":"Cifra texto con AES-256-GCM y contraseña, o descífralo, 100% en tu navegador. La contraseña y el texto nunca se envían.","url":"https://proyectospixel.com/herramientas/seguridad/cifrar-texto-aes/","applicationCategory":"SecurityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo cifrar y descifrar texto con AES-256","description":"Qué hace el cifrador de texto AES-256","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige cifrar","text":"Selecciona «Cifrar»."},{"@type":"HowToStep","position":2,"name":"Escribe texto y contraseña","text":"Escribe el texto y la contraseña (la que será la clave; sin ella no hay recuperación posible)."},{"@type":"HowToStep","position":3,"name":"Copia el texto cifrado","text":"Pulsa el botón y copia el resultado: empieza por v1: y contiene todo lo necesario para descifrar."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué pasa si olvido la contraseña?","acceptedAnswer":{"@type":"Answer","text":"El texto no se puede recuperar: no hay servidor que la guarde ni puerta trasera. Es el precio de la privacidad real."}},{"@type":"Question","name":"¿Cómo sabe si la contraseña es incorrecta?","acceptedAnswer":{"@type":"Answer","text":"AES-GCM autentica los datos: si la clave no es la correcta o el texto se alteró, el descifrado falla y te avisa."}},{"@type":"Question","name":"¿Puedo descifrar en otro sitio?","acceptedAnswer":{"@type":"Answer","text":"El formato estándar de AES-GCM y PBKDF2 permite descifrarlo con cualquier herramienta que use los mismos parámetros (hay que respetar iteraciones y codificación)."}},{"@type":"Question","name":"¿Se envía mi texto?","acceptedAnswer":{"@type":"Answer","text":"No. Ni el texto ni la contraseña salen de tu dispositivo."}}]}]}
   </script>
 </head>
 <body>
@@ -86,6 +89,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el cifrador de texto AES-256</h2>
+          <p>Cifra un texto con una contraseña usando <strong>AES-256-GCM</strong>, el mismo estándar que usan los bancos y los servicios de mensajería modernos, con derivación de clave <strong>PBKDF2</strong> (150.000 iteraciones por defecto) para que la contraseña sea difícil de atacar.</p>
+          <p>Genera un texto cifrado con formato <code>v1:iteraciones:datos</code> que solo se puede descifrar con la contraseña correcta. <strong>Todo ocurre en tu navegador</strong>: la contraseña y el texto jamás se transmiten.</p>
+          <h2>Cómo cifrar un texto paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Selecciona «Cifrar»</strong>.</li>
+            <li><strong>Escribe el texto y la contraseña</strong> (la que será la clave; sin ella no hay recuperación posible).</li>
+            <li><strong>Pulsa el botón</strong> y copia el resultado: empieza por <code>v1:</code> y contiene todo lo necesario para descifrar.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Compartir algo sensible:</strong> envía el texto cifrado por un canal y la contraseña por otro.</li>
+            <li><strong>Notas privadas:</strong> guarda apuntes cifrados en tu nube sin confiar en ella.</li>
+            <li><strong>Ejercicios de seguridad:</strong> entender cifrado autenticado y derivación de claves.</li>
+            <li><strong>Mensajes en foros</strong> que solo debe leer un destinatario.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Qué pasa si olvido la contraseña?</summary><p>El texto no se puede recuperar: no hay servidor que la guarde ni puerta trasera. Es el precio de la privacidad real.</p></details>
+            <details class="faq-item"><summary>¿Cómo sabe si la contraseña es incorrecta?</summary><p>AES-GCM autentica los datos: si la clave no es la correcta o el texto se alteró, el descifrado falla y te avisa.</p></details>
+            <details class="faq-item"><summary>¿Puedo descifrar en otro sitio?</summary><p>El formato estándar de AES-GCM y PBKDF2 permite descifrarlo con cualquier herramienta que use los mismos parámetros (hay que respetar iteraciones y codificación).</p></details>
+            <details class="faq-item"><summary>¿Se envía mi texto?</summary><p>No. Ni el texto ni la contraseña salen de tu dispositivo.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/seguridad/generar-contrasenas/">Generador de contraseñas</a>, <a href="/herramientas/seguridad/verificador-contrasenas/">Verificador de contraseñas</a> o <a href="/herramientas/seguridad/cifrado-rot13/">Cifrado ROT13 (no seguro)</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -95,12 +125,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=28"></script>
-  <script src="/js/tools-data.js?v=28"></script>
+  <script src="/js/components.js?v=29"></script>
+  <script src="/js/tools-data.js?v=29"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/cifrar-texto-aes.js?v=28"></script>
+  <script src="/js/tools/cifrar-texto-aes.js?v=29"></script>
 </body>
 </html>

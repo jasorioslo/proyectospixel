@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=28">
+  <link rel="stylesheet" href="/css/styles.css?v=29">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Generador de HMAC","description":"Calcula HMAC de un mensaje con tu clave secreta (SHA-256, SHA-384 o SHA-512) online. Todo local con WebCrypto.","url":"https://proyectospixel.com/herramientas/seguridad/generador-hmac/","applicationCategory":"SecurityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo generar un HMAC con clave secreta","description":"Qué es un HMAC","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Escribe la clave y el mensaje","text":"Escribe la clave secreta (key) y el mensaje."},{"@type":"HowToStep","position":2,"name":"Elige el algoritmo","text":"Elige el algoritmo (SHA-256, SHA-384 o SHA-512)."},{"@type":"HowToStep","position":3,"name":"Calcula y copia","text":"Pulsa calcular y copia el HMAC en hexadecimal."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿HMAC o hash?","acceptedAnswer":{"@type":"Answer","text":"El hash solo depende del mensaje; el HMAC necesita además la clave, por eso sirve para autenticar."}},{"@type":"Question","name":"¿Se envía mi clave?","acceptedAnswer":{"@type":"Answer","text":"No: el cálculo es local con WebCrypto. Tu clave secreta no sale del navegador."}},{"@type":"Question","name":"¿Qué algoritmo es el más habitual?","acceptedAnswer":{"@type":"Answer","text":"HMAC-SHA256 es el estándar en la mayoría de APIs."}},{"@type":"Question","name":"¿El resultado es hexadecimal?","acceptedAnswer":{"@type":"Answer","text":"Sí, en minúsculas y sin separadores, que es el formato que esperan los servicios."}}]}]}
   </script>
 </head>
 <body>
@@ -78,6 +81,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es un HMAC</h2>
+          <p>Un <strong>HMAC</strong> es un código de autenticación: mezcla un mensaje con una <strong>clave secreta</strong> para demostrar que el mensaje es auténtico y no ha sido alterado. A diferencia de un hash normal, necesita la clave.</p>
+          <p>Es la pieza que firma multitud de APIs (Webhooks de pago, AWS, Stripe...). Aquí lo calculas con SHA-256, SHA-384 o SHA-512 sin enviar nada.</p>
+          <h2>Cómo calcular un HMAC paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Escribe la clave secreta</strong> (key) y el <strong>mensaje</strong>.</li>
+            <li><strong>Elige el algoritmo</strong> (SHA-256, SHA-384 o SHA-512).</li>
+            <li><strong>Pulsa calcular</strong> y copia el HMAC en hexadecimal.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Webhooks:</strong> verificar que el pago o la notificación viene de quien dice.</li>
+            <li><strong>APIs firmadas:</strong> reproducir la firma HMAC que espera el servicio.</li>
+            <li><strong>Integridad autenticada:</strong> asegurarte de que un mensaje no se alteró y conoce la clave.</li>
+            <li><strong>Depuración de integraciones</strong> que fallan por una firma incorrecta.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿HMAC o hash?</summary><p>El hash solo depende del mensaje; el HMAC necesita además la clave, por eso sirve para autenticar.</p></details>
+            <details class="faq-item"><summary>¿Se envía mi clave?</summary><p>No: el cálculo es local con WebCrypto. Tu clave secreta no sale del navegador.</p></details>
+            <details class="faq-item"><summary>¿Qué algoritmo es el más habitual?</summary><p>HMAC-SHA256 es el estándar en la mayoría de APIs.</p></details>
+            <details class="faq-item"><summary>¿El resultado es hexadecimal?</summary><p>Sí, en minúsculas y sin separadores, que es el formato que esperan los servicios.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/seguridad/generador-hashes/">Generador de hashes</a>, <a href="/herramientas/seguridad/cifrar-texto-aes/">Cifrar texto (AES-256)</a> o <a href="/herramientas/conversion/codificar-decodificar-base64/">Codificar Base64</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -87,13 +117,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=28"></script>
-  <script src="/js/tools-data.js?v=28"></script>
-  <script src="/js/tools/hash-utils.js?v=28"></script>
+  <script src="/js/components.js?v=29"></script>
+  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/tools/hash-utils.js?v=29"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/generador-hmac.js?v=28"></script>
+  <script src="/js/tools/generador-hmac.js?v=29"></script>
 </body>
 </html>

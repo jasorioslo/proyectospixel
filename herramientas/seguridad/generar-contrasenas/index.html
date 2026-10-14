@@ -16,12 +16,15 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=28">
+  <link rel="stylesheet" href="/css/styles.css?v=29">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Generador de Contraseñas","description":"Crea contraseñas seguras y aleatorias personalizando longitud y símbolos.","url":"https://proyectospixel.com/herramientas/seguridad/generar-contrasenas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo generar contraseñas seguras online","description":"Qué hace el generador de contraseñas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Define longitud y opciones","text":"Define la longitud (16-20 caracteres es un buen equilibrio) y marca los conjuntos de caracteres que quieras incluir."},{"@type":"HowToStep","position":2,"name":"Genera la contraseña","text":"Pulsa generar: verás la contraseña y su nivel de fortaleza."},{"@type":"HowToStep","position":3,"name":"Cópiala y guárdala","text":"Cópiala y guárdala en tu gestor de contraseñas antes de cerrar la página."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Es puramente aleatoria?","acceptedAnswer":{"@type":"Answer","text":"Sí: usa crypto.getRandomValues, el generador criptográfico del navegador, apto para usos de seguridad."}},{"@type":"Question","name":"¿Se envía la contraseña?","acceptedAnswer":{"@type":"Answer","text":"No: se genera localmente. Ni nosotros ni nadie puede verla."}},{"@type":"Question","name":"¿Cuántos caracteres uso?","acceptedAnswer":{"@type":"Answer","text":"Como mínimo 12-16 para cuentas sensibles; más longitud es más seguro que más símbolos."}},{"@type":"Question","name":"¿Puedo generar varias?","acceptedAnswer":{"@type":"Answer","text":"Sí: pulsa generar de nuevo y obtendrás otra distinta."}}]}]}
   </script>
 </head>
 <body>
@@ -70,15 +73,42 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el generador de contraseñas</h2>
+          <p>Crea contraseñas aleatorias y fuertes usando el <strong>generador criptográfico</strong> del navegador (no un simple Math.random), con control de longitud y de qué incluir: mayúsculas, minúsculas, números y símbolos.</p>
+          <p>Incluye un medidor de fortaleza y, muy importante: <strong>la contraseña se genera en tu dispositivo y nunca se envía</strong>, así que nadie la conoce salvo tú.</p>
+          <h2>Cómo generar una contraseña segura paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Define la longitud</strong> (16-20 caracteres es un buen equilibrio) y marca los conjuntos de caracteres que quieras incluir.</li>
+            <li><strong>Pulsa generar:</strong> verás la contraseña y su nivel de fortaleza.</li>
+            <li><strong>Cópiala y guárdala</strong> en tu gestor de contraseñas antes de cerrar la página.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Nuevas cuentas:</strong> empezar con una contraseña fuerte por defecto.</li>
+            <li><strong>Rotación de claves</strong> tras una filtración.</li>
+            <li><strong>Wi-Fi y dispositivos:</strong> claves largas fáciles de copiar.</li>
+            <li><strong>Aprender:</strong> jugar con longitud y símbolos para ver cómo cambia la fortaleza.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Es puramente aleatoria?</summary><p>Sí: usa crypto.getRandomValues, el generador criptográfico del navegador, apto para usos de seguridad.</p></details>
+            <details class="faq-item"><summary>¿Se envía la contraseña?</summary><p>No: se genera localmente. Ni nosotros ni nadie puede verla.</p></details>
+            <details class="faq-item"><summary>¿Cuántos caracteres uso?</summary><p>Como mínimo 12-16 para cuentas sensibles; más longitud es más seguro que más símbolos.</p></details>
+            <details class="faq-item"><summary>¿Puedo generar varias?</summary><p>Sí: pulsa generar de nuevo y obtendrás otra distinta.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/seguridad/verificador-contrasenas/">Verificador de contraseñas</a>, <a href="/herramientas/seguridad/generador-uuid/">Generador de UUID</a> o <a href="/herramientas/seguridad/generador-hashes/">Generador de hashes</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools"><h2 class="section-title">Tools Relacionadas</h2><div id="related-tools" class="grid-tools grid-tools-all"></div></section>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=28"></script>
-  <script src="/js/tools-data.js?v=28"></script>
+  <script src="/js/components.js?v=29"></script>
+  <script src="/js/tools-data.js?v=29"></script>
   <script>ProyectosPixel.renderHeader();ProyectosPixel.renderFooter();</script>
-  <script src="/js/tools/generar-contrasenas.js?v=28"></script>
+  <script src="/js/tools/generar-contrasenas.js?v=29"></script>
 </body>
 </html>

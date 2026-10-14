@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=28">
+  <link rel="stylesheet" href="/css/styles.css?v=29">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Generador de Hashes","description":"Calcula hashes SHA-1, SHA-256, SHA-384, SHA-512 y MD5 online al instante. Todo en tu navegador con WebCrypto: 100% privado.","url":"https://proyectospixel.com/herramientas/seguridad/generador-hashes/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo generar hashes SHA y MD5","description":"Qué es un hash y para qué sirve","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Marca los algoritmos","text":"Marca los algoritmos que necesites (SHA-256 por defecto)."},{"@type":"HowToStep","position":2,"name":"Pega el texto","text":"Pega el texto y pulsa calcular."},{"@type":"HowToStep","position":3,"name":"Calcula y copia","text":"Copia el resultado: cada algoritmo aparece etiquetado con su hash en hexadecimal."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se envía mi texto?","acceptedAnswer":{"@type":"Answer","text":"No: los hashes SHA se calculan con WebCrypto en tu navegador; MD5 en JavaScript local."}},{"@type":"Question","name":"¿Cuál debería usar?","acceptedAnswer":{"@type":"Answer","text":"SHA-256 es el estándar recomendado. MD5 y SHA-1 se consideran débiles para seguridad, pero valen para integridad no crítica."}},{"@type":"Question","name":"¿Hash es lo mismo que cifrar?","acceptedAnswer":{"@type":"Answer","text":"No: un hash es de un solo sentido (no se descifra); el cifrado sí permite recuperar el original con la clave."}},{"@type":"Question","name":"¿Con acentos y emojis?","acceptedAnswer":{"@type":"Answer","text":"Sí: el texto se codifica en UTF-8 antes de calcular, por lo que los caracteres no ASCII funcionan igual."}}]}]}
   </script>
 </head>
 <body>
@@ -74,6 +77,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es un hash y para qué sirve</h2>
+          <p>Un <strong>hash</strong> es una huella digital del texto: una función matemática que lo transforma en una cadena de longitud fija. El mismo texto produce siempre el mismo hash, pero del hash no se puede recuperar el original.</p>
+          <p>Sirve para verificar integridad (¿cambió el archivo?), comparar datos sin almacenarlos, firmar y generar identificadores. Aquí calculas <strong>SHA-1, SHA-256, SHA-384, SHA-512 y MD5</strong> en un clic.</p>
+          <h2>Cómo calcular un hash paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Marca los algoritmos</strong> que necesites (SHA-256 por defecto).</li>
+            <li><strong>Pega el texto</strong> y pulsa calcular.</li>
+            <li><strong>Copia el resultado:</strong> cada algoritmo aparece etiquetado con su hash en hexadecimal.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Integridad de datos:</strong> comprobar que un contenido no ha cambiado.</li>
+            <li><strong>Seguridad informática:</strong> identificar archivos o comprobar firmas.</li>
+            <li><strong>Desarrollo:</strong> generar claves de caché o de deduplicación.</li>
+            <li><strong>Docencia:</strong> ver cómo el mínimo cambio altera el hash por completo.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>SHA-256 de «abc» → ba7816bf...20015ad (valor estándar verificable)</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se envía mi texto?</summary><p>No: los hashes SHA se calculan con WebCrypto en tu navegador; MD5 en JavaScript local.</p></details>
+            <details class="faq-item"><summary>¿Cuál debería usar?</summary><p>SHA-256 es el estándar recomendado. MD5 y SHA-1 se consideran débiles para seguridad, pero valen para integridad no crítica.</p></details>
+            <details class="faq-item"><summary>¿Hash es lo mismo que cifrar?</summary><p>No: un hash es de un solo sentido (no se descifra); el cifrado sí permite recuperar el original con la clave.</p></details>
+            <details class="faq-item"><summary>¿Con acentos y emojis?</summary><p>Sí: el texto se codifica en UTF-8 antes de calcular, por lo que los caracteres no ASCII funcionan igual.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/seguridad/comparar-hashes/">Comparar hash y texto</a>, <a href="/herramientas/seguridad/generador-hmac/">Generador de HMAC</a> o <a href="/herramientas/seguridad/cifrar-texto-aes/">Cifrar texto (AES-256)</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -83,13 +117,13 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=28"></script>
-  <script src="/js/tools-data.js?v=28"></script>
+  <script src="/js/components.js?v=29"></script>
+  <script src="/js/tools-data.js?v=29"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/hash-utils.js?v=28"></script>
-  <script src="/js/tools/generador-hashes.js?v=28"></script>
+  <script src="/js/tools/hash-utils.js?v=29"></script>
+  <script src="/js/tools/generador-hashes.js?v=29"></script>
 </body>
 </html>
