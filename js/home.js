@@ -11,21 +11,14 @@
   var tools = api.tools;
 
   /* --- Render Sections --- */
-  function renderFeatured() {
-    var container = document.getElementById('featured-tools');
-    if (!container) return;
-    var featured = tools.filter(function (t) { return t.featured; });
-    container.innerHTML = featured.map(function (t) { return api.renderCardTool(t); }).join('');
-  }
-
   function renderMostUsed() {
     var container = document.getElementById('most-used-tools');
     if (!container) return;
     var mostUsed = api.getMostUsedTools(8);
     if (mostUsed.length === 0) {
-      // No data yet, show featured tools
+      // Sin datos aún: mostrar una selección de destacadas como punto de partida
       var featured = tools.filter(function (t) { return t.featured; });
-      container.innerHTML = featured.map(function (t) { return api.renderCardTool(t); }).join('');
+      container.innerHTML = featured.slice(0, 8).map(function (t) { return api.renderCardTool(t); }).join('');
       return;
     }
     var html = mostUsed.map(function (item) {
@@ -79,7 +72,6 @@
 
   /* --- Init --- */
   function init() {
-    renderFeatured();
     renderMostUsed();
     renderAllTools();
     initSearch();

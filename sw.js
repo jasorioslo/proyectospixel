@@ -2,7 +2,7 @@
    ProyectosPixel Tools - Service Worker (PWA)
    ========================================================= */
 
-var CACHE_NAME = 'pp-v17';
+var CACHE_NAME = 'pp-v18';
 var ASSETS = [
   '/',
   '/index.html',
