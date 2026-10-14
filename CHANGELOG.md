@@ -13,6 +13,11 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - **Mensajes de error con acentos**: Base64/Unicode/Morse tenían "no valido"/"Codigo" → "no válido"/"Código"
 - Bump de assets a `?v=10` + SW `pp-v10`
 
+### Changed
+- **Tools Relacionadas — cards compactas** (según feedback): solo **icono + título + badge**, sin descripción y con **altura uniforme** (min-height 156px, badge anclado abajo) → relación 6 cards alineadas en cualquier tool. La home conserva las descripciones en sus cards completas.
+- **CI (GitHub Actions) con guarda anti-fallos**: si no existen los secretos `CLOUDFLARE_API_TOKEN`/`CLOUDFLARE_ACCOUNT_ID`, el job se **omite limpiamente** (sin correos de "Run failed") y muestra instrucciones; en cuanto se configuren, despliega automático sin tocar nada.
+- Bump de assets a `?v=17` + SW `pp-v17`
+
 ### Added
 - **🔐 FASE 5 — Seguridad (5 herramientas nuevas)** (14/10/2026):
   - **Cifrar y Descifrar Texto (AES-256-GCM + PBKDF2)** — formato `v1:iteraciones:base64`, contraseña incorrecta detectada; QA: round-trip ✓ y error con clave mala ✓
