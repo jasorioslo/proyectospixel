@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "contador-clics",
+    "cat": "matematicas",
+    "keyword": "contador de clics online",
+    "h2_que": "Qué hace el contador de clics",
+    "que": [
+      "Es un <strong>tally counter interactivo</strong>: pulsa «+1» para contar, «−1» para corregir y «Resetear» para empezar de cero. Incluye <strong>atajos de teclado</strong> (+ y −, flechas arriba/abajo, R para reiniciar) y un campo de ajuste manual.",
+      "Perfecto para contar personas, repeticiones de un ejercicio, objetos en movimiento o cualquier cosa que requiera contar con el dedo."
+    ],
+    "h2_pasos": "Cómo usar el contador de clics paso a paso",
+    "howtoName": "Cómo usar un contador de clics online",
+    "howtoSteps": ["Pulsa +1 para contar", "Corrige con −1 o el ajuste manual", "Resetea cuando termines"],
+    "pasos": [
+      "<strong>Pulsa «+1 Contar»</strong> (o la tecla +) para incrementar el contador.",
+      "<strong>Corrige</strong> con «−1» (o −) si te equivocas; también puedes escribir un valor exacto en «ajuste manual».",
+      "<strong>Pulsa «Resetear»</strong> (o R) para volver a cero."
+    ],
+    "usos": [
+      "<strong>Deporte:</strong> contar series, repeticiones o vueltas.",
+      "<strong>Grupos y eventos:</strong> aforo manual, personas que entran.",
+      "<strong>Inventario rápido:</strong> contar objetos o cajas.",
+      "<strong>Hábitos:</strong> llevar la cuenta de repeticiones diarias."
+    ],
+    "faqs": [
+      { "q": "¿Funciona sin ratón?", "a": "Sí: usa las teclas + y -, las flechas arriba/abajo y la R para resetear." },
+      { "q": "¿Puedo fijar un valor concreto?", "a": "Sí, con el campo de ajuste manual (acepta números negativos también)." },
+      { "q": "¿Se guarda el conteo si recargo?", "a": "No: es en memoria. Apunta el número final antes de recargar." },
+      { "q": "¿Se envía algo?", "a": "No, todo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/generar-lista-numeros/", "label": "Generar lista de números" },
+      { "url": "/herramientas/texto/contar-palabras-caracteres/", "label": "Contar palabras y caracteres" },
+      { "url": "/herramientas/texto/numerar-lineas-texto/", "label": "Numerar líneas" }
+    ]
+  },
+  {
+    "slug": "calculadora-porcentajes",
+    "cat": "matematicas",
+    "keyword": "calculadora de porcentajes",
+    "h2_que": "Qué operaciones de porcentaje resuelve",
+    "que": [
+      "Resuelve los cinco cálculos de porcentaje de uso diario: <strong>¿cuánto es X% de Y?</strong> · <strong>¿qué porcentaje es X de Y?</strong> · <strong>variación % entre dos valores</strong> · <strong>aumentar</strong> un número un X% · <strong>aplicar un descuento</strong> del X%.",
+      "Todo con formato español (decimales) y explicación del resultado, no solo el número."
+    ],
+    "h2_pasos": "Cómo calcular porcentajes paso a paso",
+    "howtoName": "Cómo calcular porcentajes online",
+    "howtoSteps": ["Elige la operación", "Introduce los dos valores", "Lee el resultado"],
+    "pasos": [
+      "<strong>Elige la operación</strong> en el desplegable (las etiquetas de los campos cambian según elijas).",
+      "<strong>Introduce los dos valores</strong> (por ejemplo, 15 y 240 para «¿cuánto es 15% de 240?»).",
+      "<strong>Pulsa calcular</strong> y obtén el resultado explicado."
+    ],
+    "usos": [
+      "<strong>Compras y descuentos:</strong> ¿cuánto ahorro con el 20%?",
+      "<strong>Nóminas e impuestos:</strong> calcular retenciones e incrementos.",
+      "<strong>Estadística:</strong> variación porcentual entre dos cifras.",
+      "<strong>Marketing:</strong> crecimiento mensual, CTR, conversión."
+    ],
+    "ejemplos": [ "15% de 240 = 36", "de 50 a 65 → variación +30%" ],
+    "faqs": [
+      { "q": "¿Diferencia entre variación y aumento?", "a": "«Variación» compara dos valores reales (de 50 a 65 = +30%); «aumentar» aplica un porcentaje a un número." },
+      { "q": "¿Acepta decimales?", "a": "Sí, con punto o coma." },
+      { "q": "¿Sirve para el IVA?", "a": "Sí para el cálculo directo; para precios con descuento + IVA usa la calculadora de descuentos." },
+      { "q": "¿Se guardan los valores?", "a": "No, todo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/calculadora-descuentos/", "label": "Calculadora de descuentos e IVA" },
+      { "url": "/herramientas/matematicas/regla-de-tres/", "label": "Regla de tres" },
+      { "url": "/herramientas/matematicas/estadistica-basica/", "label": "Estadística básica" }
+    ]
+  },
+  {
+    "slug": "calculadora-descuentos",
+    "cat": "matematicas",
+    "keyword": "calculadora de descuentos e iva",
+    "h2_que": "Qué calcula la herramienta de descuentos e IVA",
+    "que": [
+      "A partir del <strong>precio original</strong>, aplica un <strong>descuento (%)</strong> y, si quieres, añade el <strong>IVA (%)</strong> para obtener el precio final. Desglosa todo: cuánto ahorras, el precio con descuento y el importe del impuesto.",
+      "Con formato de moneda en euros; IVA por defecto al 21%, ajustable (10%, 4%, 0%...)."
+    ],
+    "h2_pasos": "Cómo calcular el precio final paso a paso",
+    "howtoName": "Cómo calcular descuentos e IVA de un precio",
+    "howtoSteps": ["Introduce el precio", "Añade descuento e IVA", "Lee el desglose"],
+    "pasos": [
+      "<strong>Introduce el precio</strong> original.",
+      "<strong>Ajusta descuento e IVA</strong> (porcentajes) y elige si quieres añadir el IVA al total o solo mostrarlo.",
+      "<strong>Pulsa calcular:</strong> verás el ahorro, el precio con descuento y el importe final con IVA."
+    ],
+    "usos": [
+      "<strong>Tiendas y rebajas:</strong> comprobar el precio real tras el descuento.",
+      "<strong>Autónomos y facturación:</strong> separar base e IVA.",
+      "<strong>Comparar ofertas:</strong> ¿realmente compensa el 2x1?",
+      "<strong>Presupuestos:</strong> precio final con impuestos para el cliente."
+    ],
+    "ejemplos": [ "100 € −20% +21% IVA = 96,80 € (ahorras 20 €)" ],
+    "faqs": [
+      { "q": "¿El descuento se aplica antes o después del IVA?", "a": "Primero el descuento sobre el precio base, y luego el IVA sobre el precio rebajado (es lo habitual en comercio)." },
+      { "q": "¿Qué IVA uso?", "a": "En España el general es 21% (también 10% y 4%). Puedes poner cualquier valor, incluso 0%." },
+      { "q": "¿Puedo calcular hacia atrás (precio con IVA → base)?", "a": "Por ahora calcula en sentido directo; para el inverso divide por (1 + IVA/100)." },
+      { "q": "¿Se guardan los datos?", "a": "No, todo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/calculadora-porcentajes/", "label": "Calculadora de porcentajes" },
+      { "url": "/herramientas/matematicas/regla-de-tres/", "label": "Regla de tres" },
+      { "url": "/herramientas/matematicas/conversor-unidades/", "label": "Conversor de unidades" }
+    ]
+  },
+  {
+    "slug": "estadistica-basica",
+    "cat": "matematicas",
+    "keyword": "calculadora de media mediana y moda",
+    "h2_que": "Qué mide la estadística básica",
+    "que": [
+      "A partir de una lista de números calcula los descriptivos esenciales: <strong>media</strong>, <strong>mediana</strong>, <strong>moda</strong>, <strong>cuartiles (Q1, Q2, Q3)</strong>, mínimo, máximo, rango, <strong>varianza</strong> y <strong>desviación estándar</strong> (poblacional y muestral).",
+      "Acepta los números separados por espacios, comas, punto y coma o saltos de línea, con decimales."
+    ],
+    "h2_pasos": "Cómo calcular estadísticas paso a paso",
+    "howtoName": "Cómo calcular media, mediana, moda y desviación",
+    "howtoSteps": ["Pega tus números", "Pulsa calcular", "Lee los resultados"],
+    "pasos": [
+      "<strong>Pega la lista de números</strong> en cualquier formato separado (10, 12.5, 9...).",
+      "<strong>Pulsa calcular estadísticas.</strong>",
+      "<strong>Lee el resumen:</strong> tendencia central, dispersión y cuartiles."
+    ],
+    "usos": [
+      "<strong>Estudiantes:</strong> resolver ejercicios con todos los cálculo justificados.",
+      "<strong>Análisis de datos:</strong> resumen rápido de cualquier serie.",
+      "<strong>Control de calidad</strong> y medidas repetidas.",
+      "<strong>Notas y evaluaciones:</strong> media y dispersión de un grupo."
+    ],
+    "ejemplos": [ "10 12 12 15 20 22 25 → media 16,57 · mediana 15 · moda 12" ],
+    "faqs": [
+      { "q": "¿Cuál es la diferencia entre varianza poblacional y muestral?", "a": "La poblacional divide entre n; la muestral entre n−1 y se usa cuando tu lista es una muestra de un conjunto mayor." },
+      { "q": "¿Qué significa la desviación estándar?", "a": "Cuánto se alejan los datos de la media de promedio: más dispersión, más incertidumbre." },
+      { "q": "¿Y si hay varios valores repetidos con igual frecuencia?", "a": "Se muestran todas las modas (distribución multimodal)." },
+      { "q": "¿Se guardan mis datos?", "a": "No, el cálculo es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/calculadora-porcentajes/", "label": "Calculadora de porcentajes" },
+      { "url": "/herramientas/texto/frecuencia-palabras/", "label": "Frecuencia de palabras" },
+      { "url": "/herramientas/matematicas/regla-de-tres/", "label": "Regla de tres" }
+    ]
+  },
+  {
+    "slug": "convertidor-bases",
+    "cat": "matematicas",
+    "keyword": "convertir binario octal decimal hexadecimal",
+    "h2_que": "Qué hace el convertidor de bases numéricas",
+    "que": [
+      "Convierte un número entre <strong>binario (base 2), octal (8), decimal (10) y hexadecimal (16)</strong>, mostrando además todas las demás bases a la vez, los bits necesarios y los bytes.",
+      "Valida que los dígitos correspondan a la base de origen: te avisa si pones un 9 en binario o una G en hexadecimal."
+    ],
+    "h2_pasos": "Cómo convertir entre bases paso a paso",
+    "howtoName": "Cómo convertir números entre binario, octal, decimal y hexadecimal",
+    "howtoSteps": ["Introduce el número", "Elige la base de origen", "Lee todas las bases"],
+    "pasos": [
+      "<strong>Escribe el número</strong>.",
+      "<strong>Elige su base de origen</strong> (2, 8, 10 o 16): si no lo tienes claro, prueba con decimal.",
+      "<strong>Pulsa convertir:</strong> obtendrás el valor en las cuatro bases, más el número de bits."
+    ],
+    "usos": [
+      "<strong>Programación:</strong> entender máscaras de bits, permisos chmod (octal) y colores hex.",
+      "<strong>Redes y sistemas:</strong> direcciones, subredes, identificadores.",
+      "<strong>Electrónica:</strong> registros y direcciones de memoria.",
+      "<strong>Docencia:</strong> ver el mismo valor en cada base."
+    ],
+    "ejemplos": [ "1010₂ = 12₈ = 10₁₀ = A₁₆" ],
+    "faqs": [
+      { "q": "¿Acepta prefijos 0b, 0o, 0x?", "a": "Sí: puede reconocerlos y limpiarlos al convertir." },
+      { "q": "¿Qué son los bits necesarios?", "a": "Cuántas posiciones binarias requiere el número (por ejemplo, 10 necesita 4 bits)." },
+      { "q": "¿Con decimales?", "a": "Está pensado para números enteros, que es el caso de binario/octal/hex habitual." },
+      { "q": "¿Se guardan mis datos?", "a": "No, la conversión es local." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/texto-a-binario/", "label": "Texto a binario" },
+      { "url": "/herramientas/matematicas/conversor-unidades/", "label": "Conversor de unidades" },
+      { "url": "/herramientas/matematicas/generar-lista-numeros/", "label": "Generar lista de números" }
+    ]
+  }
+]

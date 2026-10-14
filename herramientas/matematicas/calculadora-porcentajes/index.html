@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Porcentajes","description":"Calcula porcentajes online: cuánto es X% de Y, qué porcentaje representa, aumentos, descuentos y variación porcentual. Gratis y privado.","url":"https://proyectospixel.com/herramientas/matematicas/calculadora-porcentajes/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo calcular porcentajes online","description":"Qué operaciones de porcentaje resuelve","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Elige la operación","text":"Elige la operación en el desplegable (las etiquetas de los campos cambian según elijas)."},{"@type":"HowToStep","position":2,"name":"Introduce los dos valores","text":"Introduce los dos valores (por ejemplo, 15 y 240 para «¿cuánto es 15% de 240?»)."},{"@type":"HowToStep","position":3,"name":"Lee el resultado","text":"Pulsa calcular y obtén el resultado explicado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Diferencia entre variación y aumento?","acceptedAnswer":{"@type":"Answer","text":"«Variación» compara dos valores reales (de 50 a 65 = +30%); «aumentar» aplica un porcentaje a un número."}},{"@type":"Question","name":"¿Acepta decimales?","acceptedAnswer":{"@type":"Answer","text":"Sí, con punto o coma."}},{"@type":"Question","name":"¿Sirve para el IVA?","acceptedAnswer":{"@type":"Answer","text":"Sí para el cálculo directo; para precios con descuento + IVA usa la calculadora de descuentos."}},{"@type":"Question","name":"¿Se guardan los valores?","acceptedAnswer":{"@type":"Answer","text":"No, todo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -81,6 +84,38 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué operaciones de porcentaje resuelve</h2>
+          <p>Resuelve los cinco cálculos de porcentaje de uso diario: <strong>¿cuánto es X% de Y?</strong> · <strong>¿qué porcentaje es X de Y?</strong> · <strong>variación % entre dos valores</strong> · <strong>aumentar</strong> un número un X% · <strong>aplicar un descuento</strong> del X%.</p>
+          <p>Todo con formato español (decimales) y explicación del resultado, no solo el número.</p>
+          <h2>Cómo calcular porcentajes paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige la operación</strong> en el desplegable (las etiquetas de los campos cambian según elijas).</li>
+            <li><strong>Introduce los dos valores</strong> (por ejemplo, 15 y 240 para «¿cuánto es 15% de 240?»).</li>
+            <li><strong>Pulsa calcular</strong> y obtén el resultado explicado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Compras y descuentos:</strong> ¿cuánto ahorro con el 20%?</li>
+            <li><strong>Nóminas e impuestos:</strong> calcular retenciones e incrementos.</li>
+            <li><strong>Estadística:</strong> variación porcentual entre dos cifras.</li>
+            <li><strong>Marketing:</strong> crecimiento mensual, CTR, conversión.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>15% de 240 = 36</code></li>
+            <li><code>de 50 a 65 → variación +30%</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Diferencia entre variación y aumento?</summary><p>«Variación» compara dos valores reales (de 50 a 65 = +30%); «aumentar» aplica un porcentaje a un número.</p></details>
+            <details class="faq-item"><summary>¿Acepta decimales?</summary><p>Sí, con punto o coma.</p></details>
+            <details class="faq-item"><summary>¿Sirve para el IVA?</summary><p>Sí para el cálculo directo; para precios con descuento + IVA usa la calculadora de descuentos.</p></details>
+            <details class="faq-item"><summary>¿Se guardan los valores?</summary><p>No, todo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/calculadora-descuentos/">Calculadora de descuentos e IVA</a>, <a href="/herramientas/matematicas/regla-de-tres/">Regla de tres</a> o <a href="/herramientas/matematicas/estadistica-basica/">Estadística básica</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -90,12 +125,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/calculadora-porcentajes.js?v=29"></script>
+  <script src="/js/tools/calculadora-porcentajes.js?v=30"></script>
 </body>
 </html>

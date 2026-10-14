@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Combinar Líneas de Dos Listas","description":"Genera el producto cruzado de dos listas de texto, una línea por combinación.","url":"https://proyectospixel.com/herramientas/matematicas/combinar-lineas-listas/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo combinar dos listas (producto cruzado)","description":"Qué es el producto cruzado de dos listas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega la lista A y la B","text":"Pega la lista A (por ejemplo, servicios) y la lista B (ciudades)."},{"@type":"HowToStep","position":2,"name":"Elige separador y orden","text":"Elige el separador y si quieres invertir el orden (B primero)."},{"@type":"HowToStep","position":3,"name":"Genera y copia","text":"Pulsa combinar: obtendrás todas las cruces (A×B) con el total indicado."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es el límite?","acceptedAnswer":{"@type":"Answer","text":"10.000 combinaciones cruzadas por consulta."}},{"@type":"Question","name":"¿Puedo poner la B primero?","acceptedAnswer":{"@type":"Answer","text":"Sí, con la opción «invertir orden» (el resultado cambia de orden, no de contenido)."}},{"@type":"Question","name":"¿Se guardan mis listas?","acceptedAnswer":{"@type":"Answer","text":"No, el cruce se calcula en tu navegador."}},{"@type":"Question","name":"¿Diferencia con fusionar listas?","acceptedAnswer":{"@type":"Answer","text":"Fusionar une por índice (a1 con b1); combinar genera todas las cruces posibles."}}]}]}
   </script>
 </head>
 <body>
@@ -76,6 +79,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué es el producto cruzado de dos listas</h2>
+          <p>Genera <strong>todas las combinaciones cruzadas</strong> entre la lista A y la lista B: cada elemento de A con cada elemento de B (A × B).</p>
+          <p>Es la misma mecánica que usarías para crear variantes de keywords (servicio × ciudad) o todas las opciones de un producto.</p>
+          <h2>Cómo combinar dos listas paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega la lista A</strong> (por ejemplo, servicios) y la <strong>lista B</strong> (ciudades).</li>
+            <li><strong>Elige el separador</strong> y si quieres invertir el orden (B primero).</li>
+            <li><strong>Pulsa combinar:</strong> obtendrás todas las cruces (A×B) con el total indicado.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Keyword research:</strong> combina servicio + ciudad para SEO local.</li>
+            <li><strong>E-commerce:</strong> variantes de color × talla.</li>
+            <li><strong>Campañas:</strong> títulos de anuncio por audiencia × beneficio.</li>
+            <li><strong>Inventarios</strong> de referencia únicas.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>A: barato/rápido · B: zapatos/camisas → barato zapatos, barato camisas, rápido zapatos, rápido camisas</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cuál es el límite?</summary><p>10.000 combinaciones cruzadas por consulta.</p></details>
+            <details class="faq-item"><summary>¿Puedo poner la B primero?</summary><p>Sí, con la opción «invertir orden» (el resultado cambia de orden, no de contenido).</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis listas?</summary><p>No, el cruce se calcula en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Diferencia con fusionar listas?</summary><p>Fusionar une por índice (a1 con b1); combinar genera todas las cruces posibles.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/fusionar-texto-lineas/">Fusionar dos listas</a>, <a href="/herramientas/matematicas/generar-combinaciones/">Generador de combinaciones</a> o <a href="/herramientas/texto/separar-keywords-genero/">Separar keywords por género</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -85,12 +119,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/combinar-lineas-listas.js?v=29"></script>
+  <script src="/js/tools/combinar-lineas-listas.js?v=30"></script>
 </body>
 </html>

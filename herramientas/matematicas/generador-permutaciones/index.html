@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Generador de Permutaciones","description":"Genera todas las permutaciones n! de los elementos de tu lista.","url":"https://proyectospixel.com/herramientas/matematicas/generador-permutaciones/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo generar todas las permutaciones de una lista","description":"Qué son las permutaciones (n!)","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega los elementos","text":"Pega los elementos, uno por línea (máximo 8; los duplicados se quitan automáticamente)."},{"@type":"HowToStep","position":2,"name":"Elige el separador","text":"Elige el separador entre elementos."},{"@type":"HowToStep","position":3,"name":"Genera y copia","text":"Pulsa generar: verás el total (n!) y todas las ordenaciones."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Por qué el límite de 8 elementos?","acceptedAnswer":{"@type":"Answer","text":"Porque 8! = 40.320 y 9! ya son 362.880: bloquearían el navegador. Para más casos, usa combinaciones o filtra antes."}},{"@type":"Question","name":"¿Se eliminan los duplicados?","acceptedAnswer":{"@type":"Answer","text":"Sí: elementos repetidos no generan permutaciones duplicadas."}},{"@type":"Question","name":"¿Se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"No, las ordenaciones se generan localmente."}},{"@type":"Question","name":"¿Permutaciones o combinaciones?","acceptedAnswer":{"@type":"Answer","text":"Permutaciones = importa el orden (n!); combinaciones = no importa (C(n,k) y son menos)."}}]}]}
   </script>
 </head>
 <body>
@@ -72,6 +75,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué son las permutaciones (n!)</h2>
+          <p>Las permutaciones son todas las <strong>formas de ordenar</strong> un conjunto: con «uno, dos» salen «uno dos» y «dos uno». El número de ordenaciones es el factorial de n (n!), que crece rápido: 3! = 6, 5! = 120, 8! = 40.320.</p>
+          <p>Aquí generas todas las permutaciones de tu lista (hasta 8 elementos) con orden aleatorio garantizado por el algoritmo de Heap.</p>
+          <h2>Cómo generar permutaciones paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega los elementos</strong>, uno por línea (máximo 8; los duplicados se quitan automáticamente).</li>
+            <li><strong>Elige el separador</strong> entre elementos.</li>
+            <li><strong>Pulsa generar:</strong> verás el total (n!) y todas las ordenaciones.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Planificación de rutas:</strong> todos los órdenes de visita posibles.</li>
+            <li><strong>Tests combinatorios:</strong> ordenaciones para probar un sistema.</li>
+            <li><strong>Juegos y puzles:</strong> todos los arreglos de unas piezas.</li>
+            <li><strong>Docencia:</strong> ver crecer el factorial.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>uno, dos → uno dos · dos uno</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Por qué el límite de 8 elementos?</summary><p>Porque 8! = 40.320 y 9! ya son 362.880: bloquearían el navegador. Para más casos, usa combinaciones o filtra antes.</p></details>
+            <details class="faq-item"><summary>¿Se eliminan los duplicados?</summary><p>Sí: elementos repetidos no generan permutaciones duplicadas.</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis datos?</summary><p>No, las ordenaciones se generan localmente.</p></details>
+            <details class="faq-item"><summary>¿Permutaciones o combinaciones?</summary><p>Permutaciones = importa el orden (n!); combinaciones = no importa (C(n,k) y son menos).</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/generar-combinaciones/">Generador de combinaciones</a>, <a href="/herramientas/matematicas/combinar-lineas-listas/">Combinar líneas (A×B)</a> o <a href="/herramientas/matematicas/generar-lista-numeros/">Generar lista de números</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -81,12 +115,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/generador-permutaciones.js?v=29"></script>
+  <script src="/js/tools/generador-permutaciones.js?v=30"></script>
 </body>
 </html>

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Estadística Básica","description":"Calcula media, mediana, moda, cuartiles, varianza y desviación estándar de una lista de números. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/matematicas/estadistica-basica/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo calcular media, mediana, moda y desviación","description":"Qué mide la estadística básica","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pega tus números","text":"Pega la lista de números en cualquier formato separado (10, 12.5, 9...)."},{"@type":"HowToStep","position":2,"name":"Pulsa calcular","text":"Pulsa calcular estadísticas."},{"@type":"HowToStep","position":3,"name":"Lee los resultados","text":"Lee el resumen: tendencia central, dispersión y cuartiles."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es la diferencia entre varianza poblacional y muestral?","acceptedAnswer":{"@type":"Answer","text":"La poblacional divide entre n; la muestral entre n−1 y se usa cuando tu lista es una muestra de un conjunto mayor."}},{"@type":"Question","name":"¿Qué significa la desviación estándar?","acceptedAnswer":{"@type":"Answer","text":"Cuánto se alejan los datos de la media de promedio: más dispersión, más incertidumbre."}},{"@type":"Question","name":"¿Y si hay varios valores repetidos con igual frecuencia?","acceptedAnswer":{"@type":"Answer","text":"Se muestran todas las modas (distribución multimodal)."}},{"@type":"Question","name":"¿Se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"No, el cálculo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -69,6 +72,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué mide la estadística básica</h2>
+          <p>A partir de una lista de números calcula los descriptivos esenciales: <strong>media</strong>, <strong>mediana</strong>, <strong>moda</strong>, <strong>cuartiles (Q1, Q2, Q3)</strong>, mínimo, máximo, rango, <strong>varianza</strong> y <strong>desviación estándar</strong> (poblacional y muestral).</p>
+          <p>Acepta los números separados por espacios, comas, punto y coma o saltos de línea, con decimales.</p>
+          <h2>Cómo calcular estadísticas paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pega la lista de números</strong> en cualquier formato separado (10, 12.5, 9...).</li>
+            <li><strong>Pulsa calcular estadísticas.</strong></li>
+            <li><strong>Lee el resumen:</strong> tendencia central, dispersión y cuartiles.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Estudiantes:</strong> resolver ejercicios con todos los cálculo justificados.</li>
+            <li><strong>Análisis de datos:</strong> resumen rápido de cualquier serie.</li>
+            <li><strong>Control de calidad</strong> y medidas repetidas.</li>
+            <li><strong>Notas y evaluaciones:</strong> media y dispersión de un grupo.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>10 12 12 15 20 22 25 → media 16,57 · mediana 15 · moda 12</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Cuál es la diferencia entre varianza poblacional y muestral?</summary><p>La poblacional divide entre n; la muestral entre n−1 y se usa cuando tu lista es una muestra de un conjunto mayor.</p></details>
+            <details class="faq-item"><summary>¿Qué significa la desviación estándar?</summary><p>Cuánto se alejan los datos de la media de promedio: más dispersión, más incertidumbre.</p></details>
+            <details class="faq-item"><summary>¿Y si hay varios valores repetidos con igual frecuencia?</summary><p>Se muestran todas las modas (distribución multimodal).</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis datos?</summary><p>No, el cálculo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/calculadora-porcentajes/">Calculadora de porcentajes</a>, <a href="/herramientas/texto/frecuencia-palabras/">Frecuencia de palabras</a> o <a href="/herramientas/matematicas/regla-de-tres/">Regla de tres</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -78,12 +112,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/estadistica-basica.js?v=29"></script>
+  <script src="/js/tools/estadistica-basica.js?v=30"></script>
 </body>
 </html>

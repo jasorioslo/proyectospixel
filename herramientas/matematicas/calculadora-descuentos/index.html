@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Calculadora de Descuentos e IVA","description":"Calcula el precio final con descuento e IVA online: cuánto ahorras, base imponible y total. Gratis y 100% privado.","url":"https://proyectospixel.com/herramientas/matematicas/calculadora-descuentos/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo calcular descuentos e IVA de un precio","description":"Qué calcula la herramienta de descuentos e IVA","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Introduce el precio","text":"Introduce el precio original."},{"@type":"HowToStep","position":2,"name":"Añade descuento e IVA","text":"Ajusta descuento e IVA (porcentajes) y elige si quieres añadir el IVA al total o solo mostrarlo."},{"@type":"HowToStep","position":3,"name":"Lee el desglose","text":"Pulsa calcular: verás el ahorro, el precio con descuento y el importe final con IVA."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿El descuento se aplica antes o después del IVA?","acceptedAnswer":{"@type":"Answer","text":"Primero el descuento sobre el precio base, y luego el IVA sobre el precio rebajado (es lo habitual en comercio)."}},{"@type":"Question","name":"¿Qué IVA uso?","acceptedAnswer":{"@type":"Answer","text":"En España el general es 21% (también 10% y 4%). Puedes poner cualquier valor, incluso 0%."}},{"@type":"Question","name":"¿Puedo calcular hacia atrás (precio con IVA → base)?","acceptedAnswer":{"@type":"Answer","text":"Por ahora calcula en sentido directo; para el inverso divide por (1 + IVA/100)."}},{"@type":"Question","name":"¿Se guardan los datos?","acceptedAnswer":{"@type":"Answer","text":"No, todo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -80,6 +83,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué calcula la herramienta de descuentos e IVA</h2>
+          <p>A partir del <strong>precio original</strong>, aplica un <strong>descuento (%)</strong> y, si quieres, añade el <strong>IVA (%)</strong> para obtener el precio final. Desglosa todo: cuánto ahorras, el precio con descuento y el importe del impuesto.</p>
+          <p>Con formato de moneda en euros; IVA por defecto al 21%, ajustable (10%, 4%, 0%...).</p>
+          <h2>Cómo calcular el precio final paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Introduce el precio</strong> original.</li>
+            <li><strong>Ajusta descuento e IVA</strong> (porcentajes) y elige si quieres añadir el IVA al total o solo mostrarlo.</li>
+            <li><strong>Pulsa calcular:</strong> verás el ahorro, el precio con descuento y el importe final con IVA.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Tiendas y rebajas:</strong> comprobar el precio real tras el descuento.</li>
+            <li><strong>Autónomos y facturación:</strong> separar base e IVA.</li>
+            <li><strong>Comparar ofertas:</strong> ¿realmente compensa el 2x1?</li>
+            <li><strong>Presupuestos:</strong> precio final con impuestos para el cliente.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>100 € −20% +21% IVA = 96,80 € (ahorras 20 €)</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿El descuento se aplica antes o después del IVA?</summary><p>Primero el descuento sobre el precio base, y luego el IVA sobre el precio rebajado (es lo habitual en comercio).</p></details>
+            <details class="faq-item"><summary>¿Qué IVA uso?</summary><p>En España el general es 21% (también 10% y 4%). Puedes poner cualquier valor, incluso 0%.</p></details>
+            <details class="faq-item"><summary>¿Puedo calcular hacia atrás (precio con IVA → base)?</summary><p>Por ahora calcula en sentido directo; para el inverso divide por (1 + IVA/100).</p></details>
+            <details class="faq-item"><summary>¿Se guardan los datos?</summary><p>No, todo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/calculadora-porcentajes/">Calculadora de porcentajes</a>, <a href="/herramientas/matematicas/regla-de-tres/">Regla de tres</a> o <a href="/herramientas/matematicas/conversor-unidades/">Conversor de unidades</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -89,12 +123,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/calculadora-descuentos.js?v=29"></script>
+  <script src="/js/tools/calculadora-descuentos.js?v=30"></script>
 </body>
 </html>

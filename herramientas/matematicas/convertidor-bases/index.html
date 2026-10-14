@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Convertidor de Bases Numéricas","description":"Convierte números entre binario, octal, decimal y hexadecimal online, con validación y bits necesarios. Gratis y privado.","url":"https://proyectospixel.com/herramientas/matematicas/convertidor-bases/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo convertir números entre binario, octal, decimal y hexadecimal","description":"Qué hace el convertidor de bases numéricas","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Introduce el número","text":"Escribe el número."},{"@type":"HowToStep","position":2,"name":"Elige la base de origen","text":"Elige su base de origen (2, 8, 10 o 16): si no lo tienes claro, prueba con decimal."},{"@type":"HowToStep","position":3,"name":"Lee todas las bases","text":"Pulsa convertir: obtendrás el valor en las cuatro bases, más el número de bits."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Acepta prefijos 0b, 0o, 0x?","acceptedAnswer":{"@type":"Answer","text":"Sí: puede reconocerlos y limpiarlos al convertir."}},{"@type":"Question","name":"¿Qué son los bits necesarios?","acceptedAnswer":{"@type":"Answer","text":"Cuántas posiciones binarias requiere el número (por ejemplo, 10 necesita 4 bits)."}},{"@type":"Question","name":"¿Con decimales?","acceptedAnswer":{"@type":"Answer","text":"Está pensado para números enteros, que es el caso de binario/octal/hex habitual."}},{"@type":"Question","name":"¿Se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"No, la conversión es local."}}]}]}
   </script>
 </head>
 <body>
@@ -77,6 +80,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el convertidor de bases numéricas</h2>
+          <p>Convierte un número entre <strong>binario (base 2), octal (8), decimal (10) y hexadecimal (16)</strong>, mostrando además todas las demás bases a la vez, los bits necesarios y los bytes.</p>
+          <p>Valida que los dígitos correspondan a la base de origen: te avisa si pones un 9 en binario o una G en hexadecimal.</p>
+          <h2>Cómo convertir entre bases paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Escribe el número</strong>.</li>
+            <li><strong>Elige su base de origen</strong> (2, 8, 10 o 16): si no lo tienes claro, prueba con decimal.</li>
+            <li><strong>Pulsa convertir:</strong> obtendrás el valor en las cuatro bases, más el número de bits.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Programación:</strong> entender máscaras de bits, permisos chmod (octal) y colores hex.</li>
+            <li><strong>Redes y sistemas:</strong> direcciones, subredes, identificadores.</li>
+            <li><strong>Electrónica:</strong> registros y direcciones de memoria.</li>
+            <li><strong>Docencia:</strong> ver el mismo valor en cada base.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>1010₂ = 12₈ = 10₁₀ = A₁₆</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Acepta prefijos 0b, 0o, 0x?</summary><p>Sí: puede reconocerlos y limpiarlos al convertir.</p></details>
+            <details class="faq-item"><summary>¿Qué son los bits necesarios?</summary><p>Cuántas posiciones binarias requiere el número (por ejemplo, 10 necesita 4 bits).</p></details>
+            <details class="faq-item"><summary>¿Con decimales?</summary><p>Está pensado para números enteros, que es el caso de binario/octal/hex habitual.</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis datos?</summary><p>No, la conversión es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/conversion/texto-a-binario/">Texto a binario</a>, <a href="/herramientas/matematicas/conversor-unidades/">Conversor de unidades</a> o <a href="/herramientas/matematicas/generar-lista-numeros/">Generar lista de números</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -86,12 +120,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/convertidor-bases.js?v=29"></script>
+  <script src="/js/tools/convertidor-bases.js?v=30"></script>
 </body>
 </html>

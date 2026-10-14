@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Generar Lista de Números","description":"Genera listas de números correlativos con inicio, fin y paso configurables.","url":"https://proyectospixel.com/herramientas/matematicas/generar-lista-numeros/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo generar listas de números correlativos","description":"Qué hace el generador de listas de números","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Define desde, hasta y paso","text":"Define los valores: desde (1), hasta (10) y paso (1)."},{"@type":"HowToStep","position":2,"name":"Elige el separador","text":"Elige el separador que necesites (líneas, comas, espacios, guiones)."},{"@type":"HowToStep","position":3,"name":"Genera y copia","text":"Pulsa generar y copia la lista completa."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Puedo usar decimales o pasos grandes?","acceptedAnswer":{"@type":"Answer","text":"El paso es un entero mayor que 0; para pasos de miles (100, 200, 300) también funciona."}},{"@type":"Question","name":"¿Y en orden descendente?","acceptedAnswer":{"@type":"Answer","text":"Sí: pon un «desde» mayor que el «hasta» y la lista baja."}},{"@type":"Question","name":"¿Hay límite?","acceptedAnswer":{"@type":"Answer","text":"Hasta 100.000 números por lista para no bloquear el navegador."}},{"@type":"Question","name":"¿Se guarda mi lista?","acceptedAnswer":{"@type":"Answer","text":"No, se genera localmente."}}]}]}
   </script>
 </head>
 <body>
@@ -76,6 +79,37 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el generador de listas de números</h2>
+          <p>Crea una lista de números correlativos definiendo <strong>desde, hasta y paso</strong>, con separador configurable (salto de línea, coma, espacio o guion).</p>
+          <p>También funciona en orden inverso: si el valor inicial es mayor que el final, la lista baja. Con límite de seguridad de 100.000 números.</p>
+          <h2>Cómo generar una lista de números paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Define los valores:</strong> desde (1), hasta (10) y paso (1).</li>
+            <li><strong>Elige el separador</strong> que necesites (líneas, comas, espacios, guiones).</li>
+            <li><strong>Pulsa generar</strong> y copia la lista completa.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Rellenar formularios</strong> y plantillas con series.</li>
+            <li><strong>IDs y numeraciones</strong> para pruebas.</li>
+            <li><strong>Inventarios, dorsales, entradas</strong> correlativas.</li>
+            <li><strong>Datos para gráficas</strong> o simulaciones.</li>
+          </ul>
+          <h2>Ejemplos</h2>
+          <ul>
+            <li><code>desde 1, hasta 5, paso 1 → 1\n2\n3\n4\n5</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Puedo usar decimales o pasos grandes?</summary><p>El paso es un entero mayor que 0; para pasos de miles (100, 200, 300) también funciona.</p></details>
+            <details class="faq-item"><summary>¿Y en orden descendente?</summary><p>Sí: pon un «desde» mayor que el «hasta» y la lista baja.</p></details>
+            <details class="faq-item"><summary>¿Hay límite?</summary><p>Hasta 100.000 números por lista para no bloquear el navegador.</p></details>
+            <details class="faq-item"><summary>¿Se guarda mi lista?</summary><p>No, se genera localmente.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/texto/numerar-lineas-texto/">Numerar líneas de texto</a>, <a href="/herramientas/matematicas/convertidor-bases/">Convertidor de bases</a> o <a href="/herramientas/matematicas/contador-clics/">Contador de clics</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -85,12 +119,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/generar-lista-numeros.js?v=29"></script>
+  <script src="/js/tools/generar-lista-numeros.js?v=30"></script>
 </body>
 </html>

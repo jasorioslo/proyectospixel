@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "generar-par-claves",
+    "cat": "seguridad",
+    "keyword": "generar par de claves rsa",
+    "h2_que": "Qué es un par de claves pública/privada",
+    "que": [
+      "En criptografía asimétrica trabajas con dos claves: la <strong>pública</strong>, que puedes dar a todo el mundo, y la <strong>privada</strong>, que solo tú guardas. Lo que se cifra con una se descifra con la otra, y lo firmado con la privada se verifica con la pública.",
+      "Esta herramienta genera el par en tu navegador (con WebCrypto) y te lo entrega en formato <strong>PEM</strong>, el que usan servidores, SSH, OpenSSL y las librerías de casi cualquier lenguaje."
+    ],
+    "h2_pasos": "Cómo generar un par de claves paso a paso",
+    "howtoName": "Cómo generar un par de claves RSA o ECDSA en PEM",
+    "howtoSteps": ["Elige el tipo de clave", "Genera el par", "Guarda la clave privada"],
+    "pasos": [
+      "<strong>Elige el tipo:</strong> RSA-2048 (cifrado) o ECDSA P-256 (firmas, más ligera).",
+      "<strong>Pulsa generar:</strong> puede tardar 1-2 segundos; verás la clave pública y la privada separadas.",
+      "<strong>Guarda ambas:</strong> la pública donde haga falta y la privada en un lugar seguro (nunca la compartas ni la subas a un repo)."
+    ],
+    "usos": [
+      "<strong>Servidores y SSH:</strong> generar claves para despliegues.",
+      "<strong>Cifrado de datos:</strong> RSA-OAEP para cifrar mensajes cortos o claves simétricas.",
+      "<strong>Firmas digitales:</strong> ECDSA para firmar documentos o tokens.",
+      "<strong>Pruebas y desarrollo</strong> sin instalar OpenSSL."
+    ],
+    "faqs": [
+      { "q": "¿Se envía la clave privada?", "a": "Nunca. Se genera en tu navegador; nada sale de tu dispositivo. Es nuestra diferencia frente a generadores online que las crean en un servidor." },
+      { "q": "¿RSA o ECDSA?", "a": "RSA-2048 es el más compatible; ECDSA P-256 es más rápido y ligero, ideal para firmas." },
+      { "q": "¿En qué formato se descarga?", "a": "PEM (texto con cabeceras BEGIN/END), el estándar interoperable." },
+      { "q": "¿Puedo reutilizarlas?", "a": "Sí: cópialas y guárdalas bien. Si pierdes la privada, no hay forma de regenerarla (es tuya y solo tuya)." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES-256)" },
+      { "url": "/herramientas/seguridad/generador-hashes/", "label": "Generador de hashes" },
+      { "url": "/herramientas/seguridad/decodificar-jwt/", "label": "Decodificar JWT" }
+    ]
+  },
+  {
+    "slug": "generar-lista-numeros",
+    "cat": "matematicas",
+    "keyword": "generar lista de numeros online",
+    "h2_que": "Qué hace el generador de listas de números",
+    "que": [
+      "Crea una lista de números correlativos definiendo <strong>desde, hasta y paso</strong>, con separador configurable (salto de línea, coma, espacio o guion).",
+      "También funciona en orden inverso: si el valor inicial es mayor que el final, la lista baja. Con límite de seguridad de 100.000 números."
+    ],
+    "h2_pasos": "Cómo generar una lista de números paso a paso",
+    "howtoName": "Cómo generar listas de números correlativos",
+    "howtoSteps": ["Define desde, hasta y paso", "Elige el separador", "Genera y copia"],
+    "pasos": [
+      "<strong>Define los valores:</strong> desde (1), hasta (10) y paso (1).",
+      "<strong>Elige el separador</strong> que necesites (líneas, comas, espacios, guiones).",
+      "<strong>Pulsa generar</strong> y copia la lista completa."
+    ],
+    "usos": [
+      "<strong>Rellenar formularios</strong> y plantillas con series.",
+      "<strong>IDs y numeraciones</strong> para pruebas.",
+      "<strong>Inventarios, dorsales, entradas</strong> correlativas.",
+      "<strong>Datos para gráficas</strong> o simulaciones."
+    ],
+    "ejemplos": [ "desde 1, hasta 5, paso 1 → 1\\n2\\n3\\n4\\n5" ],
+    "faqs": [
+      { "q": "¿Puedo usar decimales o pasos grandes?", "a": "El paso es un entero mayor que 0; para pasos de miles (100, 200, 300) también funciona." },
+      { "q": "¿Y en orden descendente?", "a": "Sí: pon un «desde» mayor que el «hasta» y la lista baja." },
+      { "q": "¿Hay límite?", "a": "Hasta 100.000 números por lista para no bloquear el navegador." },
+      { "q": "¿Se guarda mi lista?", "a": "No, se genera localmente." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/numerar-lineas-texto/", "label": "Numerar líneas de texto" },
+      { "url": "/herramientas/matematicas/convertidor-bases/", "label": "Convertidor de bases" },
+      { "url": "/herramientas/matematicas/contador-clics/", "label": "Contador de clics" }
+    ]
+  },
+  {
+    "slug": "generar-combinaciones",
+    "cat": "matematicas",
+    "keyword": "generar combinaciones online",
+    "h2_que": "Qué son las combinaciones C(n,k)",
+    "que": [
+      "Una combinación es una selección de k elementos de un conjunto de n, <strong>sin importar el orden</strong>: de «rojo, verde, azul» tomados de 2 en 2 salen rojo-verde, rojo-azul y verde-azul.",
+      "El número de combinaciones es C(n,k) = n! / (k!·(n−k)!). Aquí las generas todas con separador configurable y límite de 10.000 resultados."
+    ],
+    "h2_pasos": "Cómo generar combinaciones paso a paso",
+    "howtoName": "Cómo generar todas las combinaciones de una lista",
+    "howtoSteps": ["Pega los elementos", "Elige K y separador", "Genera y copia"],
+    "pasos": [
+      "<strong>Pega los elementos</strong>, uno por línea (los duplicados se eliminan solos).",
+      "<strong>Elige K</strong> (cuántos elementos por combinación) y el separador.",
+      "<strong>Pulsa generar:</strong> obtendrás el total y la lista completa de combinaciones."
+    ],
+    "usos": [
+      "<strong>Menús y promociones:</strong> todas las combinaciones de platos o productos.",
+      "<strong>Tests y QA:</strong> matriz de combinaciones de configuración.",
+      "<strong>Probabilidad y loterías:</strong> ver los casos posibles.",
+      "<strong>Juegos de mesa</strong> y puzles."
+    ],
+    "ejemplos": [ "rojo, verde, azul con K=2 → rojo-verde · rojo-azul · verde-azul" ],
+    "faqs": [
+      { "q": "¿Diferencia con permutaciones?", "a": "En las combinaciones el orden no importa (rojo-verde = verde-rojo); en las permutaciones sí, y por eso hay muchas más." },
+      { "q": "¿Cuál es el límite?", "a": "10.000 combinaciones por consulta, para no agotar la memoria del navegador." },
+      { "q": "¿Se permiten repetidos en la lista?", "a": "No: los elementos duplicados se eliminan antes de combinar." },
+      { "q": "¿Se guardan mis datos?", "a": "No, todo se calcula localmente." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/generador-permutaciones/", "label": "Generador de permutaciones" },
+      { "url": "/herramientas/matematicas/combinar-lineas-listas/", "label": "Combinar líneas (A×B)" },
+      { "url": "/herramientas/matematicas/regla-de-tres/", "label": "Regla de tres" }
+    ]
+  },
+  {
+    "slug": "combinar-lineas-listas",
+    "cat": "matematicas",
+    "keyword": "combinar listas de texto online",
+    "h2_que": "Qué es el producto cruzado de dos listas",
+    "que": [
+      "Genera <strong>todas las combinaciones cruzadas</strong> entre la lista A y la lista B: cada elemento de A con cada elemento de B (A × B).",
+      "Es la misma mecánica que usarías para crear variantes de keywords (servicio × ciudad) o todas las opciones de un producto."
+    ],
+    "h2_pasos": "Cómo combinar dos listas paso a paso",
+    "howtoName": "Cómo combinar dos listas (producto cruzado)",
+    "howtoSteps": ["Pega la lista A y la B", "Elige separador y orden", "Genera y copia"],
+    "pasos": [
+      "<strong>Pega la lista A</strong> (por ejemplo, servicios) y la <strong>lista B</strong> (ciudades).",
+      "<strong>Elige el separador</strong> y si quieres invertir el orden (B primero).",
+      "<strong>Pulsa combinar:</strong> obtendrás todas las cruces (A×B) con el total indicado."
+    ],
+    "usos": [
+      "<strong>Keyword research:</strong> combina servicio + ciudad para SEO local.",
+      "<strong>E-commerce:</strong> variantes de color × talla.",
+      "<strong>Campañas:</strong> títulos de anuncio por audiencia × beneficio.",
+      "<strong>Inventarios</strong> de referencia únicas."
+    ],
+    "ejemplos": [ "A: barato/rápido · B: zapatos/camisas → barato zapatos, barato camisas, rápido zapatos, rápido camisas" ],
+    "faqs": [
+      { "q": "¿Cuál es el límite?", "a": "10.000 combinaciones cruzadas por consulta." },
+      { "q": "¿Puedo poner la B primero?", "a": "Sí, con la opción «invertir orden» (el resultado cambia de orden, no de contenido)." },
+      { "q": "¿Se guardan mis listas?", "a": "No, el cruce se calcula en tu navegador." },
+      { "q": "¿Diferencia con fusionar listas?", "a": "Fusionar une por índice (a1 con b1); combinar genera todas las cruces posibles." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/texto/fusionar-texto-lineas/", "label": "Fusionar dos listas" },
+      { "url": "/herramientas/matematicas/generar-combinaciones/", "label": "Generador de combinaciones" },
+      { "url": "/herramientas/texto/separar-keywords-genero/", "label": "Separar keywords por género" }
+    ]
+  },
+  {
+    "slug": "generador-permutaciones",
+    "cat": "matematicas",
+    "keyword": "generador de permutaciones",
+    "h2_que": "Qué son las permutaciones (n!)",
+    "que": [
+      "Las permutaciones son todas las <strong>formas de ordenar</strong> un conjunto: con «uno, dos» salen «uno dos» y «dos uno». El número de ordenaciones es el factorial de n (n!), que crece rápido: 3! = 6, 5! = 120, 8! = 40.320.",
+      "Aquí generas todas las permutaciones de tu lista (hasta 8 elementos) con orden aleatorio garantizado por el algoritmo de Heap."
+    ],
+    "h2_pasos": "Cómo generar permutaciones paso a paso",
+    "howtoName": "Cómo generar todas las permutaciones de una lista",
+    "howtoSteps": ["Pega los elementos", "Elige el separador", "Genera y copia"],
+    "pasos": [
+      "<strong>Pega los elementos</strong>, uno por línea (máximo 8; los duplicados se quitan automáticamente).",
+      "<strong>Elige el separador</strong> entre elementos.",
+      "<strong>Pulsa generar:</strong> verás el total (n!) y todas las ordenaciones."
+    ],
+    "usos": [
+      "<strong>Planificación de rutas:</strong> todos los órdenes de visita posibles.",
+      "<strong>Tests combinatorios:</strong> ordenaciones para probar un sistema.",
+      "<strong>Juegos y puzles:</strong> todos los arreglos de unas piezas.",
+      "<strong>Docencia:</strong> ver crecer el factorial."
+    ],
+    "ejemplos": [ "uno, dos → uno dos · dos uno" ],
+    "faqs": [
+      { "q": "¿Por qué el límite de 8 elementos?", "a": "Porque 8! = 40.320 y 9! ya son 362.880: bloquearían el navegador. Para más casos, usa combinaciones o filtra antes." },
+      { "q": "¿Se eliminan los duplicados?", "a": "Sí: elementos repetidos no generan permutaciones duplicadas." },
+      { "q": "¿Se guardan mis datos?", "a": "No, las ordenaciones se generan localmente." },
+      { "q": "¿Permutaciones o combinaciones?", "a": "Permutaciones = importa el orden (n!); combinaciones = no importa (C(n,k) y son menos)." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/matematicas/generar-combinaciones/", "label": "Generador de combinaciones" },
+      { "url": "/herramientas/matematicas/combinar-lineas-listas/", "label": "Combinar líneas (A×B)" },
+      { "url": "/herramientas/matematicas/generar-lista-numeros/", "label": "Generar lista de números" }
+    ]
+  }
+]

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=29">
+  <link rel="stylesheet" href="/css/styles.css?v=30">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebApplication","name":"Contador de Clics","description":"Contador interactivo de clics con atajos de teclado y ajuste manual.","url":"https://proyectospixel.com/herramientas/matematicas/contador-clics/","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"HowTo","name":"Cómo usar un contador de clics online","description":"Qué hace el contador de clics","totalTime":"PT2M","step":[{"@type":"HowToStep","position":1,"name":"Pulsa +1 para contar","text":"Pulsa «+1 Contar» (o la tecla +) para incrementar el contador."},{"@type":"HowToStep","position":2,"name":"Corrige con −1 o el ajuste manual","text":"Corrige con «−1» (o −) si te equivocas; también puedes escribir un valor exacto en «ajuste manual»."},{"@type":"HowToStep","position":3,"name":"Resetea cuando termines","text":"Pulsa «Resetear» (o R) para volver a cero."}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Funciona sin ratón?","acceptedAnswer":{"@type":"Answer","text":"Sí: usa las teclas + y -, las flechas arriba/abajo y la R para resetear."}},{"@type":"Question","name":"¿Puedo fijar un valor concreto?","acceptedAnswer":{"@type":"Answer","text":"Sí, con el campo de ajuste manual (acepta números negativos también)."}},{"@type":"Question","name":"¿Se guarda el conteo si recargo?","acceptedAnswer":{"@type":"Answer","text":"No: es en memoria. Apunta el número final antes de recargar."}},{"@type":"Question","name":"¿Se envía algo?","acceptedAnswer":{"@type":"Answer","text":"No, todo es local."}}]}]}
   </script>
 </head>
 <body>
@@ -58,6 +61,33 @@
             </div>
           </div>
         </div>
+        <section class="tool-content">
+          <h2>Qué hace el contador de clics</h2>
+          <p>Es un <strong>tally counter interactivo</strong>: pulsa «+1» para contar, «−1» para corregir y «Resetear» para empezar de cero. Incluye <strong>atajos de teclado</strong> (+ y −, flechas arriba/abajo, R para reiniciar) y un campo de ajuste manual.</p>
+          <p>Perfecto para contar personas, repeticiones de un ejercicio, objetos en movimiento o cualquier cosa que requiera contar con el dedo.</p>
+          <h2>Cómo usar el contador de clics paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Pulsa «+1 Contar»</strong> (o la tecla +) para incrementar el contador.</li>
+            <li><strong>Corrige</strong> con «−1» (o −) si te equivocas; también puedes escribir un valor exacto en «ajuste manual».</li>
+            <li><strong>Pulsa «Resetear»</strong> (o R) para volver a cero.</li>
+          </ol>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Deporte:</strong> contar series, repeticiones o vueltas.</li>
+            <li><strong>Grupos y eventos:</strong> aforo manual, personas que entran.</li>
+            <li><strong>Inventario rápido:</strong> contar objetos o cajas.</li>
+            <li><strong>Hábitos:</strong> llevar la cuenta de repeticiones diarias.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Funciona sin ratón?</summary><p>Sí: usa las teclas + y -, las flechas arriba/abajo y la R para resetear.</p></details>
+            <details class="faq-item"><summary>¿Puedo fijar un valor concreto?</summary><p>Sí, con el campo de ajuste manual (acepta números negativos también).</p></details>
+            <details class="faq-item"><summary>¿Se guarda el conteo si recargo?</summary><p>No: es en memoria. Apunta el número final antes de recargar.</p></details>
+            <details class="faq-item"><summary>¿Se envía algo?</summary><p>No, todo es local.</p></details>
+          </div>
+          <h2>Herramientas relacionadas</h2>
+          <p>Complétala con <a href="/herramientas/matematicas/generar-lista-numeros/">Generar lista de números</a>, <a href="/herramientas/texto/contar-palabras-caracteres/">Contar palabras y caracteres</a> o <a href="/herramientas/texto/numerar-lineas-texto/">Numerar líneas</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
         <section class="related-tools">
           <h2 class="section-title">Tools Relacionadas</h2>
@@ -67,12 +97,12 @@
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=29"></script>
-  <script src="/js/tools-data.js?v=29"></script>
+  <script src="/js/components.js?v=30"></script>
+  <script src="/js/tools-data.js?v=30"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
   </script>
-  <script src="/js/tools/contador-clics.js?v=29"></script>
+  <script src="/js/tools/contador-clics.js?v=30"></script>
 </body>
 </html>
