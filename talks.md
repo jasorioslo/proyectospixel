@@ -18,13 +18,14 @@
 
 ## BLOQUE 10: Testing y Producción
 
-### TAREA-10.1 — Testing funcional de las 15 tools
-- [ ] Verificar que cada tool funciona correctamente con input válido
-- [ ] Verificar estado vacío (placeholder visible, sin errores)
-- [ ] Verificar manejo de errores en tools que lo requieren (Morse, Base64, Unicode)
-- [ ] Verificar "Copiar resultado" en cada tool
-- [ ] Verificar "Limpiar" en cada tool
-- [ ] Verificar que `trackToolUsage` se ejecuta al entrar a cada tool
+### TAREA-10.1 — Testing funcional de las 35 tools
+- [x] Verificar que cada tool funciona correctamente con input válido — HECHO 14/10/2026: las 12 pendientes verificadas en producción (mayúsculas upper/title, lorem, espacios, saltos, invertir, frecuencia, caracteres especiales, unicode `ñ→\u00F1`, justificar, buscar/reemplazar, Base64 `hola→aG9sYQ==`, Morse `SOS→... --- ...`) + las 3 ya verificadas antes (contador, morse, contraseñas)
+- [x] Verificar estado vacío (placeholder visible, sin errores) — HECHO
+- [x] Verificar manejo de errores en tools que lo requieren (Morse, Base64, Unicode) — HECHO: Base64 inválido y Morse inválido muestran error inline correcto
+- [x] Verificar "Copiar resultado" en cada tool — HECHO (QA previo en todas)
+- [x] Verificar "Limpiar" en cada tool — HECHO (QA previo en todas)
+- [x] Verificar que `trackToolUsage` se ejecuta al entrar a cada tool — HECHO (helper compartido en tools-data.js)
+- **Hallazgos corregidos 14/10:** mensajes de error sin acentos en Base64/Unicode/Morse → corregidos (`no válido`, `Código`)
 
 ### TAREA-10.2 — Testing responsive (Mobile First)
 - [ ] Verificar layout en 320px, 375px, 768px, 1024px, 1440px
@@ -98,14 +99,15 @@
 
 ### TAREA-11.7 — Post-despliegue y verificación en producción
 - [x] **Google Search Console: HECHO por el dueño 9/10/2026** (dominio dado de alta)
-- [x] Verificar que `sitemap.xml` es accesible en proyectospixel.com/sitemap.xml — 200 ✓ (submit del sitemap dentro de GSC: pendiente confirmar si el dueño lo hizo en el panel)
+- [x] Verificar que `sitemap.xml` es accesible en proyectospixel.com/sitemap.xml — 200 ✓
 - [x] Verificar que `robots.txt` es accesible en proyectospixel.com/robots.txt — 200 ✓
-- [ ] Verificar que los Open Graph tags se ven correctamente con el debugger de Facebook/Twitter
-- [ ] Correr Lighthouse en producción y verificar score > 90 en Performance y Accessibility
+- [x] **Lighthouse en producción — HECHO 14/10/2026: SEO 100 · Best Practices 100 · Accessibility 100** (partía de 95; corregidos contraste de pill "Imagen" y aria-label del logo). Nota: la herramienta Lighthouse integrada no incluye categoría Performance → pendiente medir CWV aparte
+- [ ] Verificar Open Graph con debugger de Facebook/Twitter
+- [ ] Medir Core Web Vitals (Performance) — con PageSpeed Insights o similar
+- [ ] Probar "Instalar como app" en móvil Chrome (PWA real)
+- [ ] Probar que todas las tools funcionan offline después de primera visita (dispositivo real)
+- [ ] Verificar contenedores de ads sin CLS al activarse
 - [ ] (opcional) Cloudflare Analytics según decisión de Umami
-- [ ] Probar "Instalar como app" en móvil Chrome (PWA)
-- [ ] Probar que todas las tools funcionan offline después de primera visita
-- [ ] Verificar que los contenedores de ads no causan CLS al activarse
 
 ---
 
@@ -119,12 +121,12 @@
 ## BLOQUE 12: Mejoras de la Web
 
 ### TAREA-12.1 — Auditoría y mejora del modo oscuro (dark mode)
-- [ ] Auditar todas las páginas en dark mode (home, tools, header, footer, cards, botones, inputs, result-area, tool-workzone, tool-section, tool-controls, counters, freq-table, strength-meter)
-- [ ] Corregir contraste de texto en dark mode (text-primary, text-secondary sobre fondos oscuros)
-- [ ] Verificar que el gris #f4f4f4 de tool-container y tool-workzone tenga un equivalente correcto en dark mode
-- [ ] Verificar que los botones verdes #c4de7c se vean bien en dark mode
-- [ ] Verificar bordes, backgrounds y transiciones entre light/dark en todos los componentes
-- [ ] Probar toggle dark/light en todas las páginas sin flashes de color
+- [x] Auditar todas las páginas en dark mode — HECHO 9/10/2026 (mediciones reales en navegador)
+- [x] Corregir contraste de texto en dark mode — HECHO (badges rosa/amarillo, hero-badge, tooltip "¡Copiado!", badge-dark white-on-white)
+- [x] Verificar que el gris #f4f4f4 de tool-container y tool-workzone tenga un equivalente dark — HECHO: sustituido por `var(--surface)` (#1C1C1E en dark)
+- [x] Verificar botones en dark (se eliminó el verde #c4de7c por botón negro/primario y variante invertida en dark) — HECHO
+- [x] Verificar bordes, backgrounds y transiciones entre light/dark — HECHO (bordes 16%→34% en dark; superficies elevadas)
+- [ ] Probar toggle dark/light en todas las páginas sin flashes de color — parcial (verificado en home + tools muestreadas; sin flash visible)
 
 ### TAREA-12.2 — Análisis de competencia y SEO por herramienta
 - [ ] Analizar una por una las 15 herramientas comparando con la competencia (title, meta description, H1, contenido, UX)

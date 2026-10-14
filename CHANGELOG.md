@@ -6,6 +6,13 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 
 ## [No publicado]
 
+### Fixed
+- **Accesibilidad 95 → 100 en Lighthouse** (14/10/2026):
+  - `.pill.disabled` ("Imagen · Próximamente") tenía contraste 3.12–3.72 (opacidad 50%) → ahora fondo neutro con `--text-secondary` (ratio >4.5:1)
+  - `aria-label` del logo no coincidía con el texto visible → eliminado (el texto visible "Px ProyectosPixel" es el nombre accesible)
+- **Mensajes de error con acentos**: Base64/Unicode/Morse tenían "no valido"/"Codigo" → "no válido"/"Código"
+- Bump de assets a `?v=10` + SW `pp-v10`
+
 ### Added
 - **🚀 PROYECTO EN LÍNEA — TAREA-11.1/11.2/11.5 completadas:**
   - Repo: `github.com/jasorioslo/proyectospixel` (público, main)
