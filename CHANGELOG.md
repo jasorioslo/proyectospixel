@@ -15,16 +15,6 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 
 ### Added
 - **🚀 PROYECTO EN LÍNEA — TAREA-11.1/11.2/11.5 completadas:**
-  - Repo: `github.com/jasorioslo/proyectospixel` (público, main)
-  - **Producción: https://proyectospixel.pages.dev** (Cloudflare Pages, deploy vía wrangler, 102 archivos)
-  - QA de producción: 18 rutas verificadas 200 OK
-  - `_headers` con security headers verificados en producción (CSP con fuentes de Google, nosniff, DENY, Referrer, Permissions)
-  - `_redirects` con www → dominio raíz (301) — **nota: la variante con host no dispara en custom domains de Pages (probadas ambas sintaxis); el redirect www se resolverá con una Redirect Rule de zona (TAREA-11.3, acción de usuario en dashboard)**
-- **🚀 DOMINIO CUSTOM ACTIVO — https://proyectospixel.com en línea** (custom domains por API + DNS del usuario; sin noindex; HTML con canonical coincidente)
-  - Nota: `*.pages.dev` incluye `X-Robots-Tag: noindex` automático de Cloudflare (evita duplicados); desaparece al adjuntar el dominio custom
-
-### Added
-- **Páginas reales de categoría + interlinking completo (TAREA-12.3):**
   - 5 páginas de categoría en `/herramientas/{texto,conversion,seguridad,desarrollo,matematicas}/` con SEO propio (title/description/canonical/OG + JSON-LD `CollectionPage`), grid de cards generado desde `tools-data.js` (nuevo helper `renderCategoryGrid`)
   - Breadcrumbs de las 35 tools ahora apuntan a su página de categoría real (ej. Cifrador César → "Seguridad" → `/herramientas/seguridad/`), con mapeo automático desde `tools-data.js`
   - Footer con bloque de enlaces a las 5 categorías (`.footer-cats`, monospace uppercase)
