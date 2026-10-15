@@ -32,6 +32,10 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=17` + SW `pp-v17`
 
 ### Added
+- **🚀 FASE 7 — Auditoría de lanzamiento** (15/10/2026): nuevo `tools/audit-launch.mjs` que verifica contra producción:
+  - `sitemap.xml` vs. conjunto esperado (66 tools + 6 categorías + home + `/herramientas/` + legales)
+  - status HTTP de cada URL, JSON-LD válido + tipos esperados, canonical y ausencia de `noindex`
+  - **Resultado: ✅ sin incidencias** — 77/77 en sitemap, 77/77 con HTTP 200, schema correcto (`WebSite` / `CollectionPage` / `HowTo`+`FAQPage`), canonicals OK, 0 noindex, `robots.txt`/`ads.txt` correctos y 404 real.
 - **⭐ FASE 5.3a — Favoritos + badge "Nuevo"** (15/10/2026):
   - **Favoritos**: estrella en cada tarjeta (home y categorías) y botón «Añadir a favoritos» en la página de cada herramienta. Se guardan en `localStorage` (`pp-favorites`) y aparece una sección **«Tus favoritos»** en la home (solo si hay alguno). Accesible por teclado (Enter/Espacio) y con `aria-pressed`.
   - **Badge «Nuevo»**: en las tarjetas de herramientas recientes; **auto-caduca a los 30 días** (lista `NEW_TOOLS` editable en `js/tools-data.js`).

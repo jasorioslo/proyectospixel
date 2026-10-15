@@ -218,3 +218,16 @@
 - [x] 6.1 Deduplicar MD5 — HECHO 15/10: `generador-hashes.js` ahora usa `ProyectosPixel.hashers` (md5/shaHex) de `hash-utils.js`; eliminada la copia inline. Verificado: md5(abc)=900150983cd24fb0d6963f7d28e17f72, sha256(abc)=ba7816bf…20015ad
 - [x] 6.2 `bump-versions.js` ahora actualiza también `CACHE_NAME` del SW (`pp-vN`) — HECHO 15/10 (fin del bump manual del sw.js)
 - [x] 6.3 `tools/check-links.mjs` (enlaces internos) — HECHO 15/10: **994 enlaces** analizados → **6 rotos encontrados y corregidos** (categorías erróneas en enlaces de contenido de contenido: `cifrado-rot13`→seguridad, `extraer-columnas-texto`→texto, `decodificar-jwt`→seguridad). Enganchado al **CI** (paso previo al deploy) + specs corregidos. Re-ejecutado: 0 rotos
+
+---
+
+## FASE 7 — Lanzamiento y Medición (15/10)
+
+> Objetivo: dejar de construir y empezar a **validar y medir** con datos reales.
+
+- [x] **Auditoría de lanzamiento** — HECHO 15/10 con `tools/audit-launch.mjs`: **77/77 URLs** en sitemap (coincide exacto con lo esperado), **77/77 responden 200**, **JSON-LD válido** en todas con los tipos esperados (`WebSite`/`CollectionPage`/`HowTo`+`FAQPage`), **canonicals correctos**, **0 noindex**. `robots.txt` con `Allow` + `Sitemap`; `ads.txt` correcto (`google.com, pub-4553600515484019, DIRECT, …`); el 404 devuelve **404 real**; cabeceras de seguridad presentes
+- [ ] (dueño) **Probar en dispositivo** — Fase 3.1/3.2/3.3 (responsive real, PWA/offline, Safari+Firefox)
+- [ ] (dueño) **CMP de Google** (AdSense → Privacidad y mensajes → GDPR) — único freno de la monetización en UE
+- [ ] (dueño) **Rotar la API key de Tavily** (seguridad)
+- [ ] (dueño) **Search Console**: verificar propiedad + enviar `sitemap.xml` → medir indexación y posiciones
+- [ ] Opcional: workflow de CI programado (semanal) que ejecute `audit-launch.mjs` contra producción
