@@ -27,6 +27,12 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=17` + SW `pp-v17`
 
 ### Added
+- **⭐ FASE 5.3a — Favoritos + badge "Nuevo"** (15/10/2026):
+  - **Favoritos**: estrella en cada tarjeta (home y categorías) y botón «Añadir a favoritos» en la página de cada herramienta. Se guardan en `localStorage` (`pp-favorites`) y aparece una sección **«Tus favoritos»** en la home (solo si hay alguno). Accesible por teclado (Enter/Espacio) y con `aria-pressed`.
+  - **Badge «Nuevo»**: en las tarjetas de herramientas recientes; **auto-caduca a los 30 días** (lista `NEW_TOOLS` editable en `js/tools-data.js`).
+  - Detalle de UI: las tarjetas pasan a un contenedor `.card-cell` (la estrella es un `<button>` hermano del enlace, no anidado → HTML/a11y correctos); las tarjetas relacionadas compactas no llevan estrella.
+  - Fix menor: eliminado un `</span>` suelto en las píldoras de categoría de la home.
+  - Bump `?v=34` + SW `pp-v34`
 - **🗂️ FASE 5.2 — Contenido SEO en las 6 páginas de categoría** (15/10/2026):
   - Generador `tools/seo/content-categories.mjs` + `tools/seo/specs-categorias.json` (mismo enfoque que las tools, idempotente)
   - Cada categoría (texto, imagen, seguridad, matemáticas, conversión, desarrollo) ahora tiene: intro («qué son»), «cómo elegir/editar paso a paso», bloque de privacidad, casos de uso, 5 preguntas frecuentes en acordeón y enlaces a las otras categorías

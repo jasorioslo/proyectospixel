@@ -261,6 +261,117 @@ textarea.input-text {
   color: #0A0A0A; /* badge blanco requiere texto oscuro en dark mode */
 }
 
+/* Badge "Nuevo" */
+.badge-new {
+  background: var(--accent);
+  color: #FFFFFF;
+}
+
+.dark .badge-new {
+  color: #0A0A0A;
+}
+
+/* --- Card cell + Favoritos --- */
+.card-cell {
+  position: relative;
+  display: flex;
+}
+
+.card-cell > .card-tool {
+  flex: 1;
+  width: 100%;
+}
+
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.card-fav {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.15s, color 0.15s, background 0.15s;
+}
+
+.card-cell:hover .card-fav,
+.card-fav:focus-visible,
+.card-fav.is-fav {
+  opacity: 1;
+}
+
+.card-fav:hover {
+  color: var(--text-primary);
+  background: rgba(127, 127, 127, 0.14);
+}
+
+.card-fav.is-fav {
+  color: var(--secondary);
+}
+
+.card-fav.is-fav svg {
+  fill: currentColor;
+}
+
+.card-cell.hidden {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+/* Contador en el título de sección (p. ej. "Tus favoritos 3") */
+.section-count {
+  color: var(--text-secondary);
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+/* Botón de favorito en la página de la herramienta */
+.tool-fav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 8px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.tool-fav-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.tool-fav-btn.is-fav {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.tool-fav-btn.is-fav svg {
+  fill: currentColor;
+}
+
 /* --- Ad Containers (CLS Prevention) --- */
 .ad-container {
   display: block;

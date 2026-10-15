@@ -164,17 +164,58 @@
     imagen: 'badge-primary'
   };
 
+  /* --- Badge "Nuevo": herramientas recientes (auto-caduca a los 30 días) ---
+     Para marcar nuevas tools, añade su slug aquí con la fecha de alta. */
+  var NEW_DAYS = 30;
+  var NEW_TOOLS = {
+    'limites-redes': '2026-10-15',
+    'marca-de-agua': '2026-10-15',
+    'generar-par-claves': '2026-10-15',
+    'conversor-unidades': '2026-10-15',
+    'imagen-a-pdf': '2026-10-15',
+    'regex-tester': '2026-10-15',
+    'cifrar-texto-aes': '2026-10-15',
+    'comparar-textos': '2026-10-15'
+  };
+  function isNewTool(tool) {
+    var d = NEW_TOOLS[tool.slug];
+    if (!d) return false;
+    var t = Date.parse(d);
+    return !isNaN(t) && (Date.now() - t) < NEW_DAYS * 86400000;
+  }
+
+  /* Icono estrella (compartido con components.js para el botón de la tool) */
+  var FAV_SVG = (window.ProyectosPixel && window.ProyectosPixel.favorites && window.ProyectosPixel.favorites.svg) ||
+    '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
+
   function renderCardTool(tool, opts) {
     var compact = opts && opts.compact;
     var icon = icons[tool.slug] || '';
     var catLabel = CATEGORY_LABELS[tool.category] || tool.category;
-    var badge = tool.featured ? '<span class="badge badge-secondary">Destacada</span>' : '<span class="badge ' + (CATEGORY_BADGE[tool.category] || 'badge-primary') + '">' + catLabel + '</span>';
-    return '<a href="/herramientas/' + tool.category + '/' + tool.slug + '/" class="card-tool' + (compact ? ' card-tool-compact' : '') + '" data-slug="' + tool.slug + '" data-title="' + tool.title.toLowerCase() + '" data-desc="' + tool.desc.toLowerCase() + '" data-category="' + tool.category + '">' +
+    var badges = [
+      tool.featured
+        ? '<span class="badge badge-secondary">Destacada</span>'
+        : '<span class="badge ' + (CATEGORY_BADGE[tool.category] || 'badge-primary') + '">' + catLabel + '</span>'
+    ];
+    if (isNewTool(tool)) badges.push('<span class="badge badge-new">Nuevo</span>');
+
+    var card = '<a href="/herramientas/' + tool.category + '/' + tool.slug + '/" class="card-tool' + (compact ? ' card-tool-compact' : '') + '" data-slug="' + tool.slug + '">' +
       icon +
       '<div class="card-title">' + tool.title + '</div>' +
       (compact ? '' : '<div class="card-desc">' + tool.desc + '</div>') +
-      badge +
+      '<div class="card-badges">' + badges.join('') + '</div>' +
     '</a>';
+
+    // Las cards compactas (Tools Relacionadas) no llevan estrella
+    if (compact) return card;
+
+    var fav = !!(window.ProyectosPixel && window.ProyectosPixel.favorites && window.ProyectosPixel.favorites.has(tool.slug));
+    var label = fav ? 'Quitar de favoritos' : 'Añadir a favoritos';
+    var favBtn = '<button type="button" class="card-fav' + (fav ? ' is-fav' : '') + '" data-fav="' + tool.slug + '" aria-pressed="' + (fav ? 'true' : 'false') + '" aria-label="' + label + '" title="' + label + '">' + FAV_SVG + '</button>';
+
+    return '<div class="card-cell" data-slug="' + tool.slug + '" data-title="' + tool.title.toLowerCase() + '" data-desc="' + tool.desc.toLowerCase() + '" data-category="' + tool.category + '">' +
+      favBtn + card +
+    '</div>';
   }
 
   /* --- Cards relacionadas (encima de #related-tools en cada tool) ---

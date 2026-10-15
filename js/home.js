@@ -40,6 +40,26 @@
     container.innerHTML = tools.map(function (t) { return api.renderCardTool(t); }).join('');
   }
 
+  /* --- Favoritos (sección que aparece solo si el usuario tiene favoritos) --- */
+  function renderFavorites() {
+    var section = document.getElementById('favoritos');
+    var container = document.getElementById('favorite-tools');
+    if (!section || !container) return;
+    var favs = (api.favorites && api.favorites.get()) || [];
+    var picked = favs.map(function (slug) {
+      return tools.find(function (t) { return t.slug === slug; });
+    }).filter(Boolean);
+    if (!picked.length) {
+      section.style.display = 'none';
+      container.innerHTML = '';
+      return;
+    }
+    section.style.display = '';
+    container.innerHTML = picked.map(function (t) { return api.renderCardTool(t); }).join('');
+    var countEl = document.getElementById('favorites-count');
+    if (countEl) countEl.textContent = picked.length;
+  }
+
   /* --- Search & Filter --- */
   function initSearch() {
     var searchInput = document.getElementById('global-search');
@@ -51,7 +71,7 @@
       debounceTimer = setTimeout(function () {
         var query = searchInput.value.toLowerCase().trim();
 
-        var cards = document.querySelectorAll('#all-tools .card-tool');
+        var cards = document.querySelectorAll('#all-tools .card-cell');
         var visibleCount = 0;
         cards.forEach(function (card) {
           var title = card.getAttribute('data-title');
@@ -80,7 +100,9 @@
   function init() {
     renderMostUsed();
     renderAllTools();
+    renderFavorites();
     initSearch();
+    document.addEventListener('pp:favorites-changed', renderFavorites);
   }
 
   if (document.readyState === 'loading') {

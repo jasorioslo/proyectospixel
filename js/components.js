@@ -206,10 +206,101 @@
     }
   }
 
+  /* --- Favoritos (localStorage: pp-favorites = [slug, ...]) --- */
+  var FAV_KEY = 'pp-favorites';
+  var FAV_SVG = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
+
+  function getFavs() {
+    try { var a = JSON.parse(localStorage.getItem(FAV_KEY) || '[]'); return Array.isArray(a) ? a : []; }
+    catch (e) { return []; }
+  }
+  function saveFavs(a) { try { localStorage.setItem(FAV_KEY, JSON.stringify(a)); } catch (e) {} }
+  function isFav(slug) { return getFavs().indexOf(slug) !== -1; }
+  function toggleFav(slug) {
+    var a = getFavs();
+    var i = a.indexOf(slug);
+    if (i === -1) a.push(slug); else a.splice(i, 1);
+    saveFavs(a);
+    var nowFav = i === -1;
+    try { document.dispatchEvent(new CustomEvent('pp:favorites-changed', { detail: { slug: slug, fav: nowFav } })); } catch (e) {}
+    return nowFav;
+  }
+
+  function syncFavUI(slug, fav) {
+    var nodes = document.querySelectorAll('[data-fav="' + slug + '"]');
+    Array.prototype.forEach.call(nodes, function (el) {
+      var label = fav ? 'Quitar de favoritos' : 'Añadir a favoritos';
+      el.classList.toggle('is-fav', fav);
+      el.setAttribute('aria-pressed', fav ? 'true' : 'false');
+      if (el.classList.contains('card-fav')) {
+        el.setAttribute('aria-label', label);
+        el.setAttribute('title', label);
+      } else if (el.classList.contains('tool-fav-btn')) {
+        var lbl = el.querySelector('.tool-fav-label');
+        if (lbl) lbl.textContent = fav ? 'En favoritos' : 'Añadir a favoritos';
+      }
+    });
+  }
+
+  function injectToolFavButton() {
+    var m = location.pathname.match(/^\/herramientas\/[^/]+\/([^/]+)\/?/);
+    if (!m) return;
+    var h1 = document.querySelector('main .tool-h1') || document.querySelector('.tool-h1');
+    if (!h1 || h1.parentNode.querySelector('.tool-fav-btn')) return;
+    var slug = m[1];
+    var fav = isFav(slug);
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'tool-fav-btn' + (fav ? ' is-fav' : '');
+    btn.setAttribute('data-fav', slug);
+    btn.setAttribute('aria-pressed', fav ? 'true' : 'false');
+    btn.innerHTML = FAV_SVG + '<span class="tool-fav-label">' + (fav ? 'En favoritos' : 'Añadir a favoritos') + '</span>';
+    btn.addEventListener('click', function () { toggleFav(slug); });
+    h1.insertAdjacentElement('afterend', btn);
+  }
+
+  function initFavorites() {
+    // Delegación: estrella en las tarjetas (no navega al pulsarla)
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest && e.target.closest('.card-fav');
+      if (!el) return;
+      e.preventDefault();
+      e.stopPropagation();
+      toggleFav(el.getAttribute('data-fav'));
+    });
+    // Teclado: Enter/Espacio sobre la estrella
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var el = e.target.closest && e.target.closest('.card-fav');
+      if (!el) return;
+      e.preventDefault();
+      e.stopPropagation();
+      toggleFav(el.getAttribute('data-fav'));
+    });
+    document.addEventListener('pp:favorites-changed', function (e) {
+      syncFavUI(e.detail.slug, e.detail.fav);
+    });
+    injectToolFavButton();
+  }
+
   /* --- Expose --- */
   window.ProyectosPixel = window.ProyectosPixel || {};
   window.ProyectosPixel.renderHeader = renderHeader;
   window.ProyectosPixel.renderFooter = renderFooter;
+  window.ProyectosPixel.favorites = {
+    get: getFavs,
+    has: isFav,
+    toggle: toggleFav,
+    count: function () { return getFavs().length; },
+    svg: FAV_SVG
+  };
+
+  // Favoritos: delegación global + botón en la página de la herramienta
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFavorites);
+  } else {
+    initFavorites();
+  }
 
   // Auto-registro del SW (se salta en localhost para facilitar desarrollo)
   initServiceWorker();

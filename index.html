@@ -16,7 +16,7 @@
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=33">
+  <link rel="stylesheet" href="/css/styles.css?v=34">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -62,13 +62,21 @@
           </div>
           <div class="category-pills">
             <a class="pill active" href="/">Todos</a>
-            <a class="pill" href="/herramientas/texto/">Texto</a></span>
+            <a class="pill" href="/herramientas/texto/">Texto</a>
             <a class="pill" href="/herramientas/desarrollo/">Desarrollo</a>
             <a class="pill" href="/herramientas/conversion/">Conversión</a>
             <a class="pill" href="/herramientas/seguridad/">Seguridad</a>
             <a class="pill" href="/herramientas/matematicas/">Matemáticas</a>
             <a class="pill" href="/herramientas/imagen/">Imagen</a>
           </div>
+        </div>
+      </section>
+
+      <!-- Favorites (hidden until the user stars something) -->
+      <section class="section" id="favoritos" style="display:none">
+        <div class="container">
+          <h2 class="section-title">Tus favoritos <span class="section-count" id="favorites-count"></span></h2>
+          <div id="favorite-tools" class="grid-tools grid-tools-featured"></div>
         </div>
       </section>
 
@@ -94,9 +102,9 @@
     <div id="footer"></div>
   </div>
 
-  <script src="/js/components.js?v=33"></script>
-  <script src="/js/tools-data.js?v=33"></script>
-  <script src="/js/home.js?v=33"></script>
+  <script src="/js/components.js?v=34"></script>
+  <script src="/js/tools-data.js?v=34"></script>
+  <script src="/js/home.js?v=34"></script>
   <script>
     // Render header and footer
     ProyectosPixel.renderHeader();
