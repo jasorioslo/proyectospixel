@@ -191,14 +191,15 @@
 - ✅ Lote 7 (v31): conversor-unidades · regla-de-tres · generador-tabla-multiplicar
 - **Todas** con HowTo + FAQPage válidos; producción v31 / SW pp-v31
 
-### FASE 3 — Testing pendiente (Bloque 10)
-- [ ] 3.1 Responsive real en dispositivo (320/375/768/1024/1440)
-- [ ] 3.2 PWA offline real + "Instalar como app" en móvil
-- [ ] 3.3 Cross-browser Safari + Firefox (WebP fallback, WebCrypto)
-- [ ] 3.4 Spot-check funcional de las 66 tools en producción
+### FASE 3 — Testing (Bloque 10)
+- [x] 3.4 Spot-check funcional de las 66 tools en producción — HECHO 15/10: script `tools/check-tools.mjs` → **66/66 responden 200, montan interfaz, cargan su JS y tienen `.tool-content`**. Pruebas funcionales reales en navegador OK: generador-hashes (md5+sha256), regla-de-tres (X=20), base64 (encode/decode), invertir-texto (hola→aloh), contador-clics (+1+1=2), calculadora-porcentajes (15% de 240 = 36)
+- [x] Auditoría de consola — HECHO 15/10: detectado que **Cloudflare Web Analytics estaba bloqueado por la CSP** (beacon inyectado por CF) + `adtrafficquality.google` (AdSense SODAR) bloqueado → **CSP corregida** (`static.cloudflareinsights.com` en script-src; `cloudflareinsights.com` y `*.adtrafficquality.google` en connect-src)
+- [ ] 3.1 Responsive real en dispositivo (320/375/768/1024/1440) — *requiere dispositivo del dueño* (checklist abajo)
+- [ ] 3.2 PWA offline real + "Instalar como app" en móvil — *requiere dispositivo del dueño*
+- [ ] 3.3 Cross-browser Safari + Firefox (WebP fallback, WebCrypto) — *requiere navegador real del dueño* (Chromium ya validado)
 
-### FASE 4 — Analítica (decisión pendiente)
-- [ ] Decidir: Cloudflare Web Analytics (1 clic, sin cookies, sin CMP) **o** Umami (eventos por tool + hosting + CMP/privacidad)
+### FASE 4 — Analítica (decidida)
+- [x] **Cloudflare Web Analytics** — HECHO: ya estaba **activado por el dueño** (beacon inyectado por Cloudflare); la CSP lo bloqueaba y se ha **corregido el 15/10**. Sin cookies, sin CMP → encaja con la marca. (Alternativa Umami descartada por ahora.)
 
 ### FASE 5 — Producto (opcional)
 - [ ] 5.1 PDF → imágenes (vendorizar pdf.js en `/js/vendor/` + precache SW)

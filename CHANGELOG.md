@@ -7,6 +7,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 ## [No publicado]
 
 ### Fixed
+- **CSP bloqueaba servicios legítimos** (15/10/2026): la `Content-Security-Policy` no permitía el beacon de **Cloudflare Web Analytics** (`static.cloudflareinsights.com` en `script-src`, `cloudflareinsights.com` en `connect-src`), por lo que la analítica (ya activada en el panel de Cloudflare) no registraba datos. Tampoco permitía `https://*.adtrafficquality.google` (SODAR de AdSense) en `connect-src`. Corregido en `_headers`.
 - **Enlaces internos rotos (6) en el contenido SEO** (15/10/2026): rutas con categoría equivocada apuntaban a 404 — `cifrado-rot13` estaba como `/texto/` (es `seguridad`), `extraer-columnas-texto` como `/matematicas/` (es `texto`) y `decodificar-jwt` como `/desarrollo/` (es `seguridad`). Corregido en las 6 páginas y en los specs de origen. Detectado con el nuevo verificador de enlaces.
 - **Accesibilidad 95 → 100 en Lighthouse** (14/10/2026):
   - `.pill.disabled` ("Imagen · Próximamente") tenía contraste 3.12–3.72 (opacidad 50%) → ahora fondo neutro con `--text-secondary` (ratio >4.5:1)
@@ -19,6 +20,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - **6.1 MD5 deduplicado**: `generador-hashes.js` usa ahora el módulo compartido `js/tools/hash-utils.js` (`ProyectosPixel.hashers`), eliminando la copia inline del algoritmo. Mismo resultado verificado (md5/sha1/sha256).
   - **6.2 `bump-versions.js`** actualiza también el `CACHE_NAME` del service worker (`pp-vN`) → se acabó el bump manual del `sw.js`.
   - **6.3 `tools/check-links.mjs`**: verificador de enlaces internos (resuelve rutas de directorio a `index.html`, ignora externos/anclas/plantilla). Enganchado al **CI** antes del deploy.
+  - **`tools/check-tools.mjs`** (QA): spot-check de las 66 tools en producción/local (200 + interfaz + JS + `.tool-content`).
   - Bump `?v=32` + SW `pp-v32`
 - **Tools Relacionadas — cards compactas** (según feedback): solo **icono + título + badge**, sin descripción y con **altura uniforme** (min-height 156px, badge anclado abajo) → relación 6 cards alineadas en cualquier tool. La home conserva las descripciones en sus cards completas.
 - **CI (GitHub Actions) con guarda anti-fallos**: si no existen los secretos `CLOUDFLARE_API_TOKEN`/`CLOUDFLARE_ACCOUNT_ID`, el job se **omite limpiamente** (sin correos de "Run failed") y muestra instrucciones; en cuanto se configuren, despliega automático sin tocar nada.
