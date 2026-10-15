@@ -7,6 +7,10 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 ## [No publicado]
 
 ### Fixed
+- **Service Worker podía servir assets antiguos tras un despliegue** (15/10/2026): con estrategia *Cache-First* para JS/CSS, si un asset quedaba cacheado durante la ventana de propagación de un deploy, permanecía viejo (detectado al activar los favoritos: el SW servía el `home.js` anterior). Ahora:
+  - Assets estáticos → **Stale-While-Revalidate** (sirve de caché al instante y se auto-refresca en 2.º plano → la caché se auto-cura).
+  - El precache de `ASSETS` usa `cache: 'reload'` (ignora la caché HTTP al instalar) y tolera fallos individuales.
+  - Bump `?v=35` + SW `pp-v35`.
 - **CSP bloqueaba servicios legítimos** (15/10/2026): la `Content-Security-Policy` no permitía el beacon de **Cloudflare Web Analytics** (`static.cloudflareinsights.com` en `script-src`, `cloudflareinsights.com` en `connect-src`), por lo que la analítica (ya activada en el panel de Cloudflare) no registraba datos. Tampoco permitía `https://*.adtrafficquality.google` (SODAR de AdSense) en `connect-src`. Corregido en `_headers`.
 - **Enlaces internos rotos (6) en el contenido SEO** (15/10/2026): rutas con categoría equivocada apuntaban a 404 — `cifrado-rot13` estaba como `/texto/` (es `seguridad`), `extraer-columnas-texto` como `/matematicas/` (es `texto`) y `decodificar-jwt` como `/desarrollo/` (es `seguridad`). Corregido en las 6 páginas y en los specs de origen. Detectado con el nuevo verificador de enlaces.
 - **Accesibilidad 95 → 100 en Lighthouse** (14/10/2026):

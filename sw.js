@@ -2,7 +2,7 @@
    ProyectosPixel Tools - Service Worker (PWA)
    ========================================================= */
 
-var CACHE_NAME = 'pp-v34';
+var CACHE_NAME = 'pp-v35';
 var ASSETS = [
   '/',
   '/index.html',
@@ -162,11 +162,15 @@ var ASSETS = [
   '/js/tools/generador-tabla-multiplicar.js'
 ];
 
-// Install: cache static assets
+// Install: cache static assets (bypassing HTTP cache para no precachear versiones viejas)
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
-      return cache.addAll(ASSETS);
+      return Promise.all(ASSETS.map(function (u) {
+        return fetch(new Request(u, { cache: 'reload' })).then(function (res) {
+          if (res && res.ok) return cache.put(u, res);
+        }).catch(function () { /* tolerar fallos individuales */ });
+      }));
     })
   );
   self.skipWaiting();
@@ -190,7 +194,9 @@ self.addEventListener('fetch', function (event) {
   var request = event.request;
   var url = new URL(request.url);
 
-  // Static assets: Cache First
+  // Static assets: Stale-While-Revalidate
+  // Sirve lo cacheado al instante y refresca en segundo plano (auto-cura la caché
+  // si un asset quedó cacheado durante una ventana de propagación de despliegue).
   if (request.destination === 'style' ||
       request.destination === 'script' ||
       request.destination === 'image' ||
@@ -202,13 +208,13 @@ self.addEventListener('fetch', function (event) {
       url.pathname.endsWith('.ico') ||
       url.pathname.endsWith('.json')) {
     event.respondWith(
-      caches.match(request).then(function (cached) {
-        return cached || fetch(request).then(function (response) {
-          var clone = response.clone();
-          caches.open(CACHE_NAME).then(function (cache) {
-            cache.put(request, clone);
-          });
-          return response;
+      caches.open(CACHE_NAME).then(function (cache) {
+        return cache.match(request).then(function (cached) {
+          var network = fetch(request).then(function (response) {
+            if (response && response.ok) cache.put(request, response.clone());
+            return response;
+          }).catch(function () { return cached; });
+          return cached || network;
         });
       })
     );
