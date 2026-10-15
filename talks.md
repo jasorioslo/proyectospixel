@@ -155,12 +155,18 @@
 > Estado base: 66 herramientas en producción, SEO técnico 100/100/100, PWA pp-v19.
 > Orden: Fase 0 + Fase 1 → deploy → Fase 2 (Tavily) → Fase 3 → Fase 4 → Fases 5/6.
 
-> **📓 Sesión 15/10/2026 — Deuda técnica + Fase 3/4** (producción **v32 / pp-v32**, commit `e1541f4`):
-> - **6.1** MD5 deduplicado (generador-hashes usa `hash-utils.js`) · **6.2** `bump-versions.js` actualiza el `CACHE_NAME` del SW · **6.3** `tools/check-links.mjs` + hook en el CI
-> - **Fix:** 6 enlaces internos rotos del contenido SEO (categorías erróneas) corregidos en HTML **y** specs → 0 rotos
-> - **3.4** spot-check 66/66 (`tools/check-tools.mjs`) + 6 pruebas funcionales reales en navegador OK
-> - **Fix CSP:** desbloquea **Cloudflare Web Analytics** (`static.cloudflareinsights.com`, `cloudflareinsights.com`) y **AdSense SODAR** (`*.adtrafficquality.google`) → **Fase 4 resuelta** (analítica ya activa por el dueño)
-> - **Pendiente del dueño:** 3.1/3.2/3.3 en dispositivo real · CMP de Google · rotar API key de Tavily
+> **📓 Sesión 15/10/2026 — Resumen completo del día** (producción **v36 / pp-v36**, commit `61335d9`):
+> - **Fase 6 (deuda técnica, v32):** 6.1 MD5 deduplicado (generador-hashes usa `hash-utils.js`) · 6.2 `bump-versions.js` actualiza el `CACHE_NAME` del SW · 6.3 `tools/check-links.mjs` + hook en el CI
+> - **Fix SEO:** 6 enlaces internos rotos (categorías erróneas) corregidos en HTML **y** specs → 0 rotos
+> - **Fase 3 (3.4, v32):** spot-check 66/66 (`tools/check-tools.mjs`) + 6 pruebas funcionales reales en navegador OK · auditoría de consola
+> - **Fix CSP (v32):** desbloquea **Cloudflare Web Analytics** (`static.cloudflareinsights.com`, `cloudflareinsights.com`) y **AdSense SODAR** (`*.adtrafficquality.google`)
+> - **Fase 4 (v32):** **Cloudflare Web Analytics** confirmada (ya activa por el dueño; la CSP la bloqueaba) → sin cookies ni CMP
+> - **Fase 5.2 (v33):** contenido SEO + **FAQPage** en las 6 páginas de categoría (`tools/seo/content-categories.mjs`)
+> - **Fase 5.3a (v34):** **Favoritos** (localStorage, estrella en tarjetas + botón en la tool + sección en la home) y **badge «Nuevo»** auto-caducable a 30 días
+> - **Fix SW (v35):** assets → **Stale-While-Revalidate** (se auto-refrescan; antes Cache-First servía JS viejo tras un deploy) + precache con `cache:'reload'`
+> - **Fix UX (v36):** color de favorito legible (nueva var `--favorite`, contraste AA en claro/oscuro)
+> - **Fase 7 (v36):** **auditoría de lanzamiento** (`tools/audit-launch.mjs`) → **77/77 URLs** OK, schema/canonical/robots/ads.txt correctos, 404 real → **sin incidencias**
+> - **Pendiente del dueño:** 3.1/3.2/3.3 en dispositivo real · CMP de Google · rotar API key de Tavily · Search Console (verificar + enviar sitemap)
 
 ### FASE 0 — Cierre técnico
 - [x] 0.1 Acortar títulos >65 chars: `codificar-url` y `conversor-unidades` — HECHO 14/10 (51 chars cada uno)

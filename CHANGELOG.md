@@ -4,7 +4,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.0/), y este proyecto adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [No publicado]
+## [15/10/2026]
 
 ### Fixed
 - **Texto/icono de favorito casi invisible en tema claro** (15/10/2026): al marcar favorito se usaba `--secondary` (#FEF0B9, amarillo pálido) como color de texto e icono, ilegible sobre fondo blanco. Se añade la variable dedicada **`--favorite`** con buen contraste en ambos temas (`#8A5200` claro · `#FACC15` oscuro). Ratios medidos: botón 5.35:1 (claro) y 8.47:1 (oscuro); estrella 6.39:1 y 11.11:1 — todos ≥ AA. El botón de la tool se resalta además con fondo tintado y negrita al estar activo. Bump `?v=36` + SW `pp-v36`.
@@ -14,11 +14,6 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - Bump `?v=35` + SW `pp-v35`.
 - **CSP bloqueaba servicios legítimos** (15/10/2026): la `Content-Security-Policy` no permitía el beacon de **Cloudflare Web Analytics** (`static.cloudflareinsights.com` en `script-src`, `cloudflareinsights.com` en `connect-src`), por lo que la analítica (ya activada en el panel de Cloudflare) no registraba datos. Tampoco permitía `https://*.adtrafficquality.google` (SODAR de AdSense) en `connect-src`. Corregido en `_headers`.
 - **Enlaces internos rotos (6) en el contenido SEO** (15/10/2026): rutas con categoría equivocada apuntaban a 404 — `cifrado-rot13` estaba como `/texto/` (es `seguridad`), `extraer-columnas-texto` como `/matematicas/` (es `texto`) y `decodificar-jwt` como `/desarrollo/` (es `seguridad`). Corregido en las 6 páginas y en los specs de origen. Detectado con el nuevo verificador de enlaces.
-- **Accesibilidad 95 → 100 en Lighthouse** (14/10/2026):
-  - `.pill.disabled` ("Imagen · Próximamente") tenía contraste 3.12–3.72 (opacidad 50%) → ahora fondo neutro con `--text-secondary` (ratio >4.5:1)
-  - `aria-label` del logo no coincidía con el texto visible → eliminado (el texto visible "Px ProyectosPixel" es el nombre accesible)
-- **Mensajes de error con acentos**: Base64/Unicode/Morse tenían "no valido"/"Codigo" → "no válido"/"Código"
-- Bump de assets a `?v=10` + SW `pp-v10`
 
 ### Changed
 - **Deuda técnica (Fase 6)** (15/10/2026):
@@ -27,9 +22,6 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - **6.3 `tools/check-links.mjs`**: verificador de enlaces internos (resuelve rutas de directorio a `index.html`, ignora externos/anclas/plantilla). Enganchado al **CI** antes del deploy.
   - **`tools/check-tools.mjs`** (QA): spot-check de las 66 tools en producción/local (200 + interfaz + JS + `.tool-content`).
   - Bump `?v=32` + SW `pp-v32`
-- **Tools Relacionadas — cards compactas** (según feedback): solo **icono + título + badge**, sin descripción y con **altura uniforme** (min-height 156px, badge anclado abajo) → relación 6 cards alineadas en cualquier tool. La home conserva las descripciones en sus cards completas.
-- **CI (GitHub Actions) con guarda anti-fallos**: si no existen los secretos `CLOUDFLARE_API_TOKEN`/`CLOUDFLARE_ACCOUNT_ID`, el job se **omite limpiamente** (sin correos de "Run failed") y muestra instrucciones; en cuanto se configuren, despliega automático sin tocar nada.
-- Bump de assets a `?v=17` + SW `pp-v17`
 
 ### Added
 - **🚀 FASE 7 — Auditoría de lanzamiento** (15/10/2026): nuevo `tools/audit-launch.mjs` que verifica contra producción:
@@ -47,6 +39,10 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - Cada categoría (texto, imagen, seguridad, matemáticas, conversión, desarrollo) ahora tiene: intro («qué son»), «cómo elegir/editar paso a paso», bloque de privacidad, casos de uso, 5 preguntas frecuentes en acordeón y enlaces a las otras categorías
   - **JSON-LD `FAQPage`** añadido a cada categoría (convive con el `CollectionPage` que ya existía)
   - Bump `?v=33` + SW `pp-v33`
+
+## [14/10/2026]
+
+### Added
 - **📝 FASE 2 — Contenido SEO por herramienta (23/66 publicadas)** (14/10/2026):
   - **Pipeline Tavily** (`tools/seo/research.mjs`): Search + Extract → `seo/research/<slug>.md` (gitignored; el repo es público)
   - **Generador de contenido** (`tools/seo/content.mjs` + specs JSON por lote): inserta `.tool-content` + FAQ en acordeón + **JSON-LD HowTo + FAQPage** de forma idempotente
@@ -106,8 +102,6 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - **Imágenes → PDF** con **escritor PDF propio** (PDF 1.4, JPEG DCTDecode, páginas A4 centrada o tamaño imagen, múltiples imágenes) — cero librerías, coherente con la promesa offline
   - Estilos nuevos: `.md-preview`
 - Total del sitio: **54 herramientas** · sitemap **64 URLs** · SW `pp-v15`
-
-### Fixed
 - **Parser Markdown**: el escape de HTML se aplicaba antes del parseo y rompía la sintaxis `>` (citas) — refactorizado (estructura sobre texto crudo, escape solo en el contenido)
 - **Verificador de Contraseñas**: el HTML del resumen se mostraba literal (`<strong>`) → ahora usa `innerHTML` controlado
 - **⚙️ FASE 3 — 4 herramientas de Desarrollo** (14/10/2026, QA verificado en navegador):
@@ -128,6 +122,22 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
   - Categoría `/herramientas/imagen/` activada en pills home, nav, footer, sitemap (51 URLs) y SW (pp-v11)
   - **Above-the-Fold móvil**: cabecera compacta, textarea 150px, controles inline y **barra de acción sticky** — verificado en 375×667 (botón de procesar siempre visible)
   - Total del sitio: **41 herramientas** en 6 categorías
+
+## [Base e historial previo]
+
+### Fixed
+- **Accesibilidad 95 → 100 en Lighthouse** (14/10/2026):
+  - `.pill.disabled` ("Imagen · Próximamente") tenía contraste 3.12–3.72 (opacidad 50%) → ahora fondo neutro con `--text-secondary` (ratio >4.5:1)
+  - `aria-label` del logo no coincidía con el texto visible → eliminado (el texto visible "Px ProyectosPixel" es el nombre accesible)
+- **Mensajes de error con acentos**: Base64/Unicode/Morse tenían "no valido"/"Codigo" → "no válido"/"Código"
+
+### Changed
+- **Tools Relacionadas — cards compactas** (según feedback): solo **icono + título + badge**, sin descripción y con **altura uniforme** (min-height 156px, badge anclado abajo) → relación 6 cards alineadas en cualquier tool. La home conserva las descripciones en sus cards completas.
+- **CI (GitHub Actions) con guarda anti-fallos**: si no existen los secretos `CLOUDFLARE_API_TOKEN`/`CLOUDFLARE_ACCOUNT_ID`, el job se **omite limpiamente** (sin correos de "Run failed") y muestra instrucciones; en cuanto se configuren, despliega automático sin tocar nada.
+- Bump de assets a `?v=17` + SW `pp-v17`
+- Bump de assets a `?v=10` + SW `pp-v10`
+
+### Added
 - **🚀 PROYECTO EN LÍNEA — TAREA-11.1/11.2/11.5 completadas:**
   - 5 páginas de categoría en `/herramientas/{texto,conversion,seguridad,desarrollo,matematicas}/` con SEO propio (title/description/canonical/OG + JSON-LD `CollectionPage`), grid de cards generado desde `tools-data.js` (nuevo helper `renderCategoryGrid`)
   - Breadcrumbs de las 35 tools ahora apuntan a su página de categoría real (ej. Cifrador César → "Seguridad" → `/herramientas/seguridad/`), con mapeo automático desde `tools-data.js`
@@ -255,4 +265,4 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 
 ---
 
-[No publicado]: https://proyectospixel.com
+[15/10/2026]: https://proyectospixel.com
