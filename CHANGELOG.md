@@ -7,6 +7,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 ## [No publicado]
 
 ### Fixed
+- **Texto/icono de favorito casi invisible en tema claro** (15/10/2026): al marcar favorito se usaba `--secondary` (#FEF0B9, amarillo pálido) como color de texto e icono, ilegible sobre fondo blanco. Se añade la variable dedicada **`--favorite`** con buen contraste en ambos temas (`#8A5200` claro · `#FACC15` oscuro). Ratios medidos: botón 5.35:1 (claro) y 8.47:1 (oscuro); estrella 6.39:1 y 11.11:1 — todos ≥ AA. El botón de la tool se resalta además con fondo tintado y negrita al estar activo. Bump `?v=36` + SW `pp-v36`.
 - **Service Worker podía servir assets antiguos tras un despliegue** (15/10/2026): con estrategia *Cache-First* para JS/CSS, si un asset quedaba cacheado durante la ventana de propagación de un deploy, permanecía viejo (detectado al activar los favoritos: el SW servía el `home.js` anterior). Ahora:
   - Assets estáticos → **Stale-While-Revalidate** (sirve de caché al instante y se auto-refresca en 2.º plano → la caché se auto-cura).
   - El precache de `ASSETS` usa `cache: 'reload'` (ignora la caché HTTP al instalar) y tolera fallos individuales.
