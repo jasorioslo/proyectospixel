@@ -102,7 +102,7 @@
     ],
     "relacionadas": [
       { "url": "/herramientas/matematicas/combinar-lineas-listas/", "label": "Combinar líneas (A×B)" },
-      { "url": "/herramientas/matematicas/extraer-columnas-texto/", "label": "Extraer columnas" },
+      { "url": "/herramientas/texto/extraer-columnas-texto/", "label": "Extraer columnas" },
       { "url": "/herramientas/texto/anadir-prefijo-sufijo-lineas/", "label": "Añadir prefijo y sufijo" }
     ]
   },
@@ -138,7 +138,7 @@
     ],
     "relacionadas": [
       { "url": "/herramientas/texto/invertir-texto/", "label": "Invertir texto" },
-      { "url": "/herramientas/texto/cifrado-rot13/", "label": "Cifrado ROT13" },
+      { "url": "/herramientas/seguridad/cifrado-rot13/", "label": "Cifrado ROT13" },
       { "url": "/herramientas/texto/quitar-vocales-texto/", "label": "Quitar vocales" }
     ]
   },

@@ -24,6 +24,10 @@ jobs:
         if: env.CF_API_TOKEN != ''
         uses: actions/checkout@v4
 
+      - name: Verificar enlaces internos
+        if: env.CF_API_TOKEN != ''
+        run: node tools/check-links.mjs
+
       - name: Deploy a Cloudflare Pages
         if: env.CF_API_TOKEN != ''
         uses: cloudflare/wrangler-action@v3

@@ -206,6 +206,6 @@
 - [ ] 5.3 UX: favoritos en localStorage, badge "Nuevo", guías/blog
 
 ### FASE 6 — Deuda técnica (baja prioridad)
-- [ ] 6.1 Deduplicar MD5 (`hash-utils.js` ↔ `generador-hashes.js`)
-- [ ] 6.2 `bump-versions.js` que también actualice `CACHE_NAME` del SW
-- [ ] 6.3 Script de chequeo automático de enlaces internos (200)
+- [x] 6.1 Deduplicar MD5 — HECHO 15/10: `generador-hashes.js` ahora usa `ProyectosPixel.hashers` (md5/shaHex) de `hash-utils.js`; eliminada la copia inline. Verificado: md5(abc)=900150983cd24fb0d6963f7d28e17f72, sha256(abc)=ba7816bf…20015ad
+- [x] 6.2 `bump-versions.js` ahora actualiza también `CACHE_NAME` del SW (`pp-vN`) — HECHO 15/10 (fin del bump manual del sw.js)
+- [x] 6.3 `tools/check-links.mjs` (enlaces internos) — HECHO 15/10: **994 enlaces** analizados → **6 rotos encontrados y corregidos** (categorías erróneas en enlaces de contenido de contenido: `cifrado-rot13`→seguridad, `extraer-columnas-texto`→texto, `decodificar-jwt`→seguridad). Enganchado al **CI** (paso previo al deploy) + specs corregidos. Re-ejecutado: 0 rotos

@@ -1,5 +1,6 @@
-// Bumper de versiones de assets — subir V bump misivo cuando cambien JS/CSS
-// Uso: node pp-bump.js 9
+// Bumper de versiones de assets — subir V cuando cambien JS/CSS
+// Uso: node bump-versions.js 9
+// Actualiza: <link>/<script> ?v=N en HTML + CACHE_NAME ('pp-vN') del service worker
 const fs = require('fs');
 const path = require('path');
 const v = process.argv[2] || '9';
@@ -30,3 +31,16 @@ walk(root, (file) => {
   if (txt !== orig) { fs.writeFileSync(file, txt, 'utf8'); changed++; }
 });
 console.log('Version ' + v + ' aplicada a ' + changed + ' paginas');
+
+// Service worker: actualizar CACHE_NAME (pp-vN) para invalidar la cache versionada
+if (fs.existsSync('sw.js')) {
+  let sw = fs.readFileSync('sw.js', 'utf8');
+  const origSw = sw;
+  sw = sw.replace(/(var CACHE_NAME\s*=\s*')pp-v\d+(')/, '$1pp-v' + v + '$2');
+  if (sw !== origSw) {
+    fs.writeFileSync('sw.js', sw, 'utf8');
+    console.log('SW CACHE_NAME -> pp-v' + v);
+  } else {
+    console.log('SW CACHE_NAME sin cambios (patron no encontrado o ya en pp-v' + v + ')');
+  }
+}

@@ -147,7 +147,7 @@
       { "q": "¿Es gratis?", "a": "Sí, gratis y sin registro." }
     ],
     "relacionadas": [
-      { "url": "/herramientas/texto/cifrado-rot13/", "label": "Cifrado ROT13" },
+      { "url": "/herramientas/seguridad/cifrado-rot13/", "label": "Cifrado ROT13" },
       { "url": "/herramientas/texto/mezclar-letras-palabras/", "label": "Mezclar letras" },
       { "url": "/herramientas/texto/quitar-acentos/", "label": "Quitar acentos" }
     ]

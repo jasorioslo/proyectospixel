@@ -103,7 +103,7 @@
     "relacionadas": [
       { "url": "/herramientas/texto/buscar-reemplazar-texto/", "label": "Buscar y reemplazar" },
       { "url": "/herramientas/texto/eliminar-lineas-duplicadas/", "label": "Quitar líneas duplicadas" },
-      { "url": "/herramientas/matematicas/extraer-columnas-texto/", "label": "Extraer columnas" }
+      { "url": "/herramientas/texto/extraer-columnas-texto/", "label": "Extraer columnas" }
     ]
   },
   {

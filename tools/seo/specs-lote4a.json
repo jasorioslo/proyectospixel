@@ -138,7 +138,7 @@
     ],
     "relacionadas": [
       { "url": "/herramientas/conversion/codificar-decodificar-base64/", "label": "Codificar Base64" },
-      { "url": "/herramientas/texto/cifrado-rot13/", "label": "Cifrado ROT13" },
+      { "url": "/herramientas/seguridad/cifrado-rot13/", "label": "Cifrado ROT13" },
       { "url": "/herramientas/conversion/texto-a-binario/", "label": "Texto a binario" }
     ]
   },

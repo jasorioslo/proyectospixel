@@ -31,7 +31,7 @@
     ],
     "relacionadas": [
       { "url": "/herramientas/seguridad/cifrar-texto-aes/", "label": "Cifrar texto (AES-256)" },
-      { "url": "/herramientas/desarrollo/decodificar-jwt/", "label": "Decodificar JWT" },
+      { "url": "/herramientas/seguridad/decodificar-jwt/", "label": "Decodificar JWT" },
       { "url": "/herramientas/desarrollo/codificar-url/", "label": "Codificar URL" }
     ]
   },
