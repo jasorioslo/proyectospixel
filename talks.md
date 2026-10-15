@@ -211,7 +211,7 @@
 ### FASE 5 — Producto (opcional)
 - [ ] 5.1 PDF → imágenes (vendorizar pdf.js en `/js/vendor/` + precache SW)
 - [x] 5.2 Contenido SEO en las 6 páginas de categoría — HECHO 15/10: generador `tools/seo/content-categories.mjs` + `specs-categorias.json` (intro + cómo elegir + privacidad + casos de uso + 5 FAQ + enlaces entre categorías). JSON-LD **FAQPage** añadido (convive con el `CollectionPage` existente). 6/6 desplegadas, links 0 rotos (v33)
-- [x] 5.3a **Favoritos + badge "Nuevo"** — HECHO 15/10: estrella en cada tarjeta (home y categorías) + botón «Añadir a favoritos» en la página de la tool + sección **«Tus favoritos»** en la home (aparece solo si hay favoritos). Persistencia en `localStorage` (`pp-favorites`), accesible por teclado, con `aria-pressed`. Badge **«Nuevo»** auto-caducable a 30 días (lista `NEW_TOOLS` editable en `tools-data.js`). Verificado en local: 66 estrellas home, 24 en categoría, 8 badges "Nuevo", buscador intacto (v34)
+- [x] 5.3a **Favoritos + badge "Nuevo"** — HECHO 15/10: estrella en cada tarjeta (home y categorías) + botón «Añadir a favoritos» en la página de la tool + sección **«Tus favoritos»** en la home (aparece solo si hay favoritos). Persistencia en `localStorage` (`pp-favorites`), accesible por teclado, con `aria-pressed`. Badge **«Nuevo»** auto-caducable a 30 días (lista `NEW_TOOLS` editable en `tools-data.js`). Verificado en local y **en producción** (66 estrellas home, 24 en categoría, 8 badges "Nuevo", buscador intacto). **+ Fix SW** (v35): assets pasan a **Stale-While-Revalidate** (se auto-refrescan; antes Cache-First podía servir JS viejo tras un deploy) y precache con `cache:'reload'`
 - [ ] 5.3b Guías/blog (contenido editorial de apoyo)
 
 ### FASE 6 — Deuda técnica (baja prioridad)
