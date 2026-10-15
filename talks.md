@@ -155,6 +155,13 @@
 > Estado base: 66 herramientas en producción, SEO técnico 100/100/100, PWA pp-v19.
 > Orden: Fase 0 + Fase 1 → deploy → Fase 2 (Tavily) → Fase 3 → Fase 4 → Fases 5/6.
 
+> **📓 Sesión 15/10/2026 — Deuda técnica + Fase 3/4** (producción **v32 / pp-v32**, commit `e1541f4`):
+> - **6.1** MD5 deduplicado (generador-hashes usa `hash-utils.js`) · **6.2** `bump-versions.js` actualiza el `CACHE_NAME` del SW · **6.3** `tools/check-links.mjs` + hook en el CI
+> - **Fix:** 6 enlaces internos rotos del contenido SEO (categorías erróneas) corregidos en HTML **y** specs → 0 rotos
+> - **3.4** spot-check 66/66 (`tools/check-tools.mjs`) + 6 pruebas funcionales reales en navegador OK
+> - **Fix CSP:** desbloquea **Cloudflare Web Analytics** (`static.cloudflareinsights.com`, `cloudflareinsights.com`) y **AdSense SODAR** (`*.adtrafficquality.google`) → **Fase 4 resuelta** (analítica ya activa por el dueño)
+> - **Pendiente del dueño:** 3.1/3.2/3.3 en dispositivo real · CMP de Google · rotar API key de Tavily
+
 ### FASE 0 — Cierre técnico
 - [x] 0.1 Acortar títulos >65 chars: `codificar-url` y `conversor-unidades` — HECHO 14/10 (51 chars cada uno)
 - [x] 0.2 (dueño) **Redirect Rule www → raíz** (301) — HECHO Y VERIFICADO 14/10: se resolvió con **Bulk Redirects** (las Redirect Rules de zona no interceptan dominios custom de Pages). Las 4 pruebas pasan (raíz, con ruta, con query, raíz sin tocar)
