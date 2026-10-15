@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=32">
+  <link rel="stylesheet" href="/css/styles.css?v=33">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Herramientas de Imagen Online","url":"https://proyectospixel.com/herramientas/imagen/","description":"Comprime, convierte, redimensiona, recorta y limpia metadatos de tus imágenes sin subirlas a ningún servidor."}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se suben mis imágenes a un servidor?","acceptedAnswer":{"@type":"Answer","text":"No: todas funcionan de forma local en el navegador. Tus fotos no se envían a ningún sitio."}},{"@type":"Question","name":"¿Qué formato pesa menos?","acceptedAnswer":{"@type":"Answer","text":"WebP suele ser el más ligero con buena calidad; JPG es la opción más compatible; PNG es para transparencias."}},{"@type":"Question","name":"¿Pierdo calidad al comprimir?","acceptedAnswer":{"@type":"Answer","text":"Puedes elegir el nivel de calidad: para web se consigue una gran reducción de peso con pérdida imperceptible."}},{"@type":"Question","name":"¿Puedo procesar imágenes grandes?","acceptedAnswer":{"@type":"Answer","text":"Sí, aunque depende de la memoria del dispositivo. Para resoluciones enormes, reduce primero el tamaño."}},{"@type":"Question","name":"¿Guarda la herramienta mis archivos?","acceptedAnswer":{"@type":"Answer","text":"No: nada se almacena. Al cerrar la página, todo desaparece de la memoria."}}]}]}
   </script>
 </head>
 <body>
@@ -40,13 +43,49 @@
         <section class="category-tools">
           <div id="category-grid" class="grid-tools grid-tools-all"></div>
         </section>
+        <section class="tool-content">
+          <h2>Qué son las herramientas de imagen online</h2>
+          <p>Son utilidades para <strong>editar y optimizar imágenes directamente en el navegador</strong>: comprimir sin perder calidad, cambiar de formato (WebP, PNG, JPG), redimensionar, recortar, añadir marca de agua y eliminar metadatos EXIF.</p>
+          <p>No hay que subir la foto a ningún servidor: la imagen se procesa con la tecnología del propio dispositivo, así que tus fotografías personales o de trabajo <strong>nunca salen de tu equipo</strong>.</p>
+          <h2>Cómo editar una imagen paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Sube o arrastra la imagen</strong> (o pégala con Ctrl+V). Verás una vista previa al instante.</li>
+            <li><strong>Elige la operación:</strong> comprimir, convertir de formato, redimensionar, recortar o aplicar marca de agua.</li>
+            <li><strong>Ajusta los parámetros</strong> (calidad, tamaño, posición) y revisa el peso o las dimensiones antes/después.</li>
+            <li><strong>Descarga el resultado.</strong> El archivo original permanece intacto en tu equipo.</li>
+          </ol>
+          <h2>Optimiza para la web y para la privacidad</h2>
+          <p>Comprimir y convertir a <strong>WebP</strong> reduce el peso y mejora los Core Web Vitals de tu web. Y antes de compartir una foto, elimina los <strong>metadatos EXIF</strong>: suelen incluir la fecha, el modelo de cámara e incluso <strong>la ubicación GPS</strong> donde se tomó.</p>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Webmasters:</strong> comprimir y convertir a WebP para acelerar la carga.</li>
+            <li><strong>Fotógrafos y creadores:</strong> añadir marca de agua y limpiar metadatos antes de publicar.</li>
+            <li><strong>Tiendas online:</strong> redimensionar y recortar fotos de producto de forma uniforme.</li>
+            <li><strong>Trámites:</strong> preparar imágenes con el tamaño o formato que piden.</li>
+          </ul>
+          <h2>Ejemplos rápidos</h2>
+          <ul>
+            <li><code>JPG 3 MB → WebP 400 KB</code></li>
+            <li><code>Foto de móvil: EXIF con GPS → imagen sin metadatos</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se suben mis imágenes a un servidor?</summary><p>No: todas funcionan de forma local en el navegador. Tus fotos no se envían a ningún sitio.</p></details>
+            <details class="faq-item"><summary>¿Qué formato pesa menos?</summary><p>WebP suele ser el más ligero con buena calidad; JPG es la opción más compatible; PNG es para transparencias.</p></details>
+            <details class="faq-item"><summary>¿Pierdo calidad al comprimir?</summary><p>Puedes elegir el nivel de calidad: para web se consigue una gran reducción de peso con pérdida imperceptible.</p></details>
+            <details class="faq-item"><summary>¿Puedo procesar imágenes grandes?</summary><p>Sí, aunque depende de la memoria del dispositivo. Para resoluciones enormes, reduce primero el tamaño.</p></details>
+            <details class="faq-item"><summary>¿Guarda la herramienta mis archivos?</summary><p>No: nada se almacena. Al cerrar la página, todo desaparece de la memoria.</p></details>
+          </div>
+          <h2>Explora otras categorías</h2>
+          <p>Sigue con <a href="/herramientas/conversion/">Herramientas de conversión</a>, <a href="/herramientas/desarrollo/">Herramientas de desarrollo</a> o <a href="/herramientas/texto/">Herramientas de texto</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=32"></script>
-  <script src="/js/tools-data.js?v=32"></script>
+  <script src="/js/components.js?v=33"></script>
+  <script src="/js/tools-data.js?v=33"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();

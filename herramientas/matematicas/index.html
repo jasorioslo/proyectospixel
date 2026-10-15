@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=32">
+  <link rel="stylesheet" href="/css/styles.css?v=33">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Herramientas Matemáticas Online","url":"https://proyectospixel.com/herramientas/matematicas/","description":"Herramientas matemáticas online gratis: listas de números, combinaciones y permutaciones. 100% privado y sin registro."}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Muestran la fórmula o solo el resultado?","acceptedAnswer":{"@type":"Answer","text":"Muchas muestran el desarrollo: por ejemplo, la regla de tres indica X = B·C/A, y la estadística incluye cuartiles y desviación."}},{"@type":"Question","name":"¿Sirven para la calculadora de IVA?","acceptedAnswer":{"@type":"Answer","text":"Sí: la calculadora de descuentos aplica un porcentaje de descuento y suma el IVA que indiques (21%, 10%, 4%…)."}},{"@type":"Question","name":"¿Qué diferencia hay entre combinaciones y permutaciones?","acceptedAnswer":{"@type":"Answer","text":"En las combinaciones el orden no importa; en las permutaciones sí. Por eso hay muchas más permutaciones."}},{"@type":"Question","name":"¿Se guardan mis datos?","acceptedAnswer":{"@type":"Answer","text":"No: los cálculos son locales en tu navegador."}},{"@type":"Question","name":"¿Funcionan para números grandes?","acceptedAnswer":{"@type":"Answer","text":"Sí, aunque los generadores (listas, combinaciones) tienen límites para no bloquear el navegador."}}]}]}
   </script>
 </head>
 <body>
@@ -40,13 +43,50 @@
         <section class="category-tools">
           <div id="category-grid" class="grid-tools grid-tools-all"></div>
         </section>
+        <section class="tool-content">
+          <h2>Qué son las herramientas matemáticas y calculadoras online</h2>
+          <p>Son <strong>calculadoras y generadores</strong> para resolver tareas cotidianas: porcentajes, descuentos e IVA, regla de tres, estadística básica, conversión de unidades y de bases numéricas, además de generadores de listas, combinaciones y permutaciones.</p>
+          <p>Pensadas para ser directas: introduces los datos, ves el resultado con su explicación y, cuando lo necesitas, la fórmula aplicada. Todo funciona en local, sin registro y sin enviar nada.</p>
+          <h2>Cómo resolver un cálculo paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige la calculadora</strong> que corresponda: porcentajes, descuentos, estadística, regla de tres, unidades o bases.</li>
+            <li><strong>Introduce los valores</strong> con coma o punto decimal, según te sea más cómodo.</li>
+            <li><strong>Pulsa calcular</strong> y lee el resultado explicado (a veces con la fórmula y el desglose).</li>
+            <li><strong>Copia el resultado.</strong> Para aprender, prueba a cambiar un valor y observa cómo varía.</li>
+          </ol>
+          <h2>Ideal para estudio y trabajo</h2>
+          <p>Estas herramientas muestran no solo el número final, sino <strong>el procedimiento</strong>: la fórmula de la regla de tres, los cuartiles y la desviación estándar, el desglose de IVA o el paso entre bases numéricas. Así sirven igual para <strong>resolver y para entender</strong>.</p>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Compras y finanzas:</strong> porcentajes, descuentos, IVA y variaciones.</li>
+            <li><strong>Estudiantes:</strong> estadística, regla de tres, bases numéricas y tablas de multiplicar.</li>
+            <li><strong>Programadores:</strong> conversión binario/octal/decimal/hexadecimal, listas y combinaciones.</li>
+            <li><strong>Cocina y talleres:</strong> conversión de unidades de masa, volumen y longitud.</li>
+          </ul>
+          <h2>Ejemplos rápidos</h2>
+          <ul>
+            <li><code>15% de 240 = 36</code></li>
+            <li><code>100 € −20% +21% IVA = 96,80 €</code></li>
+            <li><code>1010₂ = 10₁₀ = A₁₆</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Muestran la fórmula o solo el resultado?</summary><p>Muchas muestran el desarrollo: por ejemplo, la regla de tres indica X = B·C/A, y la estadística incluye cuartiles y desviación.</p></details>
+            <details class="faq-item"><summary>¿Sirven para la calculadora de IVA?</summary><p>Sí: la calculadora de descuentos aplica un porcentaje de descuento y suma el IVA que indiques (21%, 10%, 4%…).</p></details>
+            <details class="faq-item"><summary>¿Qué diferencia hay entre combinaciones y permutaciones?</summary><p>En las combinaciones el orden no importa; en las permutaciones sí. Por eso hay muchas más permutaciones.</p></details>
+            <details class="faq-item"><summary>¿Se guardan mis datos?</summary><p>No: los cálculos son locales en tu navegador.</p></details>
+            <details class="faq-item"><summary>¿Funcionan para números grandes?</summary><p>Sí, aunque los generadores (listas, combinaciones) tienen límites para no bloquear el navegador.</p></details>
+          </div>
+          <h2>Explora otras categorías</h2>
+          <p>Sigue con <a href="/herramientas/conversion/">Herramientas de conversión</a>, <a href="/herramientas/texto/">Herramientas de texto</a> o <a href="/herramientas/desarrollo/">Herramientas de desarrollo</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=32"></script>
-  <script src="/js/tools-data.js?v=32"></script>
+  <script src="/js/components.js?v=33"></script>
+  <script src="/js/tools-data.js?v=33"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();

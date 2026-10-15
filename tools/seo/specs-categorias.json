@@ -1,0 +1,228 @@
+[
+  {
+    "cat": "texto",
+    "h2_que": "Qué son las herramientas de texto online",
+    "que": [
+      "Son utilidades para <strong>trabajar con texto sin instalar nada</strong>: contar palabras y caracteres, limpiar formatos, cambiar mayúsculas, eliminar líneas duplicadas o vacías, filtrar, numerar, invertir, buscar y reemplazar, extraer columnas y mucho más.",
+      "Todas funcionan en tu navegador: pegas el texto, pulsas un botón y copias el resultado. <strong>Nada se envía a ningún servidor</strong>, así que puedes usarlas con documentos internos, contratos, contraseñas o datos sensibles sin preocuparte por la privacidad."
+    ],
+    "h2_pasos": "Cómo elegir la herramienta de texto adecuada",
+    "pasos": [
+      "<strong>Piensa en el resultado:</strong> ¿quieres limpiar (quitar espacios o saltos), transformar (mayúsculas, invertir, ROT13) o analizar (contar, frecuencia de palabras, separar keywords)?",
+      "<strong>Pega tu texto</strong> en el área de entrada. La mayoría acepta cualquier volumen razonable de texto.",
+      "<strong>Usa «Buscar y reemplazar»</strong> si necesitas cambios concretos, con soporte de expresiones regulares.",
+      "<strong>Copia el resultado</strong> o descarga si la herramienta lo permite. Todo es reversible: el texto original no se altera."
+    ],
+    "h2_extra": "Por qué son 100% privadas",
+    "extra": [
+      "A diferencia de otros sitios, aquí el texto <strong>no viaja a un servidor</strong> ni se guarda: se procesa con JavaScript en tu propio dispositivo. Es la razón por la que puedes usarlas incluso en modo avión (si ya las has visitado)."
+    ],
+    "usos": [
+      "<strong>Redactores y SEO:</strong> contar caracteres para límites, generar slugs, separar keywords por género, medir frecuencia de palabras.",
+      "<strong>Programadores:</strong> limpiar listas, eliminar líneas duplicadas, quitar saltos, añadir prefijo y sufijo.",
+      "<strong>Estudiantes:</strong> justificar, invertir, mezclar letras y practicar ortografía o tipografía.",
+      "<strong>Datos y listas:</strong> extraer columnas, filtrar líneas, fusionar dos listas y numerar líneas."
+    ],
+    "faqs": [
+      { "q": "¿Hay límite de tamaño?", "a": "No hay un límite fijo: depende de la memoria de tu navegador. Funciona bien con documentos de decenas de miles de palabras." },
+      { "q": "¿Puedo usarlas con datos confidenciales?", "a": "Sí: todo el procesamiento es local. Ningún texto sale de tu dispositivo." },
+      { "q": "¿Funcionan sin instalación y gratis?", "a": "Sí, son gratuitas, sin registro y sin instalar aplicaciones." },
+      { "q": "¿Se pueden combinar varias?", "a": "Claro: por ejemplo, quita acentos, pasa a minúsculas y genera el slug en tres pasos encadenados." },
+      { "q": "¿Puedo usarlas desde el móvil?", "a": "Sí: son responsivas y funcionan igual en el navegador del móvil, sin instalar ninguna app." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/", "label": "Herramientas de desarrollo" },
+      { "url": "/herramientas/conversion/", "label": "Herramientas de conversión" },
+      { "url": "/herramientas/matematicas/", "label": "Herramientas matemáticas" }
+    ]
+  },
+  {
+    "cat": "imagen",
+    "h2_que": "Qué son las herramientas de imagen online",
+    "que": [
+      "Son utilidades para <strong>editar y optimizar imágenes directamente en el navegador</strong>: comprimir sin perder calidad, cambiar de formato (WebP, PNG, JPG), redimensionar, recortar, añadir marca de agua y eliminar metadatos EXIF.",
+      "No hay que subir la foto a ningún servidor: la imagen se procesa con la tecnología del propio dispositivo, así que tus fotografías personales o de trabajo <strong>nunca salen de tu equipo</strong>."
+    ],
+    "h2_pasos": "Cómo editar una imagen paso a paso",
+    "pasos": [
+      "<strong>Sube o arrastra la imagen</strong> (o pégala con Ctrl+V). Verás una vista previa al instante.",
+      "<strong>Elige la operación:</strong> comprimir, convertir de formato, redimensionar, recortar o aplicar marca de agua.",
+      "<strong>Ajusta los parámetros</strong> (calidad, tamaño, posición) y revisa el peso o las dimensiones antes/después.",
+      "<strong>Descarga el resultado.</strong> El archivo original permanece intacto en tu equipo."
+    ],
+    "h2_extra": "Optimiza para la web y para la privacidad",
+    "extra": [
+      "Comprimir y convertir a <strong>WebP</strong> reduce el peso y mejora los Core Web Vitals de tu web. Y antes de compartir una foto, elimina los <strong>metadatos EXIF</strong>: suelen incluir la fecha, el modelo de cámara e incluso <strong>la ubicación GPS</strong> donde se tomó."
+    ],
+    "usos": [
+      "<strong>Webmasters:</strong> comprimir y convertir a WebP para acelerar la carga.",
+      "<strong>Fotógrafos y creadores:</strong> añadir marca de agua y limpiar metadatos antes de publicar.",
+      "<strong>Tiendas online:</strong> redimensionar y recortar fotos de producto de forma uniforme.",
+      "<strong>Trámites:</strong> preparar imágenes con el tamaño o formato que piden."
+    ],
+    "ejemplos": [ "JPG 3 MB → WebP 400 KB", "Foto de móvil: EXIF con GPS → imagen sin metadatos" ],
+    "faqs": [
+      { "q": "¿Se suben mis imágenes a un servidor?", "a": "No: todas funcionan de forma local en el navegador. Tus fotos no se envían a ningún sitio." },
+      { "q": "¿Qué formato pesa menos?", "a": "WebP suele ser el más ligero con buena calidad; JPG es la opción más compatible; PNG es para transparencias." },
+      { "q": "¿Pierdo calidad al comprimir?", "a": "Puedes elegir el nivel de calidad: para web se consigue una gran reducción de peso con pérdida imperceptible." },
+      { "q": "¿Puedo procesar imágenes grandes?", "a": "Sí, aunque depende de la memoria del dispositivo. Para resoluciones enormes, reduce primero el tamaño." },
+      { "q": "¿Guarda la herramienta mis archivos?", "a": "No: nada se almacena. Al cerrar la página, todo desaparece de la memoria." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/", "label": "Herramientas de conversión" },
+      { "url": "/herramientas/desarrollo/", "label": "Herramientas de desarrollo" },
+      { "url": "/herramientas/texto/", "label": "Herramientas de texto" }
+    ]
+  },
+  {
+    "cat": "seguridad",
+    "h2_que": "Qué son las herramientas de seguridad online",
+    "que": [
+      "Reúnen utilidades de <strong>criptografía y seguridad</strong> para el día a día: generar contraseñas fuertes y robustas, comprobar su fortaleza, calcular hashes (MD5, SHA) y HMAC, cifrar texto con AES-256, y manejar identificadores, tokens JWT y pares de claves.",
+      "La clave está en que <strong>todo se calcula en tu navegador</strong>. A diferencia de muchas webs, aquí tus contraseñas, tus claves y tus textos confidenciales <strong>no se envían a ningún servidor</strong>, que es precisamente lo que uno quiere en seguridad."
+    ],
+    "h2_pasos": "Cómo usar las herramientas de seguridad con cabeza",
+    "pasos": [
+      "<strong>Elige la operación:</strong> ¿generar, verificar, cifrar o calcular una huella (hash/HMAC)?",
+      "<strong>Introduce los datos</strong> sabiendo que los de máxima sensibilidad (como contraseñas de producción o JWT reales) conviene probarlos con valores de ejemplo.",
+      "<strong>Revisa el resultado</strong> y su explicación: fuerza estimada, coincidencia de hash, fecha de expiración del token…",
+      "<strong>Copia y guarda en un lugar seguro</strong> (gestor de contraseñas) lo que debas conservar, como una clave privada."
+    ],
+    "h2_extra": "Generación con criptografía del navegador",
+    "extra": [
+      "Las contraseñas, los UUID y los pares de claves se generan con <code>crypto.getRandomValues</code> y WebCrypto, el <strong>generador criptográfico del propio navegador</strong>, no con un simple <code>Math.random()</code>. El texto cifrado usa <strong>AES-256-GCM</strong> con derivación de clave PBKDF2, el mismo estándar de bancos y mensajería."
+    ],
+    "usos": [
+      "<strong>Cuentas nuevas:</strong> contraseñas largas y aleatorias generadas en local.",
+      "<strong>Auditoría:</strong> comprobar la fortaleza de tus claves sin exponerlas.",
+      "<strong>Desarrollo:</strong> hashes de integridad, firmas HMAC para webhooks, tokens UUID.",
+      "<strong>Compartir en privado:</strong> cifrar un texto con AES y enviar la clave por otro canal."
+    ],
+    "faqs": [
+      { "q": "¿Se envían mis contraseñas o claves?", "a": "No, nunca. Todo el cálculo es local con las API criptográficas del navegador. Es la gran diferencia frente a otros generadores que las crean en un servidor." },
+      { "q": "¿Qué diferencia hay entre hash y cifrado?", "a": "El hash es de un solo sentido (no se descifra); el cifrado sí permite recuperar el original con la clave. Para contraseñas se usa hash; para datos que debes leer, cifrado." },
+      { "q": "¿Puedo descifrar un JWT?", "a": "Puedes inspeccionar su contenido (header y payload) sin la clave, pero verificar la firma requiere la clave del emisor." },
+      { "q": "¿Qué es un UUID?", "a": "Un identificador único universal de 128 bits; el tipo v4 se genera al azar y es ideal como clave primaria." },
+      { "q": "¿Son aptas para uso profesional?", "a": "Sí: usan algoritmos y APIs estándar (AES-GCM, PBKDF2, HMAC-SHA, RSA/ECDSA), siempre que tengas en cuenta que operan en el cliente." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/", "label": "Herramientas de desarrollo" },
+      { "url": "/herramientas/conversion/", "label": "Herramientas de conversión" },
+      { "url": "/herramientas/texto/", "label": "Herramientas de texto" }
+    ]
+  },
+  {
+    "cat": "matematicas",
+    "h2_que": "Qué son las herramientas matemáticas y calculadoras online",
+    "que": [
+      "Son <strong>calculadoras y generadores</strong> para resolver tareas cotidianas: porcentajes, descuentos e IVA, regla de tres, estadística básica, conversión de unidades y de bases numéricas, además de generadores de listas, combinaciones y permutaciones.",
+      "Pensadas para ser directas: introduces los datos, ves el resultado con su explicación y, cuando lo necesitas, la fórmula aplicada. Todo funciona en local, sin registro y sin enviar nada."
+    ],
+    "h2_pasos": "Cómo resolver un cálculo paso a paso",
+    "pasos": [
+      "<strong>Elige la calculadora</strong> que corresponda: porcentajes, descuentos, estadística, regla de tres, unidades o bases.",
+      "<strong>Introduce los valores</strong> con coma o punto decimal, según te sea más cómodo.",
+      "<strong>Pulsa calcular</strong> y lee el resultado explicado (a veces con la fórmula y el desglose).",
+      "<strong>Copia el resultado.</strong> Para aprender, prueba a cambiar un valor y observa cómo varía."
+    ],
+    "h2_extra": "Ideal para estudio y trabajo",
+    "extra": [
+      "Estas herramientas muestran no solo el número final, sino <strong>el procedimiento</strong>: la fórmula de la regla de tres, los cuartiles y la desviación estándar, el desglose de IVA o el paso entre bases numéricas. Así sirven igual para <strong>resolver y para entender</strong>."
+    ],
+    "usos": [
+      "<strong>Compras y finanzas:</strong> porcentajes, descuentos, IVA y variaciones.",
+      "<strong>Estudiantes:</strong> estadística, regla de tres, bases numéricas y tablas de multiplicar.",
+      "<strong>Programadores:</strong> conversión binario/octal/decimal/hexadecimal, listas y combinaciones.",
+      "<strong>Cocina y talleres:</strong> conversión de unidades de masa, volumen y longitud."
+    ],
+    "ejemplos": [ "15% de 240 = 36", "100 € −20% +21% IVA = 96,80 €", "1010₂ = 10₁₀ = A₁₆" ],
+    "faqs": [
+      { "q": "¿Muestran la fórmula o solo el resultado?", "a": "Muchas muestran el desarrollo: por ejemplo, la regla de tres indica X = B·C/A, y la estadística incluye cuartiles y desviación." },
+      { "q": "¿Sirven para la calculadora de IVA?", "a": "Sí: la calculadora de descuentos aplica un porcentaje de descuento y suma el IVA que indiques (21%, 10%, 4%…)." },
+      { "q": "¿Qué diferencia hay entre combinaciones y permutaciones?", "a": "En las combinaciones el orden no importa; en las permutaciones sí. Por eso hay muchas más permutaciones." },
+      { "q": "¿Se guardan mis datos?", "a": "No: los cálculos son locales en tu navegador." },
+      { "q": "¿Funcionan para números grandes?", "a": "Sí, aunque los generadores (listas, combinaciones) tienen límites para no bloquear el navegador." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/", "label": "Herramientas de conversión" },
+      { "url": "/herramientas/texto/", "label": "Herramientas de texto" },
+      { "url": "/herramientas/desarrollo/", "label": "Herramientas de desarrollo" }
+    ]
+  },
+  {
+    "cat": "conversion",
+    "h2_que": "Qué son las herramientas de conversión online",
+    "que": [
+      "Transforman un formato en otro: <strong>texto a Morse y a binario, Base64, escapes Unicode, JSON a CSV, Markdown a HTML e imágenes a PDF</strong>. Son la navaja suiza para mover datos entre sistemas y lenguajes.",
+      "Todas funcionan <strong>en tu navegador</strong>: útil cuando conviertes datos internos, configuraciones o documentos y prefieres no subirlos a un servicio de terceros."
+    ],
+    "h2_pasos": "Cómo convertir datos paso a paso",
+    "pasos": [
+      "<strong>Elige la conversión:</strong> ¿texto↔Morse, texto↔Base64, JSON↔CSV, Markdown→HTML o imágenes→PDF?",
+      "<strong>Pega o sube el contenido de origen.</strong> Varias son reversibles (Base64, Morse, binario, JSON/CSV).",
+      "<strong>Configura las opciones</strong> (sentido de la conversión, delimitador, tamaño de página…) y pulsa convertir.",
+      "<strong>Copia o descarga el resultado</strong> ya en el formato de destino."
+    ],
+    "h2_extra": "Conversiones reversibles y con validación",
+    "extra": [
+      "Muchas de estas herramientas funcionan en <strong>ambos sentidos</strong> y validan la entrada: si el Base64 o el Morse no son válidos, te avisan indicando el carácter o byte exacto del problema. Así detectas errores en lugar de obtener resultados silenciosamente mal."
+    ],
+    "usos": [
+      "<strong>Desarrollo:</strong> codificar Base64, convertir JSON a CSV, procesar escapes Unicode.",
+      "<strong>Documentación:</strong> pasar Markdown a HTML para una web o un CMS.",
+      "<strong>Trámites:</strong> unir fotos en un PDF para subirlo donde solo aceptan ese formato.",
+      "<strong>Educación y juegos:</strong> Morse y binario para mensajes en clave."
+    ],
+    "ejemplos": [ "hola → aG9sYQ== (Base64)", "SOS → ... --- ... (Morse)", "Ho → 01001000 01101111 (binario UTF-8)" ],
+    "faqs": [
+      { "q": "¿Base64 cifra el texto?", "a": "No: lo codifica, no lo cifra. Cualquiera puede decodificarlo. Para proteger datos usa las herramientas de cifrado." },
+      { "q": "¿Las conversiones son reversibles?", "a": "La mayoría sí (Base64, Morse, binario, Unicode, JSON↔CSV). Markdown→HTML e imágenes→PDF van en un solo sentido." },
+      { "q": "¿Con acentos, ñ o emojis?", "a": "Sí: se trabaja en UTF-8, por lo que los caracteres no ASCII se conservan." },
+      { "q": "¿Se suben mis archivos o datos?", "a": "No: todo se procesa localmente. En imágenes a PDF, por ejemplo, el PDF se genera en tu equipo." },
+      { "q": "¿Cuál uso para íconos o charsets?", "a": "Para escapar caracteres especiales en código usa Unicode; para transporte de datos, Base64." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/desarrollo/", "label": "Herramientas de desarrollo" },
+      { "url": "/herramientas/imagen/", "label": "Herramientas de imagen" },
+      { "url": "/herramientas/texto/", "label": "Herramientas de texto" }
+    ]
+  },
+  {
+    "cat": "desarrollo",
+    "h2_que": "Qué son las herramientas para desarrolladores online",
+    "que": [
+      "Son utilidades de apoyo al desarrollo web: <strong>formatear y validar JSON, codificar y decodificar URLs, limpiar listas de URLs, minificar HTML/CSS/JS, probar expresiones regulares y comparar dos textos</strong> en busca de diferencias.",
+      "Reflejan el día a día de quien programa: depurar una respuesta de API, preparar un enlace con parámetros, revisar un diff o comprobar que un JSON no tiene errores de sintaxis. Y todo <strong>en local</strong>, sin enviar tu código a ningún servidor."
+    ],
+    "h2_pasos": "Cómo apoyarte en estas herramientas",
+    "pasos": [
+      "<strong>Identifica la tarea:</strong> ¿validar/embellecer, codificar, minificar, probar un patrón o comparar versiones?",
+      "<strong>Pega el código o los datos</strong> en el área de trabajo.",
+      "<strong>Ejecuta la acción:</strong> por ejemplo, «Formatear JSON» señala errores con línea y columna, y el probador de regex resalta cada coincidencia y sus grupos.",
+      "<strong>Copia el resultado</strong> de vuelta a tu editor, tu CMS o tu documentación."
+    ],
+    "h2_extra": "Errores claros y resultados listos para pegar",
+    "extra": [
+      "El formateador de JSON te dice <strong>dónde</strong> está el error (línea y columna) y el probador de regex muestra los <strong>grupos capturados</strong> en una tabla. El comparador de textos resalta en verde lo añadido y en rojo lo eliminado. Son atajos que ahorran abrir un editor solo para una comprobación rápida."
+    ],
+    "usos": [
+      "<strong>Depurar APIs:</strong> formatear JSON minificado y localizar el fallo.",
+      "<strong>SEO técnico:</strong> limpiar listas de URLs y quedarte con los dominios.",
+      "<strong>Producción:</strong> minificar CSS o JS antes de subirlos.",
+      "<strong>Control de cambios:</strong> comparar dos versiones de un archivo de configuración o una traducción."
+    ],
+    "ejemplos": [ "https://www.ejemplo.com/ruta?x=1 → ejemplo.com", "búsqueda con ñ → b%C3%BAsqueda%20con%20%C3%B1" ],
+    "faqs": [
+      { "q": "¿Se envían mi código o datos?", "a": "No: el procesado es local en el navegador. Ni tu JSON, ni tu regex, ni tus versiones salen de tu equipo." },
+      { "q": "¿Qué JSON soporta el formateador?", "a": "Cualquier JSON válido. Puedes indentar con 2/4 espacios o tabulación, ordenar claves y validar con indicación de línea y columna del error." },
+      { "q": "¿Qué significa codificar una URL?", "a": "Sustituir caracteres inseguros (espacios, tildes, símbolos) por su escape %XX, típico de parámetros de búsqueda y APIs." },
+      { "q": "¿La minificación es segura?", "a": "Es conservadora (quita comentarios y espacios, no renombra variables): aun así, prueba siempre el resultado." },
+      { "q": "¿Diferencia entre componente y URL completa?", "a": "Componente codifica todo (incluidos /, ? y =) para valores; URL completa respeta la estructura de la dirección." }
+    ],
+    "relacionadas": [
+      { "url": "/herramientas/conversion/", "label": "Herramientas de conversión" },
+      { "url": "/herramientas/seguridad/", "label": "Herramientas de seguridad" },
+      { "url": "/herramientas/texto/", "label": "Herramientas de texto" }
+    ]
+  }
+]

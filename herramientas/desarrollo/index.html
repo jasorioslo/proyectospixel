@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=32">
+  <link rel="stylesheet" href="/css/styles.css?v=33">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Herramientas de Desarrollo Online","url":"https://proyectospixel.com/herramientas/desarrollo/","description":"Herramientas de desarrollo y SEO online gratis: limpia listas de URLs al instante. 100% privado y offline."}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se envían mi código o datos?","acceptedAnswer":{"@type":"Answer","text":"No: el procesado es local en el navegador. Ni tu JSON, ni tu regex, ni tus versiones salen de tu equipo."}},{"@type":"Question","name":"¿Qué JSON soporta el formateador?","acceptedAnswer":{"@type":"Answer","text":"Cualquier JSON válido. Puedes indentar con 2/4 espacios o tabulación, ordenar claves y validar con indicación de línea y columna del error."}},{"@type":"Question","name":"¿Qué significa codificar una URL?","acceptedAnswer":{"@type":"Answer","text":"Sustituir caracteres inseguros (espacios, tildes, símbolos) por su escape %XX, típico de parámetros de búsqueda y APIs."}},{"@type":"Question","name":"¿La minificación es segura?","acceptedAnswer":{"@type":"Answer","text":"Es conservadora (quita comentarios y espacios, no renombra variables): aun así, prueba siempre el resultado."}},{"@type":"Question","name":"¿Diferencia entre componente y URL completa?","acceptedAnswer":{"@type":"Answer","text":"Componente codifica todo (incluidos /, ? y =) para valores; URL completa respeta la estructura de la dirección."}}]}]}
   </script>
 </head>
 <body>
@@ -40,13 +43,49 @@
         <section class="category-tools">
           <div id="category-grid" class="grid-tools grid-tools-all"></div>
         </section>
+        <section class="tool-content">
+          <h2>Qué son las herramientas para desarrolladores online</h2>
+          <p>Son utilidades de apoyo al desarrollo web: <strong>formatear y validar JSON, codificar y decodificar URLs, limpiar listas de URLs, minificar HTML/CSS/JS, probar expresiones regulares y comparar dos textos</strong> en busca de diferencias.</p>
+          <p>Reflejan el día a día de quien programa: depurar una respuesta de API, preparar un enlace con parámetros, revisar un diff o comprobar que un JSON no tiene errores de sintaxis. Y todo <strong>en local</strong>, sin enviar tu código a ningún servidor.</p>
+          <h2>Cómo apoyarte en estas herramientas</h2>
+          <ol class="step-list">
+            <li><strong>Identifica la tarea:</strong> ¿validar/embellecer, codificar, minificar, probar un patrón o comparar versiones?</li>
+            <li><strong>Pega el código o los datos</strong> en el área de trabajo.</li>
+            <li><strong>Ejecuta la acción:</strong> por ejemplo, «Formatear JSON» señala errores con línea y columna, y el probador de regex resalta cada coincidencia y sus grupos.</li>
+            <li><strong>Copia el resultado</strong> de vuelta a tu editor, tu CMS o tu documentación.</li>
+          </ol>
+          <h2>Errores claros y resultados listos para pegar</h2>
+          <p>El formateador de JSON te dice <strong>dónde</strong> está el error (línea y columna) y el probador de regex muestra los <strong>grupos capturados</strong> en una tabla. El comparador de textos resalta en verde lo añadido y en rojo lo eliminado. Son atajos que ahorran abrir un editor solo para una comprobación rápida.</p>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Depurar APIs:</strong> formatear JSON minificado y localizar el fallo.</li>
+            <li><strong>SEO técnico:</strong> limpiar listas de URLs y quedarte con los dominios.</li>
+            <li><strong>Producción:</strong> minificar CSS o JS antes de subirlos.</li>
+            <li><strong>Control de cambios:</strong> comparar dos versiones de un archivo de configuración o una traducción.</li>
+          </ul>
+          <h2>Ejemplos rápidos</h2>
+          <ul>
+            <li><code>https://www.ejemplo.com/ruta?x=1 → ejemplo.com</code></li>
+            <li><code>búsqueda con ñ → b%C3%BAsqueda%20con%20%C3%B1</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se envían mi código o datos?</summary><p>No: el procesado es local en el navegador. Ni tu JSON, ni tu regex, ni tus versiones salen de tu equipo.</p></details>
+            <details class="faq-item"><summary>¿Qué JSON soporta el formateador?</summary><p>Cualquier JSON válido. Puedes indentar con 2/4 espacios o tabulación, ordenar claves y validar con indicación de línea y columna del error.</p></details>
+            <details class="faq-item"><summary>¿Qué significa codificar una URL?</summary><p>Sustituir caracteres inseguros (espacios, tildes, símbolos) por su escape %XX, típico de parámetros de búsqueda y APIs.</p></details>
+            <details class="faq-item"><summary>¿La minificación es segura?</summary><p>Es conservadora (quita comentarios y espacios, no renombra variables): aun así, prueba siempre el resultado.</p></details>
+            <details class="faq-item"><summary>¿Diferencia entre componente y URL completa?</summary><p>Componente codifica todo (incluidos /, ? y =) para valores; URL completa respeta la estructura de la dirección.</p></details>
+          </div>
+          <h2>Explora otras categorías</h2>
+          <p>Sigue con <a href="/herramientas/conversion/">Herramientas de conversión</a>, <a href="/herramientas/seguridad/">Herramientas de seguridad</a> o <a href="/herramientas/texto/">Herramientas de texto</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=32"></script>
-  <script src="/js/tools-data.js?v=32"></script>
+  <script src="/js/components.js?v=33"></script>
+  <script src="/js/tools-data.js?v=33"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();

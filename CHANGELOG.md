@@ -27,6 +27,11 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es/1.1.
 - Bump de assets a `?v=17` + SW `pp-v17`
 
 ### Added
+- **🗂️ FASE 5.2 — Contenido SEO en las 6 páginas de categoría** (15/10/2026):
+  - Generador `tools/seo/content-categories.mjs` + `tools/seo/specs-categorias.json` (mismo enfoque que las tools, idempotente)
+  - Cada categoría (texto, imagen, seguridad, matemáticas, conversión, desarrollo) ahora tiene: intro («qué son»), «cómo elegir/editar paso a paso», bloque de privacidad, casos de uso, 5 preguntas frecuentes en acordeón y enlaces a las otras categorías
+  - **JSON-LD `FAQPage`** añadido a cada categoría (convive con el `CollectionPage` que ya existía)
+  - Bump `?v=33` + SW `pp-v33`
 - **📝 FASE 2 — Contenido SEO por herramienta (23/66 publicadas)** (14/10/2026):
   - **Pipeline Tavily** (`tools/seo/research.mjs`): Search + Extract → `seo/research/<slug>.md` (gitignored; el repo es público)
   - **Generador de contenido** (`tools/seo/content.mjs` + specs JSON por lote): inserta `.tool-content` + FAQ en acordeón + **JSON-LD HowTo + FAQPage** de forma idempotente

@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=32">
+  <link rel="stylesheet" href="/css/styles.css?v=33">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Herramientas de Texto Online","url":"https://proyectospixel.com/herramientas/texto/","description":"Herramientas de texto online gratis para contar, limpiar, transformar y filtrar texto. Sin servidores y 100% privadas: todo pasa en tu navegador."}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Hay límite de tamaño?","acceptedAnswer":{"@type":"Answer","text":"No hay un límite fijo: depende de la memoria de tu navegador. Funciona bien con documentos de decenas de miles de palabras."}},{"@type":"Question","name":"¿Puedo usarlas con datos confidenciales?","acceptedAnswer":{"@type":"Answer","text":"Sí: todo el procesamiento es local. Ningún texto sale de tu dispositivo."}},{"@type":"Question","name":"¿Funcionan sin instalación y gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí, son gratuitas, sin registro y sin instalar aplicaciones."}},{"@type":"Question","name":"¿Se pueden combinar varias?","acceptedAnswer":{"@type":"Answer","text":"Claro: por ejemplo, quita acentos, pasa a minúsculas y genera el slug en tres pasos encadenados."}},{"@type":"Question","name":"¿Puedo usarlas desde el móvil?","acceptedAnswer":{"@type":"Answer","text":"Sí: son responsivas y funcionan igual en el navegador del móvil, sin instalar ninguna app."}}]}]}
   </script>
 </head>
 <body>
@@ -40,13 +43,44 @@
         <section class="category-tools">
           <div id="category-grid" class="grid-tools grid-tools-all"></div>
         </section>
+        <section class="tool-content">
+          <h2>Qué son las herramientas de texto online</h2>
+          <p>Son utilidades para <strong>trabajar con texto sin instalar nada</strong>: contar palabras y caracteres, limpiar formatos, cambiar mayúsculas, eliminar líneas duplicadas o vacías, filtrar, numerar, invertir, buscar y reemplazar, extraer columnas y mucho más.</p>
+          <p>Todas funcionan en tu navegador: pegas el texto, pulsas un botón y copias el resultado. <strong>Nada se envía a ningún servidor</strong>, así que puedes usarlas con documentos internos, contratos, contraseñas o datos sensibles sin preocuparte por la privacidad.</p>
+          <h2>Cómo elegir la herramienta de texto adecuada</h2>
+          <ol class="step-list">
+            <li><strong>Piensa en el resultado:</strong> ¿quieres limpiar (quitar espacios o saltos), transformar (mayúsculas, invertir, ROT13) o analizar (contar, frecuencia de palabras, separar keywords)?</li>
+            <li><strong>Pega tu texto</strong> en el área de entrada. La mayoría acepta cualquier volumen razonable de texto.</li>
+            <li><strong>Usa «Buscar y reemplazar»</strong> si necesitas cambios concretos, con soporte de expresiones regulares.</li>
+            <li><strong>Copia el resultado</strong> o descarga si la herramienta lo permite. Todo es reversible: el texto original no se altera.</li>
+          </ol>
+          <h2>Por qué son 100% privadas</h2>
+          <p>A diferencia de otros sitios, aquí el texto <strong>no viaja a un servidor</strong> ni se guarda: se procesa con JavaScript en tu propio dispositivo. Es la razón por la que puedes usarlas incluso en modo avión (si ya las has visitado).</p>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Redactores y SEO:</strong> contar caracteres para límites, generar slugs, separar keywords por género, medir frecuencia de palabras.</li>
+            <li><strong>Programadores:</strong> limpiar listas, eliminar líneas duplicadas, quitar saltos, añadir prefijo y sufijo.</li>
+            <li><strong>Estudiantes:</strong> justificar, invertir, mezclar letras y practicar ortografía o tipografía.</li>
+            <li><strong>Datos y listas:</strong> extraer columnas, filtrar líneas, fusionar dos listas y numerar líneas.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Hay límite de tamaño?</summary><p>No hay un límite fijo: depende de la memoria de tu navegador. Funciona bien con documentos de decenas de miles de palabras.</p></details>
+            <details class="faq-item"><summary>¿Puedo usarlas con datos confidenciales?</summary><p>Sí: todo el procesamiento es local. Ningún texto sale de tu dispositivo.</p></details>
+            <details class="faq-item"><summary>¿Funcionan sin instalación y gratis?</summary><p>Sí, son gratuitas, sin registro y sin instalar aplicaciones.</p></details>
+            <details class="faq-item"><summary>¿Se pueden combinar varias?</summary><p>Claro: por ejemplo, quita acentos, pasa a minúsculas y genera el slug en tres pasos encadenados.</p></details>
+            <details class="faq-item"><summary>¿Puedo usarlas desde el móvil?</summary><p>Sí: son responsivas y funcionan igual en el navegador del móvil, sin instalar ninguna app.</p></details>
+          </div>
+          <h2>Explora otras categorías</h2>
+          <p>Sigue con <a href="/herramientas/desarrollo/">Herramientas de desarrollo</a>, <a href="/herramientas/conversion/">Herramientas de conversión</a> o <a href="/herramientas/matematicas/">Herramientas matemáticas</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=32"></script>
-  <script src="/js/tools-data.js?v=32"></script>
+  <script src="/js/components.js?v=33"></script>
+  <script src="/js/tools-data.js?v=33"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();

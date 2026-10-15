@@ -210,7 +210,7 @@
 
 ### FASE 5 — Producto (opcional)
 - [ ] 5.1 PDF → imágenes (vendorizar pdf.js en `/js/vendor/` + precache SW)
-- [ ] 5.2 Contenido SEO también en las 6 páginas de categoría
+- [x] 5.2 Contenido SEO en las 6 páginas de categoría — HECHO 15/10: generador `tools/seo/content-categories.mjs` + `specs-categorias.json` (intro + cómo elegir + privacidad + casos de uso + 5 FAQ + enlaces entre categorías). JSON-LD **FAQPage** añadido (convive con el `CollectionPage` existente). 6/6 desplegadas, links 0 rotos (v33)
 - [ ] 5.3 UX: favoritos en localStorage, badge "Nuevo", guías/blog
 
 ### FASE 6 — Deuda técnica (baja prioridad)

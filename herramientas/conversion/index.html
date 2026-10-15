@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=32">
+  <link rel="stylesheet" href="/css/styles.css?v=33">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Conversión de Formatos de Texto","url":"https://proyectospixel.com/herramientas/conversion/","description":"Convierte formatos online gratis: Base64, Unicode, binario y código Morse. 100% privado, sin servidores, gratis."}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Base64 cifra el texto?","acceptedAnswer":{"@type":"Answer","text":"No: lo codifica, no lo cifra. Cualquiera puede decodificarlo. Para proteger datos usa las herramientas de cifrado."}},{"@type":"Question","name":"¿Las conversiones son reversibles?","acceptedAnswer":{"@type":"Answer","text":"La mayoría sí (Base64, Morse, binario, Unicode, JSON↔CSV). Markdown→HTML e imágenes→PDF van en un solo sentido."}},{"@type":"Question","name":"¿Con acentos, ñ o emojis?","acceptedAnswer":{"@type":"Answer","text":"Sí: se trabaja en UTF-8, por lo que los caracteres no ASCII se conservan."}},{"@type":"Question","name":"¿Se suben mis archivos o datos?","acceptedAnswer":{"@type":"Answer","text":"No: todo se procesa localmente. En imágenes a PDF, por ejemplo, el PDF se genera en tu equipo."}},{"@type":"Question","name":"¿Cuál uso para íconos o charsets?","acceptedAnswer":{"@type":"Answer","text":"Para escapar caracteres especiales en código usa Unicode; para transporte de datos, Base64."}}]}]}
   </script>
 </head>
 <body>
@@ -40,13 +43,50 @@
         <section class="category-tools">
           <div id="category-grid" class="grid-tools grid-tools-all"></div>
         </section>
+        <section class="tool-content">
+          <h2>Qué son las herramientas de conversión online</h2>
+          <p>Transforman un formato en otro: <strong>texto a Morse y a binario, Base64, escapes Unicode, JSON a CSV, Markdown a HTML e imágenes a PDF</strong>. Son la navaja suiza para mover datos entre sistemas y lenguajes.</p>
+          <p>Todas funcionan <strong>en tu navegador</strong>: útil cuando conviertes datos internos, configuraciones o documentos y prefieres no subirlos a un servicio de terceros.</p>
+          <h2>Cómo convertir datos paso a paso</h2>
+          <ol class="step-list">
+            <li><strong>Elige la conversión:</strong> ¿texto↔Morse, texto↔Base64, JSON↔CSV, Markdown→HTML o imágenes→PDF?</li>
+            <li><strong>Pega o sube el contenido de origen.</strong> Varias son reversibles (Base64, Morse, binario, JSON/CSV).</li>
+            <li><strong>Configura las opciones</strong> (sentido de la conversión, delimitador, tamaño de página…) y pulsa convertir.</li>
+            <li><strong>Copia o descarga el resultado</strong> ya en el formato de destino.</li>
+          </ol>
+          <h2>Conversiones reversibles y con validación</h2>
+          <p>Muchas de estas herramientas funcionan en <strong>ambos sentidos</strong> y validan la entrada: si el Base64 o el Morse no son válidos, te avisan indicando el carácter o byte exacto del problema. Así detectas errores en lugar de obtener resultados silenciosamente mal.</p>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Desarrollo:</strong> codificar Base64, convertir JSON a CSV, procesar escapes Unicode.</li>
+            <li><strong>Documentación:</strong> pasar Markdown a HTML para una web o un CMS.</li>
+            <li><strong>Trámites:</strong> unir fotos en un PDF para subirlo donde solo aceptan ese formato.</li>
+            <li><strong>Educación y juegos:</strong> Morse y binario para mensajes en clave.</li>
+          </ul>
+          <h2>Ejemplos rápidos</h2>
+          <ul>
+            <li><code>hola → aG9sYQ== (Base64)</code></li>
+            <li><code>SOS → ... --- ... (Morse)</code></li>
+            <li><code>Ho → 01001000 01101111 (binario UTF-8)</code></li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Base64 cifra el texto?</summary><p>No: lo codifica, no lo cifra. Cualquiera puede decodificarlo. Para proteger datos usa las herramientas de cifrado.</p></details>
+            <details class="faq-item"><summary>¿Las conversiones son reversibles?</summary><p>La mayoría sí (Base64, Morse, binario, Unicode, JSON↔CSV). Markdown→HTML e imágenes→PDF van en un solo sentido.</p></details>
+            <details class="faq-item"><summary>¿Con acentos, ñ o emojis?</summary><p>Sí: se trabaja en UTF-8, por lo que los caracteres no ASCII se conservan.</p></details>
+            <details class="faq-item"><summary>¿Se suben mis archivos o datos?</summary><p>No: todo se procesa localmente. En imágenes a PDF, por ejemplo, el PDF se genera en tu equipo.</p></details>
+            <details class="faq-item"><summary>¿Cuál uso para íconos o charsets?</summary><p>Para escapar caracteres especiales en código usa Unicode; para transporte de datos, Base64.</p></details>
+          </div>
+          <h2>Explora otras categorías</h2>
+          <p>Sigue con <a href="/herramientas/desarrollo/">Herramientas de desarrollo</a>, <a href="/herramientas/imagen/">Herramientas de imagen</a> o <a href="/herramientas/texto/">Herramientas de texto</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=32"></script>
-  <script src="/js/tools-data.js?v=32"></script>
+  <script src="/js/components.js?v=33"></script>
+  <script src="/js/tools-data.js?v=33"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();

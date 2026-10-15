@@ -19,9 +19,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="/css/styles.css?v=32">
+  <link rel="stylesheet" href="/css/styles.css?v=33">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Herramientas de Seguridad Online","url":"https://proyectospixel.com/herramientas/seguridad/","description":"Herramientas de seguridad online gratis: contraseñas fuertes y cifrados ROT13 y César. Nada se envía a ningún servidor."}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se envían mis contraseñas o claves?","acceptedAnswer":{"@type":"Answer","text":"No, nunca. Todo el cálculo es local con las API criptográficas del navegador. Es la gran diferencia frente a otros generadores que las crean en un servidor."}},{"@type":"Question","name":"¿Qué diferencia hay entre hash y cifrado?","acceptedAnswer":{"@type":"Answer","text":"El hash es de un solo sentido (no se descifra); el cifrado sí permite recuperar el original con la clave. Para contraseñas se usa hash; para datos que debes leer, cifrado."}},{"@type":"Question","name":"¿Puedo descifrar un JWT?","acceptedAnswer":{"@type":"Answer","text":"Puedes inspeccionar su contenido (header y payload) sin la clave, pero verificar la firma requiere la clave del emisor."}},{"@type":"Question","name":"¿Qué es un UUID?","acceptedAnswer":{"@type":"Answer","text":"Un identificador único universal de 128 bits; el tipo v4 se genera al azar y es ideal como clave primaria."}},{"@type":"Question","name":"¿Son aptas para uso profesional?","acceptedAnswer":{"@type":"Answer","text":"Sí: usan algoritmos y APIs estándar (AES-GCM, PBKDF2, HMAC-SHA, RSA/ECDSA), siempre que tengas en cuenta que operan en el cliente."}}]}]}
   </script>
 </head>
 <body>
@@ -40,13 +43,44 @@
         <section class="category-tools">
           <div id="category-grid" class="grid-tools grid-tools-all"></div>
         </section>
+        <section class="tool-content">
+          <h2>Qué son las herramientas de seguridad online</h2>
+          <p>Reúnen utilidades de <strong>criptografía y seguridad</strong> para el día a día: generar contraseñas fuertes y robustas, comprobar su fortaleza, calcular hashes (MD5, SHA) y HMAC, cifrar texto con AES-256, y manejar identificadores, tokens JWT y pares de claves.</p>
+          <p>La clave está en que <strong>todo se calcula en tu navegador</strong>. A diferencia de muchas webs, aquí tus contraseñas, tus claves y tus textos confidenciales <strong>no se envían a ningún servidor</strong>, que es precisamente lo que uno quiere en seguridad.</p>
+          <h2>Cómo usar las herramientas de seguridad con cabeza</h2>
+          <ol class="step-list">
+            <li><strong>Elige la operación:</strong> ¿generar, verificar, cifrar o calcular una huella (hash/HMAC)?</li>
+            <li><strong>Introduce los datos</strong> sabiendo que los de máxima sensibilidad (como contraseñas de producción o JWT reales) conviene probarlos con valores de ejemplo.</li>
+            <li><strong>Revisa el resultado</strong> y su explicación: fuerza estimada, coincidencia de hash, fecha de expiración del token…</li>
+            <li><strong>Copia y guarda en un lugar seguro</strong> (gestor de contraseñas) lo que debas conservar, como una clave privada.</li>
+          </ol>
+          <h2>Generación con criptografía del navegador</h2>
+          <p>Las contraseñas, los UUID y los pares de claves se generan con <code>crypto.getRandomValues</code> y WebCrypto, el <strong>generador criptográfico del propio navegador</strong>, no con un simple <code>Math.random()</code>. El texto cifrado usa <strong>AES-256-GCM</strong> con derivación de clave PBKDF2, el mismo estándar de bancos y mensajería.</p>
+          <h2>Casos de uso</h2>
+          <ul>
+            <li><strong>Cuentas nuevas:</strong> contraseñas largas y aleatorias generadas en local.</li>
+            <li><strong>Auditoría:</strong> comprobar la fortaleza de tus claves sin exponerlas.</li>
+            <li><strong>Desarrollo:</strong> hashes de integridad, firmas HMAC para webhooks, tokens UUID.</li>
+            <li><strong>Compartir en privado:</strong> cifrar un texto con AES y enviar la clave por otro canal.</li>
+          </ul>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <details class="faq-item"><summary>¿Se envían mis contraseñas o claves?</summary><p>No, nunca. Todo el cálculo es local con las API criptográficas del navegador. Es la gran diferencia frente a otros generadores que las crean en un servidor.</p></details>
+            <details class="faq-item"><summary>¿Qué diferencia hay entre hash y cifrado?</summary><p>El hash es de un solo sentido (no se descifra); el cifrado sí permite recuperar el original con la clave. Para contraseñas se usa hash; para datos que debes leer, cifrado.</p></details>
+            <details class="faq-item"><summary>¿Puedo descifrar un JWT?</summary><p>Puedes inspeccionar su contenido (header y payload) sin la clave, pero verificar la firma requiere la clave del emisor.</p></details>
+            <details class="faq-item"><summary>¿Qué es un UUID?</summary><p>Un identificador único universal de 128 bits; el tipo v4 se genera al azar y es ideal como clave primaria.</p></details>
+            <details class="faq-item"><summary>¿Son aptas para uso profesional?</summary><p>Sí: usan algoritmos y APIs estándar (AES-GCM, PBKDF2, HMAC-SHA, RSA/ECDSA), siempre que tengas en cuenta que operan en el cliente.</p></details>
+          </div>
+          <h2>Explora otras categorías</h2>
+          <p>Sigue con <a href="/herramientas/desarrollo/">Herramientas de desarrollo</a>, <a href="/herramientas/conversion/">Herramientas de conversión</a> o <a href="/herramientas/texto/">Herramientas de texto</a>.</p>
+        </section>
         <div id="ad-banner-bottom" class="ad-container ad-bottom" style="margin-top:32px"></div>
       </div>
     </main>
     <div id="footer"></div>
   </div>
-  <script src="/js/components.js?v=32"></script>
-  <script src="/js/tools-data.js?v=32"></script>
+  <script src="/js/components.js?v=33"></script>
+  <script src="/js/tools-data.js?v=33"></script>
   <script>
     ProyectosPixel.renderHeader();
     ProyectosPixel.renderFooter();
